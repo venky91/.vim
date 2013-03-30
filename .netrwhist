@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/james/.vim/bundle/vim-peepopen/plugin'
+let g:netrw_dirhist_2='/Users/james/.vim/bundle/TagHighLight/plugin/TagHighlight'
+let g:netrw_dirhist_3='/Users/james/.oh-my-zsh'
+let g:netrw_dirhist_4='/Users/james/.vim/bundle/cvim/c-support/templates'
