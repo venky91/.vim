@@ -7,11 +7,10 @@ set showcmd		    " display incomplete commands
 set showmatch       " show matching brackets when typing
 set backspace=indent,eol,start 
 "allow backspacing over everything in insert mode
-set timeout timeoutlen=800 ttimeoutlen=50
+set timeout timeoutlen=400 ttimeoutlen=50
 " less wait-time in terminal escape sequences
 set clipboard^=unnamed
 " set the clipboard for tmux copy/paste integration
-
 " - - - - }}}
 
 " Searching - - - - {{{
@@ -183,6 +182,12 @@ map <F3> zR
 " Opens all Folds
 map <F4> zM
 " Closes all Folds
+map <F5> :set paste<CR>
+map <F6> :set nopaste<CR>
+imap <F5> <C-O>:set paste<CR>
+imap <F6> <nop>
+set pastetoggle=<F6>
+" Pasting
 nnoremap Y y$
 " y$ yanks to the end of the line
 nnoremap D d$
@@ -235,10 +240,6 @@ nnoremap <leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <leader>j :Java<cr>
 " eclim mappings
-nnoremap <leader>aa :A<cr>
-nnoremap <leader>ah :AS<cr>
-nnoremap <leader>av :AV<cr>
-" a.vim mappings
 nnoremap <leader>n :NERDTreeToggle<cr> 
 " Toggles NerdTree
 nnoremap <leader>k :BD<CR>
@@ -306,8 +307,8 @@ endif
 " WebDev - - - - {{{
 
 "Indentation
-autocmd FileType javascript,html,css,php set autoindent
-autocmd FileType javascript,html,css,php set shiftwidth=2
+autocmd FileType ruby,javascript,html,css,php set autoindent
+autocmd FileType ruby,javascript,html,css,php set shiftwidth=2
 autocmd FileType javascript,html,css,php set tabstop=2
 autocmd FileType javascript,html,css,php set sts=2
 autocmd FileType javascript,css,php set textwidth=79
@@ -333,7 +334,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'ervandew/supertab'
 Bundle 'shemerey/vim-peepopen'
-Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/LustyExplorer'
 Bundle 'vim-scripts/bufkill.vim'
@@ -355,11 +355,13 @@ Bundle 'tpope/vim-ragtag'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tmhedberg/matchit'
 Bundle 'tpope/vim-repeat'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-endwise'
+Bundle 'mileszs/ack.vim'
+Bundle 'airblade/vim-rooter'
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -416,9 +418,6 @@ let g:EclimMenus = 1
 " Easytags
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
-
-" Solarized
-call togglebg#map("<F5>")
 
 " - - - - }}}
 
