@@ -84,6 +84,7 @@ if has('mac')
     else
         set background=dark
         colorscheme badwolf
+
     endif
 elseif has('win32')
     set guifont=Consolas:h10
@@ -188,6 +189,8 @@ imap <F5> <C-O>:set paste<CR>
 imap <F6> <nop>
 set pastetoggle=<F6>
 " Pasting
+map <F7> :sign unplace *<CR>
+" Remove signs on the left side
 nnoremap Y y$
 " y$ yanks to the end of the line
 nnoremap D d$
