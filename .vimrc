@@ -7,7 +7,8 @@ set showcmd		    " display incomplete commands
 set showmatch       " show matching brackets when typing
 set backspace=indent,eol,start 
 "allow backspacing over everything in insert mode
-set timeout timeoutlen=400 ttimeoutlen=50
+"set timeout timeoutlen=400 ttimeoutlen=50
+set notimeout ttimeout timeoutlen=50
 " less wait-time in terminal escape sequences
 set clipboard^=unnamed
 " set the clipboard for tmux copy/paste integration
@@ -137,8 +138,6 @@ endif
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> bdw
 " ctrl-backspace deleted the previous word
-"inoremap <C-\> <C-x><C-l> " pick a different binding
-" line completion with ctrl-\
 vnoremap <C-a> ggVG
 " map ctrl+a to select all in visual mode
 nnoremap <C-a> ggVG
@@ -159,8 +158,6 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
 " Maps the control + movement keys to moving around window splits
-nnoremap <C-p> :A<CR>
-" switch between header and source files
 nnoremap <C-\> :pop<cr>
 " Pop back to previous definition
 
@@ -173,7 +170,7 @@ vnoremap ; :
 " Use ; to do ex commands
 cmap Q :q!<cr>
 " easier way to quit
-cmap w!! w !sudo dd of=%<cr>
+"cmap w!! w !sudo dd of=%<cr>
 " root authority writing
 vnoremap <F2> zf
 " Creates Folds
@@ -343,26 +340,26 @@ Bundle 'vim-scripts/bufkill.vim'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'vim-scripts/AutoComplPop'
+Bundle 'vim-scripts/CSApprox'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'xolox/vim-easytags'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
-Bundle 'danro/rename.vim'
 Bundle 'wincent/Command-T'
-Bundle 'vim-scripts/CSApprox'
+Bundle 'tmhedberg/matchit'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-ragtag'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tmhedberg/matchit'
 Bundle 'tpope/vim-repeat'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-eunuch'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-rooter'
 
