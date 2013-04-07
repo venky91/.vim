@@ -1,5 +1,4 @@
 " Editing - - - - {{{
-
 set nocompatible    " no compatibility with vi
 set history=200		" keep 200 lines of command line history
 set ruler		    " show the cursor position all the time
@@ -68,68 +67,43 @@ set guioptions-=L  "remove left-hand scroll bar
 if has('mac')
     set guifont=Consolas:h12
     set shell=/bin/bash
-    " sets the color scheme based on time
-    if strftime("%H") < 4
-        set background=dark
-        colorscheme navajo-night
-    elseif strftime("%H") < 12
-        set background=dark
-        colorscheme jellybeans
-    elseif strftime("%H") < 17
-        set background=light
-        colorscheme molokai
-    elseif strftime("%H") < 21
-        set background=dark
-        let g:solarized_termtrans = 1
-        colorscheme solarized
-    else
-        set background=dark
-        colorscheme badwolf
-
-    endif
 elseif has('win32')
     set guifont=Consolas:h10
-    " sets the color scheme based on time
-    if strftime("%H") < 4
-        set background=dark
-        colorscheme darkspectrum
-    elseif strftime("%H") < 12
-        set background=light
-        colorscheme solarized
-    elseif strftime("%H") < 17
-        set background=light
-        colorscheme maroloccio
-    elseif strftime("%H") < 21
-        set background=dark
-        colorscheme zenburn
-    else
-        set background=dark
-        colorscheme candycode
-    endif
 elseif has('unix')
-    " Only remove the toolbar in Linux
     set guioptions-=T  "remove toolbar
     set guioptions-=m  "remove top bar
     set gfn=Terminus\ 10
     set shell=/bin/bash
-    " sets the color scheme based on time
+endif
+
+set background=dark
+
+if has('gui_running')
     if strftime("%H") < 4
-        set background=dark
-        colorscheme candycode
+        colorscheme jellybeans
     elseif strftime("%H") < 12
-        set background=dark
-        colorscheme bclear
+        colorscheme solarized
     elseif strftime("%H") < 17
-        set background=light
-        colorscheme earendel
+        colorscheme fruity
     elseif strftime("%H") < 21
-        set background=dark
         colorscheme molokai
     else
-        set background=dark
+        colorscheme badwolf
+    endif
+else 
+    if strftime("%H") < 4
+        colorscheme navajo-night
+    elseif strftime("%H") < 12
         colorscheme jellybeans
+    elseif strftime("%H") < 17
+        colorscheme molokai
+    elseif strftime("%H") < 21
+        colorscheme fruity
+    else
+        colorscheme badwolf
     endif
 endif
+
 
 " - - - - }}}
 
@@ -256,6 +230,8 @@ map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 set foldenable      " Turn on folding
 au FileType vim set foldmethod=marker
+au FileType txt set foldmethod=marker
+au FileType php set foldmethod=syntax
 
 au FileType python set foldmethod=indent 
 au FileType python set foldnestmax=1
@@ -287,7 +263,7 @@ nnoremap <leader>cl :!clang++ % -o %<
 " clang compiler for c++
 
 if has('mac')
-    nnoremap <leader>p :!/usr/bin/python %
+    nnoremap <leader>p :!/usr/local/bin/python %<cr>
     set ofu=syntaxcomplete#Complete
 " windows
 elseif has ("win32")
@@ -312,12 +288,6 @@ autocmd FileType ruby,javascript,html,css,php set shiftwidth=2
 autocmd FileType javascript,html,css,php set tabstop=2
 autocmd FileType javascript,html,css,php set sts=2
 autocmd FileType javascript,css,php set textwidth=79
-
-"Enable autocompletion
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -350,7 +320,6 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
 Bundle 'wincent/Command-T'
-Bundle 'tmhedberg/matchit'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
@@ -362,6 +331,8 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-rooter'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'paradigm/TextObjectify'
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -457,6 +428,15 @@ set tags+=~/.vim/tags/qt4
 
 " Build Tags of your own project with Control-F12.
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+
+" Various
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 " }}}
 
