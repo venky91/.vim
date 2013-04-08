@@ -80,19 +80,19 @@ set background=dark
 
 if has('gui_running')
     if strftime("%H") < 4
-        colorscheme jellybeans
+        colorscheme molokai
     elseif strftime("%H") < 12
         colorscheme solarized
     elseif strftime("%H") < 17
         colorscheme fruity
     elseif strftime("%H") < 21
-        colorscheme molokai
+        colorscheme hybrid
     else
         colorscheme badwolf
     endif
 else 
     if strftime("%H") < 4
-        colorscheme navajo-night
+        colorscheme railscasts
     elseif strftime("%H") < 12
         colorscheme jellybeans
     elseif strftime("%H") < 17
@@ -389,6 +389,9 @@ let g:EclimMenus = 1
 " Easytags
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
+
+" Syntastic
+let g:syntastic_mode_map = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " - - - - }}}
 
