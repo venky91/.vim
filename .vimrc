@@ -107,7 +107,7 @@ endif
 
 " - - - - }}}
 
-" Control Keys - - - - {{
+" Control Keys - - - - {{{
 
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> bdw
@@ -136,7 +136,6 @@ nnoremap <C-\> :pop<cr>
 " Pop back to previous definition
 
 " - - - - }}} 
-"
 
 " Regular Keys - - - -  {{{ 
 nnoremap ; :
@@ -186,7 +185,6 @@ vnoremap > >gv
 " Reselect text after identing
 
 " - - - - }}}
-
 
 " Leader - - - - {{{ 
 
@@ -246,7 +244,6 @@ au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
 
 "  - - - - }}}
-"
 
 " Language - - - - {{{ 
 
@@ -321,7 +318,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
 Bundle 'wincent/Command-T'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
@@ -333,6 +329,14 @@ Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-rooter'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'paradigm/TextObjectify'
+Bundle 'davidhalter/jedi-vim'
+
+" Jedi
+let g:jedi#popup_select_first = 0
+autocmd FileType python augroup! AcpGlobalAutoCommand
+let g:jedi#pydoc = "<leader>K"
+let g:jedi#related_names_command = "<leader>N"
+let g:jedi#show_function_definition = "0"
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -342,7 +346,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 
 " TagBar
 let g:tagbar_left=0
-let g:tagbar_width=25
+let g:tagbar_width=30
 let g:tagbar_compact=1
 let g:tagbar_singleclick=1
 let g:tagbar_sort=0
@@ -428,9 +432,6 @@ set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
-
-" Build Tags of your own project with Control-F12.
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 
 " Various
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
