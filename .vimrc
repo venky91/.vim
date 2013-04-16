@@ -35,9 +35,7 @@ set smarttab
 
 " Files - - - - {{{
 
-set filetype=on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 set hidden          " hides buffers instead of removing them
 set nobackup		" do not keep a backup file, use versions instead
 set autoread        " Set to auto read when a file is changed from the outside
@@ -46,6 +44,12 @@ au InsertEnter * :checktime
 " reloads file on insert 
 set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm
 " extensions to ignore
+
+" source vimrc automatically
+autocmd BufWritePost .vimrc nested source $MYVIMRC
+
+
+
 
 " - - - - }}}
 
@@ -201,7 +205,8 @@ nnoremap <leader>Q :so ~/scratch.vim<cr>
 "nnoremap <leader>v <C-w><C-v><C-w>l:e $MYVIMRC<cr>
 nnoremap <leader>v :e ~/.vimrc<cr>
 " open vimrc in another split
-nnoremap <leader>V :silent! so $MYVIMRC<cr>
+"nnoremap <leader>V :silent! so $MYVIMRC<cr>
+nnoremap <leader>V :silent! so $MYVIMRC<CR>
 " source vimrc
 nnoremap <leader>hp :!pasty %<cr>
 " cats the current file into hastebin
@@ -228,6 +233,7 @@ nnoremap <leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
 xnoremap <leader>r :s/<c-r>=expand(@/)<cr>/
 nnoremap <leader>o *Ncgn
 
+nnoremap <leader>y *N
 " - - - - }}}
 
 " Folding - - - - {{{ 
@@ -348,7 +354,7 @@ au FileType c,cpp inoremap {}     {}
 set laststatus=2 " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 let g:Powerline_symbols = 'fancy'
-set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+"set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " TagBar
 let g:tagbar_left=0
@@ -420,6 +426,7 @@ let g:clang_auto_select=0
 let g:clang_user_options='|| exit 0'
 let g:clang_use_library=1
 set completeopt=menu,menuone,longest
+let g:clang_jumpto_back_key="<C-\>"
 
 " Tag Location
 set tags+=~/.vim/tags/cpp
