@@ -1,4 +1,5 @@
 " Editing - - - - {{{
+
 set nocompatible    " no compatibility with vi
 set history=200		" keep 200 lines of command line history
 set ruler		    " show the cursor position all the time
@@ -6,11 +7,11 @@ set showcmd		    " display incomplete commands
 set showmatch       " show matching brackets when typing
 set backspace=indent,eol,start 
 "allow backspacing over everything in insert mode
-"set timeout timeoutlen=400 ttimeoutlen=50
 set notimeout ttimeout timeoutlen=50
 " less wait-time in terminal escape sequences
 set clipboard^=unnamed
 " set the clipboard for tmux copy/paste integration
+
 " - - - - }}}
 
 " Searching - - - - {{{
@@ -40,7 +41,6 @@ filetype indent on
 set hidden          " hides buffers instead of removing them
 set nobackup		" do not keep a backup file, use versions instead
 set autoread        " Set to auto read when a file is changed from the outside
-"set autochdir       " automatically cd to file
 set noswapfile      " sets no swap file
 au InsertEnter * :checktime
 " reloads file on insert 
@@ -253,18 +253,19 @@ au BufWinEnter * silent! loadview
 
 " Language - - - - {{{ 
 
-" general
+" General
 nnoremap <leader>mc :make <bar> :cw<cr>
-" compiles c++ with -g flag
+" make
 nnoremap <leader>mk :make %< <bar> :cw<cr>
 " maps ,m to compile and open a quickfix window if there are errors
 
-" c++ 
+" C/C++ 
 nnoremap <C-c> :!./%<<cr>
 " runs c++ files *ctrl-c*
 nnoremap <leader>cl :!clang++ % -o %<
 " clang compiler for c++
 
+" Python
 if has('mac')
     nnoremap <leader>p :!/usr/local/bin/python %<cr>
     set ofu=syntaxcomplete#Complete
@@ -311,7 +312,6 @@ Bundle 'vim-scripts/LustyExplorer'
 Bundle 'vim-scripts/bufkill.vim'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'vim-scripts/ScrollColors'
-Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/CSApprox'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
@@ -412,21 +412,7 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " - - - - }}}
 
-" Completion - - - -{{{
-
-" AutoComplPop
-let g:acp_behaviorJavaEclimLength = 2
-function MeetsForJavaEclim(context)
-  return g:acp_behaviorJavaEclimLength >= 0 &&
-        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
-endfunction
-let g:acp_behavior = {
-    \ 'java': [{
-      \ 'command': "\<c-x>\<c-u>",
-      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
-      \ 'meets'        : 'MeetsForJavaEclim',
-    \ }]
-  \ }
+" Completion - - - - {{{
 
 " Clang Complete
 let g:clang_complete_auto=0
@@ -451,8 +437,6 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 " Neocomplcache
-" Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
-let g:acp_enableAtStartup = 0
 " Launches neocomplcache automatically on vim startup.
 let g:neocomplcache_enable_at_startup = 1
 " Use smartcase.
@@ -497,9 +481,6 @@ let g:neocomplcache_force_omni_patterns.objc =
       \ '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_force_omni_patterns.objcpp =
       \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-let g:clang_complete_auto = 0
-let g:clang_auto_select = 0
-"let g:clang_use_library = 1
 
 " Neosnippet
 " SuperTab like snippets behavior.
