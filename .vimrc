@@ -125,8 +125,6 @@ inoremap <C-v> <C-O>"+gP
 inoremap <C-U> <C-G>u<C-U>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
-nnoremap <C-n> :bn<CR>
-" Moves along buffers
 nnoremap <C-k> <C-W>k
 nnoremap <C-j> <C-W>j
 nnoremap <C-l> <C-W>l
@@ -183,6 +181,8 @@ map L $
 vnoremap < <gv
 vnoremap > >gv
 " Reselect text after identing
+nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
+" Double Click with the Mouse selects all occurences in the buffer.
 
 " - - - - }}}
 
@@ -222,6 +222,12 @@ nnoremap<leader>[ :pop<cr>
 nnoremap <leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" Neat Select and Replace Short Cuts.
+nnoremap <leader>s *N
+nnoremap <leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
+xnoremap <leader>r :s/<c-r>=expand(@/)<cr>/
+nnoremap <leader>o *Ncgn
+
 " - - - - }}}
 
 " Folding - - - - {{{ 
@@ -299,7 +305,6 @@ set rtp+=vim/,~/.vim/bundle/vundle/,/usr/local/lib/python2.7/site-packages/power
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Rip-Rip/clang_complete'
-Bundle 'ervandew/supertab'
 Bundle 'shemerey/vim-peepopen'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/LustyExplorer'
@@ -328,15 +333,16 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-rooter'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'paradigm/TextObjectify'
-Bundle 'davidhalter/jedi-vim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'honza/vim-snippets'
+Bundle 'dahu/VimRegexTutor'
 
-" Jedi
-let g:jedi#popup_select_first = 0
-autocmd FileType python augroup! AcpGlobalAutoCommand
-let g:jedi#pydoc = "<leader>K"
-let g:jedi#related_names_command = "<leader>N"
-let g:jedi#show_function_definition = "0"
+" DelimitMate
+au FileType c,cpp inoremap {      {}<Left>
+au FileType c,cpp inoremap {<CR>  {<CR>}<Esc>O
+au FileType c,cpp inoremap {{     {
+au FileType c,cpp inoremap {}     {}
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -354,6 +360,7 @@ let g:tagbar_sort=0
 " mouse
 if has('mouse')
     set mouse=a
+    set ttymouse=xterm2
 endif
 
 " Sparkup 
@@ -395,11 +402,17 @@ let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
 
 " Syntastic
+let g:syntastic_check_on_open       = 0
+let g:syntastic_enable_balloons     = 0
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_auto_jump           = 1
+let g:syntastic_auto_loc_list       = 1
+let g:syntastic_enable_signs        = 1
 let g:syntastic_mode_map = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " - - - - }}}
 
-" Completion - - - - {{{
+" Completion - - - -{{{
 
 " AutoComplPop
 let g:acp_behaviorJavaEclimLength = 2
@@ -415,14 +428,9 @@ let g:acp_behavior = {
     \ }]
   \ }
 
-" Super Tab
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-let g:SuperTabLongestHighlight = 1
-
 " Clang Complete
-let g:clang_complete_auto=1
-let g:clang_auto_select=1
+let g:clang_complete_auto=0
+let g:clang_auto_select=0
 let g:clang_user_options='|| exit 0'
 let g:clang_use_library=1
 set completeopt=menu,menuone,longest
@@ -441,6 +449,70 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+" Neocomplcache
+" Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
+let g:acp_enableAtStartup = 0
+" Launches neocomplcache automatically on vim startup.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Use camel case completion.
+let g:neocomplcache_enable_camel_case_completion = 1
+" Use underscore completion.
+let g:neocomplcache_enable_underbar_completion = 1
+" Sets minimum char length of syntax keyword.
+let g:neocomplcache_min_syntax_length = 3
+" buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+" Recommended key-mappings.
+
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  "return neocomplcache#smart_close_popup() . "\<CR>"
+  " For no inserting <CR> key.
+  return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+endfunction
+
+" <TAB>: completion.
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" AutoComplPop like behavior.
+let g:neocomplcache_enable_auto_select = 1
+
+" Compatibility with Clang
+if !exists('g:neocomplcache_force_omni_patterns')
+  let g:neocomplcache_force_omni_patterns = {}
+endif
+let g:neocomplcache_force_overwrite_completefunc = 1
+let g:neocomplcache_force_omni_patterns.c =
+      \ '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplcache_force_omni_patterns.cpp =
+      \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+let g:neocomplcache_force_omni_patterns.objc =
+      \ '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplcache_force_omni_patterns.objcpp =
+      \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+let g:clang_complete_auto = 0
+let g:clang_auto_select = 0
+"let g:clang_use_library = 1
+
+" Neosnippet
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
 
 " }}}
 
