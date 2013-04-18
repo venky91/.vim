@@ -11,6 +11,8 @@ set notimeout ttimeout timeoutlen=50
 " less wait-time in terminal escape sequences
 set clipboard^=unnamed
 " set the clipboard for tmux copy/paste integration
+set noerrorbells    " don't ring the bell
+set lazyredraw      " don't redraw while executing macros
 
 " - - - - }}}
 
@@ -249,6 +251,19 @@ nnoremap <leader>y *N
 
 " Folding - - - - {{{ 
 
+function! NeatFoldText() "{{{2
+  let line = ' ' . substitute(getline(v:foldstart), '^\s*"\?\s*\|\s*"\?\s*{{' . '{\d*\s*', '', 'g') . ' '
+  let lines_count = v:foldend - v:foldstart + 1
+  let lines_count_text = '| ' . printf("%10s", lines_count . ' lines') . ' |'
+  let foldchar = matchstr(&fillchars, 'fold:\zs.')
+  let foldtextstart = strpart('+' . repeat(foldchar, v:foldlevel*2) . line, 0, (winwidth(0)*2)/3)
+  let foldtextend = lines_count_text . repeat(foldchar, 8)
+  let foldtextlength = strlen(substitute(foldtextstart . foldtextend, '.', 'x', 'g')) + &foldcolumn
+  return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
+endfunction
+set foldtext=NeatFoldText()
+" }}}2
+
 set foldenable      " Turn on folding
 au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
@@ -258,9 +273,9 @@ au FileType python set foldmethod=indent
 au FileType python set foldnestmax=1
 
 au FileType c set foldmethod=syntax
-au FileType c set foldnestmax=2
+au FileType c set foldnestmax=1
 au FileType cpp set foldmethod=syntax
-au FileType cpp set foldnestmax=2
+au FileType cpp set foldnestmax=1
 
 au FileType java set foldmethod=syntax
 
