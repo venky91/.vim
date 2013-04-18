@@ -40,8 +40,6 @@ set hidden          " hides buffers instead of removing them
 set nobackup		" do not keep a backup file, use versions instead
 set autoread        " Set to auto read when a file is changed from the outside
 set noswapfile      " sets no swap file
-au InsertEnter * :checktime
-" reloads file on insert 
 set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm
 " extensions to ignore
 
@@ -49,7 +47,20 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*
 autocmd BufWritePost .vimrc nested source $MYVIMRC
 
 
-
+" reloads file in terminal vim if changed from another session  
+augroup checktime
+    au!
+    if !has("gui_running")
+        "silent! necessary otherwise throws errors when using command
+        "line window.
+        autocmd BufEnter        * silent! checktime
+        autocmd CursorHold      * silent! checktime
+        autocmd CursorHoldI     * silent! checktime
+        "these two _may_ slow things down. Remove if they do.
+        autocmd CursorMoved     * silent! checktime
+        autocmd CursorMovedI    * silent! checktime
+    endif
+augroup END
 
 " - - - - }}}
 
@@ -246,8 +257,10 @@ au FileType php set foldmethod=syntax
 au FileType python set foldmethod=indent 
 au FileType python set foldnestmax=1
 
+au FileType c set foldmethod=syntax
+au FileType c set foldnestmax=2
 au FileType cpp set foldmethod=syntax
-au FileType cpp set foldnestmax=1
+au FileType cpp set foldnestmax=2
 
 au FileType java set foldmethod=syntax
 
@@ -264,6 +277,7 @@ nnoremap <leader>mc :make <bar> :cw<cr>
 " make
 nnoremap <leader>mk :make %< <bar> :cw<cr>
 " maps ,m to compile and open a quickfix window if there are errors
+nnoremap <leader>mm :make %<cr>
 
 " C/C++ 
 nnoremap <C-c> :!./%<<cr>
@@ -302,12 +316,17 @@ autocmd FileType javascript,css,php set textwidth=79
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
 
+if !empty($MY_RUBY_HOME)
+ let g:ruby_path = join(split(glob($MY_RUBY_HOME.'/lib/ruby/*.*')."\n".glob($MY_RUBY_HOME.'/lib/rubysite_ruby/*'),"\n"),',')
+endif
+
 " }}}
 
 " Plugins - - - - {{{ 
 
-set rtp+=vim/,~/.vim/bundle/vundle/,/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
+"set rtp+=vim/,~/.vim/bundle/vundle/,/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=vim/,~/.vim/bundle/vundle/,~/.vim/bundle/powerline/powerline/bindings/vim
+,
 " Vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -343,6 +362,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'honza/vim-snippets'
 Bundle 'dahu/VimRegexTutor'
+Bundle 'Lokaltog/powerline'
 
 " DelimitMate
 au FileType c,cpp inoremap {      {}<Left>
@@ -354,7 +374,7 @@ au FileType c,cpp inoremap {}     {}
 set laststatus=2 " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 let g:Powerline_symbols = 'fancy'
-"set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " TagBar
 let g:tagbar_left=0
@@ -406,6 +426,8 @@ let g:EclimMenus = 1
 " Easytags
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
+let g:easytags_on_cursorhold = 1
+let g:easytags_auto_update=0
 
 " Syntastic
 let g:syntastic_check_on_open       = 0
@@ -456,6 +478,8 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 " buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+" Start length to start completion.
+let g:neocomplcache_auto_completion_start_length=3
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
