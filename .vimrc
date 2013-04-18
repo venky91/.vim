@@ -13,6 +13,7 @@ set clipboard^=unnamed
 " set the clipboard for tmux copy/paste integration
 set noerrorbells    " don't ring the bell
 set lazyredraw      " don't redraw while executing macros
+set scrolloff=5     " 5 lines will always appear below the cursor
 
 " - - - - }}}
 
@@ -176,6 +177,7 @@ set pastetoggle=<F6>
 " Pasting
 map <F7> :sign unplace *<CR>
 " Remove signs on the left side
+nnoremap <F8> :GundoToggle<CR>
 nnoremap Y y$
 " y$ yanks to the end of the line
 nnoremap D d$
@@ -378,6 +380,10 @@ Bundle 'Shougo/neosnippet'
 Bundle 'honza/vim-snippets'
 Bundle 'dahu/VimRegexTutor'
 Bundle 'Lokaltog/powerline'
+Bundle 'sjl/gundo.vim'
+
+" Gundo 
+let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " DelimitMate
 au FileType c,cpp inoremap {      {}<Left>
