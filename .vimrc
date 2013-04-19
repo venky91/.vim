@@ -49,7 +49,6 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*
 " source vimrc automatically
 autocmd BufWritePost .vimrc nested source $MYVIMRC
 
-
 " reloads file in terminal vim if changed from another session  
 augroup checktime
     au!
@@ -120,6 +119,7 @@ else
     else
         colorscheme badwolf
     endif
+    "louver, pyte, summerfruit 256
 endif
 
 
@@ -244,11 +244,11 @@ nnoremap <leader>= mzgg=G`z
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Neat Select and Replace Short Cuts.
 nnoremap <leader>s *N
+xnoremap <leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '\\n', "g") <bar>echo ' '<cr>
 nnoremap <leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
-xnoremap <leader>r :s/<c-r>=expand(@/)<cr>/
+xnoremap <leader>r :s/<c-r>=@/<cr>/
 nnoremap <leader>o *Ncgn
 
-nnoremap <leader>y *N
 " - - - - }}}
 
 " Folding - - - - {{{ 
@@ -381,6 +381,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'dahu/VimRegexTutor'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
+Bundle "myusuf3/numbers.vim"
 
 " Gundo 
 let g:gundo_close_on_revert=1   " close gundo when reverting
