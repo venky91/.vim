@@ -14,6 +14,7 @@ set clipboard^=unnamed
 set noerrorbells    " don't ring the bell
 set lazyredraw      " don't redraw while executing macros
 set scrolloff=5     " 5 lines will always appear below the cursor
+set ttyfast         " indicates a fast terminal session
 
 " - - - - }}}
 
@@ -326,9 +327,9 @@ endif
 "Indentation
 autocmd FileType ruby,javascript,html,css,php set autoindent
 autocmd FileType ruby,javascript,html,css,php set shiftwidth=2
-autocmd FileType javascript,html,css,php set tabstop=2
-autocmd FileType javascript,html,css,php set sts=2
-autocmd FileType javascript,css,php set textwidth=79
+autocmd FileType ruby,javascript,html,css,php set tabstop=2
+autocmd FileType ruby,javascript,html,css,php set sts=2
+autocmd FileType ruby,javascript,css,php set textwidth=79
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -341,7 +342,6 @@ endif
 
 " Plugins - - - - {{{ 
 
-"set rtp+=vim/,~/.vim/bundle/vundle/,/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 set rtp+=vim/,~/.vim/bundle/vundle/,~/.vim/bundle/powerline/powerline/bindings/vim
 ,
 " Vundle
@@ -378,7 +378,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'honza/vim-snippets'
-Bundle 'dahu/VimRegexTutor'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
