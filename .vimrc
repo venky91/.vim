@@ -15,6 +15,7 @@ set noerrorbells    " don't ring the bell
 set lazyredraw      " don't redraw while executing macros
 set scrolloff=5     " 5 lines will always appear below the cursor
 set ttyfast         " indicates a fast terminal session
+autocmd FileType * setlocal formatoptions-=cro  " Disable automatic comments
 
 " - - - - }}}
 
@@ -47,9 +48,6 @@ set noswapfile      " sets no swap file
 set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm
 " extensions to ignore
 
-" source vimrc automatically
-autocmd BufWritePost .vimrc nested source $MYVIMRC
-
 " reloads file in terminal vim if changed from another session  
 augroup checktime
     au!
@@ -69,7 +67,6 @@ augroup END
 syntax on           " Syntax on
 set t_Co=256        " sets 256 colors in the terminal
 set cursorline      " Highlights the current line
-set number          " Sets the line number
 set relativenumber  " Sets number relatively
 
 au WinEnter * :setlocal relativenumber
@@ -124,13 +121,8 @@ endif
 
 " Control Keys - - - - {{{
 
-inoremap <C-BS> <C-W>
-nnoremap <C-BS> bdw
-" ctrl-backspace deleted the previous word
-vnoremap <C-a> ggVG
-" map ctrl+a to select all in visual mode
-nnoremap <C-a> ggVG
-" map ctrl+a to select all in normal mode
+inoremap <C-a> <nop>
+" unbind C-a
 vnoremap <C-c> "+y
 " map ctrl+c to copy in visual mode
 vnoremap <C-v> "+gP
@@ -199,6 +191,11 @@ vnoremap > >gv
 " Reselect text after identing
 nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
 " Double Click with the Mouse selects all occurences in the buffer.
+:com! -narg=1 -complete=help H h <args> <bar> only
+" Use :H to open a help file in a full buffer.
+nnoremap ' `
+nnoremap ` '
+" Closer way to get to where you were last.
 
 " - - - - }}}
 
@@ -277,11 +274,15 @@ au FileType cpp set foldmethod=syntax
 au FileType cpp set foldnestmax=1
 
 au FileType java set foldmethod=syntax
+au FileType java set foldlevel=5
 au FileType ruby set foldmethod=syntax
+au FileType ruby set foldlevel=5
 
-" saves and loads folds from previous sessions
-au BufWinLeave * silent! mkview 
-au BufWinEnter * silent! loadview
+" Saves cursor position from last time.
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ exe "normal g`\"" |
+    \ endif
 
 "  - - - - }}}
 
@@ -295,26 +296,27 @@ nnoremap <leader>mk :make %< <bar> :cw<cr>
 nnoremap <leader>mm :make %<cr>
 
 " C/C++ 
-nnoremap <C-c> :!./%<<cr>
+autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr>
 " runs c++ files *ctrl-c*
 nnoremap <leader>cl :!clang++ % -o %<
 " clang compiler for c++
 
 " Python
 if has('mac')
-    nnoremap <leader>p :!/usr/local/bin/python %<cr>
+    autocmd FileType python nnoremap <C-c> :!/usr/local/bin/python %<cr>
+    " option to use :pyfile % instead
     set ofu=syntaxcomplete#Complete
 " windows
 elseif has ("win32")
     set makeprg=mingw32-make
     set shell=C:\MinGW\msys\1.0\bin/bash.exe
     " executes python under windows
-    map <C-p> :!C:\Python27/python %
+    autocmd FileType python map <C-p> :!C:\Python27/python %
 elseif has('unix')
     " python 
-    nnoremap <leader>p2 :!/usr/bin/env python2 %
+    autocmd FileType python nnoremap <leader>p2 :!/usr/bin/env python2 %
     " runs python 2 files *ctrl-p*
-    nnoremap <leader>p3 :!/usr/bin/env python3 %<cr>
+    autocmd FileType python nnoremap <leader>p3 :!/usr/bin/env python3 %<cr>
 endif
 
 " - - - - }}} 
@@ -322,11 +324,11 @@ endif
 " WebDev - - - - {{{
 
 "Indentation
-autocmd FileType ruby,javascript,html,css,php set autoindent
-autocmd FileType ruby,javascript,html,css,php set shiftwidth=2
-autocmd FileType ruby,javascript,html,css,php set tabstop=2
-autocmd FileType ruby,javascript,html,css,php set sts=2
-autocmd FileType ruby,javascript,css,php set textwidth=79
+autocmd FileType eruby,ruby,javascript,html,css,php set autoindent
+autocmd FileType eruby,ruby,javascript,html,css,php set shiftwidth=2
+autocmd FileType eruby,ruby,javascript,html,css,php set tabstop=2
+autocmd FileType eruby,ruby,javascript,html,css,php set sts=2
+autocmd FileType eruby,ruby,javascript,css,php set textwidth=79
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -378,15 +380,24 @@ Bundle 'honza/vim-snippets'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
+Bundle 'davidhalter/jedi-vim'
+
+" Jedi
+let g:jedi#goto_command = "<leader>pg"
+let g:jedi#get_definition_command = "<leader>pd"
+let g:jedi#rename_command = "<leader>pr"
+let g:jedi#related_names_command = "<leader>pn"
+let g:jedi#pydoc = "<leader>pk"
+let g:jedi#show_function_definition = "1"
 
 " Gundo 
 let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " DelimitMate
-au FileType c,cpp inoremap {      {}<Left>
-au FileType c,cpp inoremap {<CR>  {<CR>}<Esc>O
-au FileType c,cpp inoremap {{     {
-au FileType c,cpp inoremap {}     {}
+au FileType css,c,cpp inoremap {      {}<Left>
+au FileType css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
+au FileType css,c,cpp inoremap {{     {
+au FileType css,c,cpp inoremap {}     {}
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -424,7 +435,6 @@ let g:CommandTCancelMap=['<C-x>', '<C-c>']
 " Lusty Explorer
 nnoremap <leader>f :LustyFilesystemExplorer<cr>
 nnoremap <leader>b :LustyBufferExplorer<cr>
-nnoremap <leader>g :LustyBufferGrep<cr>
 
 " NerdTree
 " Close Vim if only NerdTree is left
@@ -444,8 +454,6 @@ let g:EclimMenus = 1
 " Easytags
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
-let g:easytags_on_cursorhold = 1
-let g:easytags_auto_update=0
 
 " Syntastic
 let g:syntastic_check_on_open       = 0
@@ -468,6 +476,7 @@ let g:clang_use_library=1
 set completeopt=menu,menuone,longest
 let g:clang_jumpto_back_key="<C-\>"
 
+
 " Tag Location
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
@@ -482,6 +491,11 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+" Ruby & Rails
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
 
 " Neocomplcache
 " Launches neocomplcache automatically on vim startup.
@@ -530,6 +544,11 @@ let g:neocomplcache_force_omni_patterns.objc =
       \ '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_force_omni_patterns.objcpp =
       \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+
+" Jedi Completion
+let g:neocomplcache_force_omni_patterns['python'] = '[^. \t]\.\w*'
+let g:jedi#popup_on_dot = 0
+au FileType python let b:did_ftplugin = 1
 
 " Neosnippet
 " SuperTab like snippets behavior.
