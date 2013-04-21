@@ -1,5 +1,4 @@
 " Editing - - - - {{{
-
 set nocompatible    " no compatibility with vi
 set history=200		" keep 200 lines of command line history
 set ruler		    " show the cursor position all the time
@@ -125,9 +124,7 @@ inoremap <C-a> <nop>
 " unbind C-a
 vnoremap <C-c> "+y
 " map ctrl+c to copy in visual mode
-vnoremap <C-v> "+gP
-" map ctrl+v to paste in visual mode
-inoremap <C-v> <C-O>"+gP
+inoremap <C-v> <C-O>"0P
 " map ctrl+v to paste in insert mode
 inoremap <C-U> <C-G>u<C-U>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
@@ -136,56 +133,56 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-j> <C-W>j
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
-" Maps the control + movement keys to moving around window splits
+" Maps the control + movement keys to moving around window splits.
 nnoremap <C-\> :pop<cr>
-" Pop back to previous definition
+" Pop back to previous definition.
 
 " - - - - }}} 
 
 " Regular Keys - - - -  {{{ 
 nnoremap ; :
 vnoremap ; :
-" Use ; to do ex commands
+" Use ; to do ex commands.
 cmap Q :q!<cr>
 " easier way to quit
 "cmap w!! w !sudo dd of=%<cr>
 " root authority writing
 vnoremap <F2> zf
-" Creates Folds
+" Creates Folds.
 map <F2> za
-" Opens or closes Folds 
+" Opens or closes Folds .
 map <F3> zR
-" Opens all Folds
+" Opens all Folds.
 map <F4> zM
-" Closes all Folds
+" Closes all Folds.
 map <F5> :set paste<CR>
 map <F6> :set nopaste<CR>
 imap <F5> <C-O>:set paste<CR>
 imap <F6> <nop>
 set pastetoggle=<F6>
-" Pasting
+" Absolute pasting.
 map <F7> :sign unplace *<CR>
-" Remove signs on the left side
+" Remove signs on the left side.
 nnoremap <F8> :GundoToggle<CR>
 nnoremap Y y$
-" y$ yanks to the end of the line
+" y$ yanks to the end of the line.
 nnoremap D d$
-" d$ deletes to the end of the line
+" d$ deletes to the end of the line.
 nnoremap C c$
-" c$ changes to the end of the line
+" c$ changes to the end of the line.
 imap jk <Esc>
-" esc returns to command mode
+" esc returns to command mode.
 nnoremap Q gq
-" Don't use Ex mode, use Q for formatting
+" Don't use Ex mode, use Q for formatting.
 nnoremap J 10j
 nnoremap K 10k
 vnoremap J 10j
 vnoremap K 10k
-" Moves 10 lines down/up
+" Moves 10 lines down/up.
 map H ^
-" Moves to the front of the line
+" Moves to the front of the line.
 map L $
-" Moves to the end of the line
+" Moves to the end of the line.
 vnoremap < <gv
 vnoremap > >gv
 " Reselect text after identing
@@ -242,6 +239,8 @@ xnoremap <leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '
 nnoremap <leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
 xnoremap <leader>r :s/<c-r>=@/<cr>/
 nnoremap <leader>o *Ncgn
+" Delete into one register and paste from another.
+vnoremap <leader>v "_dP
 
 " - - - - }}}
 
@@ -394,10 +393,10 @@ let g:jedi#show_function_definition = "1"
 let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " DelimitMate
-au FileType css,c,cpp inoremap {      {}<Left>
-au FileType css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
-au FileType css,c,cpp inoremap {{     {
-au FileType css,c,cpp inoremap {}     {}
+au FileType java,css,c,cpp inoremap {      {}<Left>
+au FileType java,css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
+au FileType java,css,c,cpp inoremap {{     {
+au FileType java,css,c,cpp inoremap {}     {}
 
 " Powerline
 set laststatus=2 " Always show the statusline
