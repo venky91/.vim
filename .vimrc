@@ -262,20 +262,10 @@ set foldtext=NeatFoldText()
 set foldenable      " Turn on folding
 au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
-au FileType php set foldmethod=syntax
 
 au FileType python set foldmethod=indent 
-au FileType python set foldnestmax=1
-
-au FileType c set foldmethod=syntax
-au FileType c set foldnestmax=1
-au FileType cpp set foldmethod=syntax
-au FileType cpp set foldnestmax=1
-
-au FileType java set foldmethod=syntax
-au FileType java set foldlevel=5
-au FileType ruby set foldmethod=syntax
-au FileType ruby set foldlevel=5
+au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
+au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
 
 " Saves cursor position from last time.
 autocmd BufReadPost *
@@ -297,8 +287,6 @@ nnoremap <leader>mm :make %<cr>
 " C/C++ 
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr>
 " runs c++ files *ctrl-c*
-nnoremap <leader>cl :!clang++ % -o %<
-" clang compiler for c++
 
 " Python
 if has('mac')
@@ -380,6 +368,9 @@ Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
 Bundle 'davidhalter/jedi-vim'
+Bundle 'paradigm/TextObjectify'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'Shougo/vimproc'
 
 " Jedi
 let g:jedi#goto_command = "<leader>pg"
@@ -393,10 +384,10 @@ let g:jedi#show_function_definition = "1"
 let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " DelimitMate
-au FileType java,css,c,cpp inoremap {      {}<Left>
-au FileType java,css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
-au FileType java,css,c,cpp inoremap {{     {
-au FileType java,css,c,cpp inoremap {}     {}
+au FileType scss,java,css,c,cpp inoremap {      {}<Left>
+au FileType scss,java,css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
+au FileType scss,java,css,c,cpp inoremap {{     {
+au FileType scss,java,css,c,cpp inoremap {}     {}
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -441,9 +432,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:NERDChristmasTree=1
 let g:NERDTreeHighlightCursorline=1
 let g:NERDTreeQuitOnOpen=1
-let g:NERDTreeMinimalUI=1
+let g:NERDTreeMinimalUI=0
 let g:NERDTreeShowBookmarks=1
-let g:NERDTreeDirArrows=1
+let g:NERDTreeDirArrows=0
 let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
 
@@ -488,13 +479,10 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby set omnifunc=rubycomplete#Complete
+"autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-" Ruby & Rails
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
+
 
 " Neocomplcache
 " Launches neocomplcache automatically on vim startup.
@@ -561,6 +549,14 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+
+let g:rsenseUseOmniFunc=1
+let g:neocomplcache#sources#rsense#home_directory = '/usr/local/rsense-0.3'
+
+" Ruby & Rails
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
 
 " }}}
 
