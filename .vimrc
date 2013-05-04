@@ -16,6 +16,12 @@ set scrolloff=5     " 5 lines will always appear below the cursor
 set ttyfast         " indicates a fast terminal session
 autocmd FileType * setlocal formatoptions-=cro  " Disable automatic comments
 
+" Mouse
+if has('mouse')
+    set mouse=a
+    set ttymouse=xterm2
+endif
+
 " - - - - }}}
 
 " Searching - - - - {{{
@@ -44,7 +50,7 @@ set hidden          " hides buffers instead of removing them
 set nobackup		" do not keep a backup file, use versions instead
 set autoread        " Set to auto read when a file is changed from the outside
 set noswapfile      " sets no swap file
-set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm
+set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm,*.class
 " extensions to ignore
 
 " reloads file in terminal vim if changed from another session  
@@ -101,15 +107,18 @@ if has('gui_running')
     else
         colorscheme badwolf
     endif
+    " base16monokai, ocean, railscast, solarized, tomorrow
 else 
     if strftime("%H") < 4
         colorscheme railscasts
     elseif strftime("%H") < 12
         colorscheme jellybeans
-    elseif strftime("%H") < 17
+    elseif strftime("%H") < 15
         colorscheme molokai
-    elseif strftime("%H") < 21
+    elseif strftime("%H") < 18
         colorscheme fruity
+    elseif strftime("%H") < 21
+        colorscheme candycode
     else
         colorscheme badwolf
     endif
@@ -155,11 +164,11 @@ map <F3> zR
 " Opens all Folds.
 map <F4> zM
 " Closes all Folds.
-map <F5> :set paste<CR>
-map <F6> :set nopaste<CR>
-imap <F5> <C-O>:set paste<CR>
-imap <F6> <nop>
-set pastetoggle=<F6>
+"map <F5> :set paste<CR>
+"map <F6> :set nopaste<CR>
+"imap <F5> <C-O>:set paste<CR>
+"imap <F6> <nop>
+"set pastetoggle=<F6>
 " Absolute pasting.
 map <F7> :sign unplace *<CR>
 " Remove signs on the left side.
@@ -176,8 +185,8 @@ nnoremap Q gq
 " Don't use Ex mode, use Q for formatting.
 nnoremap J 10j
 nnoremap K 10k
-vnoremap J 10j
-vnoremap K 10k
+xnoremap J 10j
+xnoremap K 10k
 " Moves 10 lines down/up.
 map H ^
 " Moves to the front of the line.
@@ -193,6 +202,17 @@ nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\
 nnoremap ' `
 nnoremap ` '
 " Closer way to get to where you were last.
+nnoremap x "_x
+vnoremap x "_x
+" Delete to another register.
+
+" Disable some of the a.vim mappings.
+augroup DisableMappings
+    autocmd!
+    autocmd VimEnter * :iunmap <leader>ihn
+    autocmd VimEnter * :iunmap <leader>is
+    autocmd VimEnter * :iunmap <leader>ih
+augroup END
 
 " - - - - }}}
 
@@ -241,6 +261,8 @@ xnoremap <leader>r :s/<c-r>=@/<cr>/
 nnoremap <leader>o *Ncgn
 " Delete into one register and paste from another.
 vnoremap <leader>v "_dP
+" Navigate by indentation.
+nnoremap <leader>x :call search('^'.matchstr(getline('.'),'^\s*').'\S','We')<CR>
 
 " - - - - }}}
 
@@ -277,16 +299,29 @@ autocmd BufReadPost *
 
 " Language - - - - {{{ 
 
-" General
+" Default Make
 nnoremap <leader>mc :make <bar> :cw<cr>
-" make
+" Compile the current file and open a quickfix on errors.
 nnoremap <leader>mk :make %< <bar> :cw<cr>
-" maps ,m to compile and open a quickfix window if there are errors
-nnoremap <leader>mm :make %<cr>
+" Regular compile with no quickfix.
+nnoremap <leader>mm :make %< <cr>
+" Compile SDL programs.
+nnoremap <leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
+" Compile > Run > Back to Code, for SDL programs.
+nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && ./%< <cr><cr>
 
 " C/C++ 
-autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr>
+autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
 " runs c++ files *ctrl-c*
+autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
+autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && ./%< <cr><cr>
+
+" Java
+autocmd FileType java nnoremap <C-c> :!java %<<cr><cr>
+autocmd FileType java set makeprg=javac\ %
+autocmd FileType java set errorformat=%A:%f:%l:\ %m,%-Z%p^,%-C%.%#
+autocmd FileType java nnoremap <f5> :make<cr><cr>
+autocmd FileType java nnoremap <f6> :!echo %\|awk -F. '{print $1}'\|xargs java<cr><cr>
 
 " Python
 if has('mac')
@@ -320,6 +355,9 @@ autocmd FileType eruby,ruby,javascript,css,php set textwidth=79
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
 
+" HTML in php files.
+au BufRead,BufNewFile *.php set ft=php.html
+
 if !empty($MY_RUBY_HOME)
  let g:ruby_path = join(split(glob($MY_RUBY_HOME.'/lib/ruby/*.*')."\n".glob($MY_RUBY_HOME.'/lib/rubysite_ruby/*'),"\n"),',')
 endif
@@ -341,12 +379,12 @@ Bundle 'vim-scripts/bufkill.vim'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'vim-scripts/CSApprox'
+Bundle 'vim-scripts/a.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'xolox/vim-easytags'
-Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
 Bundle 'wincent/Command-T'
@@ -371,6 +409,7 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'Shougo/vimproc'
+Bundle 'jiangmiao/auto-pairs'
 
 " Jedi
 let g:jedi#goto_command = "<leader>pg"
@@ -383,11 +422,8 @@ let g:jedi#show_function_definition = "1"
 " Gundo 
 let g:gundo_close_on_revert=1   " close gundo when reverting
 
-" DelimitMate
-au FileType scss,java,css,c,cpp inoremap {      {}<Left>
-au FileType scss,java,css,c,cpp inoremap {<CR>  {<CR>}<Esc>O
-au FileType scss,java,css,c,cpp inoremap {{     {
-au FileType scss,java,css,c,cpp inoremap {}     {}
+" Auto-pairs
+let g:AutoPairsFlyMode = 1
 
 " Powerline
 set laststatus=2 " Always show the statusline
@@ -401,12 +437,6 @@ let g:tagbar_width=30
 let g:tagbar_compact=1
 let g:tagbar_singleclick=1
 let g:tagbar_sort=0
-
-" mouse
-if has('mouse')
-    set mouse=a
-    set ttymouse=xterm2
-endif
 
 " Sparkup 
 let g:sparkupNextMapping='<c-u>'
@@ -444,6 +474,7 @@ let g:EclimMenus = 1
 " Easytags
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
+let g:easytags_file = '~/.vim/tags/easytags'
 
 " Syntastic
 let g:syntastic_check_on_open       = 0
@@ -466,13 +497,6 @@ let g:clang_use_library=1
 set completeopt=menu,menuone,longest
 let g:clang_jumpto_back_key="<C-\>"
 
-
-" Tag Location
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
-
 " Various
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -481,8 +505,6 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 "autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-
-
 
 " Neocomplcache
 " Launches neocomplcache automatically on vim startup.
@@ -543,23 +565,26 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expan
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
+
+" Compatibility with Snipmate
+let g:neosnippet#enable_snipmate_compatibility = 1
 
 " For snippet_complete marker.
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
+" Ruby & Rails, RSense & Neocomplcache
 let g:rsenseUseOmniFunc=1
 let g:neocomplcache#sources#rsense#home_directory = '/usr/local/rsense-0.3'
-
-" Ruby & Rails
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
+" Tags
+set tags+=~/.vim/tags/cpp_src 
+set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/easytags
+
 " }}}
-
-
-
-

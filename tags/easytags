@@ -1,0 +1,294 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+'	/Users/james/.vimrc	/^nnoremap ' `$/;"	m	language:Vim
+;	/Users/james/.vimrc	/^nnoremap ; :$/;"	m	language:Vim
+;	/Users/james/.vimrc	/^vnoremap ; :$/;"	m	language:Vim
+<	/Users/james/.vimrc	/^vnoremap < <gv$/;"	m	language:Vim
+<2-LeftMouse>	/Users/james/.vimrc	/^nnoremap <silent> <2-LeftMouse> :let @\/='\\V\\<'.escape(expand('<cword>'), '\\').'\\>'<cr>:set hls<cr>$/;"	m	language:Vim
+<C-a>	/Users/james/.vimrc	/^inoremap <C-a> <nop>$/;"	m	language:Vim
+<C-b>	/Users/james/.vimrc	/^map <C-b> :CommandTBuffer<cr>$/;"	m	language:Vim
+<C-c>	/Users/james/.vimrc	/^vnoremap <C-c> "+y$/;"	m	language:Vim
+<C-h>	/Users/james/.vimrc	/^nnoremap <C-h> <C-W>h$/;"	m	language:Vim
+<C-j>	/Users/james/.vimrc	/^nnoremap <C-j> <C-W>j$/;"	m	language:Vim
+<C-k>	/Users/james/.vimrc	/^nnoremap <C-k> <C-W>k$/;"	m	language:Vim
+<C-l>	/Users/james/.vimrc	/^nnoremap <C-l> <C-W>l$/;"	m	language:Vim
+<C-t>	/Users/james/.vimrc	/^map <C-t> :CommandT<cr>$/;"	m	language:Vim
+<C-U>	/Users/james/.vimrc	/^inoremap <C-U> <C-G>u<C-U>$/;"	m	language:Vim
+<C-v>	/Users/james/.vimrc	/^inoremap <C-v> <C-O>"0P$/;"	m	language:Vim
+<C-\>	/Users/james/.vimrc	/^nnoremap <C-\\> :pop<cr>$/;"	m	language:Vim
+<CR>	/Users/james/.vimrc	/^inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>$/;"	m	language:Vim
+<F2>	/Users/james/.vimrc	/^map <F2> za$/;"	m	language:Vim
+<F2>	/Users/james/.vimrc	/^vnoremap <F2> zf$/;"	m	language:Vim
+<F3>	/Users/james/.vimrc	/^map <F3> zR$/;"	m	language:Vim
+<F4>	/Users/james/.vimrc	/^map <F4> zM$/;"	m	language:Vim
+<F7>	/Users/james/.vimrc	/^map <F7> :sign unplace *<CR>$/;"	m	language:Vim
+<F8>	/Users/james/.vimrc	/^nnoremap <F8> :GundoToggle<CR>$/;"	m	language:Vim
+<leader><space>	/Users/james/.vimrc	/^nnoremap <leader><space> :noh<cr>$/;"	m	language:Vim
+<leader>=	/Users/james/.vimrc	/^nnoremap <leader>= mzgg=G`z$/;"	m	language:Vim
+<leader>b	/Users/james/.vimrc	/^nnoremap <leader>b :LustyBufferExplorer<cr>$/;"	m	language:Vim
+<leader>ctf	/Users/james/.vimrc	/^nnoremap<leader>ctf :CommandTFlush<cr>$/;"	m	language:Vim
+<leader>dp	/Users/james/.vimrc	/^nnoremap <leader>dp :!cp % ~\/Dropbox\/Public\/$/;"	m	language:Vim
+<leader>e	/Users/james/.vimrc	/^map <leader>e :e <C-R>=expand("%:p:h") . "\/" <CR>$/;"	m	language:Vim
+<leader>f	/Users/james/.vimrc	/^nnoremap <leader>f :LustyFilesystemExplorer<cr>$/;"	m	language:Vim
+<leader>hp	/Users/james/.vimrc	/^nnoremap <leader>hp :!pasty %<cr>$/;"	m	language:Vim
+<Leader>ih	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^imap <Leader>ih <ESC>:IHS<CR>$/;"	m	language:Vim
+<Leader>ih	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^nmap <Leader>ih :IHS<CR>$/;"	m	language:Vim
+<Leader>ihn	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^imap <Leader>ihn <ESC>:IHN<CR>$/;"	m	language:Vim
+<Leader>ihn	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^nmap <Leader>ihn :IHN<CR>$/;"	m	language:Vim
+<Leader>is	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^imap <Leader>is <ESC>:IHS<CR>:A<CR>$/;"	m	language:Vim
+<Leader>is	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^nmap <Leader>is :IHS<CR>:A<CR>$/;"	m	language:Vim
+<leader>j	/Users/james/.vimrc	/^nnoremap <leader>j :Java<cr>$/;"	m	language:Vim
+<leader>k	/Users/james/.vimrc	/^nnoremap <leader>k :BD<CR>$/;"	m	language:Vim
+<leader>mc	/Users/james/.vimrc	/^nnoremap <leader>mc :make <bar> :cw<cr>$/;"	m	language:Vim
+<leader>mk	/Users/james/.vimrc	/^nnoremap <leader>mk :make %< <bar> :cw<cr>$/;"	m	language:Vim
+<leader>mm	/Users/james/.vimrc	/^nnoremap <leader>mm :make %< <cr>$/;"	m	language:Vim
+<leader>mr	/Users/james/.vimrc	/^nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && .\/%< <cr><cr>$/;"	m	language:Vim
+<leader>ms	/Users/james/.vimrc	/^nnoremap <leader>ms :!g++ % -o %< `sdl-config --cflags --libs`$/;"	m	language:Vim
+<leader>n	/Users/james/.vimrc	/^nnoremap <leader>n :NERDTreeToggle<cr> $/;"	m	language:Vim
+<leader>o	/Users/james/.vimrc	/^nnoremap <leader>o *Ncgn$/;"	m	language:Vim
+<leader>Q	/Users/james/.vimrc	/^nnoremap <leader>Q :so ~\/scratch.vim<cr>$/;"	m	language:Vim
+<leader>q	/Users/james/.vimrc	/^nnoremap <leader>q <C-w><C-v><C-w>l :e ~\/scratch.vim<cr>$/;"	m	language:Vim
+<leader>r	/Users/james/.vimrc	/^nnoremap <leader>r :'{,'}s\/<c-r>=expand('<cword>')<cr>\/$/;"	m	language:Vim
+<leader>s	/Users/james/.vimrc	/^nnoremap <leader>s *N$/;"	m	language:Vim
+<leader>t	/Users/james/.vimrc	/^map <leader>t :TagbarToggle<CR>$/;"	m	language:Vim
+<leader>v	/Users/james/.vimrc	/^nnoremap <leader>v :e ~\/.vimrc<cr>$/;"	m	language:Vim
+<leader>V	/Users/james/.vimrc	/^nnoremap <leader>V :silent! so $MYVIMRC<CR>$/;"	m	language:Vim
+<leader>v	/Users/james/.vimrc	/^vnoremap <leader>v "_dP$/;"	m	language:Vim
+<leader>wh	/Users/james/.vimrc	/^nnoremap <leader>wh :split<cr>$/;"	m	language:Vim
+<leader>wv	/Users/james/.vimrc	/^nnoremap <leader>wv :vsplit<cr>$/;"	m	language:Vim
+<leader>x	/Users/james/.vimrc	/^nnoremap <leader>x :call search('^'.matchstr(getline('.'),'^\\s*').'\\S','We')<CR>$/;"	m	language:Vim
+<leader>[	/Users/james/.vimrc	/^nnoremap<leader>[ :pop<cr>$/;"	m	language:Vim
+<leader>]	/Users/james/.vimrc	/^nnoremap <leader>] <C-]>$/;"	m	language:Vim
+<TAB>	/Users/james/.vimrc	/^imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m	language:Vim
+<TAB>	/Users/james/.vimrc	/^imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m	language:Vim
+<TAB>	/Users/james/.vimrc	/^inoremap <expr><TAB> pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m	language:Vim
+>	/Users/james/.vimrc	/^vnoremap > >gv$/;"	m	language:Vim
+A	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang A call AlternateFile("n<bang>", <f-args>)$/;"	c	language:Vim
+AddAlternateExtensionMapping	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>AddAlternateExtensionMapping(extension, alternates)$/;"	f	language:Vim
+alternateExtensionsDict	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let alternateExtensionsDict = {}$/;"	v	language:Vim
+AlternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! AlternateFile(splitWindow, ...)$/;"	f	language:Vim
+AlternateOpenFileUnderCursor	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! AlternateOpenFileUnderCursor(splitWindow,...)$/;"	f	language:Vim
+AlternateOpenNextFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! AlternateOpenNextFile(bang)$/;"	f	language:Vim
+AN	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AN call NextAlternate("<bang>")$/;"	c	language:Vim
+AS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)$/;"	c	language:Vim
+AT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)$/;"	c	language:Vim
+AV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)$/;"	c	language:Vim
+basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public basic_window() {$/;"	m	language:Java	class:basic_window
+basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^public class basic_window extends JFrame {$/;"	c	language:Java
+basic_window.basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public basic_window() {$/;"	m	language:Java	class:basic_window
+basic_window.initUI	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public final void initUI() {$/;"	m	language:Java	class:basic_window
+BufferOrFileExists	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>BufferOrFileExists(fileName)$/;"	f	language:Vim
+C	/Users/james/.vimrc	/^nnoremap C c\$$/;"	m	language:Vim
+checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
+checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^public class checkbox extends JFrame {$/;"	c	language:Java
+checkbox.checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
+checkbox.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public final void initUI() {$/;"	m	language:Java	class:checkbox
+checkbox.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:checkbox
+checkbox.statusbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    private JLabel statusbar;$/;"	f	language:Java	class:checkbox	file:
+checktime	/Users/james/.vimrc	/^augroup checktime$/;"	a	language:Vim
+D	/Users/james/.vimrc	/^nnoremap D d\$$/;"	m	language:Vim
+data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
+DetermineExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! DetermineExtension(path) $/;"	f	language:Vim
+DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
+EnumerateFilesByExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! EnumerateFilesByExtension(path, baseName, extension)$/;"	f	language:Vim
+EnumerateFilesByExtensionInPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! EnumerateFilesByExtensionInPath(baseName, extension, pathList, relPathBase)$/;"	f	language:Vim
+EqualFilePaths	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>EqualFilePaths(path1, path2)$/;"	f	language:Vim
+ExpandAlternatePath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>ExpandAlternatePath(pathSpec, sfPath) $/;"	f	language:Vim
+FindFileInSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPath(fileName, pathList, relPathBase)$/;"	f	language:Vim
+FindFileInSearchPathEx	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPathEx(fileName, pathList, relPathBase, count)$/;"	f	language:Vim
+FindOrCreateBuffer	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)$/;"	f	language:Vim
+first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public first_example() {$/;"	m	language:Java	class:first_example
+first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^public class first_example extends JFrame {$/;"	c	language:Java
+first_example.first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public first_example() {$/;"	m	language:Java	class:first_example
+first_example.main	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public static void main(String[] args) {$/;"	m	language:Java	class:first_example
+g:alternateNoDefaultAlternate	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^   let g:alternateNoDefaultAlternate = 0$/;"	v	language:Vim
+g:alternateRelativeFiles	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^   let g:alternateRelativeFiles = 0$/;"	v	language:Vim
+g:alternateSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^  let g:alternateSearchPath = 'sfr:..\/source,sfr:..\/src,sfr:..\/include,sfr:..\/inc'$/;"	v	language:Vim
+g:AutoPairsFlyMode	/Users/james/.vimrc	/^let g:AutoPairsFlyMode = 1$/;"	v	language:Vim
+g:clang_auto_select	/Users/james/.vimrc	/^let g:clang_auto_select=0$/;"	v	language:Vim
+g:clang_complete_auto	/Users/james/.vimrc	/^let g:clang_complete_auto=0$/;"	v	language:Vim
+g:clang_jumpto_back_key	/Users/james/.vimrc	/^let g:clang_jumpto_back_key="<C-\\>"$/;"	v	language:Vim
+g:clang_user_options	/Users/james/.vimrc	/^let g:clang_user_options='|| exit 0'$/;"	v	language:Vim
+g:clang_use_library	/Users/james/.vimrc	/^let g:clang_use_library=1$/;"	v	language:Vim
+g:CommandTCancelMap	/Users/james/.vimrc	/^let g:CommandTCancelMap=['<C-x>', '<C-c>']$/;"	v	language:Vim
+g:CommandTMaxCachedDirectories	/Users/james/.vimrc	/^let g:CommandTMaxCachedDirectories=2$/;"	v	language:Vim
+g:CommandTMaxDepth	/Users/james/.vimrc	/^let g:CommandTMaxDepth=5$/;"	v	language:Vim
+g:CommandTMaxFiles	/Users/james/.vimrc	/^let g:CommandTMaxFiles=10000$/;"	v	language:Vim
+g:CommandTMaxHeight	/Users/james/.vimrc	/^let g:CommandTMaxHeight=20$/;"	v	language:Vim
+g:CommandTScanDotDirectories	/Users/james/.vimrc	/^let g:CommandTScanDotDirectories=1$/;"	v	language:Vim
+g:easytags_file	/Users/james/.vimrc	/^let g:easytags_file = '~\/.vim\/tags\/easytags'$/;"	v	language:Vim
+g:easytags_include_members	/Users/james/.vimrc	/^let g:easytags_include_members = 1$/;"	v	language:Vim
+g:easytags_python_enabled	/Users/james/.vimrc	/^let g:easytags_python_enabled = 1$/;"	v	language:Vim
+g:EclimMenus	/Users/james/.vimrc	/^let g:EclimMenus = 1$/;"	v	language:Vim
+g:gundo_close_on_revert	/Users/james/.vimrc	/^let g:gundo_close_on_revert=1   " close gundo when reverting$/;"	v	language:Vim
+g:jedi#get_definition_command	/Users/james/.vimrc	/^let g:jedi#get_definition_command = "<leader>pd"$/;"	v	language:Vim
+g:jedi#goto_command	/Users/james/.vimrc	/^let g:jedi#goto_command = "<leader>pg"$/;"	v	language:Vim
+g:jedi#popup_on_dot	/Users/james/.vimrc	/^let g:jedi#popup_on_dot = 0$/;"	v	language:Vim
+g:jedi#pydoc	/Users/james/.vimrc	/^let g:jedi#pydoc = "<leader>pk"$/;"	v	language:Vim
+g:jedi#related_names_command	/Users/james/.vimrc	/^let g:jedi#related_names_command = "<leader>pn"$/;"	v	language:Vim
+g:jedi#rename_command	/Users/james/.vimrc	/^let g:jedi#rename_command = "<leader>pr"$/;"	v	language:Vim
+g:jedi#show_function_definition	/Users/james/.vimrc	/^let g:jedi#show_function_definition = "1"$/;"	v	language:Vim
+g:neocomplcache#sources#rsense#home_directory	/Users/james/.vimrc	/^let g:neocomplcache#sources#rsense#home_directory = '\/usr\/local\/rsense-0.3'$/;"	v	language:Vim
+g:neocomplcache_auto_completion_start_length	/Users/james/.vimrc	/^let g:neocomplcache_auto_completion_start_length=3$/;"	v	language:Vim
+g:neocomplcache_enable_at_startup	/Users/james/.vimrc	/^let g:neocomplcache_enable_at_startup = 1$/;"	v	language:Vim
+g:neocomplcache_enable_auto_select	/Users/james/.vimrc	/^let g:neocomplcache_enable_auto_select = 1$/;"	v	language:Vim
+g:neocomplcache_enable_camel_case_completion	/Users/james/.vimrc	/^let g:neocomplcache_enable_camel_case_completion = 1$/;"	v	language:Vim
+g:neocomplcache_enable_smart_case	/Users/james/.vimrc	/^let g:neocomplcache_enable_smart_case = 1$/;"	v	language:Vim
+g:neocomplcache_enable_underbar_completion	/Users/james/.vimrc	/^let g:neocomplcache_enable_underbar_completion = 1$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^  let g:neocomplcache_force_omni_patterns = {}$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^let g:neocomplcache_force_omni_patterns.c =$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^let g:neocomplcache_force_omni_patterns.cpp =$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^let g:neocomplcache_force_omni_patterns.objc =$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^let g:neocomplcache_force_omni_patterns.objcpp =$/;"	v	language:Vim
+g:neocomplcache_force_omni_patterns	/Users/james/.vimrc	/^let g:neocomplcache_force_omni_patterns['python'] = '[^. \\t]\\.\\w*'$/;"	v	language:Vim
+g:neocomplcache_force_overwrite_completefunc	/Users/james/.vimrc	/^let g:neocomplcache_force_overwrite_completefunc = 1$/;"	v	language:Vim
+g:neocomplcache_lock_buffer_name_pattern	/Users/james/.vimrc	/^let g:neocomplcache_lock_buffer_name_pattern = '\\*ku\\*'$/;"	v	language:Vim
+g:neocomplcache_min_syntax_length	/Users/james/.vimrc	/^let g:neocomplcache_min_syntax_length = 3$/;"	v	language:Vim
+g:neosnippet#enable_snipmate_compatibility	/Users/james/.vimrc	/^let g:neosnippet#enable_snipmate_compatibility = 1$/;"	v	language:Vim
+g:neosnippet#snippets_directory	/Users/james/.vimrc	/^let g:neosnippet#snippets_directory='~\/.vim\/bundle\/vim-snippets\/snippets,~\/.vim\/snippets'$/;"	v	language:Vim
+g:NERDChristmasTree	/Users/james/.vimrc	/^let g:NERDChristmasTree=1$/;"	v	language:Vim
+g:NERDTreeAutoDeleteBuffer	/Users/james/.vimrc	/^let g:NERDTreeAutoDeleteBuffer=1$/;"	v	language:Vim
+g:NERDTreeCasadeOpenSingleChildDir	/Users/james/.vimrc	/^let g:NERDTreeCasadeOpenSingleChildDir=1$/;"	v	language:Vim
+g:NERDTreeDirArrows	/Users/james/.vimrc	/^let g:NERDTreeDirArrows=0$/;"	v	language:Vim
+g:NERDTreeHighlightCursorline	/Users/james/.vimrc	/^let g:NERDTreeHighlightCursorline=1$/;"	v	language:Vim
+g:NERDTreeMinimalUI	/Users/james/.vimrc	/^let g:NERDTreeMinimalUI=0$/;"	v	language:Vim
+g:NERDTreeQuitOnOpen	/Users/james/.vimrc	/^let g:NERDTreeQuitOnOpen=1$/;"	v	language:Vim
+g:NERDTreeShowBookmarks	/Users/james/.vimrc	/^let g:NERDTreeShowBookmarks=1$/;"	v	language:Vim
+g:Powerline_symbols	/Users/james/.vimrc	/^let g:Powerline_symbols = 'fancy'$/;"	v	language:Vim
+g:rsenseUseOmniFunc	/Users/james/.vimrc	/^let g:rsenseUseOmniFunc=1$/;"	v	language:Vim
+g:rubycomplete_buffer_loading	/Users/james/.vimrc	/^let g:rubycomplete_buffer_loading = 1$/;"	v	language:Vim
+g:rubycomplete_classes_in_global	/Users/james/.vimrc	/^let g:rubycomplete_classes_in_global = 1$/;"	v	language:Vim
+g:rubycomplete_rails	/Users/james/.vimrc	/^let g:rubycomplete_rails = 1$/;"	v	language:Vim
+g:ruby_path	/Users/james/.vimrc	/^ let g:ruby_path = join(split(glob($MY_RUBY_HOME.'\/lib\/ruby\/*.*')."\\n".glob($MY_RUBY_HOME.'\/lib\/rubysite_ruby\/*'),"\\n"),',')$/;"	v	language:Vim
+g:sparkupNextMapping	/Users/james/.vimrc	/^let g:sparkupNextMapping='<c-u>'$/;"	v	language:Vim
+g:syntastic_auto_jump	/Users/james/.vimrc	/^let g:syntastic_auto_jump           = 1$/;"	v	language:Vim
+g:syntastic_auto_loc_list	/Users/james/.vimrc	/^let g:syntastic_auto_loc_list       = 1$/;"	v	language:Vim
+g:syntastic_check_on_open	/Users/james/.vimrc	/^let g:syntastic_check_on_open       = 0$/;"	v	language:Vim
+g:syntastic_enable_balloons	/Users/james/.vimrc	/^let g:syntastic_enable_balloons     = 0$/;"	v	language:Vim
+g:syntastic_enable_highlighting	/Users/james/.vimrc	/^let g:syntastic_enable_highlighting = 0$/;"	v	language:Vim
+g:syntastic_enable_signs	/Users/james/.vimrc	/^let g:syntastic_enable_signs        = 1$/;"	v	language:Vim
+g:syntastic_mode_map	/Users/james/.vimrc	/^let g:syntastic_mode_map = { 'passive_filetypes': ['java', 'cpp', 'c'] }$/;"	v	language:Vim
+g:tagbar_compact	/Users/james/.vimrc	/^let g:tagbar_compact=1$/;"	v	language:Vim
+g:tagbar_left	/Users/james/.vimrc	/^let g:tagbar_left=0$/;"	v	language:Vim
+g:tagbar_singleclick	/Users/james/.vimrc	/^let g:tagbar_singleclick=1$/;"	v	language:Vim
+g:tagbar_sort	/Users/james/.vimrc	/^let g:tagbar_sort=0$/;"	v	language:Vim
+g:tagbar_width	/Users/james/.vimrc	/^let g:tagbar_width=30$/;"	v	language:Vim
+GetNthItemFromList	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>GetNthItemFromList(list, n) $/;"	f	language:Vim
+H	/Users/james/.vimrc	/^map H ^$/;"	m	language:Vim
+head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
+IH	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IH call AlternateOpenFileUnderCursor("n<bang>", <f-args>)$/;"	c	language:Vim
+IHN	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHN call AlternateOpenNextFile("<bang>")$/;"	c	language:Vim
+IHS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHS call AlternateOpenFileUnderCursor("h<bang>", <f-args>)$/;"	c	language:Vim
+IHT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHT call AlternateOpenFileUnderCursor("t<bang>", <f-args>)$/;"	c	language:Vim
+IHV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHV call AlternateOpenFileUnderCursor("v<bang>", <f-args>)$/;"	c	language:Vim
+initUI	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public final void initUI() {$/;"	m	language:Java	class:basic_window
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public final void initUI() {$/;"	m	language:Java	class:checkbox
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public final void initUI() {$/;"	m	language:Java	class:PopupMenu
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public final void initUI() {$/;"	m	language:Java	class:PopupMenu
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public final void initUI() {$/;"	m	language:Java	class:simple_menu
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public final void initUI() {$/;"	m	language:Java	class:submenus
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
+initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public final void initUI() {$/;"	m	language:Java	class:twotoolbars
+initUI	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^    public final void initUI() {$/;"	m	language:Java	class:tooltip
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::bool insertAfter( node *elem, int data ) { $/;"	f	language:C++
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
+insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+J	/Users/james/.vimrc	/^nnoremap J 10j$/;"	m	language:Vim
+jk	/Users/james/.vimrc	/^imap jk <Esc>$/;"	m	language:Vim
+K	/Users/james/.vimrc	/^nnoremap K 10k$/;"	m	language:Vim
+L	/Users/james/.vimrc	/^map L \$$/;"	m	language:Vim
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^class LinkedList {$/;"	c	language:C++	file:
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
+LinkedList::head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
+LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
+LinkedList::insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
+LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
+LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
+LinkedList::tail	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
+LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
+loaded_alternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let loaded_alternateFile = 1$/;"	v	language:Vim
+main	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public static void main(String[] args) {$/;"	m	language:Java	class:first_example
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:checkbox
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:PopupMenu
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:PopupMenu
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:simple_menu
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:toolbar
+main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:twotoolbars
+mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
+menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
+menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
+my_cr_function	/Users/james/.vimrc	/^function! s:my_cr_function()$/;"	f	language:Vim
+NeatFoldText	/Users/james/.vimrc	/^function! NeatFoldText() "{{{2$/;"	f	language:Vim
+next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
+NextAlternate	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! NextAlternate(bang)$/;"	f	language:Vim
+node	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^struct node {$/;"	s	language:C++	file:
+node::data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
+node::next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
+PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^public class PopupMenu extends JFrame {$/;"	c	language:Java
+PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^public class PopupMenu extends JFrame {$/;"	c	language:Java
+PopupMenu.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public final void initUI() {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public final void initUI() {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
+PopupMenu.menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
+PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
+PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
+PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
+Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
+Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
+remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
+remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
+s:maxDotsInExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let s:maxDotsInExtension = 1$/;"	v	language:Vim
+simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public simple_menu() {$/;"	m	language:Java	class:simple_menu
+simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^public class simple_menu extends JFrame {$/;"	c	language:Java
+simple_menu.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public final void initUI() {$/;"	m	language:Java	class:simple_menu
+simple_menu.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:simple_menu
+simple_menu.simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public simple_menu() {$/;"	m	language:Java	class:simple_menu
+statusbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    private JLabel statusbar;$/;"	f	language:Java	class:checkbox	file:
+submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
+submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^public class submenus extends JFrame {$/;"	c	language:Java
+submenus.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public final void initUI() {$/;"	m	language:Java	class:submenus
+submenus.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
+submenus.submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
+tail	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
+toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
+toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^public class toolbar extends JFrame {$/;"	c	language:Java
+toolbar.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
+toolbar.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:toolbar
+toolbar.toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
+toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
+toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
+tooltip	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^    public tooltip() {$/;"	m	language:Java	class:tooltip
+tooltip	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^public class tooltip extends JFrame {$/;"	c	language:Java
+tooltip.initUI	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^    public final void initUI() {$/;"	m	language:Java	class:tooltip
+tooltip.tooltip	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^    public tooltip() {$/;"	m	language:Java	class:tooltip
+twotoolbars	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public twotoolbars() {$/;"	m	language:Java	class:twotoolbars
+twotoolbars	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^public class twotoolbars extends JFrame {$/;"	c	language:Java
+twotoolbars.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public final void initUI() {$/;"	m	language:Java	class:twotoolbars
+twotoolbars.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:twotoolbars
+twotoolbars.twotoolbars	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public twotoolbars() {$/;"	m	language:Java	class:twotoolbars
+x	/Users/james/.vimrc	/^nnoremap x "_x$/;"	m	language:Vim
+x	/Users/james/.vimrc	/^vnoremap x "_x$/;"	m	language:Vim
+Y	/Users/james/.vimrc	/^nnoremap Y y\$$/;"	m	language:Vim
+`	/Users/james/.vimrc	/^nnoremap ` '$/;"	m	language:Vim
+~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
