@@ -70,7 +70,6 @@ augroup END
 " Appearance - - - - {{{ 
 
 syntax on           " Syntax on
-set t_Co=256        " sets 256 colors in the terminal
 set cursorline      " Highlights the current line
 set relativenumber  " Sets number relatively
 
@@ -87,6 +86,7 @@ if has('mac')
 elseif has('win32')
     set guifont=Consolas:h10
 elseif has('unix')
+    set t_Co=256        " sets 256 colors in the terminal
     set guioptions-=T  "remove toolbar
     set guioptions-=m  "remove top bar
     set gfn=Terminus\ 10
@@ -110,7 +110,7 @@ if has('gui_running')
     " base16monokai, ocean, railscast, solarized, tomorrow
 else 
     if strftime("%H") < 4
-        colorscheme railscasts
+        colorscheme mustang
     elseif strftime("%H") < 12
         colorscheme jellybeans
     elseif strftime("%H") < 15

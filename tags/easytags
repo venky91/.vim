@@ -89,12 +89,14 @@ basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    
 basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^public class basic_window extends JFrame {$/;"	c	language:Java
 basic_window.basic_window	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public basic_window() {$/;"	m	language:Java	class:basic_window
 basic_window.initUI	/Users/james/Developer/Java/Swing_Examples/basic_window.java	/^    public final void initUI() {$/;"	m	language:Java	class:basic_window
+batch_modify_before_lists	/Users/james/Developer/puzzle_3.py	/^def batch_modify_before_lists(a_name, b_name, nodes_dict):$/;"	f	language:Python
 border_layout	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout.java	/^    public border_layout() {$/;"	m	language:Java	class:border_layout
 border_layout	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout.java	/^public class border_layout extends JFrame {$/;"	c	language:Java
 border_layout.border_layout	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout.java	/^    public border_layout() {$/;"	m	language:Java	class:border_layout
 border_layout.initUI	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout.java	/^    public final void initUI() {$/;"	m	language:Java	class:border_layout
 border_layout.main	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:border_layout
 BufferOrFileExists	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>BufferOrFileExists(fileName)$/;"	f	language:Vim
+build_list	/Users/james/Developer/puzzle_3.py	/^def build_list(nodes_dict, file_content):$/;"	f	language:Python
 C	/Users/james/.vimrc	/^nnoremap C c\$$/;"	m	language:Vim
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^public class checkbox extends JFrame {$/;"	c	language:Java
@@ -106,6 +108,7 @@ checktime	/Users/james/.vimrc	/^augroup checktime$/;"	a	language:Vim
 clean_up	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void clean_up();$/;"	p	language:C++	file:
 D	/Users/james/.vimrc	/^nnoremap D d\$$/;"	m	language:Vim
+data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 DetermineExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! DetermineExtension(path) $/;"	f	language:Vim
 DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
@@ -116,7 +119,10 @@ event	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Event 
 ExpandAlternatePath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>ExpandAlternatePath(pathSpec, sfPath) $/;"	f	language:Vim
 FindFileInSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPath(fileName, pathList, relPathBase)$/;"	f	language:Vim
 FindFileInSearchPathEx	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPathEx(fileName, pathList, relPathBase, count)$/;"	f	language:Vim
+findMToLastElement	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node *findMToLastElement( int m );$/;"	p	language:C++	class:LinkedList	file:
+findMToLastElement	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::findMToLastElement( int m ) {$/;"	f	language:C++	class:LinkedList
 FindOrCreateBuffer	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)$/;"	f	language:Vim
+find_top_most_required	/Users/james/Developer/puzzle_3.py	/^def find_top_most_required(nodeA, nodeB):$/;"	f	language:Python
 first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public first_example() {$/;"	m	language:Java	class:first_example
 first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^public class first_example extends JFrame {$/;"	c	language:Java
 first_example.first_example	/Users/james/Developer/Java/Swing_Examples/first_example.java	/^    public first_example() {$/;"	m	language:Java	class:first_example
@@ -205,6 +211,7 @@ grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management
 grid_layout_example.grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public grid_layout_example() {$/;"	m	language:Java	class:grid_layout_example
 grid_layout_example.main	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:grid_layout_example
 H	/Users/james/.vimrc	/^map H ^$/;"	m	language:Vim
+head	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 IH	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IH call AlternateOpenFileUnderCursor("n<bang>", <f-args>)$/;"	c	language:Vim
 IHN	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHN call AlternateOpenNextFile("<bang>")$/;"	c	language:Vim
@@ -225,28 +232,50 @@ initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.ja
 initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
 initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public final void initUI() {$/;"	m	language:Java	class:twotoolbars
 initUI	/Users/james/Developer/Java/Swing_Examples/tooltip.java	/^    public final void initUI() {$/;"	m	language:Java	class:tooltip
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::bool insertAfter( node *elem, int data ) { $/;"	f	language:C++
+insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
 insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
 insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::bool insertAfter( node *elem, int data ) { $/;"	f	language:C++
 insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
+insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
 insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
 J	/Users/james/.vimrc	/^nnoremap J 10j$/;"	m	language:Vim
 jk	/Users/james/.vimrc	/^imap jk <Esc>$/;"	m	language:Vim
 K	/Users/james/.vimrc	/^nnoremap K 10k$/;"	m	language:Vim
 L	/Users/james/.vimrc	/^map L \$$/;"	m	language:Vim
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^class LinkedList {$/;"	c	language:C++	file:
+LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
 LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^class LinkedList {$/;"	c	language:C++	file:
 LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
+LinkedList::findMToLastElement	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node *findMToLastElement( int m );$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::findMToLastElement	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::findMToLastElement( int m ) {$/;"	f	language:C++	class:LinkedList
+LinkedList::head	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 LinkedList::head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
+LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
 LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::insertAfter	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::insertAfter(node * elem, int data) {$/;"	f	language:C++	class:LinkedList
+LinkedList::insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::insertAfter_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool insertAfter_(node* elem, int data);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
 LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::LinkedList() {$/;"	f	language:C++	class:LinkedList
+LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
 LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
+LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
 LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
+LinkedList::tail	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
 LinkedList::tail	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
+LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 loaded_alternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let loaded_alternateFile = 1$/;"	v	language:Vim
@@ -267,16 +296,26 @@ main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.j
 main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
 main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:toolbar
 main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:twotoolbars
+main	/Users/james/Developer/puzzle_3.py	/^def main():$/;"	f	language:Python
 mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
 menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
 menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
+modify_linked_list	/Users/james/Developer/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name, nodes_dict, nodes_as_linked_list):$/;"	f	language:Python
+modify_node	/Users/james/Developer/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
+modify_nodes	/Users/james/Developer/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
 my_cr_function	/Users/james/.vimrc	/^function! s:my_cr_function()$/;"	f	language:Vim
 NeatFoldText	/Users/james/.vimrc	/^function! NeatFoldText() "{{{2$/;"	f	language:Vim
+next	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
 next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
 NextAlternate	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! NextAlternate(bang)$/;"	f	language:Vim
+node	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^struct node {$/;"	s	language:C++	file:
 node	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^struct node {$/;"	s	language:C++	file:
+Node	/Users/james/Developer/puzzle_3.py	/^from Node import Node$/;"	i	language:Python
+node::data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 node::data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
+node::next	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
 node::next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
+open_file	/Users/james/Developer/puzzle_3.py	/^def open_file(filename):$/;"	f	language:Python
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^public class PopupMenu extends JFrame {$/;"	c	language:Java
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
@@ -293,8 +332,12 @@ PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
 Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
 Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
+remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
 remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
+remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
+remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
 remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
 s:maxDotsInExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let s:maxDotsInExtension = 1$/;"	v	language:Vim
@@ -313,6 +356,7 @@ submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.
 submenus.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public final void initUI() {$/;"	m	language:Java	class:submenus
 submenus.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
 submenus.submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
+tail	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
 tail	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^public class toolbar extends JFrame {$/;"	c	language:Java
@@ -334,5 +378,7 @@ x	/Users/james/.vimrc	/^nnoremap x "_x$/;"	m	language:Vim
 x	/Users/james/.vimrc	/^vnoremap x "_x$/;"	m	language:Vim
 Y	/Users/james/.vimrc	/^nnoremap Y y\$$/;"	m	language:Vim
 `	/Users/james/.vimrc	/^nnoremap ` '$/;"	m	language:Vim
+~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
+~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
