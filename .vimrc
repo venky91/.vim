@@ -151,6 +151,8 @@ nnoremap <C-\> :pop<cr>
 " Regular Keys - - - -  {{{ 
 nnoremap ; :
 vnoremap ; :
+nnoremap : ;
+vnoremap : ;
 " Use ; to do ex commands.
 cmap Q :q!<cr>
 " easier way to quit
@@ -220,7 +222,7 @@ augroup END
 
 let mapleader=","
 " change the mapleader from \ to ,
-map <leader>t :TagbarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 " toggles the tagbar with tt
 nnoremap <leader><space> :noh<cr>
 " map ,space to clear search results
@@ -252,7 +254,7 @@ nnoremap<leader>[ :pop<cr>
 " Indent the whole file and return to original position
 nnoremap <leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
-map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Neat Select and Replace Short Cuts.
 nnoremap <leader>s *N
 xnoremap <leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '\\n', "g") <bar>echo ' '<cr>
@@ -314,7 +316,8 @@ nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && ./
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
 " runs c++ files *ctrl-c*
 autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
-autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && ./%< <cr><cr>
+autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf && ./%< <cr><cr>
+autocmd FileType c,cpp nnoremap <f7> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf && ./%< <cr>
 
 " Java
 autocmd FileType java nnoremap <C-c> :!java %<<cr><cr>
