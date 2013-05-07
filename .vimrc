@@ -289,7 +289,7 @@ au FileType txt set foldmethod=marker
 
 au FileType python set foldmethod=indent 
 au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
-au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
+au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=3
 
 " Saves cursor position from last time.
 autocmd BufReadPost *
@@ -310,14 +310,14 @@ nnoremap <leader>mm :make %< <cr>
 " Compile SDL programs.
 nnoremap <leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
 " Compile > Run > Back to Code, for SDL programs.
-nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image && ./%< <cr><cr>
+nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
 
 " C/C++ 
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
 " runs c++ files *ctrl-c*
 autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
-autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf && ./%< <cr><cr>
-autocmd FileType c,cpp nnoremap <f7> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf && ./%< <cr>
+autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
+autocmd FileType c,cpp nnoremap <f7> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr>
 
 " Java
 autocmd FileType java nnoremap <C-c> :!java %<<cr><cr>
@@ -445,8 +445,8 @@ let g:tagbar_sort=0
 let g:sparkupNextMapping='<c-u>'
 
 " CommandT
-map <C-t> :CommandT<cr>
-map <C-b> :CommandTBuffer<cr>
+nnoremap <C-t> :CommandT<cr>
+nnoremap <C-b> :CommandTBuffer<cr>
 nnoremap<leader>ctf :CommandTFlush<cr>
 let g:CommandTMaxFiles=10000
 let g:CommandTMaxDepth=5
