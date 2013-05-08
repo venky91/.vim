@@ -151,8 +151,6 @@ nnoremap <C-\> :pop<cr>
 " Regular Keys - - - -  {{{ 
 nnoremap ; :
 vnoremap ; :
-nnoremap : ;
-vnoremap : ;
 " Use ; to do ex commands.
 cmap Q :q!<cr>
 " easier way to quit
