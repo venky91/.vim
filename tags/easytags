@@ -29,6 +29,10 @@
 <F8>	/Users/james/.vimrc	/^nnoremap <F8> :GundoToggle<CR>$/;"	m	language:Vim
 <leader><space>	/Users/james/.vimrc	/^nnoremap <leader><space> :noh<cr>$/;"	m	language:Vim
 <leader>=	/Users/james/.vimrc	/^nnoremap <leader>= mzgg=G`z$/;"	m	language:Vim
+<Leader>a:	/Users/james/.vimrc	/^  nmap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
+<Leader>a:	/Users/james/.vimrc	/^  vmap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
+<Leader>a=	/Users/james/.vimrc	/^  nmap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
+<Leader>a=	/Users/james/.vimrc	/^  vmap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
 <leader>b	/Users/james/.vimrc	/^nnoremap <leader>b :LustyBufferExplorer<cr>$/;"	m	language:Vim
 <leader>ctf	/Users/james/.vimrc	/^nnoremap<leader>ctf :CommandTFlush<cr>$/;"	m	language:Vim
 <leader>dp	/Users/james/.vimrc	/^nnoremap <leader>dp :!cp % ~\/Dropbox\/Public\/$/;"	m	language:Vim
@@ -74,6 +78,8 @@ absolute_example.absolute_example	/Users/james/Developer/Java/Swing_Examples/lay
 absolute_example.initUI	/Users/james/Developer/Java/Swing_Examples/layout_management/absolute_example.java	/^    public final void initUI() {$/;"	m	language:Java	class:absolute_example
 absolute_example.main	/Users/james/Developer/Java/Swing_Examples/layout_management/absolute_example.java	/^    public static void main(String[] args) {$/;"	m	language:Java	class:absolute_example
 AddAlternateExtensionMapping	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>AddAlternateExtensionMapping(extension, alternates)$/;"	f	language:Vim
+add_ingredients_to_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void add_ingredients_to_table() {$/;"	f	language:C++
+add_ingredients_to_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void add_ingredients_to_table();$/;"	p	language:C++	file:
 alternateExtensionsDict	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let alternateExtensionsDict = {}$/;"	v	language:Vim
 AlternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! AlternateFile(splitWindow, ...)$/;"	f	language:Vim
 AlternateOpenFileUnderCursor	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! AlternateOpenFileUnderCursor(splitWindow,...)$/;"	f	language:Vim
@@ -81,17 +87,25 @@ AlternateOpenNextFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! Al
 AN	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AN call NextAlternate("<bang>")$/;"	c	language:Vim
 apply_surface	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect *clip = NULL ) {$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL ) {$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination );$/;"	p	language:C++	file:
 apply_surface	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^void apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect *clip = NULL ) {$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect *clip = NULL ) {$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL ) {$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
+apply_surface	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^void apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect *clip = NULL ) {$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
@@ -100,16 +114,22 @@ apply_surface	/Users/james/Downloads/lesson15/lesson15.cpp	/^void apply_surface(
 AS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)$/;"	c	language:Vim
 AT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)$/;"	c	language:Vim
 AV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)$/;"	c	language:Vim
+a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^pthread_cond_t a_cond;$/;"	v	language:C++
+a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^pthread_cond_t a_cond;$/;"	v	language:C++
+a_mutex	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
+a_mutex	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
+background	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
+background	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
@@ -128,7 +148,11 @@ border_layout_manager	/Users/james/Developer/Java/Swing_Examples/layout_manageme
 border_layout_manager.border_layout_manager	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout_manager.java	/^    public border_layout_manager() {$/;"	m	language:Java	class:border_layout_manager
 border_layout_manager.initUI	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout_manager.java	/^    public final void initUI() {$/;"	m	language:Java	class:border_layout_manager
 border_layout_manager.main	/Users/james/Developer/Java/Swing_Examples/layout_management/border_layout_manager.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:border_layout_manager
+box	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        SDL_Rect box;$/;"	m	language:C++	class:Square	file:
+box	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    SDL_Rect box;$/;"	m	language:C++	class:Square	file:
 box	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^    SDL_Rect box;$/;"	m	language:C++	class:Button	file:
+box	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    std::vector<SDL_Rect> box;$/;"	m	language:C++	class:Dot	file:
+box	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    std::vector<SDL_Rect> box;$/;"	m	language:C++	class:Dot	file:
 box	/Users/james/Downloads/lesson09/lesson09.cpp	/^    SDL_Rect box;$/;"	m	language:C++	class:Button	file:
 BufferOrFileExists	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>BufferOrFileExists(fileName)$/;"	f	language:Vim
 build_list	/Users/james/Developer/puzzle_3.py	/^def build_list(nodes_dict, file_content):$/;"	f	language:Python
@@ -157,6 +181,8 @@ Button::show	/Users/james/Downloads/lesson09/lesson09.cpp	/^void Button::show()$
 buttonSheet	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^SDL_Surface *buttonSheet = NULL;$/;"	v	language:C++
 buttonSheet	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Surface *buttonSheet = NULL;$/;"	v	language:C++
 C	/Users/james/.vimrc	/^nnoremap C c\$$/;"	m	language:Vim
+c	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Circle c;$/;"	m	language:C++	class:Dot	file:
+c	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        Circle c;$/;"	m	language:C++	class:Dot
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^public class checkbox extends JFrame {$/;"	c	language:Java
 checkbox.checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
@@ -164,8 +190,23 @@ checkbox.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/ch
 checkbox.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:checkbox
 checkbox.statusbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    private JLabel statusbar;$/;"	f	language:Java	class:checkbox	file:
 checktime	/Users/james/.vimrc	/^augroup checktime$/;"	a	language:Vim
+check_collision	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool check_collision( Circle &A, Circle &B )$/;"	f	language:C++
+check_collision	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool check_collision( Circle &A, std::vector<SDL_Rect> &B )$/;"	f	language:C++
+check_collision	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool check_collision( SDL_Rect A, SDL_Rect B ) {$/;"	f	language:C++
+check_collision	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool check_collision( SDL_Rect A, SDL_Rect B )$/;"	f	language:C++
+check_collision	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool check_collision( std::vector<SDL_Rect> &A, std::vector<SDL_Rect> &B )$/;"	f	language:C++
+check_collision	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool check_collision( std::vector<SDL_Rect> &A, std::vector<SDL_Rect> &B ) {$/;"	f	language:C++
+check_for_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void check_for_ingredient(ingredient thread_ingredient) {$/;"	f	language:C++
+check_for_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void check_for_ingredient(ingredient thread_ingredient);$/;"	p	language:C++	file:
+Circle	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^struct Circle$/;"	s	language:C++	file:
+Circle::r	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int r;$/;"	m	language:C++	struct:Circle	file:
+Circle::x	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
+Circle::y	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
 clean_up	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void clean_up() {$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void clean_up()$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void clean_up()$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void clean_up()$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^void clean_up();$/;"	p	language:C++	file:
 clean_up	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void clean_up()$/;"	f	language:C++
@@ -175,8 +216,12 @@ clean_up	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void clean_up
 clean_up	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^void clean_up() {$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void clean_up() {$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void clean_up()$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^void clean_up() {$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^void clean_up() {$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^void clean_up();$/;"	p	language:C++	file:
 clean_up	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^void clean_up()$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^void clean_up() {$/;"	f	language:C++
 clean_up	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^void clean_up()$/;"	f	language:C++
@@ -199,31 +244,115 @@ data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/
 data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 DetermineExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! DetermineExtension(path) $/;"	f	language:Vim
 DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
+distance	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^double distance( int x1, int y1, int x2, int y2 )$/;"	f	language:C++
+Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Dot();$/;"	p	language:C++	class:Dot	file:
+Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^class Dot$/;"	c	language:C++	file:
+Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^Dot::Dot()$/;"	f	language:C++	class:Dot
+dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^SDL_Surface *dot = NULL;$/;"	v	language:C++
 Dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        Dot();$/;"	p	language:C++	class:Dot	file:
 Dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^class Dot {$/;"	c	language:C++	file:
 Dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^Dot::Dot() {$/;"	f	language:C++	class:Dot
 dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^SDL_Surface *dot = NULL;$/;"	v	language:C++
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    Dot( int X, int Y );$/;"	p	language:C++	class:Dot	file:
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^class Dot$/;"	c	language:C++	file:
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^Dot::Dot( int X, int Y )$/;"	f	language:C++	class:Dot
+dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^SDL_Surface *dot = NULL;$/;"	v	language:C++
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    Dot( int X, int Y );$/;"	p	language:C++	class:Dot	file:
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^class Dot$/;"	c	language:C++	file:
+Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^Dot::Dot( int X, int Y )$/;"	f	language:C++	class:Dot
+dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^SDL_Surface *dot = NULL;$/;"	v	language:C++
+Dot	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^Dot::Dot() {$/;"	f	language:C++	class:Dot
+Dot	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        Dot();$/;"	p	language:C++	class:Dot
+Dot	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^class Dot {$/;"	c	language:C++
+Dot::box	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    std::vector<SDL_Rect> box;$/;"	m	language:C++	class:Dot	file:
+Dot::box	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    std::vector<SDL_Rect> box;$/;"	m	language:C++	class:Dot	file:
+Dot::c	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Circle c;$/;"	m	language:C++	class:Dot	file:
+Dot::c	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        Circle c;$/;"	m	language:C++	class:Dot
+Dot::Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Dot();$/;"	p	language:C++	class:Dot	file:
+Dot::Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^Dot::Dot()$/;"	f	language:C++	class:Dot
 Dot::Dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        Dot();$/;"	p	language:C++	class:Dot	file:
 Dot::Dot	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^Dot::Dot() {$/;"	f	language:C++	class:Dot
+Dot::Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    Dot( int X, int Y );$/;"	p	language:C++	class:Dot	file:
+Dot::Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^Dot::Dot( int X, int Y )$/;"	f	language:C++	class:Dot
+Dot::Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    Dot( int X, int Y );$/;"	p	language:C++	class:Dot	file:
+Dot::Dot	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^Dot::Dot( int X, int Y )$/;"	f	language:C++	class:Dot
+Dot::Dot	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^Dot::Dot() {$/;"	f	language:C++	class:Dot
+Dot::Dot	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        Dot();$/;"	p	language:C++	class:Dot
+Dot::get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    std::vector<SDL_Rect> &get_rects();$/;"	p	language:C++	class:Dot	file:
+Dot::get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^std::vector<SDL_Rect> &Dot::get_rects()$/;"	f	language:C++	class:Dot
+Dot::get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    std::vector<SDL_Rect> &get_rects();$/;"	p	language:C++	class:Dot	file:
+Dot::get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^std::vector<SDL_Rect> &Dot::get_rects() {$/;"	f	language:C++	class:Dot
+Dot::handle_input	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+Dot::handle_input	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::handle_input()$/;"	f	language:C++	class:Dot
 Dot::handle_input	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void handle_input();$/;"	p	language:C++	class:Dot	file:
 Dot::handle_input	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+Dot::handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+Dot::handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::handle_input()$/;"	f	language:C++	class:Dot
+Dot::handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+Dot::handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+Dot::handle_input	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+Dot::handle_input	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void handle_input();$/;"	p	language:C++	class:Dot
+Dot::move	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void move( std::vector<SDL_Rect> &rects, Circle &circle );$/;"	p	language:C++	class:Dot	file:
+Dot::move	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects, Circle &circle )$/;"	f	language:C++	class:Dot
 Dot::move	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void move();$/;"	p	language:C++	class:Dot	file:
 Dot::move	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::move() {$/;"	f	language:C++	class:Dot
+Dot::move	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void move( std::vector<SDL_Rect> &rects );$/;"	p	language:C++	class:Dot	file:
+Dot::move	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects )$/;"	f	language:C++	class:Dot
+Dot::move	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void move( std::vector<SDL_Rect> &rects );$/;"	p	language:C++	class:Dot	file:
+Dot::move	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects ) {$/;"	f	language:C++	class:Dot
+Dot::move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects, Circle &circle ) {$/;"	f	language:C++	class:Dot
+Dot::move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void move( std::vector<SDL_Rect> &rects, Circle &circle );$/;"	p	language:C++	class:Dot
+Dot::shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
+Dot::shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::shift_boxes()$/;"	f	language:C++	class:Dot
+Dot::shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
+Dot::shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::shift_boxes() {$/;"	f	language:C++	class:Dot
+Dot::show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+Dot::show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::show()$/;"	f	language:C++	class:Dot
 Dot::show	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void show();$/;"	p	language:C++	class:Dot	file:
 Dot::show	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
+Dot::show	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+Dot::show	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::show()$/;"	f	language:C++	class:Dot
+Dot::show	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+Dot::show	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
+Dot::show	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
+Dot::show	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void show();$/;"	p	language:C++	class:Dot
 Dot::x	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::x	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::x	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::xVel	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
 Dot::xVel	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::xVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::xVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::xVel	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot
 Dot::y	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::y	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::y	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+Dot::yVel	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
 Dot::yVel	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::yVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::yVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+Dot::yVel	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot
+DOT_H	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^#define DOT_H$/;"	d	language:C++
 DOT_HEIGHT	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int DOT_HEIGHT = 20;$/;"	v	language:C++
+DOT_HEIGHT	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int DOT_HEIGHT = 20;$/;"	v	language:C++
+DOT_HEIGHT	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int DOT_HEIGHT = 20;$/;"	v	language:C++
+DOT_WIDTH	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^const int DOT_WIDTH = 20;$/;"	v	language:C++
 DOT_WIDTH	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int DOT_WIDTH = 20;$/;"	v	language:C++
+DOT_WIDTH	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int DOT_WIDTH = 20;$/;"	v	language:C++
+DOT_WIDTH	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int DOT_WIDTH = 20;$/;"	v	language:C++
+DOT_WIDTH	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^const int DOT_WIDTH = 20;$/;"	v	language:C++
 down	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *down = NULL;$/;"	v	language:C++
 down	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *down = NULL;$/;"	v	language:C++
+do_smoke	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * do_smoke(void *data) {$/;"	f	language:C++
+do_smoke	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * do_smoke(void *data);$/;"	p	language:C++	file:
 EnumerateFilesByExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! EnumerateFilesByExtension(path, baseName, extension)$/;"	f	language:Vim
 EnumerateFilesByExtensionInPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! EnumerateFilesByExtensionInPath(baseName, extension, pathList, relPathBase)$/;"	f	language:Vim
 EqualFilePaths	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>EqualFilePaths(path1, path2)$/;"	f	language:Vim
 event	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^SDL_Event event;$/;"	v	language:C++
@@ -232,13 +361,27 @@ event	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^SDL_Event event;
 event	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Event event;$/;"	v	language:C++
+event	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Event event;$/;"	v	language:C++
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-h" 'windmove-left) ;; move left around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-j" 'windmove-down) ;; move down a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-k" 'windmove-up) ;; move up a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-l" 'windmove-right) ;; move right around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-p" 'ff-find-other-file) ;; open .h or .cpp$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
 ExpandAlternatePath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>ExpandAlternatePath(pathSpec, sfPath) $/;"	f	language:Vim
 FindFileInSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPath(fileName, pathList, relPathBase)$/;"	f	language:Vim
 FindFileInSearchPathEx	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPathEx(fileName, pathList, relPathBase, count)$/;"	f	language:Vim
@@ -268,9 +411,15 @@ font	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^TTF_Font *font 
 font	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^TTF_Font *font = NULL;$/;"	v	language:C++
 font	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^TTF_Font *font = NULL;$/;"	v	language:C++
 foo	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *foo = NULL;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
 FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
 FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
 FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
+FRAMES_PER_SECOND	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^const int FRAMES_PER_SECOND = 20;$/;"	v	language:C++
 g:alternateNoDefaultAlternate	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^   let g:alternateNoDefaultAlternate = 0$/;"	v	language:Vim
 g:alternateRelativeFiles	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^   let g:alternateRelativeFiles = 0$/;"	v	language:Vim
 g:alternateSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^  let g:alternateSearchPath = 'sfr:..\/source,sfr:..\/src,sfr:..\/include,sfr:..\/inc'$/;"	v	language:Vim
@@ -343,19 +492,38 @@ g:tagbar_left	/Users/james/.vimrc	/^let g:tagbar_left=0$/;"	v	language:Vim
 g:tagbar_singleclick	/Users/james/.vimrc	/^let g:tagbar_singleclick=1$/;"	v	language:Vim
 g:tagbar_sort	/Users/james/.vimrc	/^let g:tagbar_sort=0$/;"	v	language:Vim
 g:tagbar_width	/Users/james/.vimrc	/^let g:tagbar_width=30$/;"	v	language:Vim
+gameScreen	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Surface *gameScreen = NULL;$/;"	v	language:C++
+gameStart	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool gameStart = false;$/;"	v	language:C++
 GetNthItemFromList	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>GetNthItemFromList(list, n) $/;"	f	language:Vim
+get_random_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^ingredient get_random_ingredient() {$/;"	f	language:C++
+get_random_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^ingredient get_random_ingredient();$/;"	p	language:C++	file:
+get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    std::vector<SDL_Rect> &get_rects();$/;"	p	language:C++	class:Dot	file:
+get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^std::vector<SDL_Rect> &Dot::get_rects()$/;"	f	language:C++	class:Dot
+get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    std::vector<SDL_Rect> &get_rects();$/;"	p	language:C++	class:Dot	file:
+get_rects	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^std::vector<SDL_Rect> &Dot::get_rects() {$/;"	f	language:C++	class:Dot
 get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
 get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+get_ticks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+get_ticks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+get_ticks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+get_ticks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
+get_ticks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+get_ticks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 get_ticks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
+get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+global-map	/Users/james/.emacs	/^(define-key global-map (kbd "RET") 'newline-and-indent) ;; autoindent$/;"	f	language:Lisp
 grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public grid_layout_example() {$/;"	m	language:Java	class:grid_layout_example
 grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^public class grid_layout_example extends JFrame {$/;"	c	language:Java
 grid_layout_example.grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public grid_layout_example() {$/;"	m	language:Java	class:grid_layout_example
@@ -365,8 +533,22 @@ handle_events	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cp
 handle_events	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void Button::handle_events() {$/;"	f	language:C++	class:Button
 handle_events	/Users/james/Downloads/lesson09/lesson09.cpp	/^    void handle_events();$/;"	p	language:C++	class:Button	file:
 handle_events	/Users/james/Downloads/lesson09/lesson09.cpp	/^void Button::handle_events()$/;"	f	language:C++	class:Button
+handle_input	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+handle_input	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::handle_input()$/;"	f	language:C++	class:Dot
+handle_input	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void handle_input();$/;"	p	language:C++	class:Square	file:
+handle_input	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::handle_input() {$/;"	f	language:C++	class:Square
+handle_input	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void handle_input();$/;"	p	language:C++	class:Square	file:
+handle_input	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::handle_input()$/;"	f	language:C++	class:Square
 handle_input	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void handle_input();$/;"	p	language:C++	class:Dot	file:
 handle_input	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::handle_input()$/;"	f	language:C++	class:Dot
+handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void handle_input();$/;"	p	language:C++	class:Dot	file:
+handle_input	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+handle_input	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::handle_input() {$/;"	f	language:C++	class:Dot
+handle_input	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void handle_input();$/;"	p	language:C++	class:Dot
+handle_return_key	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^void handle_return_key() {$/;"	f	language:C++
+handle_return_key	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^void handle_return_key();$/;"	p	language:C++	file:
 head	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 high	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Chunk *high = NULL;$/;"	v	language:C++
@@ -377,8 +559,15 @@ IHS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHS call 
 IHT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHT call AlternateOpenFileUnderCursor("t<bang>", <f-args>)$/;"	c	language:Vim
 IHV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHV call AlternateOpenFileUnderCursor("v<bang>", <f-args>)$/;"	c	language:Vim
 image	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *image = NULL;$/;"	v	language:C++
+ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^enum ingredient {$/;"	g	language:C++	file:
+INGREDIENTS_ON_TABLE	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    ingredient INGREDIENTS_ON_TABLE [NUM_INGREDIENTS-1]; \/\/ there can only be 2 ingredients on a table at a time$/;"	m	language:C++	struct:Table	file:
+ingredient_name	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^std::string ingredient_name(ingredient number) {$/;"	f	language:C++
+ingredient_name	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^std::string ingredient_name(ingredient number);$/;"	p	language:C++	file:
 init	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool init() {$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool init()$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool init()$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool init()$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^bool init();$/;"	p	language:C++	file:
 init	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool init()$/;"	f	language:C++
@@ -388,8 +577,12 @@ init	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool init()$/;"	f
 init	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^bool init() {$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^bool init() {$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool init()$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^bool init() {$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool init() {$/;"	f	language:C++
+init	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool init();$/;"	p	language:C++	file:
 init	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^bool init()$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^bool init() {$/;"	f	language:C++
 init	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^bool init()$/;"	f	language:C++
@@ -424,29 +617,52 @@ is_paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    
 is_paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+is_paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+is_paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+is_paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+is_paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
+is_paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+is_paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
+is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+is_started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+is_started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+is_started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+is_started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
+is_started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+is_started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
+is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+iwb	/Users/james/.emacs	/^(defun iwb ()$/;"	f	language:Lisp
 J	/Users/james/.vimrc	/^nnoremap J 10j$/;"	m	language:Vim
 jk	/Users/james/.vimrc	/^imap jk <Esc>$/;"	m	language:Vim
 K	/Users/james/.vimrc	/^nnoremap K 10k$/;"	m	language:Vim
+kill_time	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void kill_time() {$/;"	f	language:C++
+kill_time	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void kill_time();$/;"	p	language:C++	file:
 L	/Users/james/.vimrc	/^map L \$$/;"	m	language:Vim
 left	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *left = NULL;$/;"	v	language:C++
 left	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *left = NULL;$/;"	v	language:C++
@@ -487,6 +703,9 @@ LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/Maint
 loaded_alternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let loaded_alternateFile = 1$/;"	v	language:Vim
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool load_files() {$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool load_files()$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool load_files()$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool load_files()$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^bool load_files();$/;"	p	language:C++	file:
 load_files	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool load_files()$/;"	f	language:C++
@@ -496,8 +715,12 @@ load_files	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool load_f
 load_files	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^bool load_files() {$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^bool load_files() {$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool load_files()$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^bool load_files() {$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool load_files() {$/;"	f	language:C++
+load_files	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool load_files();$/;"	p	language:C++	file:
 load_files	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^bool load_files() {$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^bool load_files()$/;"	f	language:C++
@@ -505,17 +728,25 @@ load_files	/Users/james/Downloads/lesson09/lesson09.cpp	/^bool load_files()$/;"	
 load_files	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool load_files()$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *load_image( std::string filename ) $/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *load_image( std::string filename );$/;"	p	language:C++	file:
 load_image	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^SDL_Surface *load_image( std::string filename ) $/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
+load_image	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
@@ -523,18 +754,31 @@ load_image	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Surface *load_imag
 load_image	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 low	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Chunk *low = NULL;$/;"	v	language:C++
 low	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Chunk *low = NULL;$/;"	v	language:C++
+main	/Users/james/a.cpp	/^int main() {$/;"	f	language:C++
+main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/a.cpp	/^int main() {$/;"	f	language:C++
+main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/abc.cpp	/^int main() {$/;"	f	language:C++
+main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^int main(void) {$/;"	f	language:C++
+main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^int main(void) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^int main( int argc, char* args[] ) $/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^int main( int argc, char *args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^int main( int argc, char *args[] ) {$/;"	f	language:C++
+main	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^int main( int argc, char* args[] ) $/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
@@ -559,21 +803,37 @@ main	/Users/james/Developer/puzzle_3.py	/^def main():$/;"	f	language:Python
 main	/Users/james/Downloads/lesson09/lesson09.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Downloads/lesson15/lesson15.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
+Match	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Match = 2,$/;"	e	language:C++	enum:ingredient	file:
+MAX_CIGS_SMOKED	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define MAX_CIGS_SMOKED /;"	d	language:C++	file:
 med	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Chunk *med = NULL;$/;"	v	language:C++
 med	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Chunk *med = NULL;$/;"	v	language:C++
 menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
 menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private JPopupMenu menu;$/;"	f	language:Java	class:PopupMenu	file:
 message	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
+message	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
+message	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 modify_linked_list	/Users/james/Developer/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name, nodes_dict, nodes_as_linked_list):$/;"	f	language:Python
 modify_node	/Users/james/Developer/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
 modify_nodes	/Users/james/Developer/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
+move	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void move( std::vector<SDL_Rect> &rects, Circle &circle );$/;"	p	language:C++	class:Dot	file:
+move	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects, Circle &circle )$/;"	f	language:C++	class:Dot
+move	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void move();$/;"	p	language:C++	class:Square	file:
+move	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::move() {$/;"	f	language:C++	class:Square
+move	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void move();$/;"	p	language:C++	class:Square	file:
+move	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::move()$/;"	f	language:C++	class:Square
 move	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void move();$/;"	p	language:C++	class:Dot	file:
 move	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::move() {$/;"	f	language:C++	class:Dot
+move	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void move( std::vector<SDL_Rect> &rects );$/;"	p	language:C++	class:Dot	file:
+move	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects )$/;"	f	language:C++	class:Dot
+move	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void move( std::vector<SDL_Rect> &rects );$/;"	p	language:C++	class:Dot	file:
+move	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects ) {$/;"	f	language:C++	class:Dot
+move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::move( std::vector<SDL_Rect> &rects, Circle &circle ) {$/;"	f	language:C++	class:Dot
+move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void move( std::vector<SDL_Rect> &rects, Circle &circle );$/;"	p	language:C++	class:Dot
 music	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
 music	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
 my_cr_function	/Users/james/.vimrc	/^function! s:my_cr_function()$/;"	f	language:Vim
@@ -588,33 +848,58 @@ node::data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement
 node::data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 node::next	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
 node::next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
+Nothing	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Nothing = 0,$/;"	e	language:C++	enum:ingredient	file:
+NUM_INGREDIENTS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define NUM_INGREDIENTS /;"	d	language:C++	file:
 open_file	/Users/james/Developer/puzzle_3.py	/^def open_file(filename):$/;"	f	language:Python
+Paper	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Paper = 1,$/;"	e	language:C++	enum:ingredient	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
 pause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+pause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+pause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+pause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+pause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
+pause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+pause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 pause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 pause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 pause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
+pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 pause	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool paused;$/;"	m	language:C++	class:Timer	file:
+paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+pausedTicks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+pausedTicks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+pausedTicks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pausedTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
+play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^bool Sound::play_music( std::string filename ) {$/;"	f	language:C++	class:Sound
+play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        bool play_music( std::string filename );$/;"	p	language:C++	class:Sound
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^public class PopupMenu extends JFrame {$/;"	c	language:Java
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
@@ -631,6 +916,7 @@ PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
 Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
 Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
+r	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int r;$/;"	m	language:C++	struct:Circle	file:
 remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 remove	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^bool LinkedList::remove(node * elem) {$/;"	f	language:C++	class:LinkedList
 remove	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove(node *elem);$/;"	p	language:C++	class:LinkedList	file:
@@ -651,33 +937,51 @@ scratch	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_
 scratch	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Chunk *scratch = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+screen	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+ScreenManager::apply_surface	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
+ScreenManager::load_image	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
@@ -685,16 +989,24 @@ SCREEN_BPP	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int SCREEN_BPP =
 SCREEN_BPP	/Users/james/Downloads/lesson15/lesson15.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
@@ -702,16 +1014,24 @@ SCREEN_HEIGHT	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int SCREEN_HE
 SCREEN_HEIGHT	/Users/james/Downloads/lesson15/lesson15.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/image_extension/image_extension.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/key_presses/key_presses.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
@@ -723,10 +1043,26 @@ seconds	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface 
 seconds	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *seconds = NULL;$/;"	v	language:C++
 set_clips	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void set_clips()$/;"	f	language:C++
 set_clips	/Users/james/Downloads/lesson09/lesson09.cpp	/^void set_clips()$/;"	f	language:C++
+shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
+shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::shift_boxes()$/;"	f	language:C++	class:Dot
+shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
+shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::shift_boxes() {$/;"	f	language:C++	class:Dot
+show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::show()$/;"	f	language:C++	class:Dot
+show	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void show();$/;"	p	language:C++	class:Square	file:
+show	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::show() {$/;"	f	language:C++	class:Square
+show	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void show();$/;"	p	language:C++	class:Square	file:
+show	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::show()$/;"	f	language:C++	class:Square
 show	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void show();$/;"	p	language:C++	class:Dot	file:
 show	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
 show	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^    void show();$/;"	p	language:C++	class:Button	file:
 show	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void Button::show() {$/;"	f	language:C++	class:Button
+show	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+show	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::show()$/;"	f	language:C++	class:Dot
+show	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
+show	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
+show	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::show() {$/;"	f	language:C++	class:Dot
+show	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void show();$/;"	p	language:C++	class:Dot
 show	/Users/james/Downloads/lesson09/lesson09.cpp	/^    void show();$/;"	p	language:C++	class:Button	file:
 show	/Users/james/Downloads/lesson09/lesson09.cpp	/^void Button::show()$/;"	f	language:C++	class:Button
 simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public simple_menu() {$/;"	m	language:Java	class:simple_menu
@@ -734,52 +1070,135 @@ simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple
 simple_menu.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public final void initUI() {$/;"	m	language:Java	class:simple_menu
 simple_menu.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:simple_menu
 simple_menu.simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public simple_menu() {$/;"	m	language:Java	class:simple_menu
+SMOKED_CIGS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^int SMOKED_CIGS = 0; $/;"	v	language:C++
+Sound	/Users/james/Developer/EBSideScroller/Project/Sound/Sound.h	/^class Sound{$/;"	c	language:C++
+Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::Sound() {$/;"	f	language:C++	class:Sound
+Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        Sound();$/;"	p	language:C++	class:Sound
+Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^class Sound {$/;"	c	language:C++
+Sound::play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^bool Sound::play_music( std::string filename ) {$/;"	f	language:C++	class:Sound
+Sound::play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        bool play_music( std::string filename );$/;"	p	language:C++	class:Sound
+Sound::Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::Sound() {$/;"	f	language:C++	class:Sound
+Sound::Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        Sound();$/;"	p	language:C++	class:Sound
+Sound::stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^void Sound::stop_music() {$/;"	f	language:C++	class:Sound
+Sound::stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        void stop_music();$/;"	p	language:C++	class:Sound
+Sound::~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::~Sound() {$/;"	f	language:C++	class:Sound
+Sound::~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        ~Sound();$/;"	p	language:C++	class:Sound
+SOUND_H	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^#define SOUND_H$/;"	d	language:C++
+Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        Square();$/;"	p	language:C++	class:Square	file:
+Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^class Square {$/;"	c	language:C++	file:
+square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Surface *square = NULL;$/;"	v	language:C++
+Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^Square::Square() {$/;"	f	language:C++	class:Square
+Square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    Square();$/;"	p	language:C++	class:Square	file:
+Square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^class Square$/;"	c	language:C++	file:
+square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Surface *square = NULL;$/;"	v	language:C++
+Square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^Square::Square()$/;"	f	language:C++	class:Square
+Square::box	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        SDL_Rect box;$/;"	m	language:C++	class:Square	file:
+Square::box	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    SDL_Rect box;$/;"	m	language:C++	class:Square	file:
+Square::handle_input	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void handle_input();$/;"	p	language:C++	class:Square	file:
+Square::handle_input	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::handle_input() {$/;"	f	language:C++	class:Square
+Square::handle_input	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void handle_input();$/;"	p	language:C++	class:Square	file:
+Square::handle_input	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::handle_input()$/;"	f	language:C++	class:Square
+Square::move	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void move();$/;"	p	language:C++	class:Square	file:
+Square::move	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::move() {$/;"	f	language:C++	class:Square
+Square::move	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void move();$/;"	p	language:C++	class:Square	file:
+Square::move	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::move()$/;"	f	language:C++	class:Square
+Square::show	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void show();$/;"	p	language:C++	class:Square	file:
+Square::show	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Square::show() {$/;"	f	language:C++	class:Square
+Square::show	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void show();$/;"	p	language:C++	class:Square	file:
+Square::show	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Square::show()$/;"	f	language:C++	class:Square
+Square::Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        Square();$/;"	p	language:C++	class:Square	file:
+Square::Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^Square::Square() {$/;"	f	language:C++	class:Square
+Square::Square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    Square();$/;"	p	language:C++	class:Square	file:
+Square::Square	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^Square::Square()$/;"	f	language:C++	class:Square
+Square::xVel	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+Square::xVel	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+Square::yVel	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+Square::yVel	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+SQUARE_HEIGHT	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SQUARE_HEIGHT = 20;$/;"	v	language:C++
+SQUARE_HEIGHT	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SQUARE_HEIGHT = 20;$/;"	v	language:C++
+SQUARE_WIDTH	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SQUARE_WIDTH = 20;$/;"	v	language:C++
+SQUARE_WIDTH	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SQUARE_WIDTH = 20;$/;"	v	language:C++
 start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
 start	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+start	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+start	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+start	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+start	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
+start	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+start	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 start	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 start	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 start	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
+start	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+start	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 start	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool started;$/;"	m	language:C++	class:Timer	file:
+started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+startScreen	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Surface *startScreen = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startTicks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+startTicks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+startTicks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+startTicks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int startTicks;$/;"	m	language:C++	class:Timer	file:
+startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 statusbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    private JLabel statusbar;$/;"	f	language:Java	class:checkbox	file:
 stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
 stop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+stop	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+stop	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+stop	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+stop	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
+stop	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+stop	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
+stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^void Sound::stop_music() {$/;"	f	language:C++	class:Sound
+stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        void stop_music();$/;"	p	language:C++	class:Sound
 submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
 submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^public class submenus extends JFrame {$/;"	c	language:Java
 submenus.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public final void initUI() {$/;"	m	language:Java	class:submenus
 submenus.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
 submenus.submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
+Table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^struct Table {$/;"	s	language:C++	file:
+Table::INGREDIENTS_ON_TABLE	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    ingredient INGREDIENTS_ON_TABLE [NUM_INGREDIENTS-1]; \/\/ there can only be 2 ingredients on a table at a time$/;"	m	language:C++	struct:Table	file:
 tail	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
 tail	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
 textColor	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Color textColor = { 0, 0, 0 };$/;"	v	language:C++
@@ -800,6 +1219,15 @@ Timer	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^Timer::T
 Timer	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^class Timer$/;"	c	language:C++	file:
 Timer	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^class Timer$/;"	c	language:C++	file:
+Timer	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^class Timer {$/;"	c	language:C++	file:
+Timer	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^Timer::Timer() {$/;"	f	language:C++	class:Timer
+Timer	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^class Timer$/;"	c	language:C++	file:
+Timer	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^class Timer$/;"	c	language:C++	file:
 Timer	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
@@ -809,6 +1237,12 @@ Timer	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^Timer::Tim
 Timer	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        Timer();$/;"	p	language:C++	class:Timer	file:
 Timer	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^class Timer {$/;"	c	language:C++	file:
 Timer	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^Timer::Timer() {$/;"	f	language:C++	class:Timer
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^class Timer$/;"	c	language:C++	file:
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^class Timer$/;"	c	language:C++	file:
+Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer	/Users/james/Downloads/lesson15/lesson15.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer	/Users/james/Downloads/lesson15/lesson15.cpp	/^class Timer$/;"	c	language:C++	file:
 Timer	/Users/james/Downloads/lesson15/lesson15.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
@@ -816,120 +1250,220 @@ Timer::get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int get_ticks();$/;"	p	language:C++	class:Timer	file:
 Timer::get_ticks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^int Timer::get_ticks() {$/;"	f	language:C++	class:Timer
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
+Timer::get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 Timer::get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 Timer::get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+Timer::is_paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+Timer::is_paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+Timer::is_paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+Timer::is_paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
+Timer::is_paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+Timer::is_paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool Timer::is_paused() {$/;"	f	language:C++	class:Timer
+Timer::is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+Timer::is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+Timer::is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
+Timer::is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 Timer::is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 Timer::is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+Timer::is_started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+Timer::is_started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+Timer::is_started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+Timer::is_started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
+Timer::is_started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+Timer::is_started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
+Timer::is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+Timer::is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
+Timer::is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
+Timer::is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 Timer::is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 Timer::is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+Timer::pause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+Timer::pause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+Timer::pause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+Timer::pause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
+Timer::pause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+Timer::pause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
+Timer::pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+Timer::pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
+Timer::pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
+Timer::pause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 Timer::pause	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 Timer::pause	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::pause()$/;"	f	language:C++	class:Timer
 Timer::paused	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::paused	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+Timer::paused	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+Timer::paused	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+Timer::paused	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::paused	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::paused	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::paused	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool paused;$/;"	m	language:C++	class:Timer	file:
+Timer::paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
+Timer::paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool paused;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::pausedTicks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::pausedTicks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::pausedTicks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::pausedTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
 Timer::start	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+Timer::start	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+Timer::start	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+Timer::start	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+Timer::start	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
+Timer::start	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+Timer::start	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 Timer::start	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 Timer::start	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 Timer::start	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
+Timer::start	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+Timer::start	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+Timer::start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
+Timer::start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 Timer::start	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 Timer::start	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 Timer::started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+Timer::started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+Timer::started	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+Timer::started	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::started	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::started	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::started	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        bool started;$/;"	m	language:C++	class:Timer	file:
+Timer::started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
+Timer::started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::startTicks	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::startTicks	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::startTicks	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int startTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
+Timer::startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::startTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
 Timer::stop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+Timer::stop	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+Timer::stop	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+Timer::stop	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+Timer::stop	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
+Timer::stop	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+Timer::stop	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 Timer::stop	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 Timer::stop	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 Timer::stop	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
+Timer::stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+Timer::stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+Timer::stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
+Timer::stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 Timer::stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 Timer::stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^Timer::Timer() {$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer::Timer	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer::Timer	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer::Timer	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer::Timer	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^Timer::Timer() {$/;"	f	language:C++	class:Timer
+Timer::Timer	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer::Timer	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^Timer::Timer() {$/;"	f	language:C++	class:Timer
+Timer::Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer::Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
+Timer::Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
+Timer::Timer	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer::Timer	/Users/james/Downloads/lesson15/lesson15.cpp	/^    Timer();$/;"	p	language:C++	class:Timer	file:
 Timer::Timer	/Users/james/Downloads/lesson15/lesson15.cpp	/^Timer::Timer()$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+Timer::unpause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+Timer::unpause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+Timer::unpause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+Timer::unpause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
+Timer::unpause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+Timer::unpause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
+Timer::unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+Timer::unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+Timer::unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+Timer::unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 Timer::unpause	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 Timer::unpause	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 tip_of_the_day	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public tip_of_the_day() {$/;"	m	language:Java	class:tip_of_the_day
@@ -937,6 +1471,7 @@ tip_of_the_day	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_
 tip_of_the_day.initUI	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public final void initUI() {$/;"	m	language:Java	class:tip_of_the_day
 tip_of_the_day.main	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:tip_of_the_day
 tip_of_the_day.tip_of_the_day	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public tip_of_the_day() {$/;"	m	language:Java	class:tip_of_the_day
+Tobacco	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Tobacco = 3$/;"	e	language:C++	enum:ingredient	file:
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^public class toolbar extends JFrame {$/;"	c	language:Java
 toolbar.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
@@ -967,25 +1502,60 @@ unpause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    vo
 unpause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
 unpause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 unpause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+unpause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+unpause	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+unpause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+unpause	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
+unpause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+unpause	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 unpause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 unpause	/Users/james/Developer/EBSideScroller/frame_rate/frame_rate.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 unpause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 unpause	/Users/james/Developer/EBSideScroller/frame_rate/lesson14.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 unpause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        void unpause();$/;"	p	language:C++	class:Timer	file:
 unpause	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^void Timer::unpause() {$/;"	f	language:C++	class:Timer
+unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
+unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
+unpause	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 unpause	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void unpause();$/;"	p	language:C++	class:Timer	file:
 unpause	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::unpause()$/;"	f	language:C++	class:Timer
 up	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *up = NULL;$/;"	v	language:C++
 up	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *up = NULL;$/;"	v	language:C++
+wall	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Rect wall;$/;"	v	language:C++
+wall	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Rect wall;$/;"	v	language:C++
+watch_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * watch_table(void *data) {$/;"	f	language:C++
+watch_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * watch_table(void *data);$/;"	p	language:C++	file:
 x	/Users/james/.vimrc	/^nnoremap x "_x$/;"	m	language:Vim
 x	/Users/james/.vimrc	/^vnoremap x "_x$/;"	m	language:Vim
+x	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
 x	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int x, y;$/;"	m	language:C++	class:Dot	file:
+x	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+x	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+xVel	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+xVel	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+xVel	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Square	file:
 xVel	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+xVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+xVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+xVel	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot
 Y	/Users/james/.vimrc	/^nnoremap Y y\$$/;"	m	language:Vim
+y	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
 y	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int x, y;$/;"	m	language:C++	class:Dot	file:
+y	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+y	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+yVel	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+yVel	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Square	file:
+yVel	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Square	file:
 yVel	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+yVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+yVel	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
+yVel	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        int xVel, yVel;$/;"	m	language:C++	class:Dot
+__Table__	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^}__Table__;$/;"	v	language:C++	typeref:struct:Table
 `	/Users/james/.vimrc	/^nnoremap ` '$/;"	m	language:Vim
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
+~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::~Sound() {$/;"	f	language:C++	class:Sound
+~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        ~Sound();$/;"	p	language:C++	class:Sound

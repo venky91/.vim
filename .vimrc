@@ -110,13 +110,13 @@ if has('gui_running')
     " base16monokai, ocean, railscast, solarized, tomorrow
 else 
     if strftime("%H") < 4
-        colorscheme mustang
+        colorscheme fruity
     elseif strftime("%H") < 12
         colorscheme jellybeans
     elseif strftime("%H") < 15
         colorscheme molokai
     elseif strftime("%H") < 18
-        colorscheme fruity
+        colorscheme xoria256
     elseif strftime("%H") < 21
         colorscheme candycode
     else
@@ -411,6 +411,14 @@ Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'Shougo/vimproc'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'godlygeek/tabular'
+Bundle 'tpope/vim-dispatch'
+
+" Tabular
+nnoremap <Leader>a= :Tabularize /=<CR>
+vnoremap <Leader>a= :Tabularize /=<CR>
+nnoremap <Leader>a: :Tabularize /:\zs<CR>
+vnoremap <Leader>a: :Tabularize /:\zs<CR>
 
 " Jedi
 let g:jedi#goto_command = "<leader>pg"
