@@ -413,6 +413,7 @@ Bundle 'Shougo/vimproc'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-dispatch'
+Bundle 'FredKSchott/CoVim'
 
 " Tabular
 nnoremap <Leader>a= :Tabularize /=<CR>

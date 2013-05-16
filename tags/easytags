@@ -29,10 +29,10 @@
 <F8>	/Users/james/.vimrc	/^nnoremap <F8> :GundoToggle<CR>$/;"	m	language:Vim
 <leader><space>	/Users/james/.vimrc	/^nnoremap <leader><space> :noh<cr>$/;"	m	language:Vim
 <leader>=	/Users/james/.vimrc	/^nnoremap <leader>= mzgg=G`z$/;"	m	language:Vim
-<Leader>a:	/Users/james/.vimrc	/^  nmap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
-<Leader>a:	/Users/james/.vimrc	/^  vmap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
-<Leader>a=	/Users/james/.vimrc	/^  nmap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
-<Leader>a=	/Users/james/.vimrc	/^  vmap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
+<Leader>a:	/Users/james/.vimrc	/^nnoremap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
+<Leader>a:	/Users/james/.vimrc	/^vnoremap <Leader>a: :Tabularize \/:\\zs<CR>$/;"	m	language:Vim
+<Leader>a=	/Users/james/.vimrc	/^nnoremap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
+<Leader>a=	/Users/james/.vimrc	/^vnoremap <Leader>a= :Tabularize \/=<CR>$/;"	m	language:Vim
 <leader>b	/Users/james/.vimrc	/^nnoremap <leader>b :LustyBufferExplorer<cr>$/;"	m	language:Vim
 <leader>ctf	/Users/james/.vimrc	/^nnoremap<leader>ctf :CommandTFlush<cr>$/;"	m	language:Vim
 <leader>dp	/Users/james/.vimrc	/^nnoremap <leader>dp :!cp % ~\/Dropbox\/Public\/$/;"	m	language:Vim
@@ -104,6 +104,7 @@ apply_surface	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18
 apply_surface	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL ) {$/;"	f	language:C++
+apply_surface	/Users/james/Developer/EBSideScroller/Project/ScreenManager/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
 apply_surface	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
 apply_surface	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination )$/;"	f	language:C++
 apply_surface	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
@@ -113,6 +114,55 @@ apply_surface	/Users/james/Downloads/lesson09/lesson09.cpp	/^void apply_surface(
 apply_surface	/Users/james/Downloads/lesson15/lesson15.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 AS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)$/;"	c	language:Vim
 AT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)$/;"	c	language:Vim
+autopair-action	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-action nil$/;"	f	language:Lisp
+autopair-autowrap	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-autowrap 'help-balance$/;"	f	language:Lisp
+autopair-backspace	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-backspace ()$/;"	f	language:Lisp
+autopair-blink	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-blink (&optional pos)$/;"	f	language:Lisp
+autopair-blink	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-blink (if (boundp 'blink-matching-paren)$/;"	f	language:Lisp
+autopair-blink-delay	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-blink-delay 0.1$/;"	f	language:Lisp
+autopair-blink-matching-open	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-blink-matching-open ()$/;"	f	language:Lisp
+autopair-calculate-inserted	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-calculate-inserted ()$/;"	f	language:Lisp
+autopair-calculate-wrap-action	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-calculate-wrap-action ()$/;"	f	language:Lisp
+autopair-default-handle-action	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-default-handle-action (action pair pos-before)$/;"	f	language:Lisp
+autopair-default-handle-wrap-action	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-default-handle-wrap-action (action pair pos-before region-before)$/;"	f	language:Lisp
+autopair-document-bindings	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-document-bindings (&optional fallback-keys)$/;"	f	language:Lisp
+autopair-dont-activate	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-dont-activate nil$/;"	f	language:Lisp
+autopair-dont-pair	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-dont-pair `(:string (?') :comment  (?'))$/;"	f	language:Lisp
+autopair-emulation-alist	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-emulation-alist nil$/;"	f	language:Lisp
+autopair-escaped-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-escaped-p (syntax-info)$/;"	f	language:Lisp
+autopair-exception-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-exception-p (where-sym exception-where-sym blacklist &optional fn)$/;"	f	language:Lisp
+autopair-extra-insert-opening	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-extra-insert-opening ()$/;"	f	language:Lisp
+autopair-extra-pair-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-extra-pair-p ()$/;"	f	language:Lisp
+autopair-extra-pairs	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-extra-pairs nil$/;"	f	language:Lisp
+autopair-extra-skip-close-maybe	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-extra-skip-close-maybe ()$/;"	f	language:Lisp
+autopair-extra-skip-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-extra-skip-p ()$/;"	f	language:Lisp
+autopair-fallback	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-fallback (&optional fallback-keys)$/;"	f	language:Lisp
+autopair-find-pair	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-find-pair (delim &optional closing)$/;"	f	language:Lisp
+autopair-global-mode	/Users/james/.emacs.d/packages/autopair.el	/^(define-globalized-minor-mode autopair-global-mode autopair-mode autopair-on)$/;"	f	language:Lisp
+autopair-handle-action-fns	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-handle-action-fns '()$/;"	f	language:Lisp
+autopair-handle-wrap-action-fns	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-handle-wrap-action-fns '()$/;"	f	language:Lisp
+autopair-in-unterminated-string-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-in-unterminated-string-p (autopair-triplet)$/;"	f	language:Lisp
+autopair-insert-opening	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-insert-opening ()$/;"	f	language:Lisp
+autopair-insert-or-skip-paired-delimiter	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-insert-or-skip-paired-delimiter ()$/;"	f	language:Lisp
+autopair-insert-or-skip-quote	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-insert-or-skip-quote ()$/;"	f	language:Lisp
+autopair-inserted	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-inserted nil$/;"	f	language:Lisp
+autopair-latex-mode-paired-delimiter-action	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-latex-mode-paired-delimiter-action (action pair pos-before)$/;"	f	language:Lisp
+autopair-mode	/Users/james/.emacs.d/packages/autopair.el	/^(define-minor-mode autopair-mode$/;"	f	language:Lisp
+autopair-newline	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-newline ()$/;"	f	language:Lisp
+autopair-on	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-on () (unless (or buffer-read-only$/;"	f	language:Lisp
+autopair-original-binding	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-original-binding ()$/;"	f	language:Lisp
+autopair-pair-criteria	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-pair-criteria 'help-balance$/;"	f	language:Lisp
+autopair-pair-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-pair-p ()$/;"	f	language:Lisp
+autopair-post-command-handler	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-post-command-handler ()$/;"	f	language:Lisp
+autopair-python-triple-quote-action	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-python-triple-quote-action (action pair pos-before)$/;"	f	language:Lisp
+autopair-should-autowrap	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-should-autowrap ()$/;"	f	language:Lisp
+autopair-skip-close-maybe	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-skip-close-maybe ()$/;"	f	language:Lisp
+autopair-skip-criteria	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-skip-criteria 'help-balance$/;"	f	language:Lisp
+autopair-skip-p	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-skip-p ()$/;"	f	language:Lisp
+autopair-skip-whitespace	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-skip-whitespace nil$/;"	f	language:Lisp
+autopair-syntax-ppss	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-syntax-ppss ()$/;"	f	language:Lisp
+autopair-up-list	/Users/james/.emacs.d/packages/autopair.el	/^(defun autopair-up-list (syntax-info &optional closing)$/;"	f	language:Lisp
+autopair-wrap-action	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-wrap-action nil$/;"	f	language:Lisp
 AV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AV call AlternateFile("v<bang>", <f-args>)$/;"	c	language:Vim
 a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^pthread_cond_t a_cond;$/;"	v	language:C++
 a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^pthread_cond_t a_cond;$/;"	v	language:C++
@@ -198,6 +248,7 @@ check_collision	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson
 check_collision	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool check_collision( std::vector<SDL_Rect> &A, std::vector<SDL_Rect> &B ) {$/;"	f	language:C++
 check_for_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void check_for_ingredient(ingredient thread_ingredient) {$/;"	f	language:C++
 check_for_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void check_for_ingredient(ingredient thread_ingredient);$/;"	p	language:C++	file:
+check_vundle	/Users/james/vimsetup.py	/^def check_vundle():$/;"	f	language:Python
 Circle	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^struct Circle$/;"	s	language:C++	file:
 Circle::r	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int r;$/;"	m	language:C++	struct:Circle	file:
 Circle::x	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
@@ -239,9 +290,12 @@ CLIP_MOUSEOVER	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.c
 CLIP_MOUSEOVER	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int CLIP_MOUSEOVER = 0;$/;"	v	language:C++
 CLIP_MOUSEUP	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^const int CLIP_MOUSEUP = 3;$/;"	v	language:C++
 CLIP_MOUSEUP	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int CLIP_MOUSEUP = 3;$/;"	v	language:C++
+create_symlinks	/Users/james/vimsetup.py	/^def create_symlinks():$/;"	f	language:Python
+cua--pre-command-handler-1	/Users/james/.emacs.d/packages/autopair.el	/^(defadvice cua--pre-command-handler-1 (around autopair-override activate)$/;"	f	language:Lisp
 D	/Users/james/.vimrc	/^nnoremap D d\$$/;"	m	language:Vim
 data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
+delete-selection-pre-hook	/Users/james/.emacs.d/packages/autopair.el	/^(defadvice delete-selection-pre-hook (around autopair-override activate)$/;"	f	language:Lisp
 DetermineExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! DetermineExtension(path) $/;"	f	language:Vim
 DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
 distance	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^double distance( int x1, int y1, int x2, int y2 )$/;"	f	language:C++
@@ -371,17 +425,73 @@ event	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Event event;
 event	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Event event;$/;"	v	language:C++
+evil-motion-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-motion-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
+evil-motion-state-map	/Users/james/.init.el	/^(define-key evil-motion-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map ";" 'evil-ex)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "Y" 'copy-to-end-of-line)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-h" 'windmove-left) ;; move left around split$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-j" 'windmove-down) ;; move down a split$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-k" 'windmove-up) ;; move up a split$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-l" 'windmove-right) ;; move right around split$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map "\\C-p" 'ff-find-other-file) ;; open .h or .cpp$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map (kbd "C-u") 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f2] 'hs-toggle-hiding)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f3] 'hs-show-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f4] 'hs-hide-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f5] 'gdb)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f6] 'recompile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs	/^(define-key evil-normal-state-map [f7] 'compile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "Y" 'copy-to-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "\\C-h" 'windmove-left) ;; move left around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "\\C-j" 'windmove-down) ;; move down a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "\\C-k" 'windmove-up) ;; move up a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "\\C-l" 'windmove-right) ;; move right around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map "\\C-p" 'ff-find-other-file) ;; open .h or .cpp$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map (kbd "C-u") 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f2] 'hs-toggle-hiding)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f3] 'hs-show-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f4] 'hs-hide-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f5] 'gdb)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f6] 'recompile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f7] 'compile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "Y" 'copy-to-end-of-line)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "\\C-h" 'windmove-left) ;; move left around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "\\C-j" 'windmove-down) ;; move down a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "\\C-k" 'windmove-up) ;; move up a split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "\\C-l" 'windmove-right) ;; move right around split$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map "\\C-p" 'ff-find-other-file) ;; open .h or .cpp$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map (kbd "C-u") 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f2] 'hs-toggle-hiding)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f3] 'hs-show-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f4] 'hs-hide-all)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f5] 'gdb)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f6] 'recompile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f7] 'compile)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
 evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map ";" 'evil-ex)$/;"	f	language:Lisp
 evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
 evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs	/^(define-key evil-visual-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-visual-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-visual-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-visual-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-visual-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.init.el	/^(define-key evil-visual-state-map ";" 'evil-ex)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.init.el	/^(define-key evil-visual-state-map "H" 'evil-first-non-blank)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.init.el	/^(define-key evil-visual-state-map "L" 'evil-end-of-line)$/;"	f	language:Lisp
+evil-visual-state-map	/Users/james/.init.el	/^(define-key evil-visual-state-map [escape] 'keyboard-quit)$/;"	f	language:Lisp
 ExpandAlternatePath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>ExpandAlternatePath(pathSpec, sfPath) $/;"	f	language:Vim
 FindFileInSearchPath	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPath(fileName, pathList, relPathBase)$/;"	f	language:Vim
 FindFileInSearchPathEx	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>FindFileInSearchPathEx(fileName, pathList, relPathBase, count)$/;"	f	language:Vim
@@ -524,6 +634,10 @@ get_ticks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_co
 get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int get_ticks();$/;"	p	language:C++	class:Timer	file:
 get_ticks	/Users/james/Downloads/lesson15/lesson15.cpp	/^int Timer::get_ticks()$/;"	f	language:C++	class:Timer
 global-map	/Users/james/.emacs	/^(define-key global-map (kbd "RET") 'newline-and-indent) ;; autoindent$/;"	f	language:Lisp
+global-map	/Users/james/.emacs.d/init.el	/^(define-key global-map "\\C-ca" 'org-agenda)$/;"	f	language:Lisp
+global-map	/Users/james/.emacs.d/init.el	/^(define-key global-map "\\C-cl" 'org-store-link)$/;"	f	language:Lisp
+global-map	/Users/james/.emacs.d/init.el	/^(define-key global-map (kbd "RET") 'newline-and-indent) ;; autoindent$/;"	f	language:Lisp
+global-map	/Users/james/.init.el	/^(define-key global-map (kbd "RET") 'newline-and-indent) ;; autoindent$/;"	f	language:Lisp
 grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public grid_layout_example() {$/;"	m	language:Java	class:grid_layout_example
 grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^public class grid_layout_example extends JFrame {$/;"	c	language:Java
 grid_layout_example.grid_layout_example	/Users/james/Developer/Java/Swing_Examples/layout_management/grid_layout_example.java	/^    public grid_layout_example() {$/;"	m	language:Java	class:grid_layout_example
@@ -658,12 +772,15 @@ is_started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_c
 is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_started()$/;"	f	language:C++	class:Timer
 iwb	/Users/james/.emacs	/^(defun iwb ()$/;"	f	language:Lisp
+iwb	/Users/james/.emacs.d/init.el	/^(defun iwb ()$/;"	f	language:Lisp
+iwb	/Users/james/.init.el	/^(defun iwb ()$/;"	f	language:Lisp
 J	/Users/james/.vimrc	/^nnoremap J 10j$/;"	m	language:Vim
 jk	/Users/james/.vimrc	/^imap jk <Esc>$/;"	m	language:Vim
 K	/Users/james/.vimrc	/^nnoremap K 10k$/;"	m	language:Vim
 kill_time	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void kill_time() {$/;"	f	language:C++
 kill_time	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void kill_time();$/;"	p	language:C++	file:
 L	/Users/james/.vimrc	/^map L \$$/;"	m	language:Vim
+launch_vim_and_install_bundles	/Users/james/vimsetup.py	/^def launch_vim_and_install_bundles():$/;"	f	language:Python
 left	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *left = NULL;$/;"	v	language:C++
 left	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *left = NULL;$/;"	v	language:C++
 LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        LinkedList();$/;"	p	language:C++	class:LinkedList	file:
@@ -745,6 +862,7 @@ load_image	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cp
 load_image	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
+load_image	/Users/james/Developer/EBSideScroller/Project/ScreenManager/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
 load_image	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
 load_image	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
 load_image	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *load_image( std::string filename )$/;"	f	language:C++
@@ -802,6 +920,7 @@ main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.j
 main	/Users/james/Developer/puzzle_3.py	/^def main():$/;"	f	language:Python
 main	/Users/james/Downloads/lesson09/lesson09.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Downloads/lesson15/lesson15.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/vimsetup.py	/^def main():$/;"	f	language:Python
 mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
 Match	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Match = 2,$/;"	e	language:C++	enum:ingredient	file:
 MAX_CIGS_SMOKED	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define MAX_CIGS_SMOKED /;"	d	language:C++	file:
@@ -817,6 +936,21 @@ message	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^SDL_
 message	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/surface_loading/surface_loading.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
+minibuffer-local-completion-map	/Users/james/.emacs	/^(define-key minibuffer-local-completion-map [escape]$/;"	f	language:Lisp
+minibuffer-local-completion-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-completion-map [escape]$/;"	f	language:Lisp
+minibuffer-local-completion-map	/Users/james/.init.el	/^(define-key minibuffer-local-completion-map [escape]$/;"	f	language:Lisp
+minibuffer-local-isearch-map	/Users/james/.emacs	/^(define-key minibuffer-local-isearch-map [escape]$/;"	f	language:Lisp
+minibuffer-local-isearch-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-isearch-map [escape]$/;"	f	language:Lisp
+minibuffer-local-isearch-map	/Users/james/.init.el	/^(define-key minibuffer-local-isearch-map [escape]$/;"	f	language:Lisp
+minibuffer-local-map	/Users/james/.emacs	/^(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+minibuffer-local-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+minibuffer-local-map	/Users/james/.init.el	/^(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+minibuffer-local-must-match-map	/Users/james/.emacs	/^(define-key minibuffer-local-must-match-map [escape]$/;"	f	language:Lisp
+minibuffer-local-must-match-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-must-match-map [escape]$/;"	f	language:Lisp
+minibuffer-local-must-match-map	/Users/james/.init.el	/^(define-key minibuffer-local-must-match-map [escape]$/;"	f	language:Lisp
+minibuffer-local-ns-map	/Users/james/.emacs	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+minibuffer-local-ns-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+minibuffer-local-ns-map	/Users/james/.init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
 modify_linked_list	/Users/james/Developer/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name, nodes_dict, nodes_as_linked_list):$/;"	f	language:Python
 modify_node	/Users/james/Developer/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
 modify_nodes	/Users/james/Developer/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
@@ -836,6 +970,14 @@ move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.cpp	/^void Dot::m
 move	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        void move( std::vector<SDL_Rect> &rects, Circle &circle );$/;"	p	language:C++	class:Dot
 music	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
 music	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
+my-buffer-face-mode-fixed	/Users/james/.init.el	/^(defun my-buffer-face-mode-fixed ()$/;"	f	language:Lisp
+my-buffer-face-mode-variable	/Users/james/.init.el	/^(defun my-buffer-face-mode-variable ()$/;"	f	language:Lisp
+my-c-mode-cedet-hook	/Users/james/.emacs	/^(defun my-c-mode-cedet-hook ()$/;"	f	language:Lisp
+my-c-mode-cedet-hook	/Users/james/.emacs.d/init.el	/^(defun my-c-mode-cedet-hook ()$/;"	f	language:Lisp
+my-c-mode-cedet-hook	/Users/james/.init.el	/^(defun my-c-mode-cedet-hook ()$/;"	f	language:Lisp
+my-semantic-hook	/Users/james/.emacs	/^(defun my-semantic-hook ()$/;"	f	language:Lisp
+my-semantic-hook	/Users/james/.emacs.d/init.el	/^(defun my-semantic-hook ()$/;"	f	language:Lisp
+my-semantic-hook	/Users/james/.init.el	/^(defun my-semantic-hook ()$/;"	f	language:Lisp
 my_cr_function	/Users/james/.vimrc	/^function! s:my_cr_function()$/;"	f	language:Vim
 NeatFoldText	/Users/james/.vimrc	/^function! NeatFoldText() "{{{2$/;"	f	language:Vim
 next	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
@@ -851,6 +993,7 @@ node::next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedList
 Nothing	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Nothing = 0,$/;"	e	language:C++	enum:ingredient	file:
 NUM_INGREDIENTS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define NUM_INGREDIENTS /;"	d	language:C++	file:
 open_file	/Users/james/Developer/puzzle_3.py	/^def open_file(filename):$/;"	f	language:Python
+os	/Users/james/vimsetup.py	/^import os$/;"	i	language:Python
 Paper	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Paper = 1,$/;"	e	language:C++	enum:ingredient	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
@@ -898,6 +1041,7 @@ pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_
 pausedTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
+play_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^bool SoundManager::play_music( std::string filename ) {$/;"	f	language:C++	class:SoundManager
 play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^bool Sound::play_music( std::string filename ) {$/;"	f	language:C++	class:Sound
 play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        bool play_music( std::string filename );$/;"	p	language:C++	class:Sound
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
@@ -932,6 +1076,12 @@ rigid_area_example	/Users/james/Developer/Java/Swing_Examples/layout_management/
 rigid_area_example.initUI	/Users/james/Developer/Java/Swing_Examples/layout_management/rigid_area_example.java	/^    public final void initUI() {$/;"	m	language:Java	class:rigid_area_example
 rigid_area_example.main	/Users/james/Developer/Java/Swing_Examples/layout_management/rigid_area_example.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:rigid_area_example
 rigid_area_example.rigid_area_example	/Users/james/Developer/Java/Swing_Examples/layout_management/rigid_area_example.java	/^    public rigid_area_example() {$/;"	m	language:Java	class:rigid_area_example
+rotate-windows	/Users/james/.emacs	/^(defun rotate-windows ()$/;"	f	language:Lisp
+rotate-windows	/Users/james/.emacs.d/init.el	/^(defun rotate-windows ()$/;"	f	language:Lisp
+rotate-windows	/Users/james/.init.el	/^(defun rotate-windows ()$/;"	f	language:Lisp
+rotate-windows-helper	/Users/james/.emacs	/^(defun rotate-windows-helper(x d)$/;"	f	language:Lisp
+rotate-windows-helper	/Users/james/.emacs.d/init.el	/^(defun rotate-windows-helper(x d)$/;"	f	language:Lisp
+rotate-windows-helper	/Users/james/.init.el	/^(defun rotate-windows-helper(x d)$/;"	f	language:Lisp
 s:maxDotsInExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let s:maxDotsInExtension = 1$/;"	v	language:Vim
 scratch	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Chunk *scratch = NULL;$/;"	v	language:C++
 scratch	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Chunk *scratch = NULL;$/;"	v	language:C++
@@ -960,7 +1110,9 @@ screen	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *sc
 screen	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+ScreenManager::apply_surface	/Users/james/Developer/EBSideScroller/Project/ScreenManager/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
 ScreenManager::apply_surface	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^void ScreenManager::apply_surface( int x, int y, SDL_Surface *source, SDL_Surface *destination ) {$/;"	f	language:C++	class:ScreenManager
+ScreenManager::load_image	/Users/james/Developer/EBSideScroller/Project/ScreenManager/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
 ScreenManager::load_image	/Users/james/Developer/EBSideScroller/Project/Screens/ScreenManager.cpp	/^SDL_Surface *ScreenManager::load_image( std::string filename ) {$/;"	f	language:C++	class:ScreenManager
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
@@ -1083,6 +1235,11 @@ Sound::stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp
 Sound::stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        void stop_music();$/;"	p	language:C++	class:Sound
 Sound::~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::~Sound() {$/;"	f	language:C++	class:Sound
 Sound::~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        ~Sound();$/;"	p	language:C++	class:Sound
+SoundManager	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^SoundManager::SoundManager() {$/;"	f	language:C++	class:SoundManager
+SoundManager::play_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^bool SoundManager::play_music( std::string filename ) {$/;"	f	language:C++	class:SoundManager
+SoundManager::SoundManager	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^SoundManager::SoundManager() {$/;"	f	language:C++	class:SoundManager
+SoundManager::stop_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^void SoundManager::stop_music() {$/;"	f	language:C++	class:SoundManager
+SoundManager::~SoundManager	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^SoundManager::~SoundManager() {$/;"	f	language:C++	class:SoundManager
 SOUND_H	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^#define SOUND_H$/;"	d	language:C++
 Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        Square();$/;"	p	language:C++	class:Square	file:
 Square	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^class Square {$/;"	c	language:C++	file:
@@ -1190,6 +1347,7 @@ stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collisi
 stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+stop_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^void SoundManager::stop_music() {$/;"	f	language:C++	class:SoundManager
 stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^void Sound::stop_music() {$/;"	f	language:C++	class:Sound
 stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        void stop_music();$/;"	p	language:C++	class:Sound
 submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
@@ -1472,6 +1630,9 @@ tip_of_the_day.initUI	/Users/james/Developer/Java/Swing_Examples/layout_manageme
 tip_of_the_day.main	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:tip_of_the_day
 tip_of_the_day.tip_of_the_day	/Users/james/Developer/Java/Swing_Examples/layout_management/tip_of_the_day.java	/^    public tip_of_the_day() {$/;"	m	language:Java	class:tip_of_the_day
 Tobacco	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Tobacco = 3$/;"	e	language:C++	enum:ingredient	file:
+toggle-window-split	/Users/james/.emacs	/^(defun toggle-window-split ()$/;"	f	language:Lisp
+toggle-window-split	/Users/james/.emacs.d/init.el	/^(defun toggle-window-split ()$/;"	f	language:Lisp
+toggle-window-split	/Users/james/.init.el	/^(defun toggle-window-split ()$/;"	f	language:Lisp
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^public class toolbar extends JFrame {$/;"	c	language:Java
 toolbar.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
@@ -1559,3 +1720,4 @@ __Table__	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigare
 ~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 ~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::~Sound() {$/;"	f	language:C++	class:Sound
 ~Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        ~Sound();$/;"	p	language:C++	class:Sound
+~SoundManager	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^SoundManager::~SoundManager() {$/;"	f	language:C++	class:SoundManager
