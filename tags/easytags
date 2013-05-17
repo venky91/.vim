@@ -557,6 +557,7 @@ g:jedi#pydoc	/Users/james/.vimrc	/^let g:jedi#pydoc = "<leader>pk"$/;"	v	languag
 g:jedi#related_names_command	/Users/james/.vimrc	/^let g:jedi#related_names_command = "<leader>pn"$/;"	v	language:Vim
 g:jedi#rename_command	/Users/james/.vimrc	/^let g:jedi#rename_command = "<leader>pr"$/;"	v	language:Vim
 g:jedi#show_function_definition	/Users/james/.vimrc	/^let g:jedi#show_function_definition = "1"$/;"	v	language:Vim
+g:last_mode	/Users/james/.vimrc	/^let g:last_mode = ''$/;"	v	language:Vim
 g:neocomplcache#sources#rsense#home_directory	/Users/james/.vimrc	/^let g:neocomplcache#sources#rsense#home_directory = '\/usr\/local\/rsense-0.3'$/;"	v	language:Vim
 g:neocomplcache_auto_completion_start_length	/Users/james/.vimrc	/^let g:neocomplcache_auto_completion_start_length=3$/;"	v	language:Vim
 g:neocomplcache_enable_at_startup	/Users/james/.vimrc	/^let g:neocomplcache_enable_at_startup = 1$/;"	v	language:Vim
@@ -673,6 +674,7 @@ IHS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHS call 
 IHT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHT call AlternateOpenFileUnderCursor("t<bang>", <f-args>)$/;"	c	language:Vim
 IHV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHV call AlternateOpenFileUnderCursor("v<bang>", <f-args>)$/;"	c	language:Vim
 image	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *image = NULL;$/;"	v	language:C++
+in	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::ifstream in; \/\/ object to read from the file$/;"	v	language:C++
 ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^enum ingredient {$/;"	g	language:C++	file:
 INGREDIENTS_ON_TABLE	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    ingredient INGREDIENTS_ON_TABLE [NUM_INGREDIENTS-1]; \/\/ there can only be 2 ingredients on a table at a time$/;"	m	language:C++	struct:Table	file:
 ingredient_name	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^std::string ingredient_name(ingredient number) {$/;"	f	language:C++
@@ -818,6 +820,8 @@ LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/findM
 LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        ~LinkedList();$/;"	p	language:C++	class:LinkedList	file:
 LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::~LinkedList() {$/;"	f	language:C++	class:LinkedList
 loaded_alternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let loaded_alternateFile = 1$/;"	v	language:Vim
+LoadFile	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void LoadFile(const char *filename) {$/;"	f	language:C++
+LoadFile	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void LoadFile(const char *filename);$/;"	p	language:C++	file:
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool load_files() {$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool load_files()$/;"	f	language:C++
@@ -877,6 +881,7 @@ main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/a.cpp	/^int
 main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/abc.cpp	/^int main() {$/;"	f	language:C++
 main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^int main(void) {$/;"	f	language:C++
 main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^int main(void) {$/;"	f	language:C++
+main	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^int main() {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
@@ -951,6 +956,7 @@ minibuffer-local-must-match-map	/Users/james/.init.el	/^(define-key minibuffer-l
 minibuffer-local-ns-map	/Users/james/.emacs	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
 minibuffer-local-ns-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
 minibuffer-local-ns-map	/Users/james/.init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
+Mode	/Users/james/.vimrc	/^function! Mode()$/;"	f	language:Vim
 modify_linked_list	/Users/james/Developer/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name, nodes_dict, nodes_as_linked_list):$/;"	f	language:Python
 modify_node	/Users/james/Developer/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
 modify_nodes	/Users/james/Developer/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
@@ -994,6 +1000,7 @@ Nothing	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarett
 NUM_INGREDIENTS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define NUM_INGREDIENTS /;"	d	language:C++	file:
 open_file	/Users/james/Developer/puzzle_3.py	/^def open_file(filename):$/;"	f	language:Python
 os	/Users/james/vimsetup.py	/^import os$/;"	i	language:Python
+out	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::ofstream out; \/\/ object to write to the file$/;"	v	language:C++
 Paper	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Paper = 1,$/;"	e	language:C++	enum:ingredient	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
@@ -1058,6 +1065,8 @@ PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbar
 PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
+printWord	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void printWord() {$/;"	f	language:C++
+printWord	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void printWord();$/;"	p	language:C++	file:
 Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
 Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
 r	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int r;$/;"	m	language:C++	struct:Circle	file:
