@@ -113,6 +113,27 @@ apply_surface	/Users/james/Developer/EBSideScroller/true_type/true_type_fonts.cp
 apply_surface	/Users/james/Downloads/lesson09/lesson09.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 apply_surface	/Users/james/Downloads/lesson15/lesson15.cpp	/^void apply_surface( int x, int y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = NULL )$/;"	f	language:C++
 AS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AS call AlternateFile("h<bang>", <f-args>)$/;"	c	language:Vim
+askThenLoad	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenLoad() {$/;"	f	language:C++
+askThenLoad	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenLoad();$/;"	p	language:C++	file:
+askThenLoad	/Users/james/play.cpp	/^void askThenLoad() {$/;"	f	language:C++
+askThenLoad	/Users/james/play.cpp	/^void askThenLoad();$/;"	p	language:C++	file:
+askThenRate	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenRate() {$/;"	f	language:C++
+askThenRate	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenRate();$/;"	p	language:C++	file:
+askThenRate	/Users/james/play.cpp	/^void askThenRate() {$/;"	f	language:C++
+askThenRate	/Users/james/play.cpp	/^void askThenRate();$/;"	p	language:C++	file:
+askThenSeek	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenSeek() {$/;"	f	language:C++
+askThenSeek	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void askThenSeek();$/;"	p	language:C++	file:
+askThenSeek	/Users/james/play.cpp	/^void askThenSeek() {$/;"	f	language:C++
+askThenSeek	/Users/james/play.cpp	/^void askThenSeek();$/;"	p	language:C++	file:
+Assistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Assistant() {$/;"	m	language:Java	class:Assistant
+Assistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^public class Assistant {$/;"	c	language:Java
+assistant	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector assistant = new Vector();$/;"	f	language:Java	class:Surgeon
+Assistant.Assistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Assistant() {$/;"	m	language:Java	class:Assistant
+Assistant.doctorAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector doctorAssistant = new Vector();$/;"	f	language:Java	class:Assistant
+Assistant.personAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector personAssistant = new Vector();$/;"	f	language:Java	class:Assistant
+Assistant.skills	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Skills skills;$/;"	f	language:Java	class:Assistant
+Assistant.surgeon	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Surgeon surgeon;$/;"	f	language:Java	class:Assistant
+Assistant.surgeryAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector surgeryAssistant = new Vector();$/;"	f	language:Java	class:Assistant
 AT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang AT call AlternateFile("t<bang>", <f-args>)$/;"	c	language:Vim
 autopair-action	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-action nil$/;"	f	language:Lisp
 autopair-autowrap	/Users/james/.emacs.d/packages/autopair.el	/^(defvar autopair-autowrap 'help-balance$/;"	f	language:Lisp
@@ -168,6 +189,22 @@ a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette
 a_cond	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^pthread_cond_t a_cond;$/;"	v	language:C++
 a_mutex	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
 a_mutex	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
+a_mutex	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
+a_mutex	/Users/james/play.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
+b:blockCommentEndRE	/Users/james/Downloads/javascript.vim	/^let b:blockCommentEndRE    = '\\*\/'$/;"	v	language:Vim
+b:blockCommentMiddleExtra	/Users/james/Downloads/javascript.vim	/^let b:blockCommentMiddleExtra = 1$/;"	v	language:Vim
+b:blockCommentMiddleRE	/Users/james/Downloads/javascript.vim	/^let b:blockCommentMiddleRE = '\\*'$/;"	v	language:Vim
+b:blockCommentRE	/Users/james/Downloads/javascript.vim	/^let b:blockCommentRE = 'javaScriptComment'$/;"	v	language:Vim
+b:blockCommentStartRE	/Users/james/Downloads/javascript.vim	/^let b:blockCommentStartRE  = '\/\\*'$/;"	v	language:Vim
+b:commentRE	/Users/james/Downloads/javascript.vim	/^let b:commentRE      = 'javaScript\\(Line\\)\\?Comment'$/;"	v	language:Vim
+b:contTraversesLineComments	/Users/james/Downloads/javascript.vim	/^let b:contTraversesLineComments = 1$/;"	v	language:Vim
+b:did_indent	/Users/james/Downloads/javascript.vim	/^let b:did_indent = 1$/;"	v	language:Vim
+b:doubleQuoteStringRE	/Users/james/Downloads/javascript.vim	/^let b:doubleQuoteStringRE = 'javaScriptStringD'$/;"	v	language:Vim
+b:indentTrios	/Users/james/Downloads/javascript.vim	/^let b:indentTrios = [$/;"	v	language:Vim
+b:lineCommentRE	/Users/james/Downloads/javascript.vim	/^let b:lineCommentRE  = 'javaScriptLineComment'$/;"	v	language:Vim
+b:lineContList	/Users/james/Downloads/javascript.vim	/^let b:lineContList = [$/;"	v	language:Vim
+b:singleQuoteStringRE	/Users/james/Downloads/javascript.vim	/^let b:singleQuoteStringRE = 'javaScriptStringS'$/;"	v	language:Vim
+b:stringRE	/Users/james/Downloads/javascript.vim	/^let b:stringRE            = 'javaScriptString\\(S\\|D\\)'$/;"	v	language:Vim
 background	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Developer/EBSideScroller/color_key/color_key.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
@@ -233,6 +270,10 @@ buttonSheet	/Users/james/Downloads/lesson09/lesson09.cpp	/^SDL_Surface *buttonSh
 C	/Users/james/.vimrc	/^nnoremap C c\$$/;"	m	language:Vim
 c	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Circle c;$/;"	m	language:C++	class:Dot	file:
 c	/Users/james/Developer/EBSideScroller/Project/Objects/Dot.h	/^        Circle c;$/;"	m	language:C++	class:Dot
+changeFunction	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void changeFunction() {$/;"	f	language:C++
+changeFunction	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void changeFunction();$/;"	p	language:C++	file:
+changeFunction	/Users/james/play.cpp	/^void changeFunction() {$/;"	f	language:C++
+changeFunction	/Users/james/play.cpp	/^void changeFunction();$/;"	p	language:C++	file:
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
 checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^public class checkbox extends JFrame {$/;"	c	language:Java
 checkbox.checkbox	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    public checkbox() {$/;"	m	language:Java	class:checkbox
@@ -290,15 +331,29 @@ CLIP_MOUSEOVER	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.c
 CLIP_MOUSEOVER	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int CLIP_MOUSEOVER = 0;$/;"	v	language:C++
 CLIP_MOUSEUP	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^const int CLIP_MOUSEUP = 3;$/;"	v	language:C++
 CLIP_MOUSEUP	/Users/james/Downloads/lesson09/lesson09.cpp	/^const int CLIP_MOUSEUP = 3;$/;"	v	language:C++
+controlOption	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^char controlOption; \/\/ variable control threads set$/;"	v	language:C++
+controlOption	/Users/james/play.cpp	/^char controlOption; \/\/ variable control threads set$/;"	v	language:C++
 create_symlinks	/Users/james/vimsetup.py	/^def create_symlinks():$/;"	f	language:Python
 cua--pre-command-handler-1	/Users/james/.emacs.d/packages/autopair.el	/^(defadvice cua--pre-command-handler-1 (around autopair-override activate)$/;"	f	language:Lisp
+currentlyPlaying	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^bool currentlyPlaying; \/\/ boolean value to determine player status$/;"	v	language:C++
+currentlyPlaying	/Users/james/play.cpp	/^bool currentlyPlaying; \/\/ boolean value to determine player status$/;"	v	language:C++
+currentlyThreading	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^bool currentlyThreading; \/\/ keyboard thread controls when other threads exit$/;"	v	language:C++
+currentlyThreading	/Users/james/play.cpp	/^bool currentlyThreading; \/\/ keyboard thread controls when other threads exit$/;"	v	language:C++
 D	/Users/james/.vimrc	/^nnoremap D d\$$/;"	m	language:Vim
 data	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
 data	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    void * data;$/;"	m	language:C++	struct:node	file:
+delete-other-windows	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defadvice delete-other-windows (around sr-speedbar-delete-other-window-advice activate)$/;"	f	language:Lisp
 delete-selection-pre-hook	/Users/james/.emacs.d/packages/autopair.el	/^(defadvice delete-selection-pre-hook (around autopair-override activate)$/;"	f	language:Lisp
+delete-window	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defadvice delete-window (before sr-speedbar-delete-window-advice activate)$/;"	f	language:Lisp
+departmentID	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private int departmentID;$/;"	f	language:Java	class:Surgeon	file:
 DetermineExtension	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! DetermineExtension(path) $/;"	f	language:Vim
+determineSleep	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^int determineSleep() {$/;"	f	language:C++
+determineSleep	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^int determineSleep();$/;"	p	language:C++	file:
+determineSleep	/Users/james/play.cpp	/^int determineSleep() {$/;"	f	language:C++
+determineSleep	/Users/james/play.cpp	/^int determineSleep();$/;"	p	language:C++	file:
 DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
 distance	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^double distance( int x1, int y1, int x2, int y2 )$/;"	f	language:C++
+doctorAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector doctorAssistant = new Vector();$/;"	f	language:Java	class:Assistant
 Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    Dot();$/;"	p	language:C++	class:Dot	file:
 Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^class Dot$/;"	c	language:C++	file:
 Dot	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^Dot::Dot()$/;"	f	language:C++	class:Dot
@@ -476,7 +531,7 @@ evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map 
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f2] 'hs-toggle-hiding)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f3] 'hs-show-all)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f4] 'hs-hide-all)$/;"	f	language:Lisp
-evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f5] 'gdb)$/;"	f	language:Lisp
+evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f5] 'gud-gdb)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f6] 'recompile)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f7] 'compile)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.init.el	/^(define-key evil-normal-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
@@ -557,7 +612,6 @@ g:jedi#pydoc	/Users/james/.vimrc	/^let g:jedi#pydoc = "<leader>pk"$/;"	v	languag
 g:jedi#related_names_command	/Users/james/.vimrc	/^let g:jedi#related_names_command = "<leader>pn"$/;"	v	language:Vim
 g:jedi#rename_command	/Users/james/.vimrc	/^let g:jedi#rename_command = "<leader>pr"$/;"	v	language:Vim
 g:jedi#show_function_definition	/Users/james/.vimrc	/^let g:jedi#show_function_definition = "1"$/;"	v	language:Vim
-g:last_mode	/Users/james/.vimrc	/^let g:last_mode = ''$/;"	v	language:Vim
 g:neocomplcache#sources#rsense#home_directory	/Users/james/.vimrc	/^let g:neocomplcache#sources#rsense#home_directory = '\/usr\/local\/rsense-0.3'$/;"	v	language:Vim
 g:neocomplcache_auto_completion_start_length	/Users/james/.vimrc	/^let g:neocomplcache_auto_completion_start_length=3$/;"	v	language:Vim
 g:neocomplcache_enable_at_startup	/Users/james/.vimrc	/^let g:neocomplcache_enable_at_startup = 1$/;"	v	language:Vim
@@ -605,6 +659,10 @@ g:tagbar_sort	/Users/james/.vimrc	/^let g:tagbar_sort=0$/;"	v	language:Vim
 g:tagbar_width	/Users/james/.vimrc	/^let g:tagbar_width=30$/;"	v	language:Vim
 gameScreen	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Surface *gameScreen = NULL;$/;"	v	language:C++
 gameStart	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^bool gameStart = false;$/;"	v	language:C++
+getKeys	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * getKeys(void *data) {$/;"	f	language:C++
+getKeys	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * getKeys(void *data);$/;"	p	language:C++	file:
+getKeys	/Users/james/play.cpp	/^void * getKeys(void *data) {$/;"	f	language:C++
+getKeys	/Users/james/play.cpp	/^void * getKeys(void *data);$/;"	p	language:C++	file:
 GetNthItemFromList	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^function! <SID>GetNthItemFromList(list, n) $/;"	f	language:Vim
 get_random_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^ingredient get_random_ingredient() {$/;"	f	language:C++
 get_random_ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^ingredient get_random_ingredient();$/;"	p	language:C++	file:
@@ -668,6 +726,7 @@ head	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/
 head	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        node * head;$/;"	m	language:C++	class:LinkedList	file:
 high	/Users/james/Developer/EBSideScroller/playing_sounds/lesson11.cpp	/^Mix_Chunk *high = NULL;$/;"	v	language:C++
 high	/Users/james/Developer/EBSideScroller/playing_sounds/playing_sounds.cpp	/^Mix_Chunk *high = NULL;$/;"	v	language:C++
+hiredDate	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private Date hiredDate;$/;"	f	language:Java	class:Surgeon	file:
 IH	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IH call AlternateOpenFileUnderCursor("n<bang>", <f-args>)$/;"	c	language:Vim
 IHN	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHN call AlternateOpenNextFile("<bang>")$/;"	c	language:Vim
 IHS	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHS call AlternateOpenFileUnderCursor("h<bang>", <f-args>)$/;"	c	language:Vim
@@ -675,6 +734,9 @@ IHT	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHT call 
 IHV	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^comm! -nargs=? -bang IHV call AlternateOpenFileUnderCursor("v<bang>", <f-args>)$/;"	c	language:Vim
 image	/Users/james/Downloads/lesson15/lesson15.cpp	/^SDL_Surface *image = NULL;$/;"	v	language:C++
 in	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::ifstream in; \/\/ object to read from the file$/;"	v	language:C++
+in	/Users/james/play.cpp	/^std::ifstream in; \/\/ object to read from the file$/;"	v	language:C++
+IndentAnything_Dbg	/Users/james/Downloads/javascript.vim	/^let IndentAnything_Dbg = 0$/;"	v	language:Vim
+IndentAnything_Dbg	/Users/james/Downloads/javascript.vim	/^let IndentAnything_Dbg = 1$/;"	v	language:Vim
 ingredient	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^enum ingredient {$/;"	g	language:C++	file:
 INGREDIENTS_ON_TABLE	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    ingredient INGREDIENTS_ON_TABLE [NUM_INGREDIENTS-1]; \/\/ there can only be 2 ingredients on a table at a time$/;"	m	language:C++	struct:Table	file:
 ingredient_name	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^std::string ingredient_name(ingredient number) {$/;"	f	language:C++
@@ -751,6 +813,7 @@ is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_co
 is_paused	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
 is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool is_paused();$/;"	p	language:C++	class:Timer	file:
 is_paused	/Users/james/Downloads/lesson15/lesson15.cpp	/^bool Timer::is_paused()$/;"	f	language:C++	class:Timer
+is_plugin	/Users/james/.oh-my-zsh/oh-my-zsh.sh	/^is_plugin() {$/;"	f	language:Sh
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool Timer::is_started() {$/;"	f	language:C++	class:Timer
 is_started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool is_started();$/;"	p	language:C++	class:Timer	file:
@@ -822,6 +885,12 @@ LinkedList::~LinkedList	/Users/james/Developer/C-Plus-Plus/Implementations/Maint
 loaded_alternateFile	/Users/james/.vim/bundle/a.vim/plugin/a.vim	/^let loaded_alternateFile = 1$/;"	v	language:Vim
 LoadFile	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void LoadFile(const char *filename) {$/;"	f	language:C++
 LoadFile	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void LoadFile(const char *filename);$/;"	p	language:C++	file:
+LoadFile	/Users/james/play.cpp	/^void LoadFile(const char *filename) {$/;"	f	language:C++
+LoadFile	/Users/james/play.cpp	/^void LoadFile(const char *filename);$/;"	p	language:C++	file:
+loadWordsInDeque	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void loadWordsInDeque() {$/;"	f	language:C++
+loadWordsInDeque	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void loadWordsInDeque();$/;"	p	language:C++	file:
+loadWordsInDeque	/Users/james/play.cpp	/^void loadWordsInDeque() {$/;"	f	language:C++
+loadWordsInDeque	/Users/james/play.cpp	/^void loadWordsInDeque();$/;"	p	language:C++	file:
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^bool load_files() {$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^bool load_files()$/;"	f	language:C++
 load_files	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^bool load_files()$/;"	f	language:C++
@@ -925,6 +994,8 @@ main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/twotoolbars.j
 main	/Users/james/Developer/puzzle_3.py	/^def main():$/;"	f	language:Python
 main	/Users/james/Downloads/lesson09/lesson09.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
 main	/Users/james/Downloads/lesson15/lesson15.cpp	/^int main( int argc, char* args[] )$/;"	f	language:C++
+main	/Users/james/play.cpp	/^int main() {$/;"	f	language:C++
+main	/Users/james/test.cpp	/^int main() {$/;"	f	language:C++
 main	/Users/james/vimsetup.py	/^def main():$/;"	f	language:Python
 mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
 Match	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Match = 2,$/;"	e	language:C++	enum:ingredient	file:
@@ -956,7 +1027,6 @@ minibuffer-local-must-match-map	/Users/james/.init.el	/^(define-key minibuffer-l
 minibuffer-local-ns-map	/Users/james/.emacs	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
 minibuffer-local-ns-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
 minibuffer-local-ns-map	/Users/james/.init.el	/^(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)$/;"	f	language:Lisp
-Mode	/Users/james/.vimrc	/^function! Mode()$/;"	f	language:Vim
 modify_linked_list	/Users/james/Developer/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name, nodes_dict, nodes_as_linked_list):$/;"	f	language:Python
 modify_node	/Users/james/Developer/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
 modify_nodes	/Users/james/Developer/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
@@ -998,10 +1068,17 @@ node::next	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement
 node::next	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^    node * next;$/;"	m	language:C++	struct:node	file:
 Nothing	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Nothing = 0,$/;"	e	language:C++	enum:ingredient	file:
 NUM_INGREDIENTS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^#define NUM_INGREDIENTS /;"	d	language:C++	file:
+nurse	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector nurse = new Vector();$/;"	f	language:Java	class:Surgeon
+office	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Office office;$/;"	f	language:Java	class:Surgeon
+OOD	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^package OOD;$/;"	p	language:Java
+OOD	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^package OOD;$/;"	p	language:Java
 open_file	/Users/james/Developer/puzzle_3.py	/^def open_file(filename):$/;"	f	language:Python
 os	/Users/james/vimsetup.py	/^import os$/;"	i	language:Python
+other-window	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defadvice other-window (after sr-speedbar-other-window-advice)$/;"	f	language:Lisp
 out	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::ofstream out; \/\/ object to write to the file$/;"	v	language:C++
+out	/Users/james/play.cpp	/^std::ofstream out; \/\/ object to write to the file$/;"	v	language:C++
 Paper	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    Paper = 1,$/;"	e	language:C++	enum:ingredient	file:
+patientSurgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector patientSurgeon = new Vector();$/;"	f	language:Java	class:Surgeon
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
 pause	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::pause() {$/;"	f	language:C++	class:Timer
 pause	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void pause();$/;"	p	language:C++	class:Timer	file:
@@ -1048,9 +1125,24 @@ pausedTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_
 pausedTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int pausedTicks;$/;"	m	language:C++	class:Timer	file:
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
 pauseMessage	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *pauseMessage = NULL;$/;"	v	language:C++
+personAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector personAssistant = new Vector();$/;"	f	language:Java	class:Assistant
+personSurgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector personSurgeon = new Vector();$/;"	f	language:Java	class:Surgeon
+playbackRate	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^float playbackRate; \/\/ negative goes in reverse, positive forward$/;"	v	language:C++
+playbackRate	/Users/james/play.cpp	/^float playbackRate; \/\/ negative goes in reverse, positive forward$/;"	v	language:C++
+playDeque	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::deque<word> playDeque; \/\/ play pops to rewind, reading forward$/;"	v	language:C++
+playDeque	/Users/james/play.cpp	/^std::deque<word> playDeque; \/\/ play pops to rewind, reading forward$/;"	v	language:C++
+playMedia	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * playMedia(void *data) {$/;"	f	language:C++
+playMedia	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * playMedia(void *data);$/;"	p	language:C++	file:
+playMedia	/Users/james/play.cpp	/^void * playMedia(void *data) {$/;"	f	language:C++
+playMedia	/Users/james/play.cpp	/^void * playMedia(void *data);$/;"	p	language:C++	file:
+playWordFromMedia	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void playWordFromMedia(std::deque<word> &playFrom, std::deque<word> &addTo) {$/;"	f	language:C++
+playWordFromMedia	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void playWordFromMedia(std::deque<word> &playFrom, std::deque<word> &addTo);$/;"	p	language:C++	file:
+playWordFromMedia	/Users/james/play.cpp	/^void playWordFromMedia(std::deque<word> &playFrom, std::deque<word> &addTo) {$/;"	f	language:C++
+playWordFromMedia	/Users/james/play.cpp	/^void playWordFromMedia(std::deque<word> &playFrom, std::deque<word> &addTo);$/;"	p	language:C++	file:
 play_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^bool SoundManager::play_music( std::string filename ) {$/;"	f	language:C++	class:SoundManager
 play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^bool Sound::play_music( std::string filename ) {$/;"	f	language:C++	class:Sound
 play_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        bool play_music( std::string filename );$/;"	p	language:C++	class:Sound
+pop-to-buffer	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defadvice pop-to-buffer (before sr-speedbar-pop-to-buffer-advice activate)$/;"	f	language:Lisp
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^public class PopupMenu extends JFrame {$/;"	c	language:Java
 PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
@@ -1065,8 +1157,6 @@ PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbar
 PopupMenu.PopupMenu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    public PopupMenu(String title) {$/;"	m	language:Java	class:PopupMenu
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/popup.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
 PopupMenu.toolkit	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/PopupMenu.java	/^    private Toolkit toolkit;$/;"	f	language:Java	class:PopupMenu	file:
-printWord	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void printWord() {$/;"	f	language:C++
-printWord	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void printWord();$/;"	p	language:C++	file:
 Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
 Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
 r	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int r;$/;"	m	language:C++	struct:Circle	file:
@@ -1078,6 +1168,13 @@ remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cp
 remove_	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
 remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^        bool remove_(node *elem);$/;"	p	language:C++	class:LinkedList	file:
 remove_	/Users/james/Developer/C-Plus-Plus/Implementations/MaintainLinkedListTailPointer.cpp	/^LinkedList::remove_(node *elem) {$/;"	f	language:C++	class:LinkedList
+rename-current-buffer-file	/Users/james/.init.el	/^(defun rename-current-buffer-file ()$/;"	f	language:Lisp
+Rewind	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Rewind() {$/;"	f	language:C++
+Rewind	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Rewind();$/;"	p	language:C++	file:
+Rewind	/Users/james/play.cpp	/^void Rewind() {$/;"	f	language:C++
+Rewind	/Users/james/play.cpp	/^void Rewind();$/;"	p	language:C++	file:
+rewindDeque	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^std::deque<word> rewindDeque; \/\/ rewind inserts to play, reading backwards$/;"	v	language:C++
+rewindDeque	/Users/james/play.cpp	/^std::deque<word> rewindDeque; \/\/ rewind inserts to play, reading backwards$/;"	v	language:C++
 right	/Users/james/Developer/EBSideScroller/mouse_events/key_states.cpp	/^SDL_Surface *right = NULL;$/;"	v	language:C++
 right	/Users/james/Developer/EBSideScroller/mouse_events/lesson10.cpp	/^SDL_Surface *right = NULL;$/;"	v	language:C++
 rigid_area_example	/Users/james/Developer/Java/Swing_Examples/layout_management/rigid_area_example.java	/^    public rigid_area_example() {$/;"	m	language:Java	class:rigid_area_example
@@ -1202,12 +1299,21 @@ seconds	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Su
 seconds	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *seconds = NULL;$/;"	v	language:C++
 seconds	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *seconds = NULL;$/;"	v	language:C++
 seconds	/Users/james/Developer/EBSideScroller/timing/timing.cpp	/^SDL_Surface *seconds = NULL;$/;"	v	language:C++
+SeekTo	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void SeekTo(int byteoffset) {$/;"	f	language:C++
+SeekTo	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void SeekTo(int byteoffset);$/;"	p	language:C++	file:
+SeekTo	/Users/james/play.cpp	/^void SeekTo(int byteoffset) {$/;"	f	language:C++
+SeekTo	/Users/james/play.cpp	/^void SeekTo(int byteoffset);$/;"	p	language:C++	file:
+SetRate	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void SetRate(float rate) {$/;"	f	language:C++
+SetRate	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void SetRate(float rate);$/;"	p	language:C++	file:
+SetRate	/Users/james/play.cpp	/^void SetRate(float rate) {$/;"	f	language:C++
+SetRate	/Users/james/play.cpp	/^void SetRate(float rate);$/;"	p	language:C++	file:
 set_clips	/Users/james/Developer/EBSideScroller/mouse_events/mouse_events.cpp	/^void set_clips()$/;"	f	language:C++
 set_clips	/Users/james/Downloads/lesson09/lesson09.cpp	/^void set_clips()$/;"	f	language:C++
 shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
 shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^void Dot::shift_boxes()$/;"	f	language:C++	class:Dot
 shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    void shift_boxes();$/;"	p	language:C++	class:Dot	file:
 shift_boxes	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Dot::shift_boxes() {$/;"	f	language:C++	class:Dot
+shorten-directory	/Users/james/.init.el	/^(defun shorten-directory (dir max-length)$/;"	f	language:Lisp
 show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    void show();$/;"	p	language:C++	class:Dot	file:
 show	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^void Dot::show()$/;"	f	language:C++	class:Dot
 show	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        void show();$/;"	p	language:C++	class:Square	file:
@@ -1231,6 +1337,8 @@ simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple
 simple_menu.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public final void initUI() {$/;"	m	language:Java	class:simple_menu
 simple_menu.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:simple_menu
 simple_menu.simple_menu	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/simple_menu.java	/^    public simple_menu() {$/;"	m	language:Java	class:simple_menu
+skillID	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private int skillID;$/;"	f	language:Java	class:Surgeon	file:
+skills	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Skills skills;$/;"	f	language:Java	class:Assistant
 SMOKED_CIGS	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^int SMOKED_CIGS = 0; $/;"	v	language:C++
 Sound	/Users/james/Developer/EBSideScroller/Project/Sound/Sound.h	/^class Sound{$/;"	c	language:C++
 Sound	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^Sound::Sound() {$/;"	f	language:C++	class:Sound
@@ -1284,6 +1392,45 @@ SQUARE_HEIGHT	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^co
 SQUARE_HEIGHT	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SQUARE_HEIGHT = 20;$/;"	v	language:C++
 SQUARE_WIDTH	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^const int SQUARE_WIDTH = 20;$/;"	v	language:C++
 SQUARE_WIDTH	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^const int SQUARE_WIDTH = 20;$/;"	v	language:C++
+sr-speedbar	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defgroup sr-speedbar nil$/;"	f	language:Lisp
+sr-speedbar-auto-refresh	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-auto-refresh t$/;"	f	language:Lisp
+sr-speedbar-before-visiting-file-hook	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-before-visiting-file-hook ()$/;"	f	language:Lisp
+sr-speedbar-before-visiting-tag-hook	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-before-visiting-tag-hook ()$/;"	f	language:Lisp
+sr-speedbar-buffer-exist-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-buffer-exist-p (buffer)$/;"	f	language:Lisp
+sr-speedbar-buffer-name	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defconst sr-speedbar-buffer-name "*SPEEDBAR*"$/;"	f	language:Lisp
+sr-speedbar-close	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-close ()$/;"	f	language:Lisp
+sr-speedbar-current-window-take-width	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-current-window-take-width (&optional window)$/;"	f	language:Lisp
+sr-speedbar-delete-windows	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-delete-windows nil$/;"	f	language:Lisp
+sr-speedbar-exist-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-exist-p ()$/;"	f	language:Lisp
+sr-speedbar-get-window	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-get-window ()$/;"	f	language:Lisp
+sr-speedbar-handle-auto-refresh	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-handle-auto-refresh (activate &optional echo-show)$/;"	f	language:Lisp
+sr-speedbar-handle-other-window-advice	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-handle-other-window-advice (activate)$/;"	f	language:Lisp
+sr-speedbar-kill-buffer-hook	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-kill-buffer-hook ()$/;"	f	language:Lisp
+sr-speedbar-last-refresh-dictionary	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defvar sr-speedbar-last-refresh-dictionary nil$/;"	f	language:Lisp
+sr-speedbar-max-width	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-max-width 50$/;"	f	language:Lisp
+sr-speedbar-open	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-open ()$/;"	f	language:Lisp
+sr-speedbar-recalculate-width	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-recalculate-width ()$/;"	f	language:Lisp
+sr-speedbar-refresh	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-refresh ()$/;"	f	language:Lisp
+sr-speedbar-refresh-toggle	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-refresh-toggle ()$/;"	f	language:Lisp
+sr-speedbar-refresh-turn-off	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-refresh-turn-off ()$/;"	f	language:Lisp
+sr-speedbar-refresh-turn-on	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-refresh-turn-on ()$/;"	f	language:Lisp
+sr-speedbar-remember-window-width	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-remember-window-width ()$/;"	f	language:Lisp
+sr-speedbar-right-side	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-right-side t$/;"	f	language:Lisp
+sr-speedbar-select-window	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-select-window ()$/;"	f	language:Lisp
+sr-speedbar-skip-other-window-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-skip-other-window-p nil$/;"	f	language:Lisp
+sr-speedbar-toggle	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-toggle ()$/;"	f	language:Lisp
+sr-speedbar-version	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defconst sr-speedbar-version "0.1.4"$/;"	f	language:Lisp
+sr-speedbar-visiting-file-hook	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-visiting-file-hook ()$/;"	f	language:Lisp
+sr-speedbar-visiting-tag-hook	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-visiting-tag-hook ()$/;"	f	language:Lisp
+sr-speedbar-width	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defvar sr-speedbar-width nil$/;"	f	language:Lisp
+sr-speedbar-width-console	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-width-console 24$/;"	f	language:Lisp
+sr-speedbar-width-x	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defcustom sr-speedbar-width-x 24$/;"	f	language:Lisp
+sr-speedbar-window	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defvar sr-speedbar-window nil$/;"	f	language:Lisp
+sr-speedbar-window-dedicated-only-one-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-window-dedicated-only-one-p ()$/;"	f	language:Lisp
+sr-speedbar-window-exist-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-window-exist-p (window)$/;"	f	language:Lisp
+sr-speedbar-window-p	/Users/james/.emacs.d/elpa/sr-speedbar-0.1.8/sr-speedbar.el	/^(defun sr-speedbar-window-p ()$/;"	f	language:Lisp
+Start	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Start() {$/;"	f	language:C++
+Start	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Start();$/;"	p	language:C++	file:
 start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::start() {$/;"	f	language:C++	class:Timer
 start	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
@@ -1306,6 +1453,8 @@ start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collis
 start	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
 start	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void start();$/;"	p	language:C++	class:Timer	file:
 start	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::start()$/;"	f	language:C++	class:Timer
+Start	/Users/james/play.cpp	/^void Start() {$/;"	f	language:C++
+Start	/Users/james/play.cpp	/^void Start();$/;"	p	language:C++	file:
 started	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
@@ -1318,6 +1467,10 @@ started	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/
 started	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 started	/Users/james/Downloads/lesson15/lesson15.cpp	/^    bool started;$/;"	m	language:C++	class:Timer	file:
 startScreen	/Users/james/Developer/EBSideScroller/Project/Driver/main.cpp	/^SDL_Surface *startScreen = NULL;$/;"	v	language:C++
+startSometimes	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * startSometimes(void *data) {$/;"	f	language:C++
+startSometimes	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * startSometimes(void *data);$/;"	p	language:C++	file:
+startSometimes	/Users/james/play.cpp	/^void * startSometimes(void *data) {$/;"	f	language:C++
+startSometimes	/Users/james/play.cpp	/^void * startSometimes(void *data);$/;"	p	language:C++	file:
 startStop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
 startStop	/Users/james/Developer/EBSideScroller/timing/lesson12.cpp	/^SDL_Surface *startStop = NULL;$/;"	v	language:C++
@@ -1334,6 +1487,8 @@ startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cp
 startTicks	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 startTicks	/Users/james/Downloads/lesson15/lesson15.cpp	/^    int startTicks;$/;"	m	language:C++	class:Timer	file:
 statusbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/checkbox.java	/^    private JLabel statusbar;$/;"	f	language:Java	class:checkbox	file:
+Stop	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Stop() {$/;"	f	language:C++
+Stop	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void Stop();$/;"	p	language:C++	file:
 stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Developer/EBSideScroller/adv_timing/adv_timing.cpp	/^void Timer::stop() {$/;"	f	language:C++	class:Timer
 stop	/Users/james/Developer/EBSideScroller/adv_timing/lesson13.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
@@ -1356,6 +1511,12 @@ stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collisi
 stop	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^    void stop();$/;"	p	language:C++	class:Timer	file:
 stop	/Users/james/Downloads/lesson15/lesson15.cpp	/^void Timer::stop()$/;"	f	language:C++	class:Timer
+Stop	/Users/james/play.cpp	/^void Stop() {$/;"	f	language:C++
+Stop	/Users/james/play.cpp	/^void Stop();$/;"	p	language:C++	file:
+stopSometimes	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * stopSometimes(void *data) {$/;"	f	language:C++
+stopSometimes	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void * stopSometimes(void *data);$/;"	p	language:C++	file:
+stopSometimes	/Users/james/play.cpp	/^void * stopSometimes(void *data) {$/;"	f	language:C++
+stopSometimes	/Users/james/play.cpp	/^void * stopSometimes(void *data);$/;"	p	language:C++	file:
 stop_music	/Users/james/Developer/EBSideScroller/Project/SoundManager/SoundManager.cpp	/^void SoundManager::stop_music() {$/;"	f	language:C++	class:SoundManager
 stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.cpp	/^void Sound::stop_music() {$/;"	f	language:C++	class:Sound
 stop_music	/Users/james/Developer/EBSideScroller/Project/Sounds/Sound.h	/^        void stop_music();$/;"	p	language:C++	class:Sound
@@ -1364,6 +1525,22 @@ submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.
 submenus.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public final void initUI() {$/;"	m	language:Java	class:submenus
 submenus.main	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public static void main (String[] args) {$/;"	m	language:Java	class:submenus
 submenus.submenus	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/submenus.java	/^    public submenus() {$/;"	m	language:Java	class:submenus
+surgeon	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Surgeon surgeon;$/;"	f	language:Java	class:Assistant
+Surgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Surgeon(int yearsOfExperiance, int departmentID, int skillID) {$/;"	m	language:Java	class:Surgeon
+Surgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^public class Surgeon {$/;"	c	language:Java
+Surgeon.assistant	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector assistant = new Vector();$/;"	f	language:Java	class:Surgeon
+Surgeon.departmentID	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private int departmentID;$/;"	f	language:Java	class:Surgeon	file:
+Surgeon.hiredDate	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private Date hiredDate;$/;"	f	language:Java	class:Surgeon	file:
+Surgeon.nurse	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector nurse = new Vector();$/;"	f	language:Java	class:Surgeon
+Surgeon.office	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Office office;$/;"	f	language:Java	class:Surgeon
+Surgeon.patientSurgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector patientSurgeon = new Vector();$/;"	f	language:Java	class:Surgeon
+Surgeon.personSurgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector personSurgeon = new Vector();$/;"	f	language:Java	class:Surgeon
+Surgeon.skillID	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    private int skillID;$/;"	f	language:Java	class:Surgeon	file:
+Surgeon.Surgeon	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Surgeon(int yearsOfExperiance, int departmentID, int skillID) {$/;"	m	language:Java	class:Surgeon
+Surgeon.surgeonSurgery	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector surgeonSurgery = new Vector();$/;"	f	language:Java	class:Surgeon
+Surgeon.yearsOfExperiance	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public int yearsOfExperiance;$/;"	f	language:Java	class:Surgeon
+surgeonSurgery	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public Vector surgeonSurgery = new Vector();$/;"	f	language:Java	class:Surgeon
+surgeryAssistant	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/OOD/Assistant.java	/^    public Vector surgeryAssistant = new Vector();$/;"	f	language:Java	class:Assistant
 Table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^struct Table {$/;"	s	language:C++	file:
 Table::INGREDIENTS_ON_TABLE	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^    ingredient INGREDIENTS_ON_TABLE [NUM_INGREDIENTS-1]; \/\/ there can only be 2 ingredients on a table at a time$/;"	m	language:C++	struct:Table	file:
 tail	/Users/james/Developer/C-Plus-Plus/Implementations/findMToLastElement.cpp	/^        node * tail;$/;"	m	language:C++	class:LinkedList	file:
@@ -1642,6 +1819,10 @@ Tobacco	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarett
 toggle-window-split	/Users/james/.emacs	/^(defun toggle-window-split ()$/;"	f	language:Lisp
 toggle-window-split	/Users/james/.emacs.d/init.el	/^(defun toggle-window-split ()$/;"	f	language:Lisp
 toggle-window-split	/Users/james/.init.el	/^(defun toggle-window-split ()$/;"	f	language:Lisp
+togglePlayer	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void togglePlayer() {$/;"	f	language:C++
+togglePlayer	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^void togglePlayer();$/;"	p	language:C++	file:
+togglePlayer	/Users/james/play.cpp	/^void togglePlayer() {$/;"	f	language:C++
+togglePlayer	/Users/james/play.cpp	/^void togglePlayer();$/;"	p	language:C++	file:
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public toolbar() {$/;"	m	language:Java	class:toolbar
 toolbar	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^public class toolbar extends JFrame {$/;"	c	language:Java
 toolbar.initUI	/Users/james/Developer/Java/Swing_Examples/menus_and_toolbars/toolbar.java	/^    public final void initUI() {$/;"	m	language:Java	class:toolbar
@@ -1696,6 +1877,8 @@ wall	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^SDL_Rect wa
 wall	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^SDL_Rect wall;$/;"	v	language:C++
 watch_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * watch_table(void *data) {$/;"	f	language:C++
 watch_table	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp	/^void * watch_table(void *data);$/;"	p	language:C++	file:
+word	/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp	/^typedef std::string word;$/;"	t	language:C++	file:
+word	/Users/james/play.cpp	/^typedef std::string word;$/;"	t	language:C++	file:
 x	/Users/james/.vimrc	/^nnoremap x "_x$/;"	m	language:Vim
 x	/Users/james/.vimrc	/^vnoremap x "_x$/;"	m	language:Vim
 x	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int x, y;$/;"	m	language:C++	struct:Circle	file:
@@ -1714,6 +1897,7 @@ y	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int 
 y	/Users/james/Developer/EBSideScroller/motion/motion.cpp	/^        int x, y;$/;"	m	language:C++	class:Dot	file:
 y	/Users/james/Developer/EBSideScroller/per_pixel_collision/lesson18.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
 y	/Users/james/Developer/EBSideScroller/per_pixel_collision/per_pixel_collision.cpp	/^    int x, y;$/;"	m	language:C++	class:Dot	file:
+yearsOfExperiance	/Users/james/Dropbox/Computer Science/SE Project/Week 6/src/OOD/Surgeon.java	/^    public int yearsOfExperiance;$/;"	f	language:Java	class:Surgeon
 yVel	/Users/james/Developer/EBSideScroller/circle_collision/lesson19.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Dot	file:
 yVel	/Users/james/Developer/EBSideScroller/collision/collision.cpp	/^        int xVel, yVel;$/;"	m	language:C++	class:Square	file:
 yVel	/Users/james/Developer/EBSideScroller/collision/lesson17.cpp	/^    int xVel, yVel;$/;"	m	language:C++	class:Square	file:

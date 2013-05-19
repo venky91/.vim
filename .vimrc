@@ -97,11 +97,11 @@ set background=dark
 
 if has('gui_running')
     if strftime("%H") < 4
-        colorscheme molokai
+        colorscheme fruity
     elseif strftime("%H") < 12
         colorscheme solarized
     elseif strftime("%H") < 17
-        colorscheme fruity
+        colorscheme molokai
     elseif strftime("%H") < 21
         colorscheme hybrid
     else
@@ -346,11 +346,13 @@ endif
 " WebDev - - - - {{{
 
 "Indentation
-autocmd FileType eruby,ruby,javascript,html,css,php set autoindent
-autocmd FileType eruby,ruby,javascript,html,css,php set shiftwidth=2
-autocmd FileType eruby,ruby,javascript,html,css,php set tabstop=2
-autocmd FileType eruby,ruby,javascript,html,css,php set sts=2
-autocmd FileType eruby,ruby,javascript,css,php set textwidth=79
+autocmd FileType eruby,ruby,html,css,php set autoindent
+autocmd FileType eruby,ruby,html,css,php set shiftwidth=2
+autocmd FileType eruby,ruby,html,css,php set tabstop=2
+autocmd FileType eruby,ruby,html,css,php set sts=2
+autocmd FileType eruby,ruby,css,php set textwidth=79
+
+
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -413,6 +415,8 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-dispatch'
 Bundle 'FredKSchott/CoVim'
+Bundle 'jakar/vim-json'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Tabular
 nnoremap <Leader>a= :Tabularize /=<CR>
