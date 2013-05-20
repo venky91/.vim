@@ -24,7 +24,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'xolox/vim-easytags'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
-Bundle 'wincent/Command-T'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rails'
@@ -33,8 +32,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'mileszs/ack.vim'
-Bundle 'airblade/vim-rooter'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
@@ -49,7 +46,10 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'mattn/zencoding-vim'
 Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
+Bundle 'airblade/vim-gitgutter'
 
+"Bundle 'wincent/Command-T'
+Bundle 'airblade/vim-rooter'
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-dispatch'
@@ -83,6 +83,7 @@ set tabstop=4		" number of spaces a tab counts for
 set smarttab 		" intelligent tabbing
 set shiftwidth=4    " all for 4
 set sts=4           " about indenting
+set diffopt=iwhite  " ignore white space in diffs
 
 autocmd FileType * setlocal formatoptions-=cro " disable automatic comments
 
@@ -100,7 +101,13 @@ set hidden          " hides buffers instead of removing them
 set nobackup        " don't keep a backup file
 set autoread        " refreshes file constantly
 set noswapfile      " sets no swap file
-set wildignore=*.o,*.obj,*.bak,*.exe,*.m3u,*.avi,*.mp3,*.jpg,*.srt,*.sub,*.idx,*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.smi,*.ssa,*.divx,*.style,*.nzb,*.chf,*.part,*.png,*.pdf,*.chm,*.class
+
+" Ignore these files.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.nzb,*.chf,*.part 
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.style,*.png
+set wildignore+=*.o,*.obj,*.bak,*.m3u,*.avi,*.ssa,*.pdf
+set wildignore+=*.sub,*.mp3,*.jpg,*.srt,*.idx,*.smi,*.chm
+set wildignore+=*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.class
 
 " emulates autoread in the terminal
 augroup checktime
@@ -250,56 +257,58 @@ vnoremap x "xx
 " Disable some of the a.vim mappings.
 augroup DisableMappings
     autocmd!
-    autocmd VimEnter * :iunmap <leader>ihn
-    autocmd VimEnter * :iunmap <leader>is
-    autocmd VimEnter * :iunmap <leader>ih
+    autocmd VimEnter * :iunmap <Leader>ihn
+    autocmd VimEnter * :iunmap <Leader>is
+    autocmd VimEnter * :iunmap <Leader>ih
 augroup END
 
 " Leader
 let mapleader=","
-" change the mapleader from \ to ,
-nnoremap <leader>t :TagbarToggle<CR>
+" change the mapLeader from \ to ,
+nnoremap <Leader>t :TagbarToggle<CR>
 " toggles the tagbar with tt
-nnoremap <leader><space> :noh<cr>
+nnoremap <Leader><space> :noh<cr>
 " map ,space to clear search results
-nnoremap <leader>q <C-w><C-v><C-w>l :e ~/scratch.vim<cr>
+nnoremap <Leader>q <C-w><C-v><C-w>l :e ~/scratch.vim<cr>
 " opens a pad to do macro testing
-nnoremap <leader>Q :so ~/scratch.vim<cr>
+nnoremap <Leader>Q :so ~/scratch.vim<cr>
 " source the macro file
-"nnoremap <leader>v <C-w><C-v><C-w>l:e $MYVIMRC<cr>
-nnoremap <leader>v :e ~/.vimrc<cr>
+"nnoremap <Leader>v <C-w><C-v><C-w>l:e $MYVIMRC<cr>
+nnoremap <Leader>v :e ~/.vimrc<cr>
 " open vimrc in another split
-nnoremap <leader>V :silent! so $MYVIMRC<CR>
+nnoremap <Leader>V :silent! so $MYVIMRC<CR>
 " source vimrc
-nnoremap <leader>hp :!pasty %<cr>
+nnoremap <Leader>hp :!pasty %<cr>
 " cats the current file into hastebin
-nnoremap <leader>dp :!cp % ~/Dropbox/Public/
+nnoremap <Leader>dp :!cp % ~/Dropbox/Public/
 " copies current file into dropbox
-nnoremap <leader>wv :vsplit<cr>
-nnoremap <leader>wh :split<cr>
+nnoremap <Leader>wv :vsplit<cr>
+nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
-nnoremap <leader>j :Java<cr>
+nnoremap <Leader>j :Java<cr>
 " eclim mappings
-nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-nnoremap <leader>k :BD<CR>
+nnoremap <Leader>k :BD<CR>
 " Delete Buffer
-nnoremap <leader>] <C-]>
-nnoremap<leader>[ :pop<cr>
+nnoremap <Leader>] <C-]>
+nnoremap<Leader>[ :pop<cr>
 " Indent the whole file and return to original position
-nnoremap <leader>= mzgg=G`z
+nnoremap <Leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
-nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Neat Select and Replace Short Cuts.
-nnoremap <leader>s *N
-xnoremap <leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '\\n', "g") <bar>echo ' '<cr>
-nnoremap <leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
-xnoremap <leader>r :s/<c-r>=@/<cr>/
-nnoremap <leader>o *Ncgn
+nnoremap <Leader>s *N
+xnoremap <Leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '\\n', "g") <bar>echo ' '<cr>
+nnoremap <Leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
+xnoremap <Leader>r :s/<c-r>=@/<cr>/
+nnoremap <Leader>o *Ncgn
 " Delete into one register and paste from another.
-vnoremap <leader>v "_dP
+vnoremap <Leader>v "_dP
 " Navigate by indentation.
-nnoremap <leader>x :call search('^'.matchstr(getline('.'),'^\s*').'\S','We')<CR>
+nnoremap <Leader>x :call search('^'.matchstr(getline('.'),'^\s*').'\S','We')<CR>
+" In :Functions:, toggles diffmode of buffer.
+nnoremap <silent><Leader>df :call DiffToggle()<CR>
 
 " - - - - }}}
 
@@ -336,16 +345,20 @@ autocmd BufReadPost *
 
 " BUILD & COMPILE - - - - {{{
 
+" Use make in the same directory.
+" cabbrev make call UseMakeSameDirForC()<CR>
+autocmd FileType c,cpp cabbrev make call UseMakeSameDirForC()<CR><CR>
+
 " Default Make
-nnoremap <leader>mc :make <bar> :cw<cr>
+nnoremap <Leader>mc :make <bar> :cw<cr>
 " Compile the current file and open a quickfix on errors.
-nnoremap <leader>mk :make %< <bar> :cw<cr>
+nnoremap <Leader>mk :make %< <bar> :cw<cr>
 " Regular compile with no quickfix.
-nnoremap <leader>mm :make %< <cr>
+nnoremap <Leader>mm :make %< <cr>
 " Compile SDL programs.
-nnoremap <leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
+nnoremap <Leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
 " Compile > Run > Back to Code, for SDL programs.
-nnoremap <leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
+nnoremap <Leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
 
 " C/C++
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
@@ -374,9 +387,9 @@ elseif has ("win32")
     autocmd FileType python map <C-p> :!C:\Python27/python %
 elseif has('unix')
     " python
-    autocmd FileType python nnoremap <leader>p2 :!/usr/bin/env python2 %
+    autocmd FileType python nnoremap <Leader>p2 :!/usr/bin/env python2 %
     " runs python 2 files *ctrl-p*
-    autocmd FileType python nnoremap <leader>p3 :!/usr/bin/env python3 %<cr>
+    autocmd FileType python nnoremap <Leader>p3 :!/usr/bin/env python3 %<cr>
 endif
 
 " - - - - }}}
@@ -403,18 +416,23 @@ endif
 
 " PLUGIN - - - - {{{
 
+" Ack
+" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
 " Tabular
 nnoremap <Leader>a= :Tabularize /=<CR>
 vnoremap <Leader>a= :Tabularize /=<CR>
 nnoremap <Leader>a: :Tabularize /:\zs<CR>
 vnoremap <Leader>a: :Tabularize /:\zs<CR>
+nnoremap <Leader>a" :Tabularize /"<CR>
+vnoremap <Leader>a" :Tabularize /"<CR>
 
 " Jedi
-let g:jedi#goto_command = "<leader>pg"
-let g:jedi#get_definition_command = "<leader>pd"
-let g:jedi#rename_command = "<leader>pr"
-let g:jedi#related_names_command = "<leader>pn"
-let g:jedi#pydoc = "<leader>pk"
+let g:jedi#goto_command = "<Leader>pg"
+let g:jedi#get_definition_command = "<Leader>pd"
+let g:jedi#rename_command = "<Leader>pr"
+let g:jedi#related_names_command = "<Leader>pn"
+let g:jedi#pydoc = "<Leader>pk"
 let g:jedi#show_function_definition = "1"
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_select_first = 0
@@ -439,22 +457,41 @@ let g:tagbar_sort=0
 " let g:sparkupNextMapping='<c-u>'
 
 " Zencoding
-let g:user_zen_leader_key = '<c-y>'
+let g:user_zen_Leader_key = '<c-y>'
 
 " CommandT
-nnoremap <C-t> :CommandT<cr>
-nnoremap <C-b> :CommandTBuffer<cr>
-nnoremap<leader>ctf :CommandTFlush<cr>
-let g:CommandTMaxFiles=10000
-let g:CommandTMaxDepth=5
-let g:CommandTScanDotDirectories=1
-let g:CommandTMaxHeight=20
-let g:CommandTMaxCachedDirectories=2
-let g:CommandTCancelMap=['<C-x>', '<C-c>']
+" nnoremap <C-t> :CommandT<cr>
+" nnoremap <C-b> :CommandTBuffer<cr>
+" nnoremap<Leader>ctf :CommandTFlush<cr>
+" let g:CommandTMaxFiles=10000
+" let g:CommandTMaxDepth=5
+" let g:CommandTScanDotDirectories=1
+" let g:CommandTMaxHeight=20
+" let g:CommandTMaxCachedDirectories=2
+" let g:CommandTCancelMap=['<C-x>', '<C-c>']
+
+" Vim Rooter
+let g:rooter_use_lcd = 1
+
+" CtrlP
+nnoremap <C-5> :CtrlPCurWD<Cr>
+nnoremap <C-t> :CtrlP<cr>
+nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap <C-g> :CtrlPMRU<cr>
+let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+let g:ctrlp_max_depth = 10 " How many levels to search through.
+let g:ctrlp_mruf_max = 30 " How many files to remember.
+let g:ctrlp_by_filename=1 " Emphasize filnames in search.
+let g:ctrlp_use_caching=1 " Cache searches.
+let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
+let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
+let g:ctrlp_max_files = 10000
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " Lusty Explorer
-nnoremap <leader>f :LustyFilesystemExplorer<cr>
-nnoremap <leader>b :LustyBufferExplorer<cr>
+nnoremap <Leader>f :LustyFilesystemExplorer<cr>
+nnoremap <Leader>b :LustyBufferExplorer<cr>
 
 " NerdTree
 " Close Vim if only NerdTree is left
@@ -477,16 +514,16 @@ let g:easytags_python_enabled = 1
 let g:easytags_file = '~/.vim/tags/easytags'
 
 " Syntastic
-let g:syntastic_check_on_open        = 0 " run syntastic on open and save
+let g:syntastic_check_on_open        = 1 " run syntastic on open and save
 let g:syntastic_enable_balloons      = 1 " display errors in tool tips
 let g:syntastic_enable_highlighting  = 1 " mark errors with syntax highlighting
 let g:syntastic_auto_jump            = 0 " jump to the first error on save
 let g:syntastic_auto_loc_list        = 1 " open and close automatically
 let g:syntastic_enable_signs         = 1 " errors to the left
-let g:syntastic_error_symbol         = 'xe' " syntax errors, defaults to '>>'
-let g:syntastic_style_error_symbol   = 'se' "style errors, defaults to 'S>'
-let g:syntastic_warning_symbol       = 'xw'  " syntax warnings, defaults to '>>'
-let g:syntastic_style_warning_symbol = 'sw' " style warnings, defaults to 'S>'
+let g:syntastic_error_symbol = '✗✗'
+let g:syntastic_style_error_symbol = '✠✠'
+let g:syntastic_warning_symbol = '∆∆'
+let g:syntastic_style_warning_symbol = '≈≈'
 let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " YouCompleteMe
@@ -537,8 +574,13 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType vim set omnifunc=syntaxcomplete#Complete
+
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "" Neocomplcache
 "" Launches neocomplcache automatically on vim startup.
@@ -623,4 +665,26 @@ set tags+=~/.vim/tags/easytags
 
 " - - - - }}}
 
+" FUNCTIONS - - - - {{{
 
+function! DiffToggle()
+    if &diff
+        echom "diffoff"
+        diffoff
+    else
+        echom "diffon"
+        diffthis
+    endif
+endfunction
+
+" CD to current file's directory, execute make there and then cd back to Root.
+function! UseMakeSameDirForC()
+    redir => rootPath
+        pwd
+    redir end
+    lcd %:p:h
+    make
+    cd `=rootPath`
+endfunction
+
+" - - - - }}}
