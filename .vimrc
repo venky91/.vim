@@ -519,11 +519,11 @@ let g:syntastic_enable_highlighting  = 1 " mark errors with syntax highlighting
 let g:syntastic_auto_jump            = 0 " jump to the first error on save
 let g:syntastic_auto_loc_list        = 1 " open and close automatically
 let g:syntastic_enable_signs         = 1 " errors to the left
-let g:syntastic_error_symbol = '✗✗'
-let g:syntastic_style_error_symbol = '✠✠'
-let g:syntastic_warning_symbol = '∆∆'
-let g:syntastic_style_warning_symbol = '≈≈'
-"let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
+let g:syntastic_error_symbol         = "✗"
+let g:syntastic_warning_symbol       = "⚠"
+let g:syntastic_style_error_symbol   = "s✗"
+let g:syntastic_style_warning_symbol = "s⚠"
+let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " YouCompleteMe
 autocmd VimEnter * if &ft == 'c' | let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" | else | let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py" | endif

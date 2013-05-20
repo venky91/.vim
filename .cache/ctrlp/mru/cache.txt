@@ -1,8 +1,10 @@
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
+/Users/james/play.cpp
+/Users/james/.vimrc
+/Users/james/.zshrc
 /Users/james/crazy.py
 /Users/james/Developer/untitled.txt
 /Users/james/Developer/untitled
-/Users/james/.vimrc
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os_back.cpp
 /Users/james/Developer/C-Plus-Plus/Op-Systems/test.c
 /Users/james/Developer/C-Plus-Plus/Op-Systems/thread-pool-server.c
@@ -26,5 +28,3 @@
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/test.cpp
 /Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/test.cpp
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/various.txt
-/Users/james/Developer/C-Plus-Plus/MiniPrograms/Permutations.cpp
-/Users/james/Developer/C-Plus-Plus/fibon.cpp
