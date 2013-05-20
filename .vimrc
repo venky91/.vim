@@ -218,9 +218,9 @@ map <F3> zR
 " Opens all Folds.
 map <F4> zM
 " Closes all Folds.
-map <F7> :sign unplace *<CR>
-" Remove signs on the left side.
 nnoremap <F8> :GundoToggle<CR>
+map <F9> :sign unplace *<CR>
+" Remove signs on the left side.
 nnoremap Y y$
 " y$ yanks to the end of the line.
 nnoremap D d$
@@ -361,6 +361,7 @@ nnoremap <Leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
 nnoremap <Leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
 
 " C/C++
+" These won't run properly if there's a file to be opened since they would be opening files from the directory vim was launched from.
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
 " runs c++ files *ctrl-c*
 autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
@@ -415,9 +416,6 @@ endif
 " - - - - }}}
 
 " PLUGIN - - - - {{{
-
-" Ack
-" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Tabular
 nnoremap <Leader>a= :Tabularize /=<CR>
@@ -481,7 +479,7 @@ nnoremap <C-g> :CtrlPMRU<cr>
 let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
 let g:ctrlp_max_depth = 10 " How many levels to search through.
 let g:ctrlp_mruf_max = 30 " How many files to remember.
-let g:ctrlp_by_filename=1 " Emphasize filnames in search.
+let g:ctrlp_by_filename=0 " Emphasize directories in search.
 let g:ctrlp_use_caching=1 " Cache searches.
 let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
 let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
@@ -507,6 +505,7 @@ let g:NERDTreeAutoDeleteBuffer=1
 
 " Eclim
 let g:EclimMenus = 1
+let g:EclimCompletionMethod = 'omnifunc'
 
 " Easytags
 let g:easytags_include_members = 1
@@ -524,7 +523,7 @@ let g:syntastic_error_symbol = '✗✗'
 let g:syntastic_style_error_symbol = '✠✠'
 let g:syntastic_warning_symbol = '∆∆'
 let g:syntastic_style_warning_symbol = '≈≈'
-let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
+"let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " YouCompleteMe
 autocmd VimEnter * if &ft == 'c' | let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" | else | let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py" | endif
@@ -552,7 +551,8 @@ au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:U
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
+let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
 
 " - - - - }}}

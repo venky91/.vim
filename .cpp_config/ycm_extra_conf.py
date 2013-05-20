@@ -46,7 +46,10 @@ flags = [
 '-isystem',
 '/usr/lib/c++/v1',
 '-isystem',
-'/usr/include'
+'/usr/include',
+'-isystem',
+'/usr/local/include'
+
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

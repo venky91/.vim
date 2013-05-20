@@ -1,12 +1,30 @@
+/Users/james/crazy.py
+/Users/james/Developer/untitled.txt
+/Users/james/Developer/untitled
 /Users/james/.vimrc
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os_back.cpp
+/Users/james/Developer/C-Plus-Plus/Op-Systems/test.c
+/Users/james/Developer/C-Plus-Plus/Op-Systems/thread-pool-server.c
+/Users/james/Developer/C-Plus-Plus/Op-Systems/basic_pthread.c
+/Users/james/.emacs.d/elpa/evil-1.0.1/evil-common.el
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.dSYM/Contents/Info.plist
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/text.txt
+/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/autocmd.txt
+/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/options.txt
+/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/editing.txt
+/Users/james/.vim/.cpp_config/ycm_extra_conf.py
+/Users/james/log
+/Users/james/a.cpp
+/Users/james/.vim/mysnippets/java.snippets
+/Users/james/.vim/bundle/vim-snippets/UltiSnips/cpp.snippets
+/Users/james/Library/Application Support/Sparrow/ja.nguyen@gmail.com.sparrowdb/Cache/INBOX/14355/4/HospitalInit.java
+/Users/james/commands.txt
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/map.txt
 /Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp
 /Users/james/test.py
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/test.cpp
 /Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/test.cpp
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/various.txt
-/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/editing.txt
 /Users/james/Developer/C-Plus-Plus/MiniPrograms/Permutations.cpp
 /Users/james/Developer/C-Plus-Plus/fibon.cpp
-/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/quickfix.txt

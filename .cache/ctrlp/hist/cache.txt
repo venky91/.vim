@@ -1,2 +1,7 @@
 
+ophw2os.c
+Opos.c
+o
+C-p/O
+operating/
 os.cpp
