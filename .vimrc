@@ -698,11 +698,11 @@ endfunction
 
 function! FindYouCompleteMeConf()
     if &ft == 'c'
-        let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" 
+        let g:ycm_global_ycm_extra_conf = "~/.vim/.c/ycm_extra_conf.py" 
     elseif &ft == 'objcpp' || &ft == 'objc'
-        let g:ycm_global_ycm_extra_conf = "~/.vim/.obj_config/ycm_extra_conf.py"
+        let g:ycm_global_ycm_extra_conf = "~/.vim/.obj/ycm_extra_conf.py"
     else  
-        let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py"
+        let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp/ycm_extra_conf.py"
     endif
 endfunction
 
