@@ -1,11 +1,13 @@
 /Users/james/.vimrc
-/Users/james/a.cpp
+/Users/james/Developer/Java/Cool/src/cool.java
 /Users/james/test.cpp
-/Users/james/t.cpp
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/options.txt
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
+/Users/james/.vim/mysnippets/cpp.snippets
+/Users/james/a.cpp
+/Users/james/t.cpp
 /Users/james/a.c
 /Users/james/.vim/bundle/delimitMate/doc/delimitMate.txt
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/log
 /Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/log
 /Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/HomeViewController.m
@@ -26,5 +28,3 @@
 /Users/james/Developer/Objective-C/Matchismo/test
 /Users/james/Developer/Objective-C/Matchismo/Matchismo/SetGameViewController.m
 /Users/james/Developer/Objective-C/Matchismo/Matchismo/SetGameViewController.h
-/Users/james/Developer/Objective-C/Matchismo/Matchismo/MatchGameViewController.h
-/Users/james/test

@@ -449,11 +449,8 @@ let g:ctrlp_max_files = 10000
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " DelimitMate
-" au FileType mail let b:delimitMate_autoclose = 0
-" au FileType mail let b:delimitMate_expand_cr = 1
-" au FileType tcl let b:delimitMate_expand_space = 1
-let delimitMate_expand_cr = 1
-"let g:delimitMate_expand_cr = 1
+"let delimitMate_expand_cr = 1
+let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 " Easytags
@@ -543,9 +540,7 @@ let g:rooter_use_lcd = 1
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
-"autocmd VimEnter * if &ft == 'c' | let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" | elseif &ft == 'objc' | let g:ycm_global_ycm_extra_conf = "~/.vim/.obj_config/ycm_extra_conf.py"| else | let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py" | endif
-
-let g:EclimCompletionMethod = 'omnifunc'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " YouCompleteMe + Ultisnips
 function! g:UltiSnips_Complete()

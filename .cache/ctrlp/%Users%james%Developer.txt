@@ -1,15 +1,3 @@
-#add.cpp#
-#test.cpp#
-Node.py
-a.cpp
-a.out
-a.py
-log
-puzzle_3.py
-test.cpp
-untitled
-untitled.cpp
-untitled.txt
 Assembly/mips1.asm
 C-Plus-Plus/#ab3.cpp#
 C-Plus-Plus/PsuedoCodeSolver.cpp
@@ -35,10 +23,11 @@ Objective-C/README.md
 Objective-C/rkg_022113.sql
 PHP/test.php
 Python/:q!
+Python/Node.py
 Python/QuickSort.py
 Python/file
 Python/log.txt
-Python/Node.py
+Python/puzzle_3.py
 Python/test.py
 Scheme/isset.scm
 Scheme/issorted.scm
@@ -60,16 +49,6 @@ Scripts/sshfs_script.py
 Scripts/sshfsmusic
 Scripts/umount_sshfsmusic
 Shell/sys1.sh
-sample_app/Gemfile
-sample_app/Gemfile.lock
-sample_app/Guardfile
-sample_app/README.md
-sample_app/Rakefile
-sample_app/config.ru
-sample_app/foo
-sample_app/log.txt
-sample_app/random
-sample_app/tags
 Android/actionbar_sherlock/CHANGELOG.md
 Android/actionbar_sherlock/CONTRIBUTING.md
 Android/actionbar_sherlock/LICENSE.txt
@@ -152,15 +131,15 @@ C-Plus-Plus/NumericConversions/NumericConversion.suo
 C-Plus-Plus/Oblenglobish/Obenglobish.ncb
 C-Plus-Plus/Oblenglobish/Obenglobish.sln
 C-Plus-Plus/Oblenglobish/Obenglobish.suo
-C-Plus-Plus/Operating Systems/basic_pthread.c
-C-Plus-Plus/Operating Systems/employee-with-mutex
-C-Plus-Plus/Operating Systems/employee-with-mutex.c
-C-Plus-Plus/Operating Systems/employee-without-mutex
-C-Plus-Plus/Operating Systems/employee-without-mutex.c
-C-Plus-Plus/Operating Systems/test
-C-Plus-Plus/Operating Systems/test.c
-C-Plus-Plus/Operating Systems/test.cpp
-C-Plus-Plus/Operating Systems/thread-pool-server.c
+C-Plus-Plus/Op-Systems/basic_pthread.c
+C-Plus-Plus/Op-Systems/employee-with-mutex
+C-Plus-Plus/Op-Systems/employee-with-mutex.c
+C-Plus-Plus/Op-Systems/employee-without-mutex
+C-Plus-Plus/Op-Systems/employee-without-mutex.c
+C-Plus-Plus/Op-Systems/test
+C-Plus-Plus/Op-Systems/test.c
+C-Plus-Plus/Op-Systems/test.cpp
+C-Plus-Plus/Op-Systems/thread-pool-server.c
 C-Plus-Plus/ProgrammingAbstractions/Click_index_to_start.txt
 C-Plus-Plus/ProgrammingAbstractions/index.html
 C-Plus-Plus/ProgrammingAbstractions/lecturelist.html
@@ -360,6 +339,7 @@ Java/podcast-catcher/AndroidManifest.xml
 Java/podcast-catcher/README.md
 Java/podcast-catcher/proguard-project.txt
 Java/podcast-catcher/project.properties
+Objective-C/Matchismo/test
 Openhatch/oh-campus-foss/LICENSE.txt
 Openhatch/oh-campus-foss/Makefile
 Openhatch/oh-campus-foss/gpl.txt
@@ -418,6 +398,7 @@ Python/MiniPrograms/test.py
 Python/MiniPrograms/tkinter_helloworld.py
 Python/MiniPrograms/uses_even_more_practice.py
 Python/MiniPrograms/whileLoopskhan.py
+Python/new/abc.py
 Python/Pygame/colors.py
 Python/Pygame/first.py
 Python/Pygame/helloworld.py
@@ -442,7 +423,6 @@ Python/Swift/puzzle3.py
 Python/Swift/puzzle_1.py
 Python/Swift/text
 Python/Swift/text1
-Python/new/abc.py
 Rails/demo_app/Gemfile
 Rails/demo_app/Gemfile.lock
 Rails/demo_app/README.rdoc
@@ -467,29 +447,6 @@ Scripts/bashscripts/prelim
 Scripts/bashscripts/prelim.txt
 Scripts/bashscripts/readingFromFstab
 Scripts/bashscripts/specialcharacters
-sample_app/config/application.rb
-sample_app/config/boot.rb
-sample_app/config/cucumber.yml
-sample_app/config/database.yml
-sample_app/config/environment.rb
-sample_app/config/routes.rb
-sample_app/db/development.sqlite3
-sample_app/db/schema.rb
-sample_app/db/seeds.rb
-sample_app/db/test.sqlite3
-sample_app/doc/README_FOR_APP
-sample_app/features/signing_in.feature
-sample_app/log/development.log
-sample_app/log/test.log
-sample_app/public/404.html
-sample_app/public/422.html
-sample_app/public/500.html
-sample_app/public/favicon.ico
-sample_app/public/robots.txt
-sample_app/script/cucumber
-sample_app/script/rails
-sample_app/spec/factories.rb
-sample_app/spec/spec_helper.rb
 Android/actionbar_sherlock/actionbarsherlock/AndroidManifest.xml
 Android/actionbar_sherlock/actionbarsherlock/README.md
 Android/actionbar_sherlock/actionbarsherlock/pom.xml
@@ -882,22 +839,23 @@ C-Plus-Plus/Oblenglobish/Obenglobish/Obenglobish.vcproj
 C-Plus-Plus/Oblenglobish/Obenglobish/Obenglobish.vcproj.WIN.mgummelt.user
 C-Plus-Plus/Oblenglobish/Obenglobish/Obenglobish.vcproj.jameswindoze.james.user
 C-Plus-Plus/Oblenglobish/src/Obenglobish.cpp
-C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker
-C-Plus-Plus/Operating Systems/homework_1/cigarette-smoker.cpp
-C-Plus-Plus/Operating Systems/homework_1/enums
-C-Plus-Plus/Operating Systems/homework_1/enums.cpp
-C-Plus-Plus/Operating Systems/homework_1/random
-C-Plus-Plus/Operating Systems/homework_1/random.cpp
-C-Plus-Plus/Operating Systems/homework_2/a.out
-C-Plus-Plus/Operating Systems/homework_2/alt.txt
-C-Plus-Plus/Operating Systems/homework_2/extra
-C-Plus-Plus/Operating Systems/homework_2/makefile
-C-Plus-Plus/Operating Systems/homework_2/media-playback.cpp
-C-Plus-Plus/Operating Systems/homework_2/os
-C-Plus-Plus/Operating Systems/homework_2/os.cpp
-C-Plus-Plus/Operating Systems/homework_2/os_back.cpp
-C-Plus-Plus/Operating Systems/homework_2/rece_os.cpp
-C-Plus-Plus/Operating Systems/homework_2/text.txt
+C-Plus-Plus/Op-Systems/homework_1/cigarette-smoker
+C-Plus-Plus/Op-Systems/homework_1/cigarette-smoker.cpp
+C-Plus-Plus/Op-Systems/homework_1/enums
+C-Plus-Plus/Op-Systems/homework_1/enums.cpp
+C-Plus-Plus/Op-Systems/homework_1/random
+C-Plus-Plus/Op-Systems/homework_1/random.cpp
+C-Plus-Plus/Op-Systems/homework_2/alt.txt
+C-Plus-Plus/Op-Systems/homework_2/extra
+C-Plus-Plus/Op-Systems/homework_2/makefile
+C-Plus-Plus/Op-Systems/homework_2/media-playback.cpp
+C-Plus-Plus/Op-Systems/homework_2/os
+C-Plus-Plus/Op-Systems/homework_2/os.cpp
+C-Plus-Plus/Op-Systems/homework_2/os_back
+C-Plus-Plus/Op-Systems/homework_2/os_back.cpp
+C-Plus-Plus/Op-Systems/homework_2/rece_os.cpp
+C-Plus-Plus/Op-Systems/homework_2/test
+C-Plus-Plus/Op-Systems/homework_2/text.txt
 C-Plus-Plus/ProgrammingAbstractions/css/OpenCourse.css
 C-Plus-Plus/ProgrammingAbstractions/css/base.css
 C-Plus-Plus/ProgrammingAbstractions/images/14.gif
@@ -947,6 +905,7 @@ Java/ContactEditor/nbproject/build-impl.xml
 Java/ContactEditor/nbproject/genfiles.properties
 Java/ContactEditor/nbproject/project.properties
 Java/ContactEditor/nbproject/project.xml
+Java/Cool/src/cool.java
 Java/Derby/bin/NetworkServerControl
 Java/Derby/bin/NetworkServerControl.bat
 Java/Derby/bin/dblook
@@ -1235,6 +1194,7 @@ Point-of-Sales/Point IPad/Point IPad/HomeAppDelegate.m
 Point-of-Sales/Point IPad/Point IPad/HomeViewController.m
 Point-of-Sales/Point IPad/Point IPad/Point IPad-Info.plist
 Point-of-Sales/Point IPad/Point IPad/Point IPad-Prefix.pch
+Point-of-Sales/Point IPad/Point IPad/Time.d
 Point-of-Sales/Point IPad/Point IPad/main.m
 Point-of-Sales/Point IPad/Point IPad/HomeAppDelegate.h
 Point-of-Sales/Point IPad/Point IPad/HomeViewController.h
@@ -1392,45 +1352,6 @@ Rails/sample_app/script/cucumber
 Rails/sample_app/script/rails
 Rails/sample_app/spec/factories.rb
 Rails/sample_app/spec/spec_helper.rb
-sample_app/app/controllers/application_controller.rb
-sample_app/app/controllers/microposts_controller.rb
-sample_app/app/controllers/sessions_controller.rb
-sample_app/app/controllers/static_pages_controller.rb
-sample_app/app/controllers/users_controller.rb
-sample_app/app/helpers/application_helper.rb
-sample_app/app/helpers/sessions_helper.rb
-sample_app/app/helpers/static_pages_helper.rb
-sample_app/app/helpers/users_helper.rb
-sample_app/app/models/micropost.rb
-sample_app/app/models/user.rb
-sample_app/config/environments/development.rb
-sample_app/config/environments/production.rb
-sample_app/config/environments/test.rb
-sample_app/config/initializers/backtrace_silencers.rb
-sample_app/config/initializers/inflections.rb
-sample_app/config/initializers/mime_types.rb
-sample_app/config/initializers/secret_token.rb
-sample_app/config/initializers/session_store.rb
-sample_app/config/initializers/wrap_parameters.rb
-sample_app/config/locales/en.yml
-sample_app/db/migrate/20130331200457_create_users.rb
-sample_app/db/migrate/20130401025504_add_index_to_users_email.rb
-sample_app/db/migrate/20130401034948_add_password_digest_to_users.rb
-sample_app/db/migrate/20130405024845_add_remember_token_to_users.rb
-sample_app/db/migrate/20130413052303_add_admin_to_users.rb
-sample_app/db/migrate/20130419204923_create_microposts.rb
-sample_app/features/step_definitions/authentication_steps.rb
-sample_app/features/support/env.rb
-sample_app/lib/tasks/cucumber.rake
-sample_app/lib/tasks/sample_data.rake
-sample_app/spec/helpers/application_helper_spec.rb
-sample_app/spec/models/micropost_spec.rb
-sample_app/spec/models/user_spec.rb
-sample_app/spec/requests/authentication_pages_spec.rb
-sample_app/spec/requests/micropost_pages_spec.rb
-sample_app/spec/requests/static_pages_spec.rb
-sample_app/spec/requests/user_pages_spec.rb
-sample_app/spec/support/utilities.rb
 Android/actionbar_sherlock/actionbarsherlock/bin/actionbarsherlock.jar
 Android/actionbar_sherlock/actionbarsherlock/bin/AndroidManifest.xml
 Android/actionbar_sherlock/actionbarsherlock/bin/R.txt
@@ -2512,36 +2433,6 @@ Rails/sample_app/spec/requests/micropost_pages_spec.rb
 Rails/sample_app/spec/requests/static_pages_spec.rb
 Rails/sample_app/spec/requests/user_pages_spec.rb
 Rails/sample_app/spec/support/utilities.rb
-sample_app/app/assets/javascripts/application.js
-sample_app/app/assets/javascripts/sessions.js.coffee
-sample_app/app/assets/javascripts/static_pages.js.coffee
-sample_app/app/assets/javascripts/users.js.coffee
-sample_app/app/assets/stylesheets/application.css
-sample_app/app/assets/stylesheets/custom.css.scss
-sample_app/app/assets/stylesheets/sessions.css.scss
-sample_app/app/assets/stylesheets/static_pages.css.scss
-sample_app/app/assets/stylesheets/users.css.scss
-sample_app/app/views/layouts/_footer.html.erb
-sample_app/app/views/layouts/_header.html.erb
-sample_app/app/views/layouts/_shim.html.erb
-sample_app/app/views/layouts/application.html.erb
-sample_app/app/views/microposts/_micropost.html.erb
-sample_app/app/views/sessions/new.html.erb
-sample_app/app/views/shared/_error_messages.html.erb
-sample_app/app/views/shared/_feed.html.erb
-sample_app/app/views/shared/_feed_item.html.erb
-sample_app/app/views/shared/_micropost_form.html.erb
-sample_app/app/views/shared/_user_info.html.erb
-sample_app/app/views/static_pages/about.html.erb
-sample_app/app/views/static_pages/contact.html.erb
-sample_app/app/views/static_pages/help.html.erb
-sample_app/app/views/static_pages/home.html.erb
-sample_app/app/views/users/_fields.html.erb
-sample_app/app/views/users/_user.html.erb
-sample_app/app/views/users/edit.html.erb
-sample_app/app/views/users/index.html.erb
-sample_app/app/views/users/new.html.erb
-sample_app/app/views/users/show.html.erb
 Android/actionbar_sherlock/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_dark.xml
 Android/actionbar_sherlock/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_light.xml
 Android/actionbar_sherlock/actionbarsherlock/res/color/abs__primary_text_holo_dark.xml
@@ -3098,7 +2989,7 @@ C-Plus-Plus/Assignment3-xcode/4-StockCutting/StanfordCPPLib/private/randompatch.
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StanfordCPPLib/private/tokenpatch.h
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StanfordCPPLib/private/tplatform.h
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StockCutting.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-C-Plus-Plus/Operating Systems/homework_2/os.dSYM/Contents/Info.plist
+C-Plus-Plus/Op-Systems/homework_2/os.dSYM/Contents/Info.plist
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/3 Recursion starter/lexicon.cpp
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/3 Recursion starter/lexicon.dat
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/3 Recursion starter/lexicon.h
@@ -4435,6 +4326,9 @@ Java/podcast-catcher/src/fireminder/podcastcatcher/NoticeDialogFragment.java
 Java/podcast-catcher/src/fireminder/podcastcatcher/PodcastFragment.java
 Java/podcast-catcher/src/fireminder/podcastcatcher/RssParser.java
 Java/podcast-catcher/src/fireminder/podcastcatcher/RSSReader.java
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/Calculator
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/Info.plist
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/PkgInfo
 Objective-C/PGSQLKit-iOS-9.1.1/PGSQLKit/English.lproj/PGSQL Login.nib/classes.nib
 Objective-C/PGSQLKit-iOS-9.1.1/PGSQLKit/English.lproj/PGSQL Login.nib/icon_query_tool.tiff
 Objective-C/PGSQLKit-iOS-9.1.1/PGSQLKit/English.lproj/PGSQL Login.nib/info.nib
@@ -5904,6 +5798,17 @@ Objective-C/Calculator/Calculator.xcodeproj/project.xcworkspace/xcuserdata/james
 Objective-C/Calculator/Calculator.xcodeproj/xcuserdata/james.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
 Objective-C/Calculator/Calculator.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/Calculator.xcscheme
 Objective-C/Calculator/Calculator.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/xcschememanagement.plist
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator-all-target-headers.hmap
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator-generated-files.hmap
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator-own-target-headers.hmap
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator-project-headers.hmap
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator.dep
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator.hmap
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Calculator~.dep
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/build-state.dat
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/build-state~.dat
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/en.lproj/InfoPlist.strings
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app.dSYM/Contents/Info.plist
 Objective-C/Matchismo/Matchismo.xcodeproj/project.xcworkspace/xcuserdata/james.xcuserdatad/UserInterfaceState.xcuserstate
 Objective-C/Matchismo/Matchismo.xcodeproj/project.xcworkspace/xcuserdata/james.xcuserdatad/WorkspaceSettings.xcsettings
 Objective-C/Matchismo/Matchismo.xcodeproj/xcuserdata/james.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
@@ -7776,7 +7681,7 @@ C-Plus-Plus/Assignment3-xcode/4-StockCutting/StockCutting.xcodeproj/xcuserdata/e
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StockCutting.xcodeproj/xcuserdata/eroberts.xcuserdatad/xcschemes/xcschememanagement.plist
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StockCutting.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/StockCutting.xcscheme
 C-Plus-Plus/Assignment3-xcode/4-StockCutting/StockCutting.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/xcschememanagement.plist
-C-Plus-Plus/Operating Systems/homework_2/os.dSYM/Contents/Resources/DWARF/os
+C-Plus-Plus/Op-Systems/homework_2/os.dSYM/Contents/Resources/DWARF/os
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/Assign2 starter/ADTDemo.app/Contents/Info.plist
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/Assign2 starter/ADTDemo.app/Contents/PkgInfo
 C-Plus-Plus/ProgrammingAbstractions/materials/icspacs106b/CS106LibrariesForXcode.pkg/Contents/Resources/BundleVersions.plist
@@ -7811,6 +7716,9 @@ Java/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsToast.java
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsView.java
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.java
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/widget/TabsLinearLayout.java
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/en.lproj/MainStoryboard.storyboardc/2-view-3.nib
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/en.lproj/MainStoryboard.storyboardc/Info.plist
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app/en.lproj/MainStoryboard.storyboardc/UIViewController-2.nib
 Objective-C/PGSQLKit-iOS-9.1.1/iPGHello/iPGHello.xcodeproj/project.xcworkspace/xcuserdata/james.xcuserdatad/UserInterfaceState.xcuserstate
 Objective-C/PGSQLKit-iOS-9.1.1/iPGHello/iPGHello.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/iPGHello.xcscheme
 Objective-C/PGSQLKit-iOS-9.1.1/iPGHello/iPGHello.xcodeproj/xcuserdata/james.xcuserdatad/xcschemes/xcschememanagement.plist
@@ -9135,6 +9043,18 @@ Java/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuView.jav
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuWrapper.java
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.java
 Java/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.java
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/Calculations.d
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/Calculations.dia
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/Calculator.LinkFileList
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorAppDelegate.d
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorAppDelegate.dia
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorBrain.d
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorBrain.dia
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorViewController.d
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/CalculatorViewController.dia
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/main.d
+Objective-C/Calculator/build/Calculator.build/Release-iphonesimulator/Calculator.build/Objects-normal/i386/main.dia
+Objective-C/Calculator/build/Release-iphonesimulator/Calculator.app.dSYM/Contents/Resources/DWARF/Calculator
 Objective-C/PGSQLKit-iOS-9.1.1/pqtouch/include/postgresql/server/port/win32/dlfcn.h
 Objective-C/PGSQLKit-iOS-9.1.1/pqtouch/include/postgresql/server/port/win32/grp.h
 Objective-C/PGSQLKit-iOS-9.1.1/pqtouch/include/postgresql/server/port/win32/netdb.h
