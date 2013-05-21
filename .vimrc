@@ -526,7 +526,7 @@ let g:syntastic_style_warning_symbol = "s⚠"
 let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
 
 " YouCompleteMe
-autocmd VimEnter * if &ft == 'c' | let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" | else | let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py" | endif
+autocmd VimEnter * if &ft == 'c' | let g:ycm_global_ycm_extra_conf = "~/.vim/.c_config/ycm_extra_conf.py" | elseif &ft == 'cpp'| let g:ycm_global_ycm_extra_conf = "~/.vim/.obj_config/ycm_extra_conf.py"| else | let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp_config/ycm_extra_conf.py" | endif
 let g:EclimCompletionMethod = 'omnifunc'
 
 " YouCompleteMe + Ultisnips

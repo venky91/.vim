@@ -1,7 +1,10 @@
+/Users/james/.vimrc
+/Users/james/test
+/Users/james/log
+/Users/james/.vim/.obj_config/ycm_extra_conf.py
+/Users/james/.zshrc
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
 /Users/james/play.cpp
-/Users/james/.vimrc
-/Users/james/.zshrc
 /Users/james/crazy.py
 /Users/james/Developer/untitled.txt
 /Users/james/Developer/untitled
@@ -16,7 +19,6 @@
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/options.txt
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/editing.txt
 /Users/james/.vim/.cpp_config/ycm_extra_conf.py
-/Users/james/log
 /Users/james/a.cpp
 /Users/james/.vim/mysnippets/java.snippets
 /Users/james/.vim/bundle/vim-snippets/UltiSnips/cpp.snippets
@@ -26,5 +28,3 @@
 /Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/os.cpp
 /Users/james/test.py
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/test.cpp
-/Users/james/Developer/C-Plus-Plus/Operating Systems/homework_2/test.cpp
-/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/various.txt
