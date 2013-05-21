@@ -35,27 +35,73 @@ from clang_helpers import PrepareClangFlags
 # These are the compilation flags that will be used in case there's no
 # compilation database set (by default, one is not set).
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
+
 flags = [
-'-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk'
-'-isystem /usr/lib/clang/4.1/include'
-'-F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks'
-'-I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include'
-'-D __MACH__'
-'-D __APPLE_CC__'
-'-D __IPHONE_OS_VERSION_MIN_REQUIRED=40300'
-'-fblocks'
-'-fobjc-nonfragile-abi'
-'-fno-builtin'
-'-m32'
-'-fobjc-arc'
-'-include MyProject-Prefix.pch'
-'-Wall'
-'-Wextra'
-'-Wno-arc'
-'-I ./Classes'
-'-I ./opt/JSONKit'
-'-I ./opt/SomeOtherLibrary'
-'-I ./src'
+'-x', 
+'objective-c', 
+'-arch i386', 
+'-fmessage-length=0', 
+'-std=gnu99', 
+'-fobjc-arc', 
+'-Wno-trigraphs', 
+'-fpascal-strings', 
+'-Os', 
+'-Wno-missing-field-initializers', 
+'-Wno-missing-prototypes', 
+'-Wreturn-type', 
+'-Wno-implicit-atomic-properties', 
+'-Wno-receiver-is-weak', 
+'-Wduplicate-method-match', 
+'-Wformat', 
+'-Wno-missing-braces', 
+'-Wparentheses', 
+'-Wswitch', 
+'-Wno-unused-function', 
+'-Wno-unused-label', 
+'-Wno-unused-parameter', 
+'-Wunused-variable', 
+'-Wunused-value', 
+'-Wempty-body', 
+'-Wuninitialized', 
+'-Wno-unknown-pragmas', 
+'-Wno-shadow', 
+'-Wno-four-char-constants', 
+'-Wno-conversion', 
+'-Wno-constant-conversion', 
+'-Wno-int-conversion', 
+'-Wno-enum-conversion', 
+'-Wno-shorten-64-to-32', 
+'-Wpointer-sign', 
+'-Wno-newline-eof', 
+'-Wno-selector', 
+'-Wno-strict-selector-match', 
+'-Wno-undeclared-selector', 
+'-Wno-deprecated-implementations', 
+'-isysroot',
+'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk',
+'-fexceptions',
+'-fasm-blocks',
+'-fstrict-aliasing',
+'-Wprotocol',
+'-Wdeprecated-declarations',
+'-g',
+'-fvisibility=hidden',
+'-Wno-sign-conversion',
+'-fobjc-abi-version=2',
+'-fobjc-legacy-dispatch',
+'-mios-simulator-version-min=6.0',
+'-iquote',
+'-I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers',
+'-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+'-I/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad',
+'-I/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/HomeScreen',
+'-I/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/Login',
+'-I/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/Model',
+'-I/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/QuickServe',
+'-DNS_BLOCK_ASSERTIONS=1',
+'-MMD',
+'-MT',
+'-MF'
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

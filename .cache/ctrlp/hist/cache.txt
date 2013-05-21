@@ -1,4 +1,8 @@
 
+time.h
+Database
+HomeView
+SetGameView
 os.cpp
 Dever/c/O
 ophw2os.c
