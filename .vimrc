@@ -7,9 +7,9 @@ set rtp+=vim/,~/.vim/bundle/vundle/,~/.vim/bundle/powerline/powerline/bindings/v
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'shemerey/vim-peepopen'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/LustyExplorer'
 Bundle 'vim-scripts/bufkill.vim'
@@ -29,7 +29,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-eunuch'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/powerline'
@@ -38,7 +37,6 @@ Bundle "myusuf3/numbers.vim"
 Bundle 'davidhalter/jedi-vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'jiangmiao/auto-pairs'
 Bundle 'godlygeek/tabular'
 Bundle 'FredKSchott/CoVim'
 Bundle 'jakar/vim-json'
@@ -47,9 +45,12 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'airblade/vim-gitgutter'
-
-"Bundle 'wincent/Command-T'
 Bundle 'airblade/vim-rooter'
+Bundle 'Raimondi/delimitMate'
+Bundle 'tpope/vim-endwise'
+
+"Bundle 'jiangmiao/auto-pairs'
+"Bundle 'wincent/Command-T'
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-dispatch'
@@ -417,45 +418,9 @@ endif
 
 " PLUGIN - - - - {{{
 
-" Tabular
-nnoremap <Leader>a= :Tabularize /=<CR>
-vnoremap <Leader>a= :Tabularize /=<CR>
-nnoremap <Leader>a: :Tabularize /:\zs<CR>
-vnoremap <Leader>a: :Tabularize /:\zs<CR>
-nnoremap <Leader>a" :Tabularize /"<CR>
-vnoremap <Leader>a" :Tabularize /"<CR>
-
-" Jedi
-let g:jedi#goto_command = "<Leader>pg"
-let g:jedi#get_definition_command = "<Leader>pd"
-let g:jedi#rename_command = "<Leader>pr"
-let g:jedi#related_names_command = "<Leader>pn"
-let g:jedi#pydoc = "<Leader>pk"
-let g:jedi#show_function_definition = "1"
-let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#popup_select_first = 0
-
-" Gundo
-let g:gundo_close_on_revert=1   " close gundo when reverting
-
-" Powerline
-set laststatus=2 " Always show the statusline
-set encoding=utf-8 " Necessary to show unicode glyphs
-let g:Powerline_symbols = 'fancy'
-set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-
-" TagBar
-let g:tagbar_left=0
-let g:tagbar_width=30
-let g:tagbar_compact=1
-let g:tagbar_singleclick=1
-let g:tagbar_sort=0
-
-" Sparkup
-" let g:sparkupNextMapping='<c-u>'
-
-" Zencoding
-let g:user_zen_Leader_key = '<c-y>'
+" Alternate
+autocmd FileType objc let g:alternateExtensions_h = "m" 
+autocmd FileType objc let g:alternateExtensions_m = "h"
 
 " CommandT
 " nnoremap <C-t> :CommandT<cr>
@@ -467,9 +432,6 @@ let g:user_zen_Leader_key = '<c-y>'
 " let g:CommandTMaxHeight=20
 " let g:CommandTMaxCachedDirectories=2
 " let g:CommandTCancelMap=['<C-x>', '<C-c>']
-
-" Vim Rooter
-let g:rooter_use_lcd = 1
 
 " CtrlP
 nnoremap <C-5> :CtrlPCurWD<Cr>
@@ -484,8 +446,37 @@ let g:ctrlp_use_caching=1 " Cache searches.
 let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
 let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
 let g:ctrlp_max_files = 10000
-
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" DelimitMate
+" au FileType mail let b:delimitMate_autoclose = 0
+" au FileType mail let b:delimitMate_expand_cr = 1
+" au FileType tcl let b:delimitMate_expand_space = 1
+let delimitMate_expand_cr = 1
+"let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+
+" Easytags
+let g:easytags_include_members = 1
+let g:easytags_python_enabled = 1
+let g:easytags_file = '~/.vim/tags/easytags'
+
+" Eclim
+let g:EclimMenus = 1
+let g:EclimCompletionMethod = 'omnifunc'
+
+" Gundo
+let g:gundo_close_on_revert=1   " close gundo when reverting
+
+" Jedi
+let g:jedi#goto_command = "<Leader>pg"
+let g:jedi#get_definition_command = "<Leader>pd"
+let g:jedi#rename_command = "<Leader>pr"
+let g:jedi#related_names_command = "<Leader>pn"
+let g:jedi#pydoc = "<Leader>pk"
+let g:jedi#show_function_definition = "1"
+let g:jedi#use_tabs_not_buffers = 0
+let g:jedi#popup_select_first = 0
 
 " Lusty Explorer
 nnoremap <Leader>f :LustyFilesystemExplorer<cr>
@@ -503,14 +494,14 @@ let g:NERDTreeDirArrows=0
 let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
 
-" Eclim
-let g:EclimMenus = 1
-let g:EclimCompletionMethod = 'omnifunc'
+" Powerline
+set laststatus=2 " Always show the statusline
+set encoding=utf-8 " Necessary to show unicode glyphs
+let g:Powerline_symbols = 'fancy'
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
-" Easytags
-let g:easytags_include_members = 1
-let g:easytags_python_enabled = 1
-let g:easytags_file = '~/.vim/tags/easytags'
+" Sparkup
+" let g:sparkupNextMapping='<c-u>'
 
 " Syntastic
 let g:syntastic_check_on_open        = 1 " run syntastic on open and save
@@ -524,6 +515,31 @@ let g:syntastic_warning_symbol       = "⚠"
 let g:syntastic_style_error_symbol   = "s✗"
 let g:syntastic_style_warning_symbol = "s⚠"
 let g:syntastic_mode_map             = { 'passive_filetypes': ['java', 'cpp', 'c'] }
+
+" Tabular
+nnoremap <Leader>a= :Tabularize /=<CR>
+vnoremap <Leader>a= :Tabularize /=<CR>
+nnoremap <Leader>a: :Tabularize /:\zs<CR>
+vnoremap <Leader>a: :Tabularize /:\zs<CR>
+nnoremap <Leader>a" :Tabularize /"<CR>
+vnoremap <Leader>a" :Tabularize /"<CR>
+
+" TagBar
+let g:tagbar_left=0
+let g:tagbar_width=30
+let g:tagbar_compact=1
+let g:tagbar_singleclick=1
+let g:tagbar_sort=0
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsJumpForwardTrigger="<c-e>"
+let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
+let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
+let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
+
+" Vim Rooter
+let g:rooter_use_lcd = 1
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
@@ -549,12 +565,8 @@ endfunction
 
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
-" Ultisnips
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-e>"
-let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
-let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
-let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
+" Zencoding
+let g:user_zen_Leader_key = '<c-y>'
 
 
 " - - - - }}}

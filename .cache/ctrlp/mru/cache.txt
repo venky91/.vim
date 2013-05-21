@@ -1,12 +1,23 @@
+/Users/james/.vimrc
+/Users/james/a.cpp
+/Users/james/test.cpp
+/Users/james/t.cpp
+/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/options.txt
+/Users/james/a.c
+/Users/james/.vim/bundle/delimitMate/doc/delimitMate.txt
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/log
+/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/log
 /Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/HomeViewController.m
+/Users/james/.vim/.obj_config/ycm_extra_conf.py
+/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/QuickServe/QuickModifierController.m
+/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/QuickServe/QuickModifierController.h
 /Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/HomeViewController.h
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
 /Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/Model/time.h
 /Users/james/Developer/Point-of-Sales/Login/Model/Time.h
-/Users/james/.vimrc
 /Users/james/Developer/Point-of-Sales/Login/Model/DatabaseAccess.h
 /Users/james/.vim/.cpp_config/ycm_extra_conf.py
-/Users/james/.vim/.obj_config/ycm_extra_conf.py
 /Users/james/Developer/C-Plus-Plus/Blackjack/banker.h
 /Users/james/Developer/C-Plus-Plus/Blackjack/common.h
 /Users/james/calng
@@ -17,14 +28,3 @@
 /Users/james/Developer/Objective-C/Matchismo/Matchismo/SetGameViewController.h
 /Users/james/Developer/Objective-C/Matchismo/Matchismo/MatchGameViewController.h
 /Users/james/test
-/Users/james/log
-/Users/james/.zshrc
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
-/Users/james/play.cpp
-/Users/james/crazy.py
-/Users/james/Developer/untitled.txt
-/Users/james/Developer/untitled
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os_back.cpp
-/Users/james/Developer/C-Plus-Plus/Op-Systems/test.c
-/Users/james/Developer/C-Plus-Plus/Op-Systems/thread-pool-server.c
-/Users/james/Developer/C-Plus-Plus/Op-Systems/basic_pthread.c
