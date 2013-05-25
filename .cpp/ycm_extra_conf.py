@@ -36,7 +36,8 @@ from clang_helpers import PrepareClangFlags
 # compilation database set (by default, one is not set).
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
 flags = [
- '-Wall',
+
+'-Wall',
 '-std=c++11',
 '-stdlib=libc++',
 '-x',

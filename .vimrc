@@ -34,7 +34,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
-Bundle 'davidhalter/jedi-vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'godlygeek/tabular'
@@ -48,7 +47,9 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'airblade/vim-rooter'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
+Bundle 'klen/python-mode'
 
+"Bundle 'davidhalter/jedi-vim'
 "Bundle 'jiangmiao/auto-pairs'
 "Bundle 'wincent/Command-T'
 "Bundle 'Rip-Rip/clang_complete'
@@ -279,15 +280,11 @@ nnoremap <Leader>v :e ~/.vimrc<cr>
 " open vimrc in another split
 nnoremap <Leader>V :silent! so $MYVIMRC<CR>
 " source vimrc
-nnoremap <Leader>hp :!pasty %<cr>
-" cats the current file into hastebin
 nnoremap <Leader>dp :!cp % ~/Dropbox/Public/
 " copies current file into dropbox
 nnoremap <Leader>wv :vsplit<cr>
 nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
-nnoremap <Leader>j :Java<cr>
-" eclim mappings
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
 nnoremap <Leader>k :BD<CR>
@@ -310,6 +307,9 @@ vnoremap <Leader>v "_dP
 nnoremap <Leader>x :call search('^'.matchstr(getline('.'),'^\s*').'\S','We')<CR>
 " In :Functions:, toggles diffmode of buffer.
 nnoremap <silent><Leader>df :call DiffToggle()<CR>
+" YouCompleteMe GoTos
+nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 
 " - - - - }}}
 
@@ -403,7 +403,7 @@ autocmd FileType eruby,ruby,html,css,php set autoindent
 autocmd FileType eruby,ruby,html,css,php set shiftwidth=2
 autocmd FileType eruby,ruby,html,css,php set tabstop=2
 autocmd FileType eruby,ruby,html,css,php set sts=2
-autocmd FileType eruby,ruby,css,php set textwidth=79
+autocmd FileType eruby,ruby,css,php,python set textwidth=79
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -449,7 +449,6 @@ let g:ctrlp_max_files = 10000
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " DelimitMate
-"let delimitMate_expand_cr = 1
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
@@ -466,14 +465,14 @@ let g:EclimCompletionMethod = 'omnifunc'
 let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " Jedi
-let g:jedi#goto_command = "<Leader>pg"
-let g:jedi#get_definition_command = "<Leader>pd"
-let g:jedi#rename_command = "<Leader>pr"
-let g:jedi#related_names_command = "<Leader>pn"
-let g:jedi#pydoc = "<Leader>pk"
-let g:jedi#show_function_definition = "1"
-let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#popup_select_first = 0
+"let g:jedi#goto_command = "<Leader>pg"
+"let g:jedi#get_definition_command = "<Leader>pd"
+"let g:jedi#rename_command = "<Leader>pr"
+"let g:jedi#related_names_command = "<Leader>pn"
+"let g:jedi#pydoc = "<Leader>pk"
+"let g:jedi#show_function_definition = "1"
+"let g:jedi#use_tabs_not_buffers = 0
+"let g:jedi#popup_select_first = 0
 
 " Lusty Explorer
 nnoremap <Leader>f :LustyFilesystemExplorer<cr>
@@ -490,12 +489,22 @@ let g:NERDTreeShowBookmarks=1
 let g:NERDTreeDirArrows=0
 let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
+let g:NERDTreeHijackNetrw = 1
 
 " Powerline
-set laststatus=2 " Always show the statusline
-set encoding=utf-8 " Necessary to show unicode glyphs
+set laststatus=2 " Always show the statusline.
+set encoding=utf-8 " Necessary to show unicode glyphs.
 let g:Powerline_symbols = 'fancy'
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Python Mode
+let g:pymode_breakpoint = 1 " Load breakpoints plugin.
+let g:pymode_doc_key = '<Leader>K'
+let g:pymode_run_key = '<Leader>R'
+let g:pymode_breakpoint_key = '<Leader>B' " Key for set/unset breakpoint.
+let g:pymode_rope = 0 " Use Jedi instead of Rope.
+let g:pymode_folding = 1
+let g:pymode_motion = 1
 
 " Sparkup
 " let g:sparkupNextMapping='<c-u>'
@@ -529,9 +538,11 @@ let g:tagbar_singleclick=1
 let g:tagbar_sort=0
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-e>"
-let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
+"let g:UltiSnipsExpandTrigger="<c-e>"
+"let g:UltiSnipsJumpForwardTrigger="<c-e>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
@@ -544,18 +555,18 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " YouCompleteMe + Ultisnips
 function! g:UltiSnips_Complete()
+  call UltiSnips_JumpForwards()
+  if g:ulti_jump_forwards_res == 0
     call UltiSnips_ExpandSnippet()
     if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<C-n>"
-        else
-            call UltiSnips_JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-               return "\<TAB>"
-            endif
-        endif
+      if pumvisible()
+        return "\<C-n>"
+      else
+        return "\<TAB>"
+      endif
     endif
-    return ""
+  endif
+  return ""
 endfunction
 
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
@@ -590,6 +601,8 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
+set completeopt=menuone
 
 "" Neocomplcache
 "" Launches neocomplcache automatically on vim startup.
