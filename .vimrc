@@ -363,7 +363,7 @@ nnoremap <Leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL
 
 " C/C++
 " These won't run properly if there's a file to be opened since they would be opening files from the directory vim was launched from.
-autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr><cr>
+autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr>
 " runs c++ files *ctrl-c*
 autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
 autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>

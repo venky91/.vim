@@ -1,8 +1,9 @@
 /Users/james/.vim/.cpp/ycm_extra_conf.py
 /Users/james/a.cpp
+/Users/james/.vimrc
+/Users/james/a.c
 /Users/james/.emacs.d/init.el
 /usr/local/Library/Formula/emacs.rb
-/Users/james/.vimrc
 /Users/james/.zshrc
 /Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp
 /Users/james/Developer/Python/BinaryTree.py
@@ -27,4 +28,3 @@
 /Users/james/a.py
 /var/folders/k2/y7hdq90906d_5pgbt3_pt9jw0000gn/T/vCtQRqo/140
 /Users/james/Developer/Python/Node.py
-/Users/james/Developer/C-Plus-Plus/IntExpo/ReverseWords.c
