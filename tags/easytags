@@ -79,6 +79,7 @@ askThenRate	/Users/james/play.cpp	/^void askThenRate();$/;"	p	language:C++	file:
 askThenSeek	/Users/james/play.cpp	/^void askThenSeek() {$/;"	f	language:C++
 askThenSeek	/Users/james/play.cpp	/^void askThenSeek();$/;"	p	language:C++	file:
 a_mutex	/Users/james/play.cpp	/^pthread_mutex_t a_mutex;$/;"	v	language:C++
+background	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 background	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface *background = NULL;$/;"	v	language:C++
 batch_modify_before_lists	/Users/james/Developer/Python/puzzle_3.py	/^def batch_modify_before_lists(a_name, b_name, nodes_dict):$/;"	f	language:Python
 build_beds	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    private void build_beds() {$/;"	m	language:Java	class:HospitalInit	file:
@@ -88,10 +89,13 @@ build_list	/Users/james/Developer/Python/puzzle_3.py	/^def build_list(nodes_dict
 build_offices	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    private void build_offices() {$/;"	m	language:Java	class:HospitalInit	file:
 build_operating_rooms	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    private void build_operating_rooms() {$/;"	m	language:Java	class:HospitalInit	file:
 C	/Users/james/.vimrc	/^nnoremap C c\$$/;"	m	language:Vim
+caveats	/usr/local/Library/Formula/emacs-mac.rb	/^  def caveats$/;"	f	language:Ruby	class:EmacsMac
 caveats	/usr/local/Library/Formula/emacs.rb	/^  def caveats$/;"	f	language:Ruby	class:Emacs
 changeFunction	/Users/james/play.cpp	/^void changeFunction() {$/;"	f	language:C++
 changeFunction	/Users/james/play.cpp	/^void changeFunction();$/;"	p	language:C++	file:
 checktime	/Users/james/.vimrc	/^augroup checktime$/;"	a	language:Vim
+clean_up	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^void clean_up() {$/;"	f	language:C++
+clean_up	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^void clean_up();$/;"	p	language:C++	file:
 clean_up	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^void clean_up() {$/;"	f	language:C++
 clean_up	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^void clean_up();$/;"	p	language:C++	file:
 compilation_database_folder	/Users/james/.vim/.cpp/ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v	language:Python
@@ -108,6 +112,8 @@ DirectoryOfThisScript	/Users/james/.vim/.cpp/ycm_extra_conf.py	/^def DirectoryOf
 DisableMappings	/Users/james/.vimrc	/^augroup DisableMappings$/;"	a	language:Vim
 do_not_install_ctags	/usr/local/Library/Formula/emacs.rb	/^  def do_not_install_ctags$/;"	f	language:Ruby	class:Emacs
 Emacs	/usr/local/Library/Formula/emacs.rb	/^class Emacs < Formula$/;"	c	language:Ruby
+EmacsMac	/usr/local/Library/Formula/emacs-mac.rb	/^class EmacsMac < Formula$/;"	c	language:Ruby
+event	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Event event;$/;"	v	language:C++
 event	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Event event;$/;"	v	language:C++
 evil-motion-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-motion-state-map [f8] 'eval-last-sexp)$/;"	f	language:Lisp
 evil-normal-state-map	/Users/james/.emacs.d/init.el	/^(define-key evil-normal-state-map ";" 'evil-ex)$/;"	f	language:Lisp
@@ -216,11 +222,15 @@ HospitalInit.build_operating_rooms	/Users/james/Dropbox/Computer Science/SE Proj
 HospitalInit.hire_heads	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    private void hire_heads() {$/;"	m	language:Java	class:HospitalInit	file:
 HospitalInit.hire_nurses	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    private void hire_nurses() {$/;"	m	language:Java	class:HospitalInit	file:
 HospitalInit.HospitalInit	/Users/james/Dropbox/Computer Science/SE Project/Project Code/src/t5_main/HospitalInit.java	/^    public HospitalInit() {$/;"	m	language:Java	class:HospitalInit
+imageManager	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^ImageManager *imageManager;$/;"	v	language:C++
 imageManager	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^ImageManager *imageManager;$/;"	v	language:C++
 in	/Users/james/play.cpp	/^std::ifstream in; \/\/ object to read from the file$/;"	v	language:C++
+init_sdl	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^bool init_sdl() {$/;"	f	language:C++
+init_sdl	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^bool init_sdl();$/;"	p	language:C++	file:
 init_sdl	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^bool init_sdl() {$/;"	f	language:C++
 init_sdl	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^bool init_sdl();$/;"	p	language:C++	file:
 inorder	/Users/james/Developer/Python/BinaryTree.py	/^    def inorder(self, root):$/;"	m	language:Python	class:Tree
+install	/usr/local/Library/Formula/emacs-mac.rb	/^  def install$/;"	f	language:Ruby	class:EmacsMac
 install	/usr/local/Library/Formula/emacs.rb	/^  def install$/;"	f	language:Ruby	class:Emacs
 iwb	/Users/james/.emacs.d/init.el	/^(defun iwb ()$/;"	f	language:Lisp
 J	/Users/james/.vimrc	/^nnoremap J 10j$/;"	m	language:Vim
@@ -232,11 +242,14 @@ LoadFile	/Users/james/play.cpp	/^void LoadFile(const char *filename) {$/;"	f	lan
 LoadFile	/Users/james/play.cpp	/^void LoadFile(const char *filename);$/;"	p	language:C++	file:
 loadWordsInDeque	/Users/james/play.cpp	/^void loadWordsInDeque() {$/;"	f	language:C++
 loadWordsInDeque	/Users/james/play.cpp	/^void loadWordsInDeque();$/;"	p	language:C++	file:
+load_image	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface * load_image( std::string filename );$/;"	p	language:C++	file:
+load_image	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
 load_image	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface * load_image( std::string filename );$/;"	p	language:C++	file:
 load_image	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface *load_image( std::string filename ) {$/;"	f	language:C++
 main	/Users/james/a.cpp	/^int main() {$/;"	f	language:C++
 main	/Users/james/Developer/C-Plus-Plus/IntExpo/BinaryTree.cpp	/^int main() {$/;"	f	language:C++
 main	/Users/james/Developer/C-Plus-Plus/IntExpo/ReverseWords.c	/^int main() {$/;"	f	language:C
+main	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
 main	/Users/james/Developer/Python/BinaryTree.py	/^def main():$/;"	f	language:Python
 main	/Users/james/Developer/Python/puzzle_3.py	/^def main():$/;"	f	language:Python
 main	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^int main( int argc, char* args[] ) {$/;"	f	language:C++
@@ -244,6 +257,7 @@ main	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/test.cpp	/^int
 main	/Users/james/play.cpp	/^int main() {$/;"	f	language:C++
 MakeRelativePathsInFlagsAbsolute	/Users/james/.vim/.cpp/ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	language:Python
 mapleader	/Users/james/.vimrc	/^let mapleader=","$/;"	v	language:Vim
+message	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 message	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface *message = NULL;$/;"	v	language:C++
 minibuffer-local-completion-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-completion-map [escape]$/;"	f	language:Lisp
 minibuffer-local-isearch-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-local-isearch-map [escape]$/;"	f	language:Lisp
@@ -253,6 +267,7 @@ minibuffer-local-ns-map	/Users/james/.emacs.d/init.el	/^(define-key minibuffer-l
 modify_linked_list	/Users/james/Developer/Python/puzzle_3.py	/^def modify_linked_list(node_a_name, node_b_name,$/;"	f	language:Python
 modify_node	/Users/james/Developer/Python/puzzle_3.py	/^def modify_node(a_name, b_name, nodes_dict):$/;"	f	language:Python
 modify_nodes	/Users/james/Developer/Python/puzzle_3.py	/^def modify_nodes(nodes_dict, a_name, b_name, before):$/;"	f	language:Python
+music	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
 music	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^Mix_Music *music = NULL;$/;"	v	language:C++
 my-buffer-face-mode-fixed	/Users/james/.emacs.d/init.el	/^(defun my-buffer-face-mode-fixed ()$/;"	f	language:Lisp
 my-buffer-face-mode-variable	/Users/james/.emacs.d/init.el	/^(defun my-buffer-face-mode-variable ()$/;"	f	language:Lisp
@@ -273,6 +288,15 @@ playWordFromMedia	/Users/james/play.cpp	/^void playWordFromMedia(std::deque<word
 postorder	/Users/james/Developer/Python/BinaryTree.py	/^    def postorder(self, root):$/;"	m	language:Python	class:Tree
 preorder	/Users/james/Developer/Python/BinaryTree.py	/^    def preorder(self, root):$/;"	m	language:Python	class:Tree
 PrepareClangFlags	/Users/james/.vim/.cpp/ycm_extra_conf.py	/^from clang_helpers import PrepareClangFlags$/;"	i	language:Python
+program_CXX_OBJS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_CXX_OBJS := $(program_CXX_SRCS:.cpp=.o)$/;"	m	language:Make
+program_CXX_SRCS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_CXX_SRCS := $(wildcard *.cpp)$/;"	m	language:Make
+program_C_OBJS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_C_OBJS := $(program_C_SRCS:.c=.o)$/;"	m	language:Make
+program_C_SRCS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_C_SRCS := $(wildcard *.c)$/;"	m	language:Make
+program_INCLUDE_DIRS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_INCLUDE_DIRS := $/;"	m	language:Make
+program_LIBRARIES	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_LIBRARIES :=$/;"	m	language:Make
+program_LIBRARY_DIRS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_LIBRARY_DIRS :=$/;"	m	language:Make
+program_NAME	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_NAME := main$/;"	m	language:Make
+program_OBJS	/Users/james/Developer/EBSideScroller/Project/makefile	/^program_OBJS := $(program_C_OBJS) $(program_CXX_OBJS)$/;"	m	language:Make
 Q	/Users/james/.vimrc	/^cmap Q :q!<cr>$/;"	m	language:Vim
 Q	/Users/james/.vimrc	/^nnoremap Q gq$/;"	m	language:Vim
 removeNode	/Users/james/Developer/Python/BinaryTree.py	/^    def removeNode(nodeToRemove):$/;"	m	language:Python	class:Tree
@@ -286,16 +310,24 @@ right	/Users/james/Developer/Python/BinaryTree.py	/^    right = None$/;"	v	langu
 root	/Users/james/Developer/Python/BinaryTree.py	/^    root = None$/;"	v	language:Python	class:Tree
 rotate-windows	/Users/james/.emacs.d/init.el	/^(defun rotate-windows ()$/;"	f	language:Lisp
 rotate-windows-helper	/Users/james/.emacs.d/init.el	/^(defun rotate-windows-helper(x d)$/;"	f	language:Lisp
+screen	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
 screen	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface *screen = NULL;$/;"	v	language:C++
+SCREEN_BPP	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
 SCREEN_BPP	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^const int SCREEN_BPP = 32;$/;"	v	language:C++
+SCREEN_HEIGHT	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
 SCREEN_HEIGHT	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^const int SCREEN_HEIGHT = 480;$/;"	v	language:C++
+SCREEN_WIDTH	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
 SCREEN_WIDTH	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^const int SCREEN_WIDTH = 640;$/;"	v	language:C++
+SDLFLAGS	/Users/james/Developer/EBSideScroller/Project/makefile	/^SDLFLAGS := -lSDL -lSDL_image -lSDL_mixer$/;"	m	language:Make
+SDLFLAGS	/Users/james/Developer/EBSideScroller/Project/makefile	/^SDLFLAGS := `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer$/;"	m	language:Make
 SeekTo	/Users/james/play.cpp	/^void SeekTo(int byteoffset) {$/;"	f	language:C++
 SeekTo	/Users/james/play.cpp	/^void SeekTo(int byteoffset);$/;"	p	language:C++	file:
 SetRate	/Users/james/play.cpp	/^void SetRate(float rate) {$/;"	f	language:C++
 SetRate	/Users/james/play.cpp	/^void SetRate(float rate);$/;"	p	language:C++	file:
 shorten-directory	/Users/james/.emacs.d/init.el	/^(defun shorten-directory (dir max-length)$/;"	f	language:Lisp
+soundManager	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SoundManager *soundManager;$/;"	v	language:C++
 soundManager	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SoundManager *soundManager;$/;"	v	language:C++
+splash	/Users/james/Developer/EBSideScroller/Project/main.cpp	/^SDL_Surface *splash = NULL;$/;"	v	language:C++
 splash	/Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp	/^SDL_Surface *splash = NULL;$/;"	v	language:C++
 Start	/Users/james/play.cpp	/^void Start() {$/;"	f	language:C++
 Start	/Users/james/play.cpp	/^void Start();$/;"	p	language:C++	file:
@@ -311,6 +343,7 @@ togglePlayer	/Users/james/play.cpp	/^void togglePlayer() {$/;"	f	language:C++
 togglePlayer	/Users/james/play.cpp	/^void togglePlayer();$/;"	p	language:C++	file:
 Tree	/Users/james/Developer/Python/BinaryTree.py	/^class Tree:$/;"	c	language:Python
 UltiSnips_Complete	/Users/james/.vimrc	/^function! g:UltiSnips_Complete()$/;"	f	language:Vim
+UNAME	/Users/james/Developer/EBSideScroller/Project/makefile	/^UNAME := $(shell uname)$/;"	m	language:Make
 UseMakeSameDirForC	/Users/james/.vimrc	/^function! UseMakeSameDirForC()$/;"	f	language:Vim
 value	/Users/james/Developer/Python/BinaryTree.py	/^    value = 0$/;"	v	language:Python	class:Node
 word	/Users/james/play.cpp	/^typedef std::string word;$/;"	t	language:C++	file:

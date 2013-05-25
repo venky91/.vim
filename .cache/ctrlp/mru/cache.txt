@@ -1,10 +1,26 @@
-/Users/james/.vim/.cpp/ycm_extra_conf.py
-/Users/james/a.cpp
+/Users/james/.vim/.gitignore
+/Users/james/Developer/EBSideScroller/Timer.h
+/Users/james/Developer/EBSideScroller/Timer.cpp
+/Users/james/Developer/EBSideScroller/Project/basic_make
+/private/var/folders/k2/y7hdq90906d_5pgbt3_pt9jw0000gn/T/vfSrXiq/8.fugitiveblame
+/private/var/folders/k2/y7hdq90906d_5pgbt3_pt9jw0000gn/T/v7TyBIh/41.fugitiveblame
+/Users/james/Developer/EBSideScroller/Project/main.cpp
+/Users/james/Developer/EBSideScroller/.git/index
+/Users/james/Developer/EBSideScroller/Project/.gitignore
+/Users/james/.zshrc
+/Users/james/Developer/EBSideScroller/Project/makefile
 /Users/james/.vimrc
+/Users/james/Developer/EBSideScroller/Project/Timer.cpp
+/Users/james/.tmux.conf
+/usr/local/Library/Formula/emacs-mac.rb
+/Users/james/a.cpp
+/Users/james/Developer/EBSideScroller/Project/test.cpp
+/Users/james/Downloads/powerline-fonts-master/Terminus/README.rst
+/Users/james/Downloads/powerline-fonts-master/Terminus/PSF/README.markdown
+/Users/james/.vim/.cpp/ycm_extra_conf.py
 /Users/james/a.c
 /Users/james/.emacs.d/init.el
 /usr/local/Library/Formula/emacs.rb
-/Users/james/.zshrc
 /Users/james/Dropbox/Computer Science/EBSideScroller/Project/main.cpp
 /Users/james/Developer/Python/BinaryTree.py
 /Users/james/test.cpp
@@ -12,19 +28,3 @@
 /Users/james/.vim/bundle/python-mode/doc/pymode.txt
 /Users/james/.vim/bundle/ultisnips/UltiSnips/python.snippets
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/doc/index.txt
-/Users/james/Dropbox/Computer Science/CompilerProject/comp.org
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp
-/Users/james/Dropbox/Computer Science/EBSideScroller/Project/Timer.h
-/Users/james/Dropbox/Computer Science/EBSideScroller/Project/Timer.cpp
-/Users/james/play.cpp
-/Users/james/.bashrc
-/Users/james/Developer/C-Plus-Plus/IntExpo/BinaryTree.cpp
-/Users/james/Dropbox/Computer Science/EBSideScroller/Project/test.cpp
-/Users/james/.vim/bundle/YouCompleteMe/doc/youcompleteme.txt
-/Users/james/Developer/Python/puzzle_3.py
-/var/folders/k2/y7hdq90906d_5pgbt3_pt9jw0000gn/T/vwwS8Fn/136
-/Users/james/.vim/bundle/syntastic/syntax_checkers/python/pep8.vim
-/Users/james/.vim/bundle/syntastic/syntax_checkers/python/python.vim
-/Users/james/a.py
-/var/folders/k2/y7hdq90906d_5pgbt3_pt9jw0000gn/T/vCtQRqo/140
-/Users/james/Developer/Python/Node.py
