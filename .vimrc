@@ -21,7 +21,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'xolox/vim-easytags'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/cocoa.vim'
 Bundle 'tpope/vim-surround'
@@ -48,6 +47,8 @@ Bundle 'airblade/vim-rooter'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'klen/python-mode'
+Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-misc'
 
 "Bundle 'davidhalter/jedi-vim'
 "Bundle 'jiangmiao/auto-pairs'
@@ -456,6 +457,7 @@ let g:delimitMate_expand_space = 1
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
 let g:easytags_file = '~/.vim/tags/easytags'
+let g:easytags_cmd = '/usr/local/bin/ctags'
 
 " Eclim
 let g:EclimMenus = 1
