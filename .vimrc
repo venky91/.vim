@@ -150,7 +150,7 @@ elseif has('unix')
     set guioptions-=T  "remove toolbar
     set guioptions-=m  "remove top bar
     "set gfn=Terminus\ 10
-    set gfn=Inconsolata\ for\ Powerline\ 12, Terminus\ 10
+    set gfn=Inconsolata\ for\ Powerline\ 12
     set shell=/bin/bash
 endif
 
