@@ -141,7 +141,8 @@ set guioptions-=L  "remove left-hand scroll bar
 
 if has('mac')
     set showbreak=↪ " prettier linewraps
-    set guifont=Consolas:h12
+    "set guifont=Consolas:h12
+    set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13
     set shell=/bin/bash
 elseif has('win32')
     set guifont=Consolas:h10
@@ -492,7 +493,6 @@ let g:NERDTreeShowBookmarks=1
 let g:NERDTreeDirArrows=0
 let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
-let g:NERDTreeHijackNetrw = 1
 
 " Powerline
 set laststatus=2 " Always show the statusline.
