@@ -149,7 +149,8 @@ elseif has('unix')
     set t_Co=256        " sets 256 colors in the terminal
     set guioptions-=T  "remove toolbar
     set guioptions-=m  "remove top bar
-    set gfn=Terminus\ 10
+    "set gfn=Terminus\ 10
+    set gfn=Inconsolata\ for\ Powerline\ 12, Terminus\ 10
     set shell=/bin/bash
 endif
 
@@ -540,11 +541,9 @@ let g:tagbar_singleclick=1
 let g:tagbar_sort=0
 
 " Ultisnips
-"let g:UltiSnipsExpandTrigger="<c-e>"
-"let g:UltiSnipsJumpForwardTrigger="<c-e>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsJumpForwardTrigger="<c-e>"
+let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
