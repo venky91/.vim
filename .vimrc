@@ -541,9 +541,9 @@ let g:tagbar_singleclick=1
 let g:tagbar_sort=0
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-e>"
-let g:UltiSnipsJumpBackwardTrigger="<c-s-e>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
@@ -553,28 +553,28 @@ let g:rooter_use_lcd = 1
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
 
-" YouCompleteMe + Ultisnips
 function! g:UltiSnips_Complete()
-  call UltiSnips_JumpForwards()
-  if g:ulti_jump_forwards_res == 0
     call UltiSnips_ExpandSnippet()
     if g:ulti_expand_res == 0
-      if pumvisible()
-        return "\<C-n>"
-      else
-        return "\<TAB>"
-      endif
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips_JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
     endif
-  endif
-  return ""
+    return ""
 endfunction
 
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 " Zencoding
 let g:user_zen_Leader_key = '<c-y>'
-
 
 " - - - - }}}
 
