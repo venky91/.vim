@@ -571,10 +571,11 @@ function! g:UltiSnips_Complete()
     return ""
 endfunction
 
+
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 " Zencoding
-let g:user_zen_Leader_key = '<c-y>'
+let g:user_zen_Leader_key = '<c-e>'
 
 " - - - - }}}
 
