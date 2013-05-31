@@ -11,8 +11,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'shemerey/vim-peepopen'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/L9'
-Bundle 'vim-scripts/LustyExplorer'
-Bundle 'vim-scripts/bufkill.vim'
 Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'vim-scripts/ScrollColors'
 Bundle 'vim-scripts/CSApprox'
@@ -43,19 +41,24 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'airblade/vim-rooter'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'klen/python-mode'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
 
+"Bundle 'airblade/vim-rooter'
+"Bundle 'vim-scripts/LustyExplorer'
 "Bundle 'davidhalter/jedi-vim'
 "Bundle 'jiangmiao/auto-pairs'
 "Bundle 'wincent/Command-T'
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-dispatch'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'Shougo/vimproc.vim'
+"Bundle 'Shougo/vimshell.vim'
+"Bundle 'Shougo/vimfiler.vim'
 "Bundle 'Shougo/vimproc'
 "Bundle 'Shougo/neocomplcache'
 "Bundle 'Shougo/neosnippet'
@@ -135,12 +138,11 @@ set relativenumber  " numbers are not absolute
 au WinEnter * :setlocal relativenumber
 au WinLeave * :setlocal norelativenumber
 
-" Remove Scroll Bars
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+set showbreak=↪ " prettier linewraps
 
 if has('mac')
-    set showbreak=↪ " prettier linewraps
     "set guifont=Consolas:h12
     set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13
     set shell=/bin/bash
@@ -437,10 +439,14 @@ autocmd FileType objc let g:alternateExtensions_m = "h"
 " let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
 " CtrlP
-nnoremap <C-5> :CtrlPCurWD<Cr>
-nnoremap <C-t> :CtrlP<cr>
-nnoremap <C-b> :CtrlPBuffer<cr>
-nnoremap <C-g> :CtrlPMRU<cr>
+"nnoremap <C-5> :CtrlPCurWD<Cr>
+"nnoremap <C-t> :CtrlP<cr>
+"nnoremap <C-b> :CtrlPBuffer<cr>
+"nnoremap <C-g> :CtrlPMRU<cr>
+nnoremap <Leader>g :CtrlPCurFile<CR>
+nnoremap <Leader>f :CtrlP<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>r :CtrlPMRU<CR>
 let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
 let g:ctrlp_max_depth = 10 " How many levels to search through.
 let g:ctrlp_mruf_max = 30 " How many files to remember.
@@ -479,8 +485,8 @@ let g:gundo_close_on_revert=1   " close gundo when reverting
 "let g:jedi#popup_select_first = 0
 
 " Lusty Explorer
-nnoremap <Leader>f :LustyFilesystemExplorer<cr>
-nnoremap <Leader>b :LustyBufferExplorer<cr>
+" nnoremap <Leader>f :LustyFilesystemExplorer<cr>
+" nnoremap <Leader>b :LustyBufferExplorer<cr>
 
 " NerdTree
 " Close Vim if only NerdTree is left
@@ -548,7 +554,8 @@ let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
 " Vim Rooter
-let g:rooter_use_lcd = 1
+"let g:rooter_use_lcd = 1
+
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
