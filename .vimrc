@@ -74,7 +74,6 @@ set showcmd 		" display incomplete commands
 set showmatch 		" show matching brackets while typing
 set backspace=indent,eol,start " backspacing
 set notimeout ttimeout timeoutlen=50 " less wait in term
-set clipboard^=unnamed 	" tmux copy paste integration
 set noerrorbells 	" don't ring the bell
 set lazyredraw 		" don't redraw during macros
 set scrolloff=5		" 5 lines will always appear below the cursor
@@ -146,6 +145,7 @@ if has('mac')
     "set guifont=Consolas:h12
     set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13
     set shell=/bin/bash
+    set clipboard^=unnamed 	" tmux copy paste integration
 elseif has('win32')
     set guifont=Consolas:h10
 elseif has('unix')
