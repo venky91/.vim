@@ -125,6 +125,9 @@ augroup checktime
     endif
 augroup END
 
+" Read Man Pages in vim with :Main.
+runtime! ftplugin/man.vim
+
 " - - - - }}}
 
 " THEME - - - - {{{
@@ -191,7 +194,7 @@ endif
 " KEYMAPS - - - - {{{
 
 " Modifier
-inoremap <C-a> <nop>
+"inoremap <C-a> <nop>
 " unbind C-a
 vnoremap <C-c> "+y
 " map ctrl+c to copy in visual mode
@@ -251,8 +254,10 @@ vnoremap > >gv
 " Reselect text after identing
 nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
 " Double Click with the Mouse selects all occurences in the buffer.
-:com! -narg=1 -complete=help H h <args> <bar> only
+:com! -nargs=1 -complete=help H h <args> <bar> only
 " Use :H to open a help file in a full buffer.
+:com! -nargs=1 M Man <args> <bar> only
+" Use :M to open a mange in a full buffer. :Not Working Yet:
 nnoremap ' `
 nnoremap ` '
 " Closer way to get to where you were last.
@@ -579,7 +584,7 @@ endfunction
 let g:unite_source_process_enable_confirm = 1
 let g:unite_source_history_yank_enable = 1
 let g:unite_enable_split_vertically = 0
-let g:unite_winheight = 20
+let g:unite_winheight = 10
 let g:unite_source_directory_mru_limit = 300
 let g:unite_source_file_mru_limit = 300
 let g:unite_source_file_mru_filename_format = ':~:.'
