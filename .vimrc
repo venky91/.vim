@@ -315,6 +315,9 @@ nnoremap <silent><Leader>df :call DiffToggle()<CR>
 " YouCompleteMe GoTos
 nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
+" Easy Motion Forward and Backwards
+nmap s <space>w
+nmap S <space>b
 
 " - - - - }}}
 
@@ -439,7 +442,6 @@ autocmd FileType objc let g:alternateExtensions_m = "h"
 " let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
 " CtrlP
-"nnoremap <C-5> :CtrlPCurWD<Cr>
 "nnoremap <C-t> :CtrlP<cr>
 "nnoremap <C-b> :CtrlPBuffer<cr>
 "nnoremap <C-g> :CtrlPMRU<cr>
@@ -460,6 +462,9 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " DelimitMate
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
+
+" Easy Motion
+let g:EasyMotion_leader_key = '<space>'
 
 " Easytags
 let g:easytags_include_members = 1
