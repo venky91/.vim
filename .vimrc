@@ -27,7 +27,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-eunuch'
-Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle "myusuf3/numbers.vim"
@@ -39,14 +38,18 @@ Bundle 'jakar/vim-json'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'mattn/zencoding-vim'
 Bundle 'honza/vim-snippets'
-Bundle 'kien/ctrlp.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'klen/python-mode'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimproc.vim'
 
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'mileszs/ack.vim'
+"Bundle 'Shougo/vimshell.vim'
 "Bundle 'airblade/vim-rooter'
 "Bundle 'vim-scripts/LustyExplorer'
 "Bundle 'davidhalter/jedi-vim'
@@ -55,11 +58,7 @@ Bundle 'xolox/vim-misc'
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-dispatch'
-"Bundle 'Shougo/unite.vim'
-"Bundle 'Shougo/vimproc.vim'
-"Bundle 'Shougo/vimshell.vim'
 "Bundle 'Shougo/vimfiler.vim'
-"Bundle 'Shougo/vimproc'
 "Bundle 'Shougo/neocomplcache'
 "Bundle 'Shougo/neosnippet'
 filetype plugin indent on
@@ -442,22 +441,19 @@ autocmd FileType objc let g:alternateExtensions_m = "h"
 " let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
 " CtrlP
-"nnoremap <C-t> :CtrlP<cr>
-"nnoremap <C-b> :CtrlPBuffer<cr>
-"nnoremap <C-g> :CtrlPMRU<cr>
-nnoremap <Leader>g :CtrlPCurFile<CR>
-nnoremap <Leader>f :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>r :CtrlPMRU<CR>
-let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
-let g:ctrlp_max_depth = 10 " How many levels to search through.
-let g:ctrlp_mruf_max = 30 " How many files to remember.
-let g:ctrlp_by_filename=0 " Emphasize directories in search.
-let g:ctrlp_use_caching=1 " Cache searches.
-let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
-let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
-let g:ctrlp_max_files = 10000
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+"nnoremap <Leader>g :CtrlPCurFile<CR>
+"nnoremap <Leader>f :CtrlP<CR>
+"nnoremap <Leader>b :CtrlPBuffer<CR>
+"nnoremap <Leader>r :CtrlPMRU<CR>
+"let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+"let g:ctrlp_max_depth = 10 " How many levels to search through.
+"let g:ctrlp_mruf_max = 30 " How many files to remember.
+"let g:ctrlp_by_filename=0 " Emphasize directories in search.
+"let g:ctrlp_use_caching=1 " Cache searches.
+"let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
+"let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
+"let g:ctrlp_max_files = 10000
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " DelimitMate
 let g:delimitMate_expand_cr = 1
@@ -558,6 +554,85 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
+" Unite
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+
+augroup UniteAutoCmd
+    autocmd!
+augroup END
+
+function! s:unite_tabs_and_windows()
+    nmap <buffer> <C-h> <C-w>h
+    nmap <buffer> <C-j> <C-w>j
+    nmap <buffer> <C-k> <C-w>k
+    nmap <buffer> <C-l> <C-w>l
+    imap <buffer> <C-h> <Esc><C-w>h
+    imap <buffer> <C-j> <Esc><C-w>j
+    imap <buffer> <C-k> <Esc><C-w>k
+    imap <buffer> <C-l> <Esc><C-w>l
+    nmap <buffer> H gT
+    nmap <buffer> L gt
+    nmap <buffer> <leader>x :bd!<CR>
+endfunction
+
+let g:unite_source_process_enable_confirm = 1
+let g:unite_source_history_yank_enable = 1
+let g:unite_enable_split_vertically = 0
+let g:unite_winheight = 20
+let g:unite_source_directory_mru_limit = 300
+let g:unite_source_file_mru_limit = 300
+let g:unite_source_file_mru_filename_format = ':~:.'
+
+let g:unite_data_directory='~/.vim/.cache/unite'
+let g:unite_enable_start_insert=1
+let g:unite_source_history_yank_enable=1
+let g:unite_source_file_rec_max_cache_files=3000
+let g:unite_split_rule="botright"
+let g:unite_prompt='» '
+
+if executable('ag')
+    let g:unite_source_grep_command='ag'
+    let g:unite_source_grep_default_opts='--nocolor --nogroup --hidden'
+    let g:unite_source_grep_recursive_opt=''
+elseif executable('ack')
+    let g:unite_source_grep_command='ack'
+    "let g:unite_source_grep_default_opts='--no-heading --no-color -a'
+    let g:unite_source_grep_default_opts = '--column --no-color --nogroup --with-filename'
+    let g:unite_source_grep_recursive_opt=''
+endif
+
+function! s:unite_settings()
+    nmap <buffer> Q <plug>(unite_exit)
+    nmap <buffer> <esc> <plug>(unite_exit)
+    imap <buffer> <esc> <plug>(unite_exit)
+
+    imap <buffer> jk <Plug>(unite_insert_leave)
+    imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
+    imap <buffer> <leader> <Esc><leader>
+    call s:unite_tabs_and_windows()
+endfunction
+
+autocmd FileType unite call s:unite_settings()
+
+"nnoremap [unite] <nop>
+"nmap \ [unite]
+
+"nnoremap <silent> [unite]p :<C-u>Unite process -buffer-name=processes -start-insert<CR>
+"nnoremap <silent> [unite]b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
+"nnoremap <silent> [unite]/ :<C-u>Unite -buffer-name=search grep:.<cr>
+"nnoremap <silent> [unite]l :<C-u>Unite -buffer-name=line line<cr>
+"nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<cr>
+"nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
+
+nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
+nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>
+nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
+nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
+nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
+nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
+nnoremap <Leader>r :<C-u>Unite file_mru<CR>
+
 " Vim Rooter
 "let g:rooter_use_lcd = 1
 
@@ -593,14 +668,6 @@ let g:user_zen_Leader_key = '<c-e>'
 
 " COMPLETION - - - - {{{
 
-"" Clang Complete
-"let g:clang_complete_auto=0
-"let g:clang_auto_select=0
-"let g:clang_user_options='|| exit 0'
-"let g:clang_use_library=1
-"set completeopt=menu,menuone,longest
-"let g:clang_jumpto_back_key="<C-\>"
-
 " Various
 set omnifunc=syntaxcomplete#Complete " Default Completion
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -617,82 +684,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 set completeopt=menuone
-
-"" Neocomplcache
-"" Launches neocomplcache automatically on vim startup.
-"let g:neocomplcache_enable_at_startup = 1
-"" Use smartcase.
-"let g:neocomplcache_enable_smart_case = 1
-"" Use camel case completion.
-"let g:neocomplcache_enable_camel_case_completion = 1
-"" Use underscore completion.
-"let g:neocomplcache_enable_underbar_completion = 1
-"" Sets minimum char length of syntax keyword.
-"let g:neocomplcache_min_syntax_length = 3
-"" buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder
-"let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-"" Start length to start completion.
-"let g:neocomplcache_auto_completion_start_length=3
-
-"" SuperTab like snippets behavior.
-"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-"" Recommended key-mappings.
-
-"" <CR>: close popup and save indent.
-"inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-"function! s:my_cr_function()
-  ""return neocomplcache#smart_close_popup() . "\<CR>"
-  "" For no inserting <CR> key.
-  "return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
-"endfunction
-
-"" <TAB>: completion.
-"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
-"" AutoComplPop like behavior.
-"let g:neocomplcache_enable_auto_select = 1
-
-"" Compatibility with Clang
-"if !exists('g:neocomplcache_force_omni_patterns')
-  "let g:neocomplcache_force_omni_patterns = {}
-"endif
-"let g:neocomplcache_force_overwrite_completefunc = 1
-"let g:neocomplcache_force_omni_patterns.c =
-      "\ '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplcache_force_omni_patterns.cpp =
-      "\ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-"let g:neocomplcache_force_omni_patterns.objc =
-      "\ '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplcache_force_omni_patterns.objcpp =
-      "\ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
-"" Jedi Completion
-"let g:neocomplcache_force_omni_patterns['python'] = '[^. \t]\.\w*'
-"let g:jedi#popup_on_dot = 0
-"au FileType python let b:did_ftplugin = 1
-
-"" Neosnippet
-"" SuperTab like snippets behavior.
-"imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-"smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-"" Tell Neosnippet about the other snippets
-"let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
-
-"" Compatibility with Snipmate
-"let g:neosnippet#enable_snipmate_compatibility = 1
-
-"" For snippet_complete marker.
-"if has('conceal')
-  "set conceallevel=2 concealcursor=i
-"endif
-
-"" Ruby & Rails, RSense & Neocomplcache
-"let g:rsenseUseOmniFunc=1
-"let g:neocomplcache#sources#rsense#home_directory = '/usr/local/rsense-0.3'
-"let g:rubycomplete_buffer_loading = 1
-"let g:rubycomplete_classes_in_global = 1
-"let g:rubycomplete_rails = 1
 
 " Tags
 set tags+=~/.vim/tags/cpp_src
