@@ -634,9 +634,14 @@ nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_
 nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>
 nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
 nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
-nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
-nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
-nnoremap <Leader>r :<C-u>Unite file_mru<CR>
+"nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
+"nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
+"nnoremap <Leader>r :<C-u>Unite file_mru<CR>
+
+"nnoremap <space>s :Unite -quick-match buffer<cr>
+nnoremap <Leader>b :<C-u>Unite -resume buffer -buffer-name=buffers -start-insert<CR>
+nnoremap <Leader>f :<C-u>Unite -resume file_rec/async<CR>
+nnoremap <Leader>r :<C-u>Unite -resume file_mru<CR>
 
 " Vim Rooter
 "let g:rooter_use_lcd = 1
