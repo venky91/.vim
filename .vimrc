@@ -33,7 +33,6 @@ Bundle "myusuf3/numbers.vim"
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'godlygeek/tabular'
-Bundle 'FredKSchott/CoVim'
 Bundle 'jakar/vim-json'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'mattn/zencoding-vim'
@@ -46,7 +45,12 @@ Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimproc.vim'
+Bundle 'Twinside/vim-haskellFold'
+Bundle 'vim-scripts/Haskell-Conceal'
+Bundle 'powerman/vim-plugin-viewdoc'
+Bundle 'ujihisa/neco-ghc'
 
+"Bundle 'FredKSchott/CoVim'
 "Bundle 'kien/ctrlp.vim'
 "Bundle 'mileszs/ack.vim'
 "Bundle 'Shougo/vimshell.vim'
@@ -215,7 +219,7 @@ nnoremap <C-\> :pop<cr>
 noremap ; :
 vnoremap ; :
 " Use ; to do ex commands.
-cmap Q :q!<cr>
+cmap Q :qa!<cr>
 " easier way to quit
 "cmap w!! w !sudo dd of=%<cr>
 " root authority writing
@@ -240,10 +244,10 @@ imap jk <Esc>
 " esc returns to command mode.
 nnoremap Q gq
 " Don't use Ex mode, use Q for formatting.
-nnoremap J 10j
-nnoremap K 10k
-xnoremap J 10j
-xnoremap K 10k
+"nnoremap J 10j
+"nnoremap K 10k
+"xnoremap J 10j
+"xnoremap K 10k
 " Moves 10 lines down/up.
 map H ^
 " Moves to the front of the line.
@@ -256,8 +260,6 @@ nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\
 " Double Click with the Mouse selects all occurences in the buffer.
 :com! -nargs=1 -complete=help H h <args> <bar> only
 " Use :H to open a help file in a full buffer.
-:com! -nargs=1 M Man <args> <bar> only
-" Use :M to open a mange in a full buffer. :Not Working Yet:
 nnoremap ' `
 nnoremap ` '
 " Closer way to get to where you were last.
@@ -304,12 +306,6 @@ nnoremap<Leader>[ :pop<cr>
 nnoremap <Leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-" Neat Select and Replace Short Cuts.
-nnoremap <Leader>s *N
-xnoremap <Leader>s "*y<Esc>:let @/ = substitute(escape(@*, '\/.*$^~[]'), "\n", '\\n', "g") <bar>echo ' '<cr>
-nnoremap <Leader>r :'{,'}s/<c-r>=expand('<cword>')<cr>/
-xnoremap <Leader>r :s/<c-r>=@/<cr>/
-nnoremap <Leader>o *Ncgn
 " Delete into one register and paste from another.
 vnoremap <Leader>v "_dP
 " Navigate by indentation.
@@ -520,6 +516,7 @@ let g:pymode_breakpoint_key = '<Leader>B' " Key for set/unset breakpoint.
 let g:pymode_rope = 0 " Use Jedi instead of Rope.
 let g:pymode_folding = 1
 let g:pymode_motion = 1
+let g:pymode_lint_mccabe_complexity = 16
 
 " Sparkup
 " let g:sparkupNextMapping='<c-u>'
@@ -579,6 +576,8 @@ function! s:unite_tabs_and_windows()
     nmap <buffer> H gT
     nmap <buffer> L gt
     nmap <buffer> <leader>x :bd!<CR>
+    nmap <buffer> <C-s> <Plug>(unite_redraw)
+    imap <buffer> <C-s> <Plug>(unite_redraw)
 endfunction
 
 let g:unite_source_process_enable_confirm = 1
@@ -611,7 +610,6 @@ function! s:unite_settings()
     nmap <buffer> Q <plug>(unite_exit)
     nmap <buffer> <esc> <plug>(unite_exit)
     imap <buffer> <esc> <plug>(unite_exit)
-
     imap <buffer> jk <Plug>(unite_insert_leave)
     imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
     imap <buffer> <leader> <Esc><leader>
@@ -642,6 +640,10 @@ nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
 nnoremap <Leader>b :<C-u>Unite -resume buffer -buffer-name=buffers -start-insert<CR>
 nnoremap <Leader>f :<C-u>Unite -resume file_rec/async<CR>
 nnoremap <Leader>r :<C-u>Unite -resume file_mru<CR>
+
+" View Doc
+let g:viewdoc_open='new'
+let g:viewdoc_only=1
 
 " Vim Rooter
 "let g:rooter_use_lcd = 1
@@ -692,6 +694,8 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
+autocmd FileType haskell set omnifunc=necoghc#omnifunc
 
 set completeopt=menuone
 
