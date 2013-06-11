@@ -29,7 +29,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-eunuch'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
-Bundle "myusuf3/numbers.vim"
+Bundle 'myusuf3/numbers.vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'godlygeek/tabular'
