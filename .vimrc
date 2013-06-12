@@ -251,9 +251,9 @@ nnoremap Q gq
 "xnoremap J 10j
 "xnoremap K 10k
 " Moves 10 lines down/up.
-map H ^
+"map H ^
 " Moves to the front of the line.
-map L $
+"map L $
 " Moves to the end of the line.
 vnoremap < <gv
 vnoremap > >gv
@@ -288,7 +288,6 @@ nnoremap <Leader>q <C-w><C-v><C-w>l :e ~/scratch.vim<cr>
 " opens a pad to do macro testing
 nnoremap <Leader>Q :so ~/scratch.vim<cr>
 " source the macro file
-"nnoremap <Leader>v <C-w><C-v><C-w>l:e $MYVIMRC<cr>
 nnoremap <Leader>v :e ~/.vimrc<cr>
 " open vimrc in another split
 nnoremap <Leader>V :silent! so $MYVIMRC<CR>
@@ -310,8 +309,6 @@ nnoremap <Leader>= mzgg=G`z
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Delete into one register and paste from another.
 vnoremap <Leader>v "_dP
-" Navigate by indentation.
-nnoremap <Leader>x :call search('^'.matchstr(getline('.'),'^\s*').'\S','We')<CR>
 " In :Functions:, toggles diffmode of buffer.
 nnoremap <silent><Leader>df :call DiffToggle()<CR>
 " YouCompleteMe GoTos
@@ -360,7 +357,6 @@ autocmd BufReadPost *
 " BUILD & COMPILE - - - - {{{
 
 " Use make in the same directory.
-" cabbrev make call UseMakeSameDirForC()<CR>
 autocmd FileType c,cpp cabbrev make call UseMakeSameDirForC()<CR><CR>
 
 " Default Make
@@ -749,4 +745,3 @@ function! XCodeBuild()
 endfunction
 
 " - - - - }}}
-
