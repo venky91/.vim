@@ -28,7 +28,6 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-eunuch'
 Bundle 'Lokaltog/powerline'
-Bundle 'sjl/gundo.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
@@ -49,7 +48,9 @@ Bundle 'Twinside/vim-haskellFold'
 Bundle 'vim-scripts/Haskell-Conceal'
 Bundle 'powerman/vim-plugin-viewdoc'
 Bundle 'ujihisa/neco-ghc'
+Bundle 'mbbill/undotree'
 
+"Bundle 'sjl/gundo.vim'
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'kien/ctrlp.vim'
 "Bundle 'mileszs/ack.vim'
@@ -72,7 +73,7 @@ filetype plugin indent on
 " EDITING - - - - {{{
 
 set history=200 	" keep 200 lines of command line history
-set ruler 		" show the cursor position all the time
+set ruler 		    " show the cursor position all the time
 set showcmd 		" display incomplete commands
 set showmatch 		" show matching brackets while typing
 set backspace=indent,eol,start " backspacing
@@ -93,7 +94,7 @@ set shiftwidth=4    " all for 4
 set sts=4           " about indenting
 set diffopt=iwhite  " ignore white space in diffs
 
-autocmd FileType * setlocal formatoptions-=cro " disable automatic comments
+autocmd FileType * setlocal formatoptions-=cro " Disable automatic comments.
 
 " Mouse
 if has('mouse')
@@ -231,7 +232,8 @@ map <F3> zR
 " Opens all Folds.
 map <F4> zM
 " Closes all Folds.
-nnoremap <F8> :GundoToggle<CR>
+"nnoremap <F8> :GundoToggle<CR>
+nnoremap <F8> :UndotreeToggle<CR>
 map <F9> :sign unplace *<CR>
 " Remove signs on the left side.
 nnoremap Y y$
@@ -318,6 +320,9 @@ nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 " Easy Motion Forward and Backwards
 nmap s <space>w
 nmap S <space>b
+" Enable Magic Regular Expressions.
+nnoremap / /\v
+cnoremap %s %s/\v
 
 " - - - - }}}
 
@@ -647,7 +652,6 @@ let g:viewdoc_only=1
 
 " Vim Rooter
 "let g:rooter_use_lcd = 1
-
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
