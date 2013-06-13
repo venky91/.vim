@@ -343,6 +343,7 @@ set foldtext=NeatFoldText()
 " }}}2
 
 set foldenable      " Turn on folding
+set foldcolumn=1    " Add a column to the left for folding.
 au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
 
@@ -757,7 +758,7 @@ endfunction
 
 " NOTES {{{
 
-" Every every file recursively that matches a wildcard.
+" Open every file recursively that matches a wildcard.
 " args **/*.vim
 
 " }}}
