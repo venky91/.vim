@@ -19,9 +19,13 @@ def launch_vim_and_install_bundles():
     print "Installing Bundles"
     os.system('vim +BundleInstall +qall')
 
+def end_messages():
+    print "Check YouCompleteMe and VimProc."
+
 def main():
     check_vundle()
     create_symlinks()
     launch_vim_and_install_bundles()
+    print end_messages()
 
 main()

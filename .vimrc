@@ -1,4 +1,4 @@
-" PACKAGES - - - - {{{
+" PACKAGES {{{
 
 set nocompatible 	" no compatibility with vi
 filetype off 		" required for vundle
@@ -49,7 +49,10 @@ Bundle 'vim-scripts/Haskell-Conceal'
 Bundle 'powerman/vim-plugin-viewdoc'
 Bundle 'ujihisa/neco-ghc'
 Bundle 'mbbill/undotree'
+Bundle 'eagletmt/ghcmod-vim'
 
+"Bundle 'lukerandall/haskellmode-vim'
+"Bundle 'chrisbra/NrrwRgn'
 "Bundle 'sjl/gundo.vim'
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'kien/ctrlp.vim'
@@ -68,9 +71,9 @@ Bundle 'mbbill/undotree'
 "Bundle 'Shougo/neosnippet'
 filetype plugin indent on
 
-" - - - - }}}
+" }}}
 
-" EDITING - - - - {{{
+" EDITING {{{
 
 set history=200 	" keep 200 lines of command line history
 set ruler 		    " show the cursor position all the time
@@ -102,9 +105,9 @@ if has('mouse')
     set ttymouse=xterm2
 endif
 
-" - - - - }}}
+" }}}
 
-" FILES - - - - {{{
+" FILES {{{
 
 set hidden          " hides buffers instead of removing them
 set nobackup        " don't keep a backup file
@@ -133,9 +136,9 @@ augroup END
 " Read Man Pages in vim with :Main.
 runtime! ftplugin/man.vim
 
-" - - - - }}}
+" }}}
 
-" THEME - - - - {{{
+" THEME {{{
 
 syntax on           " color files automatically
 set cursorline      " highlight the current line
@@ -156,7 +159,7 @@ if has('mac')
 elseif has('win32')
     set guifont=Consolas:h10
 elseif has('unix')
-    set t_Co=256        " sets 256 colors in the terminal
+    set t_Co=256       " sets 256 colors in the terminal
     set guioptions-=T  "remove toolbar
     set guioptions-=m  "remove top bar
     "set gfn=Terminus\ 10
@@ -194,16 +197,16 @@ else
     endif
 endif
 
-" - - - - }}}
+" }}}
 
-" KEYMAPS - - - - {{{
+" KEYMAPS {{{
 
 " Modifier
 "inoremap <C-a> <nop>
 " unbind C-a
-vnoremap <C-c> "+y
+"vnoremap <C-c> "+y
 " map ctrl+c to copy in visual mode
-inoremap <C-v> <C-O>"0P
+"inoremap <C-v> <C-O>"0P
 " map ctrl+v to paste in insert mode
 inoremap <C-U> <C-G>u<C-U>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
@@ -321,9 +324,9 @@ nmap S <space>b
 nnoremap / /\v
 cnoremap %s %s/\v
 
-" - - - - }}}
+" }}}
 
-" FOLDING - - - - {{{
+" FOLDING {{{
 
 function! NeatFoldText() "{{{2
   let line = ' ' . substitute(getline(v:foldstart), '^\s*"\?\s*\|\s*"\?\s*{{' . '{\d*\s*', '', 'g') . ' '
@@ -352,9 +355,9 @@ autocmd BufReadPost *
     \ exe "normal g`\"" |
     \ endif
 
-" - - - - }}}
+"}}}
 
-" BUILD & COMPILE - - - - {{{
+" BUILD & COMPILE {{{
 
 " Use make in the same directory.
 autocmd FileType c,cpp cabbrev make call UseMakeSameDirForC()<CR><CR>
@@ -403,9 +406,9 @@ elseif has('unix')
     autocmd FileType python nnoremap <Leader>p3 :!/usr/bin/env python3 %<cr>
 endif
 
-" - - - - }}}
+" }}}
 
-" WEB - - - - {{{
+" WEB {{{
 
 "Indentation
 autocmd FileType eruby,ruby,html,css,php set autoindent
@@ -423,9 +426,9 @@ au BufRead,BufNewFile *.php set ft=php.html
 if !empty($MY_RUBY_HOME)
  let g:ruby_path = join(split(glob($MY_RUBY_HOME.'/lib/ruby/*.*')."\n".glob($MY_RUBY_HOME.'/lib/rubysite_ruby/*'),"\n"),',')
 endif
-" - - - - }}}
+" }}}
 
-" PLUGIN - - - - {{{
+" PLUGIN {{{
 
 " Alternate
 autocmd FileType objc let g:alternateExtensions_h = "m" 
@@ -476,6 +479,13 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 " Gundo
 let g:gundo_close_on_revert=1   " close gundo when reverting
+
+" GHC Mod
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+
+"" Haskell Mode
+"au BufEnter *.hs compiler ghc
+"let g:haddock_browser="/Applications/Firefox.app/Contents/MacOS/firefox"
 
 " Jedi
 "let g:jedi#goto_command = "<Leader>pg"
@@ -574,8 +584,6 @@ function! s:unite_tabs_and_windows()
     imap <buffer> <C-j> <Esc><C-w>j
     imap <buffer> <C-k> <Esc><C-w>k
     imap <buffer> <C-l> <Esc><C-w>l
-    nmap <buffer> H gT
-    nmap <buffer> L gt
     nmap <buffer> <leader>x :bd!<CR>
     nmap <buffer> <C-s> <Plug>(unite_redraw)
     imap <buffer> <C-s> <Plug>(unite_redraw)
@@ -637,7 +645,7 @@ nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
 "nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
 "nnoremap <Leader>r :<C-u>Unite file_mru<CR>
 
-"nnoremap <space>s :Unite -quick-match buffer<cr>
+nnoremap <Leader>s :Unite -resume -quick-match buffer<cr>
 nnoremap <Leader>b :<C-u>Unite -resume buffer -buffer-name=buffers -start-insert<CR>
 nnoremap <Leader>f :<C-u>Unite -resume file_rec/async<CR>
 nnoremap <Leader>r :<C-u>Unite -resume file_mru<CR>
@@ -676,9 +684,9 @@ au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:U
 " Zencoding
 let g:user_zen_Leader_key = '<c-e>'
 
-" - - - - }}}
+" }}}
 
-" COMPLETION - - - - {{{
+" COMPLETION {{{
 
 " Various
 set omnifunc=syntaxcomplete#Complete " Default Completion
@@ -704,9 +712,9 @@ set tags+=~/.vim/tags/cpp_src
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/easytags
 
-" - - - - }}}
+" }}}
 
-" FUNCTIONS - - - - {{{
+" FUNCTIONS {{{
 
 function! DiffToggle()
     if &diff
@@ -744,4 +752,11 @@ function! XCodeBuild()
     cexpr l:out
 endfunction
 
-" - - - - }}}
+" }}}
+
+" NOTES {{{
+
+" Every every file recursively that matches a wildcard.
+" args **/*.vim
+
+" }}}
