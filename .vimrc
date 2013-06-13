@@ -271,6 +271,7 @@ nnoremap ` '
 nnoremap x "xx
 vnoremap x "xx
 " Delete to the x register.
+nnoremap <TAB> za
 
 " Disable some of the a.vim mappings.
 augroup DisableMappings
