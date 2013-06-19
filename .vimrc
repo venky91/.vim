@@ -343,7 +343,7 @@ set foldtext=NeatFoldText()
 " }}}2
 
 set foldenable      " Turn on folding
-set foldcolumn=1    " Add a column to the left for folding.
+"set foldcolumn=1    " Add a column to the left for folding.
 au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
 
@@ -519,7 +519,7 @@ let g:NERDTreeAutoDeleteBuffer=1
 set laststatus=2 " Always show the statusline.
 set encoding=utf-8 " Necessary to show unicode glyphs.
 let g:Powerline_symbols = 'fancy'
-set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+"set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " Python Mode
 let g:pymode_breakpoint = 1 " Load breakpoints plugin.
