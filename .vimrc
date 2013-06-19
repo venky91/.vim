@@ -27,7 +27,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-eunuch'
-Bundle 'Lokaltog/powerline'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'paradigm/TextObjectify'
 Bundle 'vim-ruby/vim-ruby'
@@ -51,6 +50,7 @@ Bundle 'ujihisa/neco-ghc'
 Bundle 'mbbill/undotree'
 Bundle 'eagletmt/ghcmod-vim'
 
+"Bundle 'Lokaltog/powerline'
 "Bundle 'lukerandall/haskellmode-vim'
 "Bundle 'chrisbra/NrrwRgn'
 "Bundle 'sjl/gundo.vim'
@@ -153,7 +153,7 @@ set showbreak=↪ " prettier linewraps
 
 if has('mac')
     "set guifont=Consolas:h12
-    set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13
+    set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13,Menlo:h12
     set shell=/bin/bash
     set clipboard^=unnamed 	" tmux copy paste integration
 elseif has('win32')
