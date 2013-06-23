@@ -3,73 +3,89 @@
 set nocompatible 	" no compatibility with vi
 filetype off 		" required for vundle
 
-set rtp+=vim/,~/.vim/bundle/vundle/,~/.vim/bundle/powerline/powerline/bindings/vim
-call vundle#rc()
+if has('vim_starting')
+  set runtimepath+=~/.vim/neobundle.vim/
+endif
 
-Bundle 'gmarik/vundle'
-Bundle 'SirVer/ultisnips'
-Bundle 'shemerey/vim-peepopen'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'vim-scripts/L9'
-Bundle 'vim-scripts/Colour-Sampler-Pack'
-Bundle 'vim-scripts/ScrollColors'
-Bundle 'vim-scripts/CSApprox'
-Bundle 'vim-scripts/a.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'msanders/cocoa.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-eunuch'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'paradigm/TextObjectify'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'godlygeek/tabular'
-Bundle 'jakar/vim-json'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'mattn/zencoding-vim'
-Bundle 'honza/vim-snippets'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-endwise'
-Bundle 'klen/python-mode'
-Bundle 'xolox/vim-easytags'
-Bundle 'xolox/vim-misc'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'Twinside/vim-haskellFold'
-Bundle 'vim-scripts/Haskell-Conceal'
-Bundle 'powerman/vim-plugin-viewdoc'
-Bundle 'ujihisa/neco-ghc'
-Bundle 'mbbill/undotree'
-Bundle 'eagletmt/ghcmod-vim'
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-"Bundle 'Lokaltog/powerline'
-"Bundle 'lukerandall/haskellmode-vim'
-"Bundle 'chrisbra/NrrwRgn'
-"Bundle 'sjl/gundo.vim'
-"Bundle 'FredKSchott/CoVim'
-"Bundle 'kien/ctrlp.vim'
-"Bundle 'mileszs/ack.vim'
-"Bundle 'Shougo/vimshell.vim'
-"Bundle 'airblade/vim-rooter'
-"Bundle 'vim-scripts/LustyExplorer'
-"Bundle 'davidhalter/jedi-vim'
-"Bundle 'jiangmiao/auto-pairs'
-"Bundle 'wincent/Command-T'
-"Bundle 'Rip-Rip/clang_complete'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-dispatch'
-"Bundle 'Shougo/vimfiler.vim'
-"Bundle 'Shougo/neocomplcache'
-"Bundle 'Shougo/neosnippet'
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'shemerey/vim-peepopen'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'vim-scripts/L9'
+NeoBundle 'vim-scripts/Colour-Sampler-Pack'
+NeoBundle 'vim-scripts/ScrollColors'
+NeoBundle 'vim-scripts/CSApprox'
+NeoBundle 'vim-scripts/a.vim'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'msanders/cocoa.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-eunuch'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'paradigm/TextObjectify'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'jakar/vim-json'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'klen/python-mode'
+NeoBundle 'xolox/vim-easytags'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'Twinside/vim-haskellFold'
+NeoBundle 'vim-scripts/Haskell-Conceal'
+NeoBundle 'powerman/vim-plugin-viewdoc'
+NeoBundle 'ujihisa/neco-ghc'
+NeoBundle 'mbbill/undotree'
+NeoBundle 'eagletmt/ghcmod-vim'
+
+"NeoBundle 'Lokaltog/powerline'
+"NeoBundle 'lukerandall/haskellmode-vim'
+"NeoBundle 'chrisbra/NrrwRgn'
+"NeoBundle 'sjl/gundo.vim'
+"NeoBundle 'FredKSchott/CoVim'
+"NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'mileszs/ack.vim'
+"NeoBundle 'Shougo/vimshell.vim'
+"NeoBundle 'airblade/vim-rooter'
+"NeoBundle 'vim-scripts/LustyExplorer'
+"NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'jiangmiao/auto-pairs'
+"NeoBundle 'wincent/Command-T'
+"NeoBundle 'Rip-Rip/clang_complete'
+"NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"NeoBundle 'tpope/vim-dispatch'
+"NeoBundle 'Shougo/vimfiler.vim'
+"NeoBundle 'Shougo/neocomplcache'
+"NeoBundle 'Shougo/neosnippet'
 filetype plugin indent on
+
+" Installation check.
+NeoBundleCheck
 
 " }}}
 
@@ -303,10 +319,8 @@ nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-nnoremap <Leader>k :BD<CR>
-" Delete Buffer
 nnoremap <Leader>] <C-]>
-nnoremap<Leader>[ :pop<cr>
+nnoremap <Leader>[ :pop<cr>
 " Indent the whole file and return to original position
 nnoremap <Leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
@@ -629,8 +643,8 @@ endfunction
 
 autocmd FileType unite call s:unite_settings()
 
-"nnoremap [unite] <nop>
-"nmap \ [unite]
+nnoremap [unite] <nop>
+nmap \ [unite]
 
 "nnoremap <silent> [unite]p :<C-u>Unite process -buffer-name=processes -start-insert<CR>
 "nnoremap <silent> [unite]b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
@@ -638,6 +652,10 @@ autocmd FileType unite call s:unite_settings()
 "nnoremap <silent> [unite]l :<C-u>Unite -buffer-name=line line<cr>
 "nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<cr>
 "nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
+
+nnoremap <silent> [unite]neoinstall :<C-u>Unite neobundle/install<cr>
+nnoremap <silent> [unite]neoupdate :<C-u>Unite neobundle/update<cr>
+nnoremap <silent> [unite]keymap :<C-u>Unite mapping<cr>
 
 nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
 nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>

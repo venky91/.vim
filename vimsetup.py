@@ -1,29 +1,34 @@
 import os
 
-def check_vundle():
-    vundlePath = os.getenv("HOME") + "/.vim/bundle/vundle"
-    print vundlePath
-    if os.path.exists(vundlePath):
-        print "Vundle Exists"
+
+def neobundle_exists():
+    bundlePath = os.getenv("HOME") + "/.vim/neobundle.vim"
+    print bundlePath
+    if os.path.exists(bundlePath):
+        print "NeoBundle Exists"
     else:
-        print "Installing Vundle"
-        os.system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle')
-        print "Finished installing Vundle"
+        print "Installing NeoBundle"
+        os.system('git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim')
+        print "Finished installing NeoBundle"
+
 
 def create_symlinks():
     print "Creating symlinks."
     os.system('ln -s ~/.vim/.vimrc ~/.vimrc')
     os.system('ln -s ~/.vim/.gvimrc ~/.gvimrc')
 
+
 def launch_vim_and_install_bundles():
     print "Installing Bundles"
-    os.system('vim +BundleInstall +qall')
+    os.system('vim +NeoBundleInstall +q')
+
 
 def end_messages():
-    print "Check YouCompleteMe and VimProc."
+    print "Check YouCompleteMe"
+
 
 def main():
-    check_vundle()
+    neobundle_exists()
     create_symlinks()
     launch_vim_and_install_bundles()
     print end_messages()
