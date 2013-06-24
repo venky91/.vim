@@ -333,6 +333,7 @@ nnoremap <silent><Leader>df :call DiffToggle()<CR>
 nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 " Easy Motion Forward and Backwards
+nnoremap <Leader>z :e ~/Dropbox/Notes.org<CR>
 nmap s <space>w
 nmap S <space>b
 " Enable Magic Regular Expressions.
@@ -771,12 +772,5 @@ function! XCodeBuild()
     let l:out = system(l:command)
     cexpr l:out
 endfunction
-
-" }}}
-
-" NOTES {{{
-
-" Open every file recursively that matches a wildcard.
-" args **/*.vim
 
 " }}}
