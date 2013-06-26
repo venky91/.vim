@@ -1,13 +1,25 @@
 0.2.0
-/Users/james/.vim/.vimrc	1372210038
-/Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1372209477
+/Users/james/log	1372220012
+/Users/james/.vim/mysnippets/cpp.snippets	1372219959
+/Users/james/Dropbox/Notes.org	1372219955
+/Users/james/.vim/bundle/ultisnips/UltiSnips/python.snippets	1372219674
+/Users/james/.vim/bundle/ultisnips/UltiSnips/java.snippets	1372219641
+/Users/james/.vim/bundle/ultisnips/UltiSnips/cpp.snippets	1372219554
+/Users/james/.vim/bundle/ultisnips/UltiSnips/all.snippets	1372219539
+/Users/james/.vim/mysnippets/c.snippets	1372219509
+/Users/james/.vim/bundle/ultisnips/UltiSnips/c.snippets	1372218966
+/Users/james/.vim/.vimrc	1372218579
+/Users/james/.gvimrc	1372218258
+/Users/james/.dotfiles/.zshrc	1372218149
+/Users/james/.vim/bundle/vim-plugin-viewdoc/doc/viewdoc.txt	1372217530
+/Users/james/Developer/Haskell/baby.hs	1372215589
+/Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1372210836
 /Users/james/Developer/Javascript/nodebeginner/server.js	1372209173
 /Users/james/Developer/Javascript/nodebeginner/router.js	1372209107
 /Users/james/Developer/Javascript/nodebeginner/index.js	1372209073
 /Users/james/Developer/Javascript/nodebeginner/tags	1372136998
 /Users/james/music.txt	1372136880
 /Users/james/Developer/Javascript/helloworld.js	1372133858
-/Users/james/.dotfiles/.zshrc	1372126350
 /Users/james/.vim/vimsetup.py	1372124976
 /Users/james/.emacs.d/init.el	1372030770
 /private/var/log/system.log	1372029267
@@ -16,8 +28,8 @@
 /Users/james/folding.el	1371938845
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Nurse.java	1371937623
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Person.java	1371937622
-/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
+/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/BillingStatement.java	1371937598
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Appointment.java	1371937469
 /Users/james/.emacs.d/packages/folding.el	1371935644
@@ -26,7 +38,6 @@
 /Users/james/.bash_history	1371886902
 /Users/james/.vim/.cpp/ycm_extra_conf.py	1371341297
 /Users/james/.vim/.c/ycm_extra_conf.py	1371337629
-/Users/james/Developer/Haskell/baby.hs	1371097217
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Diagnosis.java	1371096650
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Department.java	1371094349
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Check.java	1371094346

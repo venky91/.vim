@@ -20,50 +20,103 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+NeoBundle 'Valloric/YouCompleteMe', {'augroup': 'youcompletemestart',
+  \ 'build': {
+    \ 'mac': './install.sh --clang-completer',
+    \ 'unix': './install.sh --clang-completer',
+    \ 'cygwin': './install.sh --clang-completer',
+    \ },
+  \ }
+
+"NeoBundle 'vim-scripts/L9'
 NeoBundle 'SirVer/ultisnips'
-NeoBundle 'shemerey/vim-peepopen'
-NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'vim-scripts/L9'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'vim-scripts/CSApprox'
-NeoBundle 'vim-scripts/a.vim'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'msanders/cocoa.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'paradigm/TextObjectify'
-NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'jakar/vim-json'
 NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'honza/vim-snippets'
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'klen/python-mode'
 NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Twinside/vim-haskellFold'
-NeoBundle 'vim-scripts/Haskell-Conceal'
 NeoBundle 'powerman/vim-plugin-viewdoc'
-NeoBundle 'ujihisa/neco-ghc'
-NeoBundle 'mbbill/undotree'
-NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'pangloss/vim-javascript'
 
+NeoBundle 'shemerey/vim-peepopen', {
+\'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
+
+NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
+
+NeoBundleLazy 'myusuf3/numbers.vim', {
+\'autoload' : { 'insert' : 1, },}
+
+NeoBundleLazy 'Raimondi/delimitMate', {
+\'autoload' : { 'insert' : 1, },}
+
+NeoBundleLazy 'tpope/vim-endwise', {
+\'autoload' : { 'insert' : 1, },}
+
+NeoBundleLazy 'mbbill/undotree', {
+\'autoload' : {'commands' : 'UndotreeToggle' },}
+
+NeoBundleLazy 'scrooloose/nerdtree', {
+\'augroup' : 'NERDTree',
+\'autoload' : {'commands' : 'NERDTreeToggle' },}
+
+NeoBundleLazy 'majutsushi/tagbar', {
+\'autoload' : {'commands' : 'TagbarToggle' },}
+
+NeoBundleLazy 'scrooloose/syntastic', {
+\'autoload' : {'filetypes' : ['html', 'javascript', 'php', 'java', 'css', 'xml', 'json', 'cpp', 'h', 'haskell'], },}
+
+NeoBundleLazy 'Twinside/vim-haskellFold', {
+\'autoload' : {'filetypes' : ['hs', 'haskell'], },}
+
+NeoBundleLazy 'vim-scripts/Haskell-Conceal', {
+\'autoload' : {'filetypes' : ['hs', 'haskell'], },}
+
+NeoBundleLazy 'ujihisa/neco-ghc', {
+\'external_commands' : 'ghc-mod',
+\'autoload' : {'filetypes' : ['hs', 'haskell'], },}
+
+NeoBundleLazy 'eagletmt/ghcmod-vim', {
+\'external_commands' : 'ghc-mod',
+\'autoload' : {'filetypes' : ['hs', 'haskell'], },}
+
+NeoBundleLazy 'tpope/vim-rails', {
+\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
+
+NeoBundleLazy 'tpope/vim-bundler', {
+\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
+
+NeoBundleLazy 'vim-ruby/vim-ruby', {
+\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
+
+NeoBundleLazy 'mattn/zencoding-vim', {
+\'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
+
+NeoBundleLazy 'pangloss/vim-javascript', {
+\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+
+NeoBundleLazy 'jakar/vim-json', {
+\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml', 'json'], },}
+
+NeoBundleLazy 'vim-scripts/a.vim', {
+\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm'], },}
+
+NeoBundleLazy 'msanders/cocoa.vim', {
+\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm'], },}
+
+NeoBundleLazy 'klen/python-mode', {
+\'autoload' : { 'filetypes' : ['python',], },}
+
+"NeoBundle 'honza/vim-snippets'
 "NeoBundle 'Lokaltog/powerline'
 "NeoBundle 'lukerandall/haskellmode-vim'
 "NeoBundle 'chrisbra/NrrwRgn'
@@ -87,6 +140,17 @@ filetype plugin indent on
 
 " Installation check.
 NeoBundleCheck
+
+" Disable some of the a.vim mappings.
+augroup DisableMappings
+    " Alternate
+    autocmd!
+    autocmd FileType c,cpp nnoremap <Leader>ihn <nop>
+    autocmd FileType c,cpp nnoremap <Leader>is <nop>
+    autocmd FileType c,cpp nnoremap <Leader>ih <nop>
+    autocmd FileType objc let g:alternateExtensions_h = "m" 
+    autocmd FileType objc let g:alternateExtensions_m = "h"
+augroup END
 
 " }}}
 
@@ -290,13 +354,6 @@ vnoremap x "xx
 " Delete to the x register.
 nnoremap <TAB> za
 
-" Disable some of the a.vim mappings.
-augroup DisableMappings
-    autocmd!
-    autocmd VimEnter * :iunmap <Leader>ihn
-    autocmd VimEnter * :iunmap <Leader>is
-    autocmd VimEnter * :iunmap <Leader>ih
-augroup END
 
 " Leader
 let mapleader=","
@@ -448,9 +505,6 @@ endif
 
 " PLUGIN {{{
 
-" Alternate
-autocmd FileType objc let g:alternateExtensions_h = "m" 
-autocmd FileType objc let g:alternateExtensions_m = "h"
 
 " CommandT
 " nnoremap <C-t> :CommandT<cr>
