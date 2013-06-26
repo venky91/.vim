@@ -20,7 +20,8 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-NeoBundle 'Valloric/YouCompleteMe', {'augroup': 'youcompletemestart',
+NeoBundle 'Valloric/YouCompleteMe', {
+  \'augroup': 'youcompletemestart',
   \ 'build': {
     \ 'mac': './install.sh --clang-completer',
     \ 'unix': './install.sh --clang-completer',
@@ -33,7 +34,6 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'vim-scripts/CSApprox'
-NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
@@ -47,6 +47,7 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'powerman/vim-plugin-viewdoc'
+NeoBundle 'scrooloose/nerdcommenter'
 
 NeoBundle 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
@@ -486,11 +487,10 @@ endif
 " WEB {{{
 
 "Indentation
-autocmd FileType eruby,ruby,html,css,php set autoindent
-autocmd FileType eruby,ruby,html,css,php set shiftwidth=2
-autocmd FileType eruby,ruby,html,css,php set tabstop=2
-autocmd FileType eruby,ruby,html,css,php set sts=2
-autocmd FileType eruby,ruby,css,php,python set textwidth=79
+autocmd FileType javascript,eruby,ruby,html,css,php set shiftwidth=2
+autocmd FileType javascript,eruby,ruby,html,css,php set tabstop=2
+autocmd FileType javascript,eruby,ruby,html,css,php set sts=2
+autocmd FileType javascript,eruby,ruby,css,php,python set textwidth=79
 
 " Set the filetype for use with Sparkup
 autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
@@ -550,7 +550,7 @@ let g:EclimMenus = 1
 let g:EclimCompletionMethod = 'omnifunc'
 
 " Gundo
-let g:gundo_close_on_revert=1   " close gundo when reverting
+"let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " GHC Mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
