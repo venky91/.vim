@@ -2,7 +2,7 @@ import os
 
 
 def neobundle_exists():
-    bundlePath = os.getenv("HOME") + "/.vim/neobundle.vim"
+    bundlePath = os.getenv("HOME") + "/.vim/bundle/neobundle.vim"
     print bundlePath
     if os.path.exists(bundlePath):
         print "NeoBundle Exists"

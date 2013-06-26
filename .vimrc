@@ -4,7 +4,7 @@ set nocompatible 	" no compatibility with vi
 filetype off 		" required for vundle
 
 if has('vim_starting')
-  set runtimepath+=~/.vim/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
@@ -62,6 +62,7 @@ NeoBundle 'powerman/vim-plugin-viewdoc'
 NeoBundle 'ujihisa/neco-ghc'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'pangloss/vim-javascript'
 
 "NeoBundle 'Lokaltog/powerline'
 "NeoBundle 'lukerandall/haskellmode-vim'
@@ -639,6 +640,8 @@ function! s:unite_settings()
     imap <buffer> jk <Plug>(unite_insert_leave)
     imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
     imap <buffer> <leader> <Esc><leader>
+    nmap <buffer> <C-s> <Plug>(unite_redraw)
+    imap <buffer> <C-s> <Plug>(unite_redraw)
     call s:unite_tabs_and_windows()
 endfunction
 
@@ -667,9 +670,9 @@ nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
 "nnoremap <Leader>r :<C-u>Unite file_mru<CR>
 
 nnoremap <Leader>s :Unite -resume -quick-match buffer<cr>
-nnoremap <Leader>b :<C-u>Unite -resume buffer -buffer-name=buffers -start-insert<CR>
-nnoremap <Leader>f :<C-u>Unite -resume file_rec/async<CR>
-nnoremap <Leader>r :<C-u>Unite -resume file_mru<CR>
+nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
+nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
+nnoremap <Leader>r :<C-u>Unite file_mru<CR>
 
 " View Doc
 let g:viewdoc_open='new'
