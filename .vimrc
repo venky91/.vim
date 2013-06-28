@@ -1,7 +1,7 @@
 " PACKAGES {{{
 
-set nocompatible 	" no compatibility with vi
-filetype off 		" required for vundle
+set nocompatible    " no compatibility with vi
+filetype off        " required for vundle
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -30,9 +30,8 @@ NeoBundle 'Valloric/YouCompleteMe', {
   \ }
 
 "NeoBundle 'vim-scripts/L9'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'vim-scripts/ScrollColors'
+NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
@@ -48,11 +47,11 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'powerman/vim-plugin-viewdoc'
 NeoBundle 'scrooloose/nerdcommenter'
-
-NeoBundle 'shemerey/vim-peepopen', {
-\'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
-
 NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
+
+
+NeoBundleLazy 'shemerey/vim-peepopen', {
+\'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
 
 NeoBundleLazy 'myusuf3/numbers.vim', {
 \'autoload' : { 'insert' : 1, },}
@@ -61,6 +60,9 @@ NeoBundleLazy 'Raimondi/delimitMate', {
 \'autoload' : { 'insert' : 1, },}
 
 NeoBundleLazy 'tpope/vim-endwise', {
+\'autoload' : { 'insert' : 1, },}
+
+NeoBundleLazy 'SirVer/ultisnips', {
 \'autoload' : { 'insert' : 1, },}
 
 NeoBundleLazy 'mbbill/undotree', {
@@ -83,11 +85,9 @@ NeoBundleLazy 'vim-scripts/Haskell-Conceal', {
 \'autoload' : {'filetypes' : ['hs', 'haskell'], },}
 
 NeoBundleLazy 'ujihisa/neco-ghc', {
-\'external_commands' : 'ghc-mod',
 \'autoload' : {'filetypes' : ['hs', 'haskell'], },}
 
 NeoBundleLazy 'eagletmt/ghcmod-vim', {
-\'external_commands' : 'ghc-mod',
 \'autoload' : {'filetypes' : ['hs', 'haskell'], },}
 
 NeoBundleLazy 'tpope/vim-rails', {
@@ -157,24 +157,24 @@ augroup END
 
 " EDITING {{{
 
-set history=200 	" keep 200 lines of command line history
-set ruler 		    " show the cursor position all the time
-set showcmd 		" display incomplete commands
-set showmatch 		" show matching brackets while typing
 set backspace=indent,eol,start " backspacing
 set notimeout ttimeout timeoutlen=50 " less wait in term
-set noerrorbells 	" don't ring the bell
-set lazyredraw 		" don't redraw during macros
-set scrolloff=5		" 5 lines will always appear below the cursor
-set ttyfast 		" indicate a fast term
-set hlsearch 		" highlight searches
-set ignorecase		" case insensitive searching
-set smartcase 		" case sensitive for uppercase
-set incsearch		" incremental searching
-set expandtab 		" turns a tab into a space
-set autoindent 		" always set indent on
-set tabstop=4		" number of spaces a tab counts for
-set smarttab 		" intelligent tabbing
+set history=200     " keep 200 lines of command line history
+set ruler           " show the cursor position all the time
+set showcmd         " display incomplete commands
+set showmatch       " show matching brackets while typing
+set noerrorbells    " don't ring the bell
+set lazyredraw      " don't redraw during macros
+set scrolloff=5     " 5 lines will always appear below the cursor
+set ttyfast         " indicate a fast term
+set hlsearch        " highlight searches
+set ignorecase      " case insensitive searching
+set smartcase       " case sensitive for uppercase
+set incsearch       " incremental searching
+set expandtab       " turns a tab into a space
+set autoindent      " always set indent on
+set tabstop=4       " number of spaces a tab counts for
+set smarttab        " intelligent tabbing
 set shiftwidth=4    " all for 4
 set sts=4           " about indenting
 set diffopt=iwhite  " ignore white space in diffs
@@ -183,7 +183,7 @@ autocmd FileType * setlocal formatoptions-=cro " Disable automatic comments.
 
 " Mouse
 if has('mouse')
-	set mouse=a
+    set mouse=a
     set ttymouse=xterm2
 endif
 
@@ -237,7 +237,7 @@ if has('mac')
     "set guifont=Consolas:h12
     set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13,Menlo:h12
     set shell=/bin/bash
-    set clipboard^=unnamed 	" tmux copy paste integration
+    set clipboard^=unnamed  " tmux copy paste integration
 elseif has('win32')
     set guifont=Consolas:h10
 elseif has('unix')
