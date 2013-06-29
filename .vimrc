@@ -48,7 +48,8 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'powerman/vim-plugin-viewdoc'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
-
+NeoBundle 'thinca/vim-visualstar'
+NeoBundle 'SirVer/ultisnips'
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
@@ -60,9 +61,6 @@ NeoBundleLazy 'Raimondi/delimitMate', {
 \'autoload' : { 'insert' : 1, },}
 
 NeoBundleLazy 'tpope/vim-endwise', {
-\'autoload' : { 'insert' : 1, },}
-
-NeoBundleLazy 'SirVer/ultisnips', {
 \'autoload' : { 'insert' : 1, },}
 
 NeoBundleLazy 'mbbill/undotree', {
@@ -222,30 +220,28 @@ runtime! ftplugin/man.vim
 
 " THEME {{{
 
-syntax on           " color files automatically
-set cursorline      " highlight the current line
-set relativenumber  " numbers are not absolute
+syntax on           " Color files automatically.
+set cursorline      " Highlight the current line.
+set relativenumber  " Numbers are not absolute.
 
 au WinEnter * :setlocal relativenumber
 au WinLeave * :setlocal norelativenumber
 
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set showbreak=↪ " prettier linewraps
+set guioptions-=r  " Remove right-hand scrollbar.
+set guioptions-=L  " Remove left-hand scrollbar.
+set showbreak=↪    " Prettier linewraps.
 
 if has('mac')
-    "set guifont=Consolas:h12
     set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13,Menlo:h12
     set shell=/bin/bash
-    set clipboard^=unnamed  " tmux copy paste integration
+    set clipboard^=unnamed  " Tmux copy paste integration.
 elseif has('win32')
     set guifont=Consolas:h10
 elseif has('unix')
-    set t_Co=256       " sets 256 colors in the terminal
-    set guioptions-=T  "remove toolbar
-    set guioptions-=m  "remove top bar
-    "set gfn=Terminus\ 10
-    set gfn=Inconsolata\ for\ Powerline\ 12
+    set t_Co=256       " Sets 256 colors in the terminal.
+    set guioptions-=T  " Remove Toolbar.
+    set guioptions-=m  " Remove Menubar.
+    set gfn=Inconsolata\ for\ Powerline\ 12,Terminus\ 10
     set shell=/bin/bash
 endif
 
@@ -278,6 +274,12 @@ else
         colorscheme badwolf
     endif
 endif
+
+set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
+set statusline+=\ \%#StatusRO#\%R\ \%#StatusHLP#\%H\ \%#StatusPRV#\%W
+set statusline+=\ \%#StatusModFlag#\%M\ \ \%{fugitive#statusline()}
+set statusline+=\%=\ \%#StatusLine#\%f\ \|\ \%#StatusFTP#\%Y\ \|\ \%p%%\ \|
+set statusline+=\ LN\ \%1.7l\:\%1.7c\
 
 " }}}
 
@@ -548,9 +550,6 @@ let g:easytags_cmd = '/usr/local/bin/ctags'
 " Eclim
 let g:EclimMenus = 1
 let g:EclimCompletionMethod = 'omnifunc'
-
-" Gundo
-"let g:gundo_close_on_revert=1   " close gundo when reverting
 
 " GHC Mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
