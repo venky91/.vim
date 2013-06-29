@@ -100,7 +100,13 @@ NeoBundleLazy 'vim-ruby/vim-ruby', {
 NeoBundleLazy 'mattn/zencoding-vim', {
 \'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
 
-NeoBundleLazy 'pangloss/vim-javascript', {
+"NeoBundleLazy 'pangloss/vim-javascript', {
+"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+
+NeoBundleLazy 'jelera/vim-javascript-syntax', {
+\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+
+NeoBundleLazy 'myhere/vim-nodejs-complete', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
 NeoBundleLazy 'jakar/vim-json', {
@@ -546,6 +552,7 @@ let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
 let g:easytags_file = '~/.vim/tags/easytags'
 let g:easytags_cmd = '/usr/local/bin/ctags'
+let g:easytags_updatetime_warn = 0
 
 " Eclim
 let g:EclimMenus = 1

@@ -1,15 +1,21 @@
 0.2.0
-/Users/james/.vim/.vimrc	1372387210
+/Users/james/.vim/.vimrc	1372534578
+/Users/james/Developer/Javascript/nodebeginner/router.js	1372514650
+/Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1372514502
+/Users/james/Developer/Javascript/nodebeginner/index.js	1372514469
+/Users/james/Developer/Javascript/nodebeginner/server.js	1372514220
+/Users/james/Developer/Javascript/nodebeginner/tags	1372513181
+/usr/local/lib/jsctags/ctags/index.js	1372490353
+/Users/james/.dotfiles/.zshrc	1372489460
+/Users/james/.vim/.git/COMMIT_EDITMSG	1372473964
+/Users/james/.oh-my-zsh/oh-my-zsh.sh	1372468426
+/Users/james/folding.el	1372401933
+/Users/james/Developer/Javascript/helloworld.js	1372401786
+/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Appointment.java	1372387735
 /Users/james/Dropbox/Resume.txt	1372385858
-/Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1372385122
-/Users/james/Developer/Javascript/nodebeginner/router.js	1372385081
-/Users/james/Developer/Javascript/nodebeginner/server.js	1372384996
 /Users/james/.vim/bundle/ScrollColors/plugin/ScrollColor.vim	1372296480
 /Users/james/.vim/bundle/ScrollColors/README	1372296435
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/syntax/abc.vim	1372296411
-/Users/james/log	1372224717
-/Users/james/Developer/Javascript/nodebeginner/index.js	1372223064
-/Users/james/.dotfiles/.zshrc	1372222810
 /Users/james/.vim/vimsetup.py	1372220083
 /Users/james/.vim/mysnippets/cpp.snippets	1372219959
 /Users/james/Dropbox/Notes.org	1372219955
@@ -22,20 +28,15 @@
 /Users/james/.gvimrc	1372218258
 /Users/james/.vim/bundle/vim-plugin-viewdoc/doc/viewdoc.txt	1372217530
 /Users/james/Developer/Haskell/baby.hs	1372215589
-/Users/james/Developer/Javascript/nodebeginner/tags	1372136998
-/Users/james/music.txt	1372136880
-/Users/james/Developer/Javascript/helloworld.js	1372133858
 /Users/james/.emacs.d/init.el	1372030770
 /private/var/log/system.log	1372029267
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp	1372019482
 /Users/james/.vim/.gitignore	1372017902
-/Users/james/folding.el	1371938845
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Nurse.java	1371937623
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Person.java	1371937622
-/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
+/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/BillingStatement.java	1371937598
-/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Appointment.java	1371937469
 /Users/james/.emacs.d/packages/folding.el	1371935644
 /Users/james/Developer/Rails/sample_app/app/controllers/static_pages_controller.rb	1371887682
 /Users/james/.zsh_history	1371886921
@@ -61,13 +62,7 @@
 /Users/james/Developer/Python/Algorithms/insertionsort.py	1370565051
 /Users/james/Developer/Python/Algorithms/insertionsort_khan.py	1370564673
 /Users/james/Developer/Python/Algorithms/binarysearch.py	1370564258
-/Users/james/Dropbox/CompilerProject/PROJECT V22/SelectionSortTokFile.txt	1370556583
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/RPerson.java	1370411069
-/Users/james/Dropbox/CompilerProject/PROJECT V22/datafile	1370386297
-/Users/james/Dropbox/CompilerProject/PROJECT V22/codefile	1370386292
-/Users/james/Dropbox/CompilerProject/PROJECT V22/parseout.txt	1370386288
-/Users/james/Dropbox/CompilerProject/PROJECT V22/scanout.txt	1370384522
-/Users/james/Dropbox/CompilerProject/PROJECT V22/srcfile.txt	1370384452
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/MainForm.java	1370383806
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Patient.java	1370382444
 /Users/james/Developer/Python/puzzle_3.py	1370364286
@@ -86,7 +81,6 @@
 /Users/james/Developer/Rails/sample_app/spec/models/relationship_spec.rb	1370360060
 /Users/james/Developer/Rails/sample_app/db/migrate/20130421051043_create_relationships.rb	1370360034
 /Users/james/.emacs.d/.mc-lists.el	1370244879
-/Users/james/.oh-my-zsh/oh-my-zsh.sh	1370239939
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/ScheduleSurgery.java	1370232214
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/ScheduleSurgery.form	1370231971
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/NewUserPage.java	1370231838
