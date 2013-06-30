@@ -59,9 +59,9 @@ flags = [
 '-x',
 'c',
 '-isystem',
-'../BoostParts',
-'-isystem',
 '/usr/include',
+'-isystem',
+'/usr/local/include',
 # This path will only work on OS X, but extra paths that don't exist are not
 # harmful
 '/System/Library/Frameworks/Python.framework/Headers',
@@ -72,15 +72,7 @@ flags = [
 '-I',
 '.',
 '-I',
-'./ClangCompleter',
-'-isystem',
-'./tests/gmock/gtest',
-'-isystem',
-'./tests/gmock/gtest/include',
-'-isystem',
-'./tests/gmock',
-'-isystem',
-'./tests/gmock/include'
+'./ClangCompleter'
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

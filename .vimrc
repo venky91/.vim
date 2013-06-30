@@ -688,7 +688,6 @@ if executable('ag')
     let g:unite_source_grep_recursive_opt=''
 elseif executable('ack')
     let g:unite_source_grep_command='ack'
-    "let g:unite_source_grep_default_opts='--no-heading --no-color -a'
     let g:unite_source_grep_default_opts = '--column --no-color --nogroup --with-filename'
     let g:unite_source_grep_recursive_opt=''
 endif
@@ -746,6 +745,21 @@ autocmd VimEnter * call FindYouCompleteMeConf()
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_semantic_triggers = {
+  \ 'c' : ['->', '.'],
+  \ 'objc' : ['->', '.'],
+  \ 'ocaml' : ['.', '#'],
+  \ 'cpp,objcpp' : ['->', '.', '::'],
+  \ 'perl' : ['->'],
+  \ 'php' : ['->', '::'],
+  \ 'cs,css,haskell,java,javascript,d,ruby' : ['.'],
+  \ 'python,perl6,scala,vb,elixir,go' : ['.'],
+  \ 'lua' : ['.', ':'],
+  \ 'erlang' : [':'],
+  \ }
+
+
 
 function! g:UltiSnips_Complete()
     call UltiSnips_ExpandSnippet()
