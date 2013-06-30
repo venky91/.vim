@@ -100,9 +100,6 @@ NeoBundleLazy 'vim-ruby/vim-ruby', {
 NeoBundleLazy 'mattn/zencoding-vim', {
 \'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
 
-"NeoBundleLazy 'pangloss/vim-javascript', {
-"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
-
 NeoBundleLazy 'jelera/vim-javascript-syntax', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
@@ -256,26 +253,28 @@ set background=dark
 if has('gui_running')
     if strftime("%H") < 4
         colorscheme fruity
+    elseif strftime("%H") < 8
+        colorscheme hybrid
     elseif strftime("%H") < 12
         colorscheme solarized
-    elseif strftime("%H") < 17
+    elseif strftime("%H") < 16
         colorscheme molokai
-    elseif strftime("%H") < 21
-        colorscheme hybrid
+    elseif strftime("%H") < 20
+        colorscheme luna
     else
         colorscheme badwolf
     endif
 else
     if strftime("%H") < 4
         colorscheme fruity
-    elseif strftime("%H") < 12
-        colorscheme jellybeans
-    elseif strftime("%H") < 15
-        colorscheme molokai
-    elseif strftime("%H") < 18
-        colorscheme xoria256
-    elseif strftime("%H") < 21
+    elseif strftime("%H") < 8
         colorscheme candycode
+    elseif strftime("%H") < 12
+        colorscheme molokai
+    elseif strftime("%H") < 16
+        colorscheme xoria256
+    elseif strftime("%H") < 20
+        colorscheme luna-term
     else
         colorscheme badwolf
     endif
@@ -403,9 +402,6 @@ nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 nnoremap <Leader>z :e ~/Dropbox/Notes.org<CR>
 nmap s <space>w
 nmap S <space>b
-" Enable Magic Regular Expressions.
-nnoremap / /\v
-cnoremap %s %s/\v
 
 " }}}
 

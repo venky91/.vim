@@ -1,5 +1,22 @@
 0.2.0
-/Users/james/.vim/.vimrc	1372544052
+/Users/james/.vim/.vimrc	1372630841
+/Users/james/Developer/Rails/sample_app/app/controllers/log	1372618190
+/Users/james/.vim/bundle/vim-json/ftplugin/json.vim	1372618151
+/Users/james/Developer/Rails/sample_app/app/controllers/static_pages_controller.rb	1372618015
+/Users/james/Developer/Rails/sample_app/app/controllers/sessions_controller.rb	1372618007
+/Users/james/Developer/Rails/sample_app/app/controllers/relationships_controller.rb	1372618005
+/Users/james/Developer/Rails/sample_app/app/controllers/microposts_controller.rb	1372617999
+/Users/james/Developer/Rails/sample_app/app/controllers/application_controller.rb	1372617979
+/Users/james/Developer/Rails/sample_app/app/controllers/users_controller.rb	1372617978
+/Users/james/Developer/Rails/sample_app/app/models/user.rb	1372617900
+/Users/james/Dropbox/need.txt	1372613417
+/Users/james/folding.el	1372608841
+/Users/james/.dotfiles/.zshrc	1372566995
+/Users/james/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	1372566978
+/Users/james/.oh-my-zsh/plugins/cp/cp.plugin.zsh	1372566955
+/Users/james/.oh-my-zsh/plugins/rsync/rsync.plugin.zsh	1372566880
+/Users/james/.oh-my-zsh/lib/aliases.zsh	1372566810
+/Users/james/Dropbox/Resume.txt	1372565467
 /Users/james/.vim/.cpp/ycm_extra_conf.py	1372542549
 /Users/james/.vim/.c/ycm_extra_conf.py	1372542409
 /Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1372541247
@@ -9,13 +26,10 @@
 /Users/james/Developer/Javascript/nodebeginner/server.js	1372514220
 /Users/james/Developer/Javascript/nodebeginner/tags	1372513181
 /usr/local/lib/jsctags/ctags/index.js	1372490353
-/Users/james/.dotfiles/.zshrc	1372489460
 /Users/james/.vim/.git/COMMIT_EDITMSG	1372473964
 /Users/james/.oh-my-zsh/oh-my-zsh.sh	1372468426
-/Users/james/folding.el	1372401933
 /Users/james/Developer/Javascript/helloworld.js	1372401786
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Appointment.java	1372387735
-/Users/james/Dropbox/Resume.txt	1372385858
 /Users/james/.vim/bundle/ScrollColors/plugin/ScrollColor.vim	1372296480
 /Users/james/.vim/bundle/ScrollColors/README	1372296435
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/syntax/abc.vim	1372296411
@@ -41,7 +55,6 @@
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/BillingStatement.java	1371937598
 /Users/james/.emacs.d/packages/folding.el	1371935644
-/Users/james/Developer/Rails/sample_app/app/controllers/static_pages_controller.rb	1371887682
 /Users/james/.zsh_history	1371886921
 /Users/james/.bash_history	1371886902
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Diagnosis.java	1371096650
@@ -76,8 +89,6 @@
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_1/cigarette-smoker.cpp	1370361924
 /Users/james/Developer/Rails/sample_app/spec/models/user_spec.rb	1370361354
 /Users/james/Developer/Rails/sample_app/app/models/micropost.rb	1370360674
-/Users/james/Developer/Rails/sample_app/app/models/user.rb	1370360491
-/Users/james/Developer/Rails/sample_app/app/controllers/relationships_controller.rb	1370360358
 /Users/james/Developer/Rails/sample_app/lib/tasks/sample_data.rake	1370360240
 /Users/james/Developer/Rails/sample_app/spec/models/relationship_spec.rb	1370360060
 /Users/james/Developer/Rails/sample_app/db/migrate/20130421051043_create_relationships.rb	1370360034
