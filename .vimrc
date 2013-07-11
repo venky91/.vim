@@ -20,27 +20,14 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-NeoBundle 'Valloric/YouCompleteMe', {
-  \'augroup': 'youcompletemestart',
-  \ 'build': {
-    \ 'mac': './install.sh --clang-completer',
-    \ 'unix': './install.sh --clang-completer',
-    \ 'cygwin': './install.sh --clang-completer',
-    \ },
-  \ }
-
 "NeoBundle 'vim-scripts/L9'
-NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
-NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'paradigm/TextObjectify'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/unite.vim'
@@ -48,8 +35,15 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'powerman/vim-plugin-viewdoc'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
-NeoBundle 'thinca/vim-visualstar'
 NeoBundle 'SirVer/ultisnips'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle 'Valloric/YouCompleteMe'
+
+NeoBundleLazy 'vim-scripts/ScrollColors', {
+\'autoload' : { 'terminal' : 1, },}
+
+NeoBundleLazy 'vim-scripts/CSApprox', {
+\'autoload' : { 'terminal' : 1, },}
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
@@ -103,6 +97,9 @@ NeoBundleLazy 'mattn/zencoding-vim', {
 NeoBundleLazy 'jelera/vim-javascript-syntax', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
+NeoBundleLazy 'pangloss/vim-javascript', {
+\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+
 NeoBundleLazy 'myhere/vim-nodejs-complete', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
@@ -110,14 +107,18 @@ NeoBundleLazy 'jakar/vim-json', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml', 'json'], },}
 
 NeoBundleLazy 'vim-scripts/a.vim', {
-\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm'], },}
+\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
 
 NeoBundleLazy 'msanders/cocoa.vim', {
-\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm'], },}
+\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
 
 NeoBundleLazy 'klen/python-mode', {
 \'autoload' : { 'filetypes' : ['python',], },}
 
+
+"NeoBundle 'terryma/vim-multiple-cursors'
+"NeoBundle 'airblade/vim-gitgutter'
+"NeoBundle 'bling/vim-airline'
 "NeoBundle 'honza/vim-snippets'
 "NeoBundle 'Lokaltog/powerline'
 "NeoBundle 'lukerandall/haskellmode-vim'
