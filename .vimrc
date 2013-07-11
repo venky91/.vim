@@ -20,7 +20,9 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-"NeoBundle 'vim-scripts/L9'
+NeoBundle 'vim-scripts/CSApprox', {
+\'autoload' : { 'terminal' : 1,  }, }
+
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
@@ -40,9 +42,6 @@ NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Valloric/YouCompleteMe'
 
 NeoBundleLazy 'vim-scripts/ScrollColors', {
-\'autoload' : { 'terminal' : 1, },}
-
-NeoBundleLazy 'vim-scripts/CSApprox', {
 \'autoload' : { 'terminal' : 1, },}
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
@@ -116,6 +115,7 @@ NeoBundleLazy 'klen/python-mode', {
 \'autoload' : { 'filetypes' : ['python',], },}
 
 
+"NeoBundle 'vim-scripts/L9'
 "NeoBundle 'terryma/vim-multiple-cursors'
 "NeoBundle 'airblade/vim-gitgutter'
 "NeoBundle 'bling/vim-airline'
@@ -281,6 +281,9 @@ else
     endif
 endif
 
+" Black column on the very left.
+highlight SignColumn guibg=black
+
 set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
 set statusline+=\ \%#StatusRO#\%R\ \%#StatusHLP#\%H\ \%#StatusPRV#\%W
 set statusline+=\ \%#StatusModFlag#\%M\ \ \%{fugitive#statusline()}
@@ -386,8 +389,9 @@ nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-nnoremap <Leader>] <C-]>
-nnoremap <Leader>[ :pop<cr>
+"nnoremap <Leader>] <C-]>
+"nnoremap <Leader>[ :pop<cr>
+" Alternative way to browse Tag Stack.
 " Indent the whole file and return to original position
 nnoremap <Leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
