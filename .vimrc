@@ -40,6 +40,7 @@ NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'wincent/Command-T'
 
 NeoBundleLazy 'vim-scripts/ScrollColors', {
 \'autoload' : { 'terminal' : 1, },}
@@ -132,7 +133,6 @@ NeoBundleLazy 'klen/python-mode', {
 "NeoBundle 'vim-scripts/LustyExplorer'
 "NeoBundle 'davidhalter/jedi-vim'
 "NeoBundle 'jiangmiao/auto-pairs'
-"NeoBundle 'wincent/Command-T'
 "NeoBundle 'Rip-Rip/clang_complete'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "NeoBundle 'tpope/vim-dispatch'
@@ -281,7 +281,6 @@ else
     endif
 endif
 
-" Black column on the very left.
 highlight SignColumn guibg=black
 
 set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
@@ -514,17 +513,16 @@ endif
 
 " PLUGIN {{{
 
-
 " CommandT
-" nnoremap <C-t> :CommandT<cr>
-" nnoremap <C-b> :CommandTBuffer<cr>
-" nnoremap<Leader>ctf :CommandTFlush<cr>
-" let g:CommandTMaxFiles=10000
-" let g:CommandTMaxDepth=5
-" let g:CommandTScanDotDirectories=1
-" let g:CommandTMaxHeight=20
-" let g:CommandTMaxCachedDirectories=2
-" let g:CommandTCancelMap=['<C-x>', '<C-c>']
+nnoremap <C-p> :CommandT<cr>
+nnoremap <C-s-b> :CommandTBuffer<cr>
+nnoremap <Leader>ctf :CommandTFlush<cr>
+let g:CommandTMaxFiles=10000
+let g:CommandTMaxDepth=5
+let g:CommandTScanDotDirectories=1
+let g:CommandTMaxHeight=20
+let g:CommandTMaxCachedDirectories=3
+let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
 " CtrlP
 "nnoremap <Leader>g :CtrlPCurFile<CR>
@@ -565,20 +563,6 @@ autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 "" Haskell Mode
 "au BufEnter *.hs compiler ghc
 "let g:haddock_browser="/Applications/Firefox.app/Contents/MacOS/firefox"
-
-" Jedi
-"let g:jedi#goto_command = "<Leader>pg"
-"let g:jedi#get_definition_command = "<Leader>pd"
-"let g:jedi#rename_command = "<Leader>pr"
-"let g:jedi#related_names_command = "<Leader>pn"
-"let g:jedi#pydoc = "<Leader>pk"
-"let g:jedi#show_function_definition = "1"
-"let g:jedi#use_tabs_not_buffers = 0
-"let g:jedi#popup_select_first = 0
-
-" Lusty Explorer
-" nnoremap <Leader>f :LustyFilesystemExplorer<cr>
-" nnoremap <Leader>b :LustyBufferExplorer<cr>
 
 " NerdTree
 " Close Vim if only NerdTree is left
@@ -679,7 +663,7 @@ let g:unite_source_file_mru_filename_format = ':~:.'
 let g:unite_data_directory='~/.vim/.cache/unite'
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable=1
-let g:unite_source_file_rec_max_cache_files=3000
+let g:unite_source_file_rec_max_cache_files=4000
 let g:unite_split_rule="botright"
 let g:unite_prompt='» '
 
@@ -707,29 +691,10 @@ endfunction
 
 autocmd FileType unite call s:unite_settings()
 
-nnoremap [unite] <nop>
-nmap \ [unite]
-
-"nnoremap <silent> [unite]p :<C-u>Unite process -buffer-name=processes -start-insert<CR>
-"nnoremap <silent> [unite]b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
-"nnoremap <silent> [unite]/ :<C-u>Unite -buffer-name=search grep:.<cr>
-"nnoremap <silent> [unite]l :<C-u>Unite -buffer-name=line line<cr>
-"nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<cr>
-"nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
-
-nnoremap <silent> [unite]neoinstall :<C-u>Unite neobundle/install<cr>
-nnoremap <silent> [unite]neoupdate :<C-u>Unite neobundle/update<cr>
-nnoremap <silent> [unite]keymap :<C-u>Unite mapping<cr>
-
 nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
 nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>
 nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
 nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
-"nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
-"nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
-"nnoremap <Leader>r :<C-u>Unite file_mru<CR>
-
-nnoremap <Leader>s :Unite -resume -quick-match buffer<cr>
 nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
 nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
 nnoremap <Leader>r :<C-u>Unite file_mru<CR>

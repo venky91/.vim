@@ -1,9 +1,12 @@
 0.2.0
-/Users/james/.vim/.vimrc	1373553628
+/Users/james/Developer/Rails/sample_app/app/controllers/users_controller.rb	1373733285
+/Users/james/.vim/.vimrc	1373732098
+/Users/james/Developer/Rails/sample_app/app/controllers/microposts_controller.rb	1373732094
+/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp	1373731931
+/Users/james/Pictures/Jojo.jpg	1373697038
 /Users/james/Dropbox/music.txt	1373515838
 /Users/james/Developer/SE Project/Project Code/src/t5_storage/Hospital.java	1373343927
 /Users/james/Developer/Javascript/nodebeginner/index.js	1373004057
-/Users/james/Developer/Rails/sample_app/app/controllers/microposts_controller.rb	1373004032
 /Users/james/Developer/Javascript/nodebeginner/server.js	1373003747
 /Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1373003715
 /private/etc/hosts	1372959273
@@ -15,7 +18,6 @@
 /Users/james/Developer/Rails/sample_app/app/controllers/sessions_controller.rb	1372618007
 /Users/james/Developer/Rails/sample_app/app/controllers/relationships_controller.rb	1372618005
 /Users/james/Developer/Rails/sample_app/app/controllers/application_controller.rb	1372617979
-/Users/james/Developer/Rails/sample_app/app/controllers/users_controller.rb	1372617978
 /Users/james/Developer/Rails/sample_app/app/models/user.rb	1372617900
 /Users/james/.dotfiles/.zshrc	1372566995
 /Users/james/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	1372566978
@@ -49,12 +51,11 @@
 /Users/james/Developer/Haskell/baby.hs	1372215589
 /Users/james/.emacs.d/init.el	1372030770
 /private/var/log/system.log	1372029267
-/Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp	1372019482
 /Users/james/.vim/.gitignore	1372017902
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Nurse.java	1371937623
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Person.java	1371937622
-/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
+/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/BillingStatement.java	1371937598
 /Users/james/.emacs.d/packages/folding.el	1371935644
 /Users/james/.zsh_history	1371886921
@@ -107,7 +108,6 @@
 /Users/james/.vim/bundle/unite.vim/autoload/unite/filters/converter_file_directory.vim	1370150807
 /Users/james/.vim/bundle/unite.vim/autoload/unite/filters/converter_default.vim	1370150788
 /Users/james/.rvm/src/ruby-1.9.3-p392/ext/tk/sample/tkextlib/tkHTML/page4/index.html	1370150780
-/Users/james/.emacs.d/elpa/evil-20130525.1141/evil-vars.el	1370150777
 /Users/james/Developer/C-Plus-Plus/Basic C/charInOut.c	1370149027
 /Users/james/Developer/Python/Algorithms/sorting_algorithms.py	1370148862
 /Users/james/Developer/Python/Node.py	1370148800
