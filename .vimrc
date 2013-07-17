@@ -180,6 +180,8 @@ set smarttab        " intelligent tabbing
 set shiftwidth=4    " all for 4
 set sts=4           " about indenting
 set diffopt=iwhite  " ignore white space in diffs
+set undofile        " persistent undo even after exiting a file
+set undodir=~/.vim/undo
 
 autocmd FileType * setlocal formatoptions-=cro " Disable automatic comments.
 
@@ -283,23 +285,24 @@ endif
 
 highlight SignColumn guibg=black
 
-set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
-set statusline+=\ \%#StatusRO#\%R\ \%#StatusHLP#\%H\ \%#StatusPRV#\%W
-set statusline+=\ \%#StatusModFlag#\%M\ \ \%{fugitive#statusline()}
-set statusline+=\%=\ \%#StatusLine#\%f\ \|\ \%#StatusFTP#\%Y\ \|\ \%p%%\ \|
-set statusline+=\ LN\ \%1.7l\:\%1.7c\
+"set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
+"set statusline+=\ \%#StatusRO#\%R\ \%#StatusHLP#\%H\ \%#StatusPRV#\%W
+"set statusline+=\ \%#StatusModFlag#\%M\ \ \%{fugitive#statusline()}
+"set statusline+=\%=\ \%#StatusLine#\%f\ \|\ \%#StatusFTP#\%Y\ \|\ \%p%%\ \|
+"set statusline+=\ LN\ \%1.7l\:\%1.7c\
+
+"status line
+set laststatus=2
+set statusline=buf\:\%1.3n\ %t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
+set statusline+=\ [%l,%v][%p%%]\ (%{&ff})(%y)\ %{fugitive#statusline()}
+set statusline+=%#warningmsg#
+set statusline+=%*
 
 " }}}
 
 " KEYMAPS {{{
 
 " Modifier
-"inoremap <C-a> <nop>
-" unbind C-a
-"vnoremap <C-c> "+y
-" map ctrl+c to copy in visual mode
-"inoremap <C-v> <C-O>"0P
-" map ctrl+v to paste in insert mode
 inoremap <C-U> <C-G>u<C-U>
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
@@ -365,7 +368,6 @@ vnoremap x "xx
 " Delete to the x register.
 nnoremap <TAB> za
 
-
 " Leader
 let mapleader=","
 " change the mapLeader from \ to ,
@@ -388,9 +390,6 @@ nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-"nnoremap <Leader>] <C-]>
-"nnoremap <Leader>[ :pop<cr>
-" Alternative way to browse Tag Stack.
 " Indent the whole file and return to original position
 nnoremap <Leader>= mzgg=G`z
 " Edit file, starting in same directory as current file
