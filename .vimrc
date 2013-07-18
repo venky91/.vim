@@ -285,12 +285,6 @@ endif
 
 highlight SignColumn guibg=black
 
-"set statusline=\ \%{&ff}\ \%{&fenc}\ buf\:\%1.3n\ \%{tagbar#currenttag('[%s]','')}
-"set statusline+=\ \%#StatusRO#\%R\ \%#StatusHLP#\%H\ \%#StatusPRV#\%W
-"set statusline+=\ \%#StatusModFlag#\%M\ \ \%{fugitive#statusline()}
-"set statusline+=\%=\ \%#StatusLine#\%f\ \|\ \%#StatusFTP#\%Y\ \|\ \%p%%\ \|
-"set statusline+=\ LN\ \%1.7l\:\%1.7c\
-
 "status line
 set laststatus=2
 set statusline=buf\:\%1.3n\ %t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
@@ -517,10 +511,10 @@ nnoremap <C-p> :CommandT<cr>
 nnoremap <C-s-b> :CommandTBuffer<cr>
 nnoremap <Leader>ctf :CommandTFlush<cr>
 let g:CommandTMaxFiles=10000
-let g:CommandTMaxDepth=5
+let g:CommandTMaxDepth=6
 let g:CommandTScanDotDirectories=1
 let g:CommandTMaxHeight=20
-let g:CommandTMaxCachedDirectories=3
+let g:CommandTMaxCachedDirectories=5
 let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
 " CtrlP
@@ -574,6 +568,7 @@ let g:NERDTreeShowBookmarks=1
 let g:NERDTreeDirArrows=0
 let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
+let g:NERDTreeShowLineNumbers=1
 
 " Powerline
 set laststatus=2 " Always show the statusline.
