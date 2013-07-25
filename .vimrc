@@ -41,6 +41,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
+NeoBundle 'kshenoy/vim-signature'
 
 NeoBundleLazy 'vim-scripts/ScrollColors', {
 \'autoload' : { 'terminal' : 1, },}

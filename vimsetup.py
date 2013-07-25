@@ -27,10 +27,18 @@ def end_messages():
     print "Check YouCompleteMe"
 
 
+def install_command_t():
+    os.system('cd ~/.vim/bundle/Command-T/ruby/command-t')
+    os.system('ruby ext.conf')
+    os.system('make')
+    print "Finished Installing Commmand-T"
+
+
 def main():
     neobundle_exists()
     create_symlinks()
     launch_vim_and_install_bundles()
+    install_command_t()
     print end_messages()
 
 main()
