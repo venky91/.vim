@@ -35,13 +35,13 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'powerman/vim-plugin-viewdoc'
-NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'kshenoy/vim-signature'
+NeoBundle 'tomtom/tcomment_vim'
 
 NeoBundleLazy 'vim-scripts/ScrollColors', {
 \'autoload' : { 'terminal' : 1, },}
@@ -117,6 +117,7 @@ NeoBundleLazy 'klen/python-mode', {
 \'autoload' : { 'filetypes' : ['python',], },}
 
 
+"NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'vim-scripts/L9'
 "NeoBundle 'terryma/vim-multiple-cursors'
 "NeoBundle 'airblade/vim-gitgutter'
@@ -270,13 +271,13 @@ if has('gui_running')
     endif
 else
     if strftime("%H") < 4
-        colorscheme fruity
+        colorscheme molokai
     elseif strftime("%H") < 8
         colorscheme candycode
     elseif strftime("%H") < 12
-        colorscheme molokai
-    elseif strftime("%H") < 16
         colorscheme xoria256
+    elseif strftime("%H") < 16
+        colorscheme fruity
     elseif strftime("%H") < 20
         colorscheme luna-term
     else
@@ -288,8 +289,8 @@ highlight SignColumn guibg=black
 
 "status line
 set laststatus=2
-set statusline=buf\:\%1.3n\ %t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
-set statusline+=\ [%l,%v][%p%%]\ (%{&ff})(%y)\ %{fugitive#statusline()}
+set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
+set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
 set statusline+=%#warningmsg#
 set statusline+=%*
 
@@ -358,8 +359,8 @@ nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\
 nnoremap ' `
 nnoremap ` '
 " Closer way to get to where you were last.
-nnoremap x "xx
-vnoremap x "xx
+"nnoremap x "xx
+"vnoremap x "xx
 " Delete to the x register.
 nnoremap <TAB> za
 
@@ -558,6 +559,11 @@ autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 "au BufEnter *.hs compiler ghc
 "let g:haddock_browser="/Applications/Firefox.app/Contents/MacOS/firefox"
 
+" vim-javascript
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
 " NerdTree
 " Close Vim if only NerdTree is left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -617,6 +623,17 @@ let g:tagbar_width=30
 let g:tagbar_compact=1
 let g:tagbar_singleclick=1
 let g:tagbar_sort=0
+
+" Tcomment
+" Yank visual selected lines before toggling comment.
+vmap gy ygvgc
+" Yank and paste visually selected liens before toggling comments.
+vmap gyy ygvgc'>gp'.
+" Yank line before toggling comment.
+nmap gy yygcc
+" Yank and paste line before toggling comment and remember position.
+" Use :t-1 instead of yyP to preserve registers.
+nmap gyy mz:t-1<cr>gCc`zmz
 
 " Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
