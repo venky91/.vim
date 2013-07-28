@@ -20,9 +20,11 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-NeoBundle 'vim-scripts/CSApprox', {
+NeoBundleLazy 'vim-scripts/CSApprox', {
 \'autoload' : { 'terminal' : 1,  }, }
 
+NeoBundle 'vim-scripts/ScrollColors'
+NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
@@ -42,9 +44,6 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tomtom/tcomment_vim'
-
-NeoBundleLazy 'vim-scripts/ScrollColors', {
-\'autoload' : { 'terminal' : 1, },}
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
@@ -105,7 +104,7 @@ NeoBundleLazy 'myhere/vim-nodejs-complete', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
 NeoBundleLazy 'jakar/vim-json', {
-\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml', 'json'], },}
+\'autoload' : {'filetypes' : ['javascript', 'css', 'xml', 'json'], },}
 
 NeoBundleLazy 'vim-scripts/a.vim', {
 \ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
@@ -279,7 +278,7 @@ else
     elseif strftime("%H") < 16
         colorscheme fruity
     elseif strftime("%H") < 20
-        colorscheme luna-term
+        colorscheme hybrid
     else
         colorscheme badwolf
     endif

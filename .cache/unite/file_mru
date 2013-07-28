@@ -1,25 +1,53 @@
 0.2.0
-/Users/james/Developer/Rails/sample_app/app/controllers/users_controller.rb	1373733285
-/Users/james/.vim/.vimrc	1373732098
-/Users/james/Developer/Rails/sample_app/app/controllers/microposts_controller.rb	1373732094
+/Users/james/.vim/.vimrc	1375037768
+/Users/james/Developer/Javascript/tizag/formvalidation.html	1375037430
+/Users/james/Developer/Javascript/tizag/upgradedwindowopen.html	1375035664
+/Users/james/Developer/Javascript/tizag/windowopen.html	1375035471
+/Users/james/.vim/mysnippets/html.snippets	1375035037
+/Users/james/.vim/mysnippets/cpp.snippets	1375034956
+/Users/james/.vim/bundle/ultisnips/UltiSnips/html.snippets	1375034921
+/Users/james/Developer/Javascript/nodebeginner/router.js	1374988330
+/Users/james/Developer/Rails/sample_app/app/assets/javascripts/static_pages.js.coffee	1374975705
+/Users/james/Developer/Rails/sample_app/app/assets/javascripts/application.js	1374975690
+/Users/james/Developer/Javascript/tizag/prompt.html	1374975635
+/Users/james/Developer/Javascript/tizag/confirm.html	1374973729
+/Users/james/Developer/Javascript/tizag/alert.html	1374971879
+/Users/james/Developer/Javascript/tizag/i_myjs.html	1374962724
+/Users/james/Developer/Javascript/tizag/if.html	1374961634
+/Users/james/Developer/Javascript/tizag/variables.html	1374961394
+/Users/james/log	1374960262
+/Users/james/Developer/Javascript/tizag/events.html	1374954481
+/Users/james/Developer/Javascript/tizag/while.html	1374954147
+/Users/james/Developer/Javascript/tizag/myjs.js	1374952332
+/Users/james/.vim/bundle/vim-javascript/indent/javascript.vim	1374950533
+/Users/james/Developer/Javascript/tizag/operator_example.html	1374948678
+/Users/james/Developer/C-Plus-Plus/simul.cpp	1374810316
+/Users/james/Developer/Rails/sample_app/app/assets/stylesheets/static_pages.css.scss	1374733787
+/Users/james/Developer/Rails/sample_app/app/assets/stylesheets/application.css	1374733777
+/Users/james/Developer/Javascript/nodebeginner/index.js	1374732136
+/Users/james/Developer/Python/Algorithms/binarysearch.py	1374364875
+/Users/james/.vim/vimsetup.py	1374129125
+/Users/james/.vim/.cache/.gitignore	1374129038
+/Users/james/.vim/.gitignore	1374128983
+/Users/james/Developer/Rails/sample_app/app/models/micropost.rb	1374127104
+/Users/james/Developer/Rails/sample_app/app/controllers/microposts_controller.rb	1374127087
+/Users/james/Developer/Rails/sample_app/app/controllers/users_controller.rb	1374045380
+/Users/james/Developer/SE Project/Project Code/src/t5_storage/Hospital.java	1374035660
+/Users/james/Developer/Rails/sample_app/app/controllers/application_controller.rb	1374035525
+/Users/james/.dotfiles/.zshrc	1373829462
+/private/etc/hosts	1373785889
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_2/os.cpp	1373731931
 /Users/james/Pictures/Jojo.jpg	1373697038
 /Users/james/Dropbox/music.txt	1373515838
-/Users/james/Developer/SE Project/Project Code/src/t5_storage/Hospital.java	1373343927
-/Users/james/Developer/Javascript/nodebeginner/index.js	1373004057
 /Users/james/Developer/Javascript/nodebeginner/server.js	1373003747
 /Users/james/Developer/Javascript/nodebeginner/requestHandlers.js	1373003715
-/private/etc/hosts	1372959273
 /Users/james/Dropbox/need.txt	1372776843
-/Users/james/Developer/Javascript/nodebeginner/router.js	1372734661
 /Users/james/Developer/Rails/sample_app/app/controllers/log	1372618190
 /Users/james/.vim/bundle/vim-json/ftplugin/json.vim	1372618151
 /Users/james/Developer/Rails/sample_app/app/controllers/static_pages_controller.rb	1372618015
 /Users/james/Developer/Rails/sample_app/app/controllers/sessions_controller.rb	1372618007
 /Users/james/Developer/Rails/sample_app/app/controllers/relationships_controller.rb	1372618005
-/Users/james/Developer/Rails/sample_app/app/controllers/application_controller.rb	1372617979
 /Users/james/Developer/Rails/sample_app/app/models/user.rb	1372617900
-/Users/james/.dotfiles/.zshrc	1372566995
 /Users/james/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	1372566978
 /Users/james/.oh-my-zsh/plugins/cp/cp.plugin.zsh	1372566955
 /Users/james/.oh-my-zsh/plugins/rsync/rsync.plugin.zsh	1372566880
@@ -37,8 +65,6 @@
 /Users/james/.vim/bundle/ScrollColors/plugin/ScrollColor.vim	1372296480
 /Users/james/.vim/bundle/ScrollColors/README	1372296435
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/syntax/abc.vim	1372296411
-/Users/james/.vim/vimsetup.py	1372220083
-/Users/james/.vim/mysnippets/cpp.snippets	1372219959
 /Users/james/Dropbox/Notes.org	1372219955
 /Users/james/.vim/bundle/ultisnips/UltiSnips/python.snippets	1372219674
 /Users/james/.vim/bundle/ultisnips/UltiSnips/java.snippets	1372219641
@@ -51,11 +77,10 @@
 /Users/james/Developer/Haskell/baby.hs	1372215589
 /Users/james/.emacs.d/init.el	1372030770
 /private/var/log/system.log	1372029267
-/Users/james/.vim/.gitignore	1372017902
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Nurse.java	1371937623
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Person.java	1371937622
-/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/CreditCard.java	1371937614
+/Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Surgeon.java	1371937614
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/BillingStatement.java	1371937598
 /Users/james/.emacs.d/packages/folding.el	1371935644
 /Users/james/.zsh_history	1371886921
@@ -71,14 +96,12 @@
 /Users/james/.emacs.d/.gitignore	1370674580
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/AdminPage.java	1370655339
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/AdminPage.form	1370655207
-/Users/james/Developer/C-Plus-Plus/simul.cpp	1370640959
 /Users/james/Developer/SE Project/Project Code/.gitignore	1370586790
 /Users/james/Developer/SE Project/.gitignore	1370586773
 /Users/james/Developer/Python/Algorithms/mergesort_old.py	1370581175
 /Users/james/Developer/Python/Algorithms/nonmergesort.py	1370578130
 /Users/james/Developer/Python/Algorithms/insertionsort.py	1370565051
 /Users/james/Developer/Python/Algorithms/insertionsort_khan.py	1370564673
-/Users/james/Developer/Python/Algorithms/binarysearch.py	1370564258
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/RPerson.java	1370411069
 /Users/james/Developer/SE Project/Project Code/src/t5_presentation_layer/MainForm.java	1370383806
 /Users/james/Developer/SE Project/Project Code/src/t5_domain_objects/Patient.java	1370382444
@@ -91,7 +114,6 @@
 /Users/james/Developer/C-Plus-Plus/Hangman/Hangman.cpp	1370361946
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_1/cigarette-smoker.cpp	1370361924
 /Users/james/Developer/Rails/sample_app/spec/models/user_spec.rb	1370361354
-/Users/james/Developer/Rails/sample_app/app/models/micropost.rb	1370360674
 /Users/james/Developer/Rails/sample_app/lib/tasks/sample_data.rake	1370360240
 /Users/james/Developer/Rails/sample_app/spec/models/relationship_spec.rb	1370360060
 /Users/james/Developer/Rails/sample_app/db/migrate/20130421051043_create_relationships.rb	1370360034
