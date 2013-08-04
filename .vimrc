@@ -20,9 +20,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-NeoBundleLazy 'vim-scripts/CSApprox', {
-\'autoload' : { 'terminal' : 1,  }, }
-
+NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
@@ -44,6 +42,7 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'Yggdroot/indentLine'
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
@@ -100,8 +99,8 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {
 NeoBundleLazy 'pangloss/vim-javascript', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
-NeoBundleLazy 'myhere/vim-nodejs-complete', {
-\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+"NeoBundleLazy 'myhere/vim-nodejs-complete', {
+"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
 NeoBundleLazy 'jakar/vim-json', {
 \'autoload' : {'filetypes' : ['javascript', 'css', 'xml', 'json'], },}
@@ -115,6 +114,7 @@ NeoBundleLazy 'msanders/cocoa.vim', {
 NeoBundleLazy 'klen/python-mode', {
 \'autoload' : { 'filetypes' : ['python',], },}
 
+NeoBundle 'marijnh/tern_for_vim'
 
 "NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'vim-scripts/L9'
@@ -765,7 +765,7 @@ let g:user_zen_Leader_key = '<c-e>'
 
 " Various
 set omnifunc=syntaxcomplete#Complete " Default Completion
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP

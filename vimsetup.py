@@ -24,7 +24,22 @@ def launch_vim_and_install_bundles():
 
 
 def end_messages():
-    print "Check YouCompleteMe"
+    print "---------------------"
+    print "To install Command-T"
+    print "---------------------"
+    print "$ cd ~/.vim/bundle/Command-T/ruby/command-t"
+    print '$ ruby ext.conf'
+    print '$ make'
+    print "---------------------"
+    print "To install Tern"
+    print "---------------------"
+    print "$ cd ~/.vim/bundle/tern_for_vim"
+    print "$ npm install"
+    print "---------------------"
+    print "To install YouCompleteMe"
+    print "---------------------"
+    print "$ cd ~/.vim/bundle/YouCompleteMe"
+    print "$ ./install.sh --clang-completer"
 
 
 def install_command_t():
@@ -34,11 +49,23 @@ def install_command_t():
     print "Finished Installing Commmand-T"
 
 
+def install_clang():
+    os.sytem('cd ~/.vim/bundle/YouCompleteMe')
+    os.system('./install.sh --clang-completer')
+
+
+def install_tern():
+    os.system('cd ~/.vim/bundle/tern_for_vim')
+    os.system('npm install')
+
+
 def main():
     neobundle_exists()
     create_symlinks()
     launch_vim_and_install_bundles()
-    install_command_t()
     print end_messages()
+    install_command_t()
+    install_tern()
+    install_clang()
 
 main()

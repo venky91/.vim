@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/james/Developer/Javascript/tizag'
+let g:netrw_dirhist_2='/Users/james/Developer/C-Plus-Plus'
+let g:netrw_dirhist_3='/Users/james/Developer/Python/Algorithms'
