@@ -229,7 +229,7 @@ set cursorline      " Highlight the current line.
 if v:version >= 704
     set number
     set relativenumber
-    au WinEnter * :setlocal number
+    au WinEnter * :setlocal relativenumber
     au WinEnter * :setlocal number
 else
     set relativenumber  " Numbers are not absolute.
@@ -454,6 +454,9 @@ autocmd FileType java set makeprg=javac\ %
 autocmd FileType java set errorformat=%A:%f:%l:\ %m,%-Z%p^,%-C%.%#
 autocmd FileType java nnoremap <f5> :make<cr><cr>
 autocmd FileType java nnoremap <f6> :!echo %\|awk -F. '{print $1}'\|xargs java<cr><cr>
+
+" Shell
+autocmd FileType sh nnoremap <C-c> :!./%<CR>
 
 " Python
 if has('mac')
