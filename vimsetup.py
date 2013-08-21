@@ -42,15 +42,16 @@ def end_messages():
     print "$ ./install.sh --clang-completer"
 
 
+#FIX how cd works when used with os.system
 def install_command_t():
     os.system('cd ~/.vim/bundle/Command-T/ruby/command-t')
-    os.system('ruby ext.conf')
+    os.system('/usr/bin/ruby ext.conf')
     os.system('make')
     print "Finished Installing Commmand-T"
 
 
 def install_clang():
-    os.sytem('cd ~/.vim/bundle/YouCompleteMe')
+    os.system('cd ~/.vim/bundle/YouCompleteMe')
     os.system('./install.sh --clang-completer')
 
 
@@ -64,8 +65,8 @@ def main():
     create_symlinks()
     launch_vim_and_install_bundles()
     print end_messages()
-    install_command_t()
-    install_tern()
-    install_clang()
+    #install_command_t()
+    #install_tern()
+    #install_clang()
 
 main()

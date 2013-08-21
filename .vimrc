@@ -42,13 +42,9 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'kshenoy/vim-signature'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'Yggdroot/indentLine'
 
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
-
-NeoBundleLazy 'myusuf3/numbers.vim', {
-\'autoload' : { 'insert' : 1, },}
 
 NeoBundleLazy 'Raimondi/delimitMate', {
 \'autoload' : { 'insert' : 1, },}
@@ -229,7 +225,15 @@ runtime! ftplugin/man.vim
 
 syntax on           " Color files automatically.
 set cursorline      " Highlight the current line.
-set relativenumber  " Numbers are not absolute.
+
+if v:version >= 704
+    set number
+    set relativenumber
+    au WinEnter * :setlocal number
+    au WinEnter * :setlocal number
+else
+    set relativenumber  " Numbers are not absolute.
+endif
 
 au WinEnter * :setlocal relativenumber
 au WinLeave * :setlocal norelativenumber
@@ -239,7 +243,7 @@ set guioptions-=L  " Remove left-hand scrollbar.
 set showbreak=↪    " Prettier linewraps.
 
 if has('mac')
-    set guifont=Consolas:h12,Inconsolata\ for\ Powerline:h13,Menlo:h12
+    set guifont=Consolas:h12,Menlo:h12
     set shell=/bin/bash
     set clipboard^=unnamed  " Tmux copy paste integration.
 elseif has('win32')
@@ -339,15 +343,6 @@ imap jk <Esc>
 " esc returns to command mode.
 nnoremap Q gq
 " Don't use Ex mode, use Q for formatting.
-"nnoremap J 10j
-"nnoremap K 10k
-"xnoremap J 10j
-"xnoremap K 10k
-" Moves 10 lines down/up.
-"map H ^
-" Moves to the front of the line.
-"map L $
-" Moves to the end of the line.
 vnoremap < <gv
 vnoremap > >gv
 " Reselect text after identing
@@ -358,9 +353,6 @@ nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\
 nnoremap ' `
 nnoremap ` '
 " Closer way to get to where you were last.
-"nnoremap x "xx
-"vnoremap x "xx
-" Delete to the x register.
 nnoremap <TAB> za
 
 " Leader
@@ -385,21 +377,18 @@ nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-" Indent the whole file and return to original position
 nnoremap <Leader>= mzgg=G`z
-" Edit file, starting in same directory as current file
+" Indent the whole file and return to original position
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-" Delete into one register and paste from another.
+" Edit file, starting in same directory as current file
 vnoremap <Leader>v "_dP
-" In :Functions:, toggles diffmode of buffer.
-nnoremap <silent><Leader>df :call DiffToggle()<CR>
-" YouCompleteMe GoTos
+" Delete into one register and paste from another.
 nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
-" Easy Motion Forward and Backwards
-nnoremap <Leader>z :e ~/Dropbox/Notes.org<CR>
+" YouCompleteMe GoTos
 nmap s <space>w
 nmap S <space>b
+" Easy Motion Forward and Backwards
 
 " }}}
 
@@ -790,16 +779,6 @@ set tags+=~/.vim/tags/easytags
 " }}}
 
 " FUNCTIONS {{{
-
-function! DiffToggle()
-    if &diff
-        echom "diffoff"
-        diffoff
-    else
-        echom "diffon"
-        diffthis
-    endif
-endfunction
 
 " CD to current file's directory, execute make there and then cd back to Root.
 function! UseMakeSameDirForC()
