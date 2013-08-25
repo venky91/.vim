@@ -86,6 +86,18 @@ NeoBundleLazy 'tpope/vim-bundler', {
 NeoBundleLazy 'vim-ruby/vim-ruby', {
 \'autoload' : {'filetypes' : ['ruby', 'rails'], },}
 
+NeoBundleLazy 'klen/python-mode', {
+\'autoload' : { 'filetypes' : ['python',], },}
+
+NeoBundleLazy 'vim-scripts/a.vim', {
+\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
+
+"NeoBundleLazy 'msanders/cocoa.vim', {
+"\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
+
+NeoBundleLazy 'marijnh/tern_for_vim', {
+\'autoload' : {'filetypes' : ['javascript', ], },}
+
 NeoBundleLazy 'mattn/zencoding-vim', {
 \'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
 
@@ -101,21 +113,12 @@ NeoBundleLazy 'pangloss/vim-javascript', {
 NeoBundleLazy 'jakar/vim-json', {
 \'autoload' : {'filetypes' : ['javascript', 'css', 'xml', 'json'], },}
 
-NeoBundleLazy 'vim-scripts/a.vim', {
-\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
-
-NeoBundleLazy 'msanders/cocoa.vim', {
-\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
-
-NeoBundleLazy 'klen/python-mode', {
-\'autoload' : { 'filetypes' : ['python',], },}
-
-NeoBundle 'marijnh/tern_for_vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'wavded/vim-stylus'
 
 "NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'vim-scripts/L9'
 "NeoBundle 'terryma/vim-multiple-cursors'
-"NeoBundle 'airblade/vim-gitgutter'
 "NeoBundle 'bling/vim-airline'
 "NeoBundle 'honza/vim-snippets'
 "NeoBundle 'Lokaltog/powerline'
@@ -231,6 +234,7 @@ if v:version >= 704
     set relativenumber
     au WinEnter * :setlocal relativenumber
     au WinEnter * :setlocal number
+    set regexpengine=1 " Old Regex Engine
 else
     set relativenumber  " Numbers are not absolute.
 endif
@@ -281,6 +285,7 @@ else
         colorscheme xoria256
     elseif strftime("%H") < 16
         colorscheme fruity
+        hi StatusLine guibg=red
     elseif strftime("%H") < 20
         colorscheme hybrid
     else
@@ -288,9 +293,9 @@ else
     endif
 endif
 
-highlight SignColumn guibg=black
+hi SignColumn guibg=black
 
-"status line
+" Status line
 set laststatus=2
 set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
 set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
@@ -696,7 +701,7 @@ autocmd FileType unite call s:unite_settings()
 
 nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
 nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>
-nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
+"nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
 nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
 nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
 nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
@@ -727,7 +732,6 @@ let g:ycm_semantic_triggers = {
   \ 'lua' : ['.', ':'],
   \ 'erlang' : [':'],
   \ }
-
 
 
 function! g:UltiSnips_Complete()
@@ -803,10 +807,5 @@ function! FindYouCompleteMeConf()
     endif
 endfunction
 
-function! XCodeBuild()
-    let l:command = 'xcodebuild -sdk iphonesimulator'
-    let l:out = system(l:command)
-    cexpr l:out
-endfunction
 
 " }}}

@@ -1,7 +1,26 @@
 0.2.0
-/Users/james/.dotfiles/.zshrc	1377049784
-/Users/james/.vim/.vimrc	1377049767
-/Users/james/.dotfiles/.tmux.conf	1376799152
+/Users/james/Developer/Javascript/mini_blog/articleprovider-mongodb.js	1377459049
+/Users/james/.vim/.vimrc	1377458084
+/Users/james/Developer/Javascript/mini_blog/package.json	1377457700
+/Users/james/Developer/Javascript/mini_blog/views/blog_new.jade	1377457661
+/Users/james/Developer/Javascript/mini_blog/views/index.jade	1377457177
+/Users/james/Developer/Javascript/mini_blog/app.js	1377457063
+/Users/james/Developer/Javascript/mini_blog/public/stylesheets/style.styl	1377455873
+/Users/james/Developer/Javascript/mini_blog/views/layout.jade	1377455303
+/Users/james/Developer/Javascript/mini_blog/articleprovider-memory.js	1377453479
+/Users/james/.vim/bundle/ultisnips/UltiSnips/javascript_jasmine.snippets	1377448362
+/Users/james/.dotfiles/.tmux.conf	1377447338
+/Users/james/Developer/C-Plus-Plus/Hangman/Hangman.cpp	1377409774
+/Users/james/Developer/C-Plus-Plus/Baccarat/Baccarat.cpp	1377409656
+/Users/james/Developer/Javascript/mixu/simple_messaging/server.js	1377408594
+/Users/james/Developer/Javascript/mixu/simple_messaging/index.html	1377408593
+/Users/james/Developer/Javascript/nodebeginner/router.js	1377408476
+/Users/james/.vim/vimsetup.py	1377408191
+/Users/james/.dotfiles/.zshrc	1377408169
+/Users/james/Developer/Python/Node.py	1377408016
+/Users/james/Developer/startup_script_project/vimsetup.sh	1377055854
+/Users/james/Developer/startup_script_project/vimsetup.py	1377050282
+/Users/james/Developer/startup_script_project/main.py	1377050162
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/syntax/javascript.vim	1376765561
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/syntax/javascript.vim	1376765549
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/indent/html.vim	1376765503
@@ -16,9 +35,7 @@
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/ccomplete.vim	1376765332
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/ccomplete.vim	1376765325
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/adacomplete.vim	1376765314
-/Users/james/Developer/Javascript/nodebeginner/router.js	1376462853
 /Users/james/Dropbox/music.txt	1376112006
-/Users/james/test.py	1375928756
 /Users/james/Developer/Javascript/tizag/formvalidation.html	1375037430
 /Users/james/Developer/Javascript/tizag/upgradedwindowopen.html	1375035664
 /Users/james/Developer/Javascript/tizag/windowopen.html	1375035471
@@ -43,7 +60,6 @@
 /Users/james/Developer/Rails/sample_app/app/assets/stylesheets/application.css	1374733777
 /Users/james/Developer/Javascript/nodebeginner/index.js	1374732136
 /Users/james/Developer/Python/Algorithms/binarysearch.py	1374364875
-/Users/james/.vim/vimsetup.py	1374129125
 /Users/james/.vim/.cache/.gitignore	1374129038
 /Users/james/.vim/.gitignore	1374128983
 /Users/james/Developer/Rails/sample_app/app/models/micropost.rb	1374127104
@@ -84,7 +100,6 @@
 /Users/james/.vim/bundle/ultisnips/UltiSnips/all.snippets	1372219539
 /Users/james/.vim/mysnippets/c.snippets	1372219509
 /Users/james/.vim/bundle/ultisnips/UltiSnips/c.snippets	1372218966
-/Users/james/.gvimrc	1372218258
 /Users/james/.vim/bundle/vim-plugin-viewdoc/doc/viewdoc.txt	1372217530
 /Users/james/Developer/Haskell/baby.hs	1372215589
 /Users/james/.emacs.d/init.el	1372030770
@@ -123,7 +138,6 @@
 /Users/james/Developer/C-Plus-Plus/ShellSim/main.c	1370362089
 /Users/james/Developer/EBSideScroller/Project/main.cpp	1370362057
 /Users/james/Developer/C-Plus-Plus/RandomWriter/RandomWriter.cpp	1370361994
-/Users/james/Developer/C-Plus-Plus/Hangman/Hangman.cpp	1370361946
 /Users/james/Developer/C-Plus-Plus/Op-Systems/homework_1/cigarette-smoker.cpp	1370361924
 /Users/james/Developer/Rails/sample_app/spec/models/user_spec.rb	1370361354
 /Users/james/Developer/Rails/sample_app/lib/tasks/sample_data.rake	1370360240
@@ -144,4 +158,3 @@
 /Users/james/.rvm/src/ruby-1.9.3-p392/ext/tk/sample/tkextlib/tkHTML/page4/index.html	1370150780
 /Users/james/Developer/C-Plus-Plus/Basic C/charInOut.c	1370149027
 /Users/james/Developer/Python/Algorithms/sorting_algorithms.py	1370148862
-/Users/james/Developer/Python/Node.py	1370148800
