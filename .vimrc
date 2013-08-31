@@ -98,11 +98,11 @@ NeoBundleLazy 'vim-scripts/a.vim', {
 NeoBundleLazy 'marijnh/tern_for_vim', {
 \'autoload' : {'filetypes' : ['javascript', ], },}
 
-NeoBundleLazy 'mattn/zencoding-vim', {
+NeoBundleLazy 'mattn/emmet-vim/', {
 \'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
 
 NeoBundleLazy 'jelera/vim-javascript-syntax', {
-\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+\'autoload' : {'filetypes' : ['html', 'javascript',], },}
 
 NeoBundleLazy 'pangloss/vim-javascript', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
@@ -419,7 +419,7 @@ au FileType txt set foldmethod=marker
 
 au FileType python set foldmethod=indent
 au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
-au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=3
+au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
 
 " Saves cursor position from last time.
 autocmd BufReadPost *
@@ -753,7 +753,7 @@ endfunction
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 " Zencoding
-let g:user_zen_Leader_key = '<c-e>'
+let g:user_emmet_leader_key = '<c-e>'
 
 " }}}
 
@@ -806,6 +806,5 @@ function! FindYouCompleteMeConf()
         let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp/ycm_extra_conf.py"
     endif
 endfunction
-
 
 " }}}
