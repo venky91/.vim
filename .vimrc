@@ -24,7 +24,6 @@ NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
-NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-eunuch'
@@ -112,27 +111,19 @@ NeoBundle 'wavded/vim-stylus'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'oblitum/rainbow'
 
+"NeoBundle 'Lokaltog/vim-easymotion'
 "NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'vim-scripts/L9'
 "NeoBundle 'terryma/vim-multiple-cursors'
-"NeoBundle 'honza/vim-snippets'
-"NeoBundle 'Lokaltog/powerline'
 "NeoBundle 'lukerandall/haskellmode-vim'
 "NeoBundle 'chrisbra/NrrwRgn'
-"NeoBundle 'sjl/gundo.vim'
 "NeoBundle 'FredKSchott/CoVim'
 "NeoBundle 'kien/ctrlp.vim'
-"NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'Shougo/vimshell.vim'
-"NeoBundle 'airblade/vim-rooter'
 "NeoBundle 'vim-scripts/LustyExplorer'
 "NeoBundle 'davidhalter/jedi-vim'
-"NeoBundle 'jiangmiao/auto-pairs'
 "NeoBundle 'Rip-Rip/clang_complete'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"NeoBundle 'tpope/vim-dispatch'
-"NeoBundle 'Shougo/vimfiler.vim'
-"NeoBundle 'Shougo/neocomplcache'
 "NeoBundle 'Shougo/neosnippet'
 filetype plugin indent on
 
@@ -292,10 +283,10 @@ hi SignColumn guibg=black
 
 " Status line
 set laststatus=2
-"set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
-"set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
-"set statusline+=%#warningmsg#
-"set statusline+=%*
+set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
+set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
+set statusline+=%#warningmsg#
+set statusline+=%*
 
 " }}}
 
@@ -386,8 +377,8 @@ vnoremap <Leader>v "_dP
 nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 " YouCompleteMe GoTos
-nmap s <space>w
-nmap S <space>b
+"nmap s <space>w
+"nmap S <space>b
 " Easy Motion Forward and Backwards
 
 " }}}
@@ -501,6 +492,8 @@ endif
 
 " Airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#hunks#non_zero_only = 1
+let g:airline#extensions#whitespace#enabled = 0
 
 " CommandT
 nnoremap <C-p> :CommandT<cr>
@@ -533,7 +526,7 @@ let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 " Easy Motion
-let g:EasyMotion_leader_key = '<space>'
+"let g:EasyMotion_leader_key = '<space>'
 
 " Easytags
 let g:easytags_include_members = 1
@@ -571,12 +564,6 @@ let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeShowLineNumbers=1
 
-" Powerline
-set laststatus=2 " Always show the statusline.
-set encoding=utf-8 " Necessary to show unicode glyphs.
-let g:Powerline_symbols = 'fancy'
-"set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-
 " Python Mode
 let g:pymode_breakpoint = 1 " Load breakpoints plugin.
 let g:pymode_doc_key = '<Leader>K'
@@ -586,6 +573,9 @@ let g:pymode_rope = 0 " Use Jedi instead of Rope.
 let g:pymode_folding = 1
 let g:pymode_motion = 1
 let g:pymode_lint_mccabe_complexity = 16
+
+" Rainbow Parens
+let g:rainbow_active = 1
 
 " Sparkup
 " let g:sparkupNextMapping='<c-u>'
