@@ -92,9 +92,6 @@ NeoBundleLazy 'klen/python-mode', {
 NeoBundleLazy 'vim-scripts/a.vim', {
 \ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
 
-"NeoBundleLazy 'msanders/cocoa.vim', {
-"\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
-
 NeoBundleLazy 'marijnh/tern_for_vim', {
 \'autoload' : {'filetypes' : ['javascript', ], },}
 
@@ -107,19 +104,17 @@ NeoBundleLazy 'jelera/vim-javascript-syntax', {
 NeoBundleLazy 'pangloss/vim-javascript', {
 \'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
 
-"NeoBundleLazy 'myhere/vim-nodejs-complete', {
-"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
-
 NeoBundleLazy 'jakar/vim-json', {
 \'autoload' : {'filetypes' : ['javascript', 'css', 'xml', 'json'], },}
 
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'wavded/vim-stylus'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'oblitum/rainbow'
 
 "NeoBundle 'scrooloose/nerdcommenter'
 "NeoBundle 'vim-scripts/L9'
 "NeoBundle 'terryma/vim-multiple-cursors'
-"NeoBundle 'bling/vim-airline'
 "NeoBundle 'honza/vim-snippets'
 "NeoBundle 'Lokaltog/powerline'
 "NeoBundle 'lukerandall/haskellmode-vim'
@@ -297,10 +292,10 @@ hi SignColumn guibg=black
 
 " Status line
 set laststatus=2
-set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
-set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
-set statusline+=%#warningmsg#
-set statusline+=%*
+"set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
+"set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
+"set statusline+=%#warningmsg#
+"set statusline+=%*
 
 " }}}
 
@@ -503,6 +498,9 @@ endif
 " }}}
 
 " PLUGIN {{{
+
+" Airline
+let g:airline_powerline_fonts = 1
 
 " CommandT
 nnoremap <C-p> :CommandT<cr>

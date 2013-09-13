@@ -1,14 +1,27 @@
 0.2.0
-/Users/james/Developer/Javascript/mini_blog/articleprovider-mongodb.js	1377459049
-/Users/james/.vim/.vimrc	1377458084
+/Users/james/.vim/.vimrc	1379041767
+/Users/james/Developer/Point-of-Sales/Point IPad/Point IPad/HomeViewController.h	1379041642
+/Users/james/Developer/js_node_project/app.js	1379041615
+/Users/james/.dotfiles/.zshrc	1378866281
+/Users/james/todo	1378582588
+/Users/james/Dropbox/Finance/September2012	1378072626
+/Users/james/Developer/Javascript/mini_blog/views/layout.jade	1377826857
+/Users/james/Developer/Javascript/mini_blog/public/stylesheets/style.styl	1377661005
+/Users/james/Developer/Javascript/mini_blog/views/index.jade	1377658730
+/Users/james/Developer/Javascript/mini_blog/public/stylesheets/style.css	1377658011
+/Users/james/Developer/Javascript/mini_blog/routes/index.js	1377493447
+/Users/james/Developer/Javascript/mini_blog/views/index-final.jade	1377493255
+/Users/james/Developer/Javascript/mini_blog/views/blog_show-final.jade	1377493238
+/Users/james/Developer/Javascript/mini_blog/articleprovider-mongodb.js	1377493029
+/Users/james/Developer/Javascript/mini_blog/app.js	1377492912
+/Users/james/.vim/bundle/undotree/README.md	1377489982
+/Users/james/Developer/Javascript/mini_blog/public/stylesheets/style-final.styl	1377481822
 /Users/james/Developer/Javascript/mini_blog/package.json	1377457700
 /Users/james/Developer/Javascript/mini_blog/views/blog_new.jade	1377457661
-/Users/james/Developer/Javascript/mini_blog/views/index.jade	1377457177
-/Users/james/Developer/Javascript/mini_blog/app.js	1377457063
-/Users/james/Developer/Javascript/mini_blog/public/stylesheets/style.styl	1377455873
-/Users/james/Developer/Javascript/mini_blog/views/layout.jade	1377455303
 /Users/james/Developer/Javascript/mini_blog/articleprovider-memory.js	1377453479
+/Users/james/.vim/mysnippets/javascript.snippets	1377448554
 /Users/james/.vim/bundle/ultisnips/UltiSnips/javascript_jasmine.snippets	1377448362
+/Users/james/.vim/bundle/ultisnips/UltiSnips/javascript.snippets	1377448326
 /Users/james/.dotfiles/.tmux.conf	1377447338
 /Users/james/Developer/C-Plus-Plus/Hangman/Hangman.cpp	1377409774
 /Users/james/Developer/C-Plus-Plus/Baccarat/Baccarat.cpp	1377409656
@@ -16,7 +29,6 @@
 /Users/james/Developer/Javascript/mixu/simple_messaging/index.html	1377408593
 /Users/james/Developer/Javascript/nodebeginner/router.js	1377408476
 /Users/james/.vim/vimsetup.py	1377408191
-/Users/james/.dotfiles/.zshrc	1377408169
 /Users/james/Developer/Python/Node.py	1377408016
 /Users/james/Developer/startup_script_project/vimsetup.sh	1377055854
 /Users/james/Developer/startup_script_project/vimsetup.py	1377050282
@@ -30,8 +42,8 @@
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/phpcomplete.vim	1376765399
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/javascriptcomplete.vim	1376765388
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/javascriptcomplete.vim	1376765385
-/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/htmlcomplete.vim	1376765374
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/htmlcomplete.vim	1376765374
+/usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/htmlcomplete.vim	1376765374
 /usr/local/Cellar/macvim/7.3-66/MacVim.app/Contents/Resources/vim/runtime/autoload/ccomplete.vim	1376765332
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/ccomplete.vim	1376765325
 /usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/Resources/vim/runtime/autoload/adacomplete.vim	1376765314
