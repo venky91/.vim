@@ -740,7 +740,7 @@ endfunction
 
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
-" Zencoding
+" Emmet
 let g:user_emmet_leader_key = '<c-e>'
 
 " }}}
