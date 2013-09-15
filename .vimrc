@@ -827,6 +827,12 @@ let g:unite_source_menu_menus.files.command_candidates = [
         \'Unite -default-action=lcd directory'],
     \['▷ know current working directory',
         \'Unite output:pwd'],
+    \['▷ command-t files  ⌘ <c-p>',
+        \'CommandT'],
+    \['▷ command-t buffers  ⌘ <c-b>',
+        \'CommandTBuffer'],
+    \['▷ command-t flush  ⌘ ',
+        \'CommandTFlush'],
     \]
 nnoremap <silent>[menu]o :Unite -silent -winheight=17 -start-insert
             \ menu:files<CR>
