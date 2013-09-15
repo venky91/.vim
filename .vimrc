@@ -719,10 +719,12 @@ let g:user_emmet_leader_key = '<c-e>'
 
 " }}}
 
-" Unite {{{
+" UNITE {{{
 let g:unite_source_menu_menus = {}
 nnoremap [menu] <Nop>
 nmap <LocalLeader> [menu]
+
+map [menu]u :Unite menu<CR>
 
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
@@ -830,6 +832,60 @@ nnoremap <silent>[menu]o :Unite -silent -winheight=17 -start-insert
             \ menu:files<CR>
 " }}}
 
+" yanks, registers & history menu {{{
+let g:unite_source_menu_menus.registers = {
+    \ 'description' : ' yanks, registers & history
+        \ ⌘ [space]i',
+    \}
+let g:unite_source_menu_menus.registers.command_candidates = [
+    \['▷ yanks ⌘ ,i',
+        \'Unite history/yank'],
+    \['▷ commands (history) ⌘ q:',
+        \'Unite history/command'],
+    \['▷ searches (history) ⌘ q/',
+        \'Unite history/search'],
+    \['▷ registers',
+        \'Unite register'],
+    \['▷ messages',
+        \'Unite output:messages'],
+    \['▷ undo tree (undotree) ⌘ <F8>',
+        \'UndotreeToggle'],
+    \]
+nnoremap <silent>[menu]i :Unite -silent menu:registers<CR>
+" }}}
+
+" neobundle menu {{{
+let g:unite_source_menu_menus.neobundle = {
+    \ 'description' : ' plugins administration with neobundle
+        \ ⌘ [space]n',
+    \}
+let g:unite_source_menu_menus.neobundle.command_candidates = [
+    \['▷ neobundle',
+        \'Unite neobundle'],
+    \['▷ neobundle log',
+        \'Unite neobundle/log'],
+    \['▷ neobundle lazy',
+        \'Unite neobundle/lazy'],
+    \['▷ neobundle update',
+        \'Unite neobundle/update'],
+    \['▷ neobundle search',
+        \'Unite neobundle/search'],
+    \['▷ neobundle install',
+        \'Unite neobundle/install'],
+    \['▷ neobundle check',
+        \'Unite -no-empty output:NeoBundleCheck'],
+    \['▷ neobundle docs',
+        \'Unite output:NeoBundleDocs'],
+    \['▷ neobundle clean',
+        \'NeoBundleClean'],
+    \['▷ neobundle list',
+        \'Unite output:NeoBundleList'],
+    \['▷ neobundle direct edit',
+        \'NeoBundleDirectEdit'],
+    \]
+nnoremap <silent>[menu]n :Unite -silent -start-insert menu:neobundle<CR>
+" }}}
+
 " git menu {{{
 let g:unite_source_menu_menus.git = {
     \ 'description' : ' admin git repositories
@@ -893,6 +949,40 @@ let g:unite_source_menu_menus.git.command_candidates = [
     \]
 
 nnoremap <silent>[menu]g :Unite -silent -winheight=29 -start-insert menu:git<CR>
+" }}}
+
+" vim menu {{{
+let g:unite_source_menu_menus.vim = {
+    \ 'description' : ' vim
+        \ ⌘ [space]v',
+    \}
+let g:unite_source_menu_menus.vim.command_candidates = [
+    \['▷ choose colorscheme',
+        \'Unite colorscheme -auto-preview'],
+    \['▷ mappings',
+        \'Unite mapping -start-insert'],
+    \['▷ edit configuration file (vimrc)',
+        \'edit $MYVIMRC'],
+    \['▷ choose filetype',
+        \'Unite -start-insert filetype'],
+    \['▷ vim help',
+        \'Unite -start-insert help'],
+    \['▷ vim commands',
+        \'Unite -start-insert command'],
+    \['▷ vim functions',
+        \'Unite -start-insert function'],
+    \['▷ vim runtimepath',
+        \'Unite -start-insert runtimepath'],
+    \['▷ vim command output',
+        \'Unite output'],
+    \['▷ unite sources',
+        \'Unite source'],
+    \['▷ kill process',
+        \'Unite -default-action=sigkill -start-insert process'],
+    \['▷ launch executable (dmenu like)',
+        \'Unite -start-insert launcher'],
+    \]
+nnoremap <silent>[menu]v :Unite menu:vim -silent -start-insert<CR>
 " }}}
 
 " }}}
