@@ -3,6 +3,17 @@
 set nocompatible    " no compatibility with vi
 filetype off        " required for vundle
 
+" Auto installing NeoBundle
+let iCanHazNeoBundle=1
+let neobundle_readme=expand($HOME.'/.vim/bundle/neobundle.vim/README.md')
+if !filereadable(neobundle_readme)
+    echo "Installing NeoBundle.."
+    echo ""
+    silent !mkdir -p $HOME/.vim/bundle
+    silent !git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
+    let iCanHazNeoBundle=0
+endif
+
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -20,6 +31,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'vim-scripts/ScrollColors'
 NeoBundle 'tpope/vim-ragtag'
@@ -79,12 +91,6 @@ NeoBundleLazy 'eagletmt/ghcmod-vim', {
 NeoBundleLazy 'tpope/vim-rails', {
 \'autoload' : {'filetypes' : ['ruby', 'rails'], },}
 
-NeoBundleLazy 'tpope/vim-bundler', {
-\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
-
-NeoBundleLazy 'vim-ruby/vim-ruby', {
-\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
-
 NeoBundleLazy 'klen/python-mode', {
 \'autoload' : { 'filetypes' : ['python',], },}
 
@@ -97,35 +103,35 @@ NeoBundleLazy 'marijnh/tern_for_vim', {
 NeoBundleLazy 'mattn/emmet-vim/', {
 \'autoload' : {'filetypes' : ['html', 'js', 'css', 'xml'], },}
 
-NeoBundleLazy 'jelera/vim-javascript-syntax', {
-\'autoload' : {'filetypes' : ['html', 'javascript',], },}
-
-NeoBundleLazy 'pangloss/vim-javascript', {
-\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
-
 NeoBundleLazy 'jakar/vim-json', {
 \'autoload' : {'filetypes' : ['javascript', 'css', 'xml', 'json'], },}
 
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'wavded/vim-stylus'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'oblitum/rainbow'
 
-"NeoBundle 'Lokaltog/vim-easymotion'
-"NeoBundle 'scrooloose/nerdcommenter'
-"NeoBundle 'vim-scripts/L9'
-"NeoBundle 'terryma/vim-multiple-cursors'
-"NeoBundle 'lukerandall/haskellmode-vim'
-"NeoBundle 'chrisbra/NrrwRgn'
-"NeoBundle 'FredKSchott/CoVim'
-"NeoBundle 'kien/ctrlp.vim'
-"NeoBundle 'Shougo/vimshell.vim'
-"NeoBundle 'vim-scripts/LustyExplorer'
-"NeoBundle 'davidhalter/jedi-vim'
-"NeoBundle 'Rip-Rip/clang_complete'
-"NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"NeoBundle 'Shougo/neosnippet'
+"NeoBundleLazy 'tpope/vim-bundler', {
+"\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
+
+"NeoBundleLazy 'pangloss/vim-javascript', {
+"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
+
+"NeoBundleLazy 'jelera/vim-javascript-syntax', {
+"\'autoload' : {'filetypes' : ['html', 'javascript',], },}
+
+"NeoBundleLazy 'vim-ruby/vim-ruby', {
+"\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
+
+"NeoBundle 'digitaltoad/vim-jade'
+"NeoBundle 'wavded/vim-stylus'
+
 filetype plugin indent on
+
+" First-time plugins installation
+if iCanHazNeoBundle == 0
+    echo "Installing Bundles, please ignore key map error messages"
+    echo ""
+    :NeoBundleInstall
+endif
 
 " Installation check.
 NeoBundleCheck
@@ -348,6 +354,7 @@ nnoremap <TAB> za
 
 " Leader
 let mapleader=","
+let maplocalleader=" "
 " change the mapLeader from \ to ,
 nnoremap <Leader>t :TagbarToggle<CR>
 " toggles the tagbar with tt
@@ -361,8 +368,6 @@ nnoremap <Leader>v :e ~/.vimrc<cr>
 " open vimrc in another split
 nnoremap <Leader>V :silent! so $MYVIMRC<CR>
 " source vimrc
-nnoremap <Leader>dp :!cp % ~/Dropbox/Public/
-" copies current file into dropbox
 nnoremap <Leader>wv :vsplit<cr>
 nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
@@ -539,6 +544,37 @@ let g:easytags_updatetime_warn = 0
 let g:EclimMenus = 1
 let g:EclimCompletionMethod = 'omnifunc'
 
+" Fugitive
+nnoremap <Leader>gn :Unite output:echo\ system("git\ init")<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>go :Gread<CR>
+nnoremap <Leader>gR :Gremove<CR>
+nnoremap <Leader>gm :Gmove<Space>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gB :Gbrowse<CR>
+nnoremap <Leader>gp :Git! push<CR>
+nnoremap <Leader>gP :Git! pull<CR>
+nnoremap <Leader>gi :Git!<Space>
+nnoremap <Leader>ge :Gedit<CR>
+nnoremap <Leader>gE :Gedit<Space>
+nnoremap <Leader>gl :exe "silent Glog <Bar> Unite -no-quit
+            \ quickfix"<CR>:redraw!<CR>
+nnoremap <Leader>gL :exe "silent Glog -- <Bar> Unite -no-quit
+            \ quickfix"<CR>:redraw!<CR>
+nnoremap <Leader>gt :!tig<CR>:redraw!<CR>
+nnoremap <Leader>gS :exe "silent !shipit"<CR>:redraw!<CR>
+nnoremap <Leader>gg :exe 'silent Ggrep -i '.input("Pattern: ")<Bar>Unite
+            \ quickfix -no-quit<CR>
+nnoremap <Leader>ggm :exe 'silent Glog --grep='.input("Pattern: ").' <Bar>
+            \Unite -no-quit quickfix'<CR>
+nnoremap <Leader>ggt :exe 'silent Glog -S='.input("Pattern: ").' <Bar>
+            \Unite -no-quit quickfix'<CR>
+
+nnoremap <Leader>ggc :silent! Ggrep -i<Space>
+
 " GHC Mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
@@ -579,6 +615,12 @@ let g:rainbow_active = 1
 
 " Sparkup
 " let g:sparkupNextMapping='<c-u>'
+
+" Signify
+let g:signify_mapping_next_hunk = '<nop>'
+let g:signify_mapping_prev_hunk = '<nop>'
+let g:signify_mapping_toggle_highlight = '<nop>'
+let g:signify_mapping_toggle = '<nop>'
 
 " Syntastic
 let g:syntastic_check_on_open        = 1 " run syntastic on open and save
@@ -626,7 +668,62 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 
-" Unite
+
+" View Doc
+let g:viewdoc_open='new'
+let g:viewdoc_only=1
+
+" Vim Rooter
+"let g:rooter_use_lcd = 1
+
+" YouCompleteMe
+autocmd VimEnter * call FindYouCompleteMeConf()
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_semantic_triggers = {
+  \ 'c' : ['->', '.'],
+  \ 'objc' : ['->', '.'],
+  \ 'ocaml' : ['.', '#'],
+  \ 'cpp,objcpp' : ['->', '.', '::'],
+  \ 'perl' : ['->'],
+  \ 'php' : ['->', '::'],
+  \ 'cs,css,haskell,java,javascript,d,ruby' : ['.'],
+  \ 'python,perl6,scala,vb,elixir,go' : ['.'],
+  \ 'lua' : ['.', ':'],
+  \ 'erlang' : [':'],
+  \ }
+
+
+function! g:UltiSnips_Complete()
+    call UltiSnips_ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips_JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+
+" Emmet
+let g:user_emmet_leader_key = '<c-e>'
+
+" }}}
+
+" Unite {{{
+let g:unite_source_menu_menus = {}
+nnoremap [menu] <Nop>
+nmap <LocalLeader> [menu]
+
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 
@@ -687,61 +784,116 @@ endfunction
 
 autocmd FileType unite call s:unite_settings()
 
-nnoremap <Leader>, :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
-nnoremap <Leader>y :<C-u>Unite -buffer-name=yanks history/yank<cr>
-"nnoremap <Leader>l :<C-u>Unite -buffer-name=line line<cr>
-nnoremap <Leader>/ :<C-u>Unite -buffer-name=search grep:.<cr>
-nnoremap <Leader>b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
-nnoremap <Leader>f :<C-u>Unite file_rec/async<CR>
-nnoremap <Leader>r :<C-u>Unite file_mru<CR>
+nnoremap <silent> [menu], :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
+nnoremap <silent> [menu]y :<C-u>Unite -buffer-name=yanks history/yank<cr>
+nnoremap <silent> [menu]/ :<C-u>Unite -buffer-name=search grep:.<cr>
+nnoremap <silent> [menu]b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
+nnoremap <silent> [menu]f :<C-u>Unite file_rec/async<CR>
+nnoremap <silent> [menu]r :<C-u>Unite file_mru<CR>
+nnoremap <silent> [menu]ma
+    \ :<C-u>Unite mapping<CR>
+nnoremap <silent> [menu]me
+    \ :<C-u>Unite output:message<CR>
+nnoremap [menu]? :<C-u>Unite source<CR>
 
-" View Doc
-let g:viewdoc_open='new'
-let g:viewdoc_only=1
+" menus menu
+nnoremap <silent>[menu]u :Unite -silent -winheight=20 menu<CR>
 
-" Vim Rooter
-"let g:rooter_use_lcd = 1
+" files and dirs menu {{{
+let g:unite_source_menu_menus.files = {
+    \ 'description' : ' files & dirs
+        \ ⌘ [space]o',
+    \}
+let g:unite_source_menu_menus.files.command_candidates = [
+    \['▷ open file ⌘',
+        \'Unite -start-insert file'],
+    \['▷ open more recently used files ⌘ [space] r',
+        \'Unite file_mru'],
+    \['▷ open file with recursive search ⌘',
+        \'Unite -start-insert file_rec/async'],
+    \['▷ edit new file',
+        \'Unite file/new'],
+    \['▷ search directory',
+        \'Unite directory'],
+    \['▷ search recently used directories',
+        \'Unite directory_mru'],
+    \['▷ search directory with recursive search',
+        \'Unite directory_rec/async'],
+    \['▷ make new directory',
+        \'Unite directory/new'],
+    \['▷ change working directory',
+        \'Unite -default-action=lcd directory'],
+    \['▷ know current working directory',
+        \'Unite output:pwd'],
+    \]
+nnoremap <silent>[menu]o :Unite -silent -winheight=17 -start-insert
+            \ menu:files<CR>
+" }}}
 
-" YouCompleteMe
-autocmd VimEnter * call FindYouCompleteMeConf()
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_semantic_triggers = {
-  \ 'c' : ['->', '.'],
-  \ 'objc' : ['->', '.'],
-  \ 'ocaml' : ['.', '#'],
-  \ 'cpp,objcpp' : ['->', '.', '::'],
-  \ 'perl' : ['->'],
-  \ 'php' : ['->', '::'],
-  \ 'cs,css,haskell,java,javascript,d,ruby' : ['.'],
-  \ 'python,perl6,scala,vb,elixir,go' : ['.'],
-  \ 'lua' : ['.', ':'],
-  \ 'erlang' : [':'],
-  \ }
+" git menu {{{
+let g:unite_source_menu_menus.git = {
+    \ 'description' : ' admin git repositories
+        \ ⌘ [space]g',
+    \}
+let g:unite_source_menu_menus.git.command_candidates = [
+    \['▷ tig ⌘ ,gt',
+        \'normal ,gt'],
+    \['▷ git viewer (gitv) ⌘ ,gv',
+        \'normal ,gv'],
+    \['▷ git viewer - buffer (gitv) ⌘ ,gV',
+        \'normal ,gV'],
+    \['▷ git status (fugitive) ⌘ ,gs',
+        \'Gstatus'],
+    \['▷ git diff (fugitive) ⌘ ,gd',
+        \'Gdiff'],
+    \['▷ git commit (fugitive) ⌘ ,gc',
+        \'Gcommit'],
+    \['▷ git log (fugitive) ⌘ ,gl',
+        \'exe "silent Glog | Unite -no-quit quickfix"'],
+    \['▷ git log - all (fugitive) ⌘ ,gL',
+        \'exe "silent Glog -all | Unite -no-quit quickfix"'],
+    \['▷ git blame (fugitive) ⌘ ,gb',
+        \'Gblame'],
+    \['▷ git add/stage (fugitive) ⌘ ,gw',
+        \'Gwrite'],
+    \['▷ git checkout (fugitive) ⌘ ,go',
+        \'Gread'],
+    \['▷ git rm (fugitive) ⌘ ,gR',
+        \'Gremove'],
+    \['▷ git mv (fugitive) ⌘ ,gm',
+        \'exe "Gmove " input("destino: ")'],
+    \['▷ git push (fugitive, buffer output) ⌘ ,gp',
+        \'Git! push'],
+    \['▷ git pull (fugitive, buffer output) ⌘ ,gP',
+        \'Git! pull'],
+    \['▷ git command (fugitive, buffer output) ⌘ ,gi',
+        \'exe "Git! " input("comando git: ")'],
+    \['▷ git edit (fugitive) ⌘ ,gE',
+        \'exe "command Gedit " input(":Gedit ")'],
+    \['▷ git grep (fugitive) ⌘ ,gg',
+        \'exe "silent Ggrep -i ".input("Pattern: ") | Unite -no-quit quickfix'],
+    \['▷ git grep - messages (fugitive) ⌘ ,ggm',
+        \'exe "silent Glog --grep=".input("Pattern: ")." | Unite -no-quit quickfix"'],
+    \['▷ git grep - text (fugitive) ⌘ ,ggt',
+        \'exe "silent Glog -S".input("Pattern: ")." | Unite -no-quit quickfix"'],
+    \['▷ git init ⌘ ,gn',
+        \'Unite output:echo\ system("git\ init")'],
+    \['▷ git cd (fugitive)',
+        \'Gcd'],
+    \['▷ git lcd (fugitive)',
+        \'Glcd'],
+    \['▷ git browse (fugitive) ⌘ ,gB',
+        \'Gbrowse'],
+    \['▷ github dashboard (github-dashboard) ⌘ ,gD',
+        \'exe "GHD! " input("Username: ")'],
+    \['▷ github activity (github-dashboard) ⌘ ,gA',
+        \'exe "GHA! " input("Username or repository: ")'],
+    \['▷ github issues & PR ⌘ ,gS',
+        \'normal ,gS'],
+    \]
 
-
-function! g:UltiSnips_Complete()
-    call UltiSnips_ExpandSnippet()
-    if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<C-n>"
-        else
-            call UltiSnips_JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-               return "\<TAB>"
-            endif
-        endif
-    endif
-    return ""
-endfunction
-
-
-au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
-
-" Emmet
-let g:user_emmet_leader_key = '<c-e>'
+nnoremap <silent>[menu]g :Unite -silent -winheight=29 -start-insert menu:git<CR>
+" }}}
 
 " }}}
 
