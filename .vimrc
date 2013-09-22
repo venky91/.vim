@@ -38,7 +38,6 @@ NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'paradigm/TextObjectify'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'xolox/vim-easytags'
@@ -57,8 +56,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundleLazy 'shemerey/vim-peepopen', {
 \'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
 
-NeoBundleLazy 'Raimondi/delimitMate', {
-\'autoload' : { 'insert' : 1, },}
+NeoBundle 'Raimondi/delimitMate'
 
 NeoBundleLazy 'tpope/vim-endwise', {
 \'autoload' : { 'insert' : 1, },}
@@ -316,7 +314,7 @@ vnoremap ; :
 " Use ; to do ex commands.
 cmap Q :qa!<cr>
 " easier way to quit
-"cmap w!! w !sudo dd of=%<cr>
+cmap w!! w !sudo dd of=%<cr>
 " root authority writing
 vnoremap <F2> zf
 " Creates Folds.
@@ -326,7 +324,6 @@ map <F3> zR
 " Opens all Folds.
 map <F4> zM
 " Closes all Folds.
-"nnoremap <F8> :GundoToggle<CR>
 nnoremap <F8> :UndotreeToggle<CR>
 map <F9> :sign unplace *<CR>
 " Remove signs on the left side.
@@ -382,8 +379,6 @@ vnoremap <Leader>v "_dP
 nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 " YouCompleteMe GoTos
-"nmap s <space>w
-"nmap S <space>b
 " Easy Motion Forward and Backwards
 
 " }}}
@@ -453,6 +448,7 @@ autocmd FileType java nnoremap <f6> :!echo %\|awk -F. '{print $1}'\|xargs java<c
 
 " Shell
 autocmd FileType sh nnoremap <C-c> :!./%<CR>
+autocmd FileType ruby nnoremap <C-c> :!ruby %<CR>
 
 " Python
 if has('mac')
@@ -496,6 +492,7 @@ endif
 " PLUGIN {{{
 
 " Airline
+set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline#extensions#whitespace#enabled = 0
