@@ -107,21 +107,6 @@ NeoBundleLazy 'jakar/vim-json', {
 NeoBundle 'bling/vim-airline'
 NeoBundle 'oblitum/rainbow'
 
-"NeoBundleLazy 'tpope/vim-bundler', {
-"\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
-
-"NeoBundleLazy 'pangloss/vim-javascript', {
-"\'autoload' : {'filetypes' : ['html', 'javascript', 'css', 'xml'], },}
-
-"NeoBundleLazy 'jelera/vim-javascript-syntax', {
-"\'autoload' : {'filetypes' : ['html', 'javascript',], },}
-
-"NeoBundleLazy 'vim-ruby/vim-ruby', {
-"\'autoload' : {'filetypes' : ['ruby', 'rails'], },}
-
-"NeoBundle 'digitaltoad/vim-jade'
-"NeoBundle 'wavded/vim-stylus'
-
 filetype plugin indent on
 
 " First-time plugins installation
@@ -376,10 +361,6 @@ nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Edit file, starting in same directory as current file
 vnoremap <Leader>v "_dP
 " Delete into one register and paste from another.
-nnoremap <Leader>je :YcmCompleter GoToDeclaration<CR>
-nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
-" YouCompleteMe GoTos
-" Easy Motion Forward and Backwards
 
 " }}}
 
@@ -508,27 +489,9 @@ let g:CommandTMaxHeight=20
 let g:CommandTMaxCachedDirectories=5
 let g:CommandTCancelMap=['<C-x>', '<C-c>']
 
-" CtrlP
-"nnoremap <Leader>g :CtrlPCurFile<CR>
-"nnoremap <Leader>f :CtrlP<CR>
-"nnoremap <Leader>b :CtrlPBuffer<CR>
-"nnoremap <Leader>r :CtrlPMRU<CR>
-"let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
-"let g:ctrlp_max_depth = 10 " How many levels to search through.
-"let g:ctrlp_mruf_max = 30 " How many files to remember.
-"let g:ctrlp_by_filename=0 " Emphasize directories in search.
-"let g:ctrlp_use_caching=1 " Cache searches.
-"let g:ctrlp_clear_cache_on_exit = 0 " Share cache between sessions.
-"let g:ctrlp_cache_dir = $HOME.'/.vim/.cache/ctrlp'
-"let g:ctrlp_max_files = 10000
-"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
 " DelimitMate
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
-
-" Easy Motion
-"let g:EasyMotion_leader_key = '<space>'
 
 " Easytags
 let g:easytags_include_members = 1
@@ -541,43 +504,8 @@ let g:easytags_updatetime_warn = 0
 let g:EclimMenus = 1
 let g:EclimCompletionMethod = 'omnifunc'
 
-" Fugitive
-nnoremap <Leader>gn :Unite output:echo\ system("git\ init")<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>go :Gread<CR>
-nnoremap <Leader>gR :Gremove<CR>
-nnoremap <Leader>gm :Gmove<Space>
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gd :Gdiff<CR>
-nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gB :Gbrowse<CR>
-nnoremap <Leader>gp :Git! push<CR>
-nnoremap <Leader>gP :Git! pull<CR>
-nnoremap <Leader>gi :Git!<Space>
-nnoremap <Leader>ge :Gedit<CR>
-nnoremap <Leader>gE :Gedit<Space>
-nnoremap <Leader>gl :exe "silent Glog <Bar> Unite -no-quit
-            \ quickfix"<CR>:redraw!<CR>
-nnoremap <Leader>gL :exe "silent Glog -- <Bar> Unite -no-quit
-            \ quickfix"<CR>:redraw!<CR>
-nnoremap <Leader>gt :!tig<CR>:redraw!<CR>
-nnoremap <Leader>gS :exe "silent !shipit"<CR>:redraw!<CR>
-nnoremap <Leader>gg :exe 'silent Ggrep -i '.input("Pattern: ")<Bar>Unite
-            \ quickfix -no-quit<CR>
-nnoremap <Leader>ggm :exe 'silent Glog --grep='.input("Pattern: ").' <Bar>
-            \Unite -no-quit quickfix'<CR>
-nnoremap <Leader>ggt :exe 'silent Glog -S='.input("Pattern: ").' <Bar>
-            \Unite -no-quit quickfix'<CR>
-
-nnoremap <Leader>ggc :silent! Ggrep -i<Space>
-
 " GHC Mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
-
-"" Haskell Mode
-"au BufEnter *.hs compiler ghc
-"let g:haddock_browser="/Applications/Firefox.app/Contents/MacOS/firefox"
 
 " vim-javascript
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -669,9 +597,6 @@ let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 " View Doc
 let g:viewdoc_open='new'
 let g:viewdoc_only=1
-
-" Vim Rooter
-"let g:rooter_use_lcd = 1
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
@@ -794,199 +719,6 @@ nnoremap <silent> [menu]ma
 nnoremap <silent> [menu]me
     \ :<C-u>Unite output:message<CR>
 nnoremap [menu]? :<C-u>Unite source<CR>
-
-" menus menu
-nnoremap <silent>[menu]u :Unite -silent -winheight=20 menu<CR>
-
-" files and dirs menu {{{
-let g:unite_source_menu_menus.files = {
-    \ 'description' : ' files & dirs
-        \ ⌘ [space]o',
-    \}
-let g:unite_source_menu_menus.files.command_candidates = [
-    \['▷ open file ⌘',
-        \'Unite -start-insert file'],
-    \['▷ open more recently used files ⌘ [space] r',
-        \'Unite file_mru'],
-    \['▷ open file with recursive search ⌘',
-        \'Unite -start-insert file_rec/async'],
-    \['▷ edit new file',
-        \'Unite file/new'],
-    \['▷ search directory',
-        \'Unite directory'],
-    \['▷ search recently used directories',
-        \'Unite directory_mru'],
-    \['▷ search directory with recursive search',
-        \'Unite directory_rec/async'],
-    \['▷ make new directory',
-        \'Unite directory/new'],
-    \['▷ change working directory',
-        \'Unite -default-action=lcd directory'],
-    \['▷ know current working directory',
-        \'Unite output:pwd'],
-    \['▷ command-t files  ⌘ <c-p>',
-        \'CommandT'],
-    \['▷ command-t buffers  ⌘ <c-b>',
-        \'CommandTBuffer'],
-    \['▷ command-t flush  ⌘ ',
-        \'CommandTFlush'],
-    \]
-nnoremap <silent>[menu]o :Unite -silent -winheight=17 -start-insert
-            \ menu:files<CR>
-" }}}
-
-" yanks, registers & history menu {{{
-let g:unite_source_menu_menus.registers = {
-    \ 'description' : ' yanks, registers & history
-        \ ⌘ [space]i',
-    \}
-let g:unite_source_menu_menus.registers.command_candidates = [
-    \['▷ yanks ⌘ ,i',
-        \'Unite history/yank'],
-    \['▷ commands (history) ⌘ q:',
-        \'Unite history/command'],
-    \['▷ searches (history) ⌘ q/',
-        \'Unite history/search'],
-    \['▷ registers',
-        \'Unite register'],
-    \['▷ messages',
-        \'Unite output:messages'],
-    \['▷ undo tree (undotree) ⌘ <F8>',
-        \'UndotreeToggle'],
-    \]
-nnoremap <silent>[menu]i :Unite -silent menu:registers<CR>
-" }}}
-
-" neobundle menu {{{
-let g:unite_source_menu_menus.neobundle = {
-    \ 'description' : ' plugins administration with neobundle
-        \ ⌘ [space]n',
-    \}
-let g:unite_source_menu_menus.neobundle.command_candidates = [
-    \['▷ neobundle',
-        \'Unite neobundle'],
-    \['▷ neobundle log',
-        \'Unite neobundle/log'],
-    \['▷ neobundle lazy',
-        \'Unite neobundle/lazy'],
-    \['▷ neobundle update',
-        \'Unite neobundle/update'],
-    \['▷ neobundle search',
-        \'Unite neobundle/search'],
-    \['▷ neobundle install',
-        \'Unite neobundle/install'],
-    \['▷ neobundle check',
-        \'Unite -no-empty output:NeoBundleCheck'],
-    \['▷ neobundle docs',
-        \'Unite output:NeoBundleDocs'],
-    \['▷ neobundle clean',
-        \'NeoBundleClean'],
-    \['▷ neobundle list',
-        \'Unite output:NeoBundleList'],
-    \['▷ neobundle direct edit',
-        \'NeoBundleDirectEdit'],
-    \]
-nnoremap <silent>[menu]n :Unite -silent -start-insert menu:neobundle<CR>
-" }}}
-
-" git menu {{{
-let g:unite_source_menu_menus.git = {
-    \ 'description' : ' admin git repositories
-        \ ⌘ [space]g',
-    \}
-let g:unite_source_menu_menus.git.command_candidates = [
-    \['▷ tig ⌘ ,gt',
-        \'normal ,gt'],
-    \['▷ git viewer (gitv) ⌘ ,gv',
-        \'normal ,gv'],
-    \['▷ git viewer - buffer (gitv) ⌘ ,gV',
-        \'normal ,gV'],
-    \['▷ git status (fugitive) ⌘ ,gs',
-        \'Gstatus'],
-    \['▷ git diff (fugitive) ⌘ ,gd',
-        \'Gdiff'],
-    \['▷ git commit (fugitive) ⌘ ,gc',
-        \'Gcommit'],
-    \['▷ git log (fugitive) ⌘ ,gl',
-        \'exe "silent Glog | Unite -no-quit quickfix"'],
-    \['▷ git log - all (fugitive) ⌘ ,gL',
-        \'exe "silent Glog -all | Unite -no-quit quickfix"'],
-    \['▷ git blame (fugitive) ⌘ ,gb',
-        \'Gblame'],
-    \['▷ git add/stage (fugitive) ⌘ ,gw',
-        \'Gwrite'],
-    \['▷ git checkout (fugitive) ⌘ ,go',
-        \'Gread'],
-    \['▷ git rm (fugitive) ⌘ ,gR',
-        \'Gremove'],
-    \['▷ git mv (fugitive) ⌘ ,gm',
-        \'exe "Gmove " input("destino: ")'],
-    \['▷ git push (fugitive, buffer output) ⌘ ,gp',
-        \'Git! push'],
-    \['▷ git pull (fugitive, buffer output) ⌘ ,gP',
-        \'Git! pull'],
-    \['▷ git command (fugitive, buffer output) ⌘ ,gi',
-        \'exe "Git! " input("comando git: ")'],
-    \['▷ git edit (fugitive) ⌘ ,gE',
-        \'exe "command Gedit " input(":Gedit ")'],
-    \['▷ git grep (fugitive) ⌘ ,gg',
-        \'exe "silent Ggrep -i ".input("Pattern: ") | Unite -no-quit quickfix'],
-    \['▷ git grep - messages (fugitive) ⌘ ,ggm',
-        \'exe "silent Glog --grep=".input("Pattern: ")." | Unite -no-quit quickfix"'],
-    \['▷ git grep - text (fugitive) ⌘ ,ggt',
-        \'exe "silent Glog -S".input("Pattern: ")." | Unite -no-quit quickfix"'],
-    \['▷ git init ⌘ ,gn',
-        \'Unite output:echo\ system("git\ init")'],
-    \['▷ git cd (fugitive)',
-        \'Gcd'],
-    \['▷ git lcd (fugitive)',
-        \'Glcd'],
-    \['▷ git browse (fugitive) ⌘ ,gB',
-        \'Gbrowse'],
-    \['▷ github dashboard (github-dashboard) ⌘ ,gD',
-        \'exe "GHD! " input("Username: ")'],
-    \['▷ github activity (github-dashboard) ⌘ ,gA',
-        \'exe "GHA! " input("Username or repository: ")'],
-    \['▷ github issues & PR ⌘ ,gS',
-        \'normal ,gS'],
-    \]
-
-nnoremap <silent>[menu]g :Unite -silent -winheight=29 -start-insert menu:git<CR>
-" }}}
-
-" vim menu {{{
-let g:unite_source_menu_menus.vim = {
-    \ 'description' : ' vim
-        \ ⌘ [space]v',
-    \}
-let g:unite_source_menu_menus.vim.command_candidates = [
-    \['▷ choose colorscheme',
-        \'Unite colorscheme -auto-preview'],
-    \['▷ mappings',
-        \'Unite mapping -start-insert'],
-    \['▷ edit configuration file (vimrc)',
-        \'edit $MYVIMRC'],
-    \['▷ choose filetype',
-        \'Unite -start-insert filetype'],
-    \['▷ vim help',
-        \'Unite -start-insert help'],
-    \['▷ vim commands',
-        \'Unite -start-insert command'],
-    \['▷ vim functions',
-        \'Unite -start-insert function'],
-    \['▷ vim runtimepath',
-        \'Unite -start-insert runtimepath'],
-    \['▷ vim command output',
-        \'Unite output'],
-    \['▷ unite sources',
-        \'Unite source'],
-    \['▷ kill process',
-        \'Unite -default-action=sigkill -start-insert process'],
-    \['▷ launch executable (dmenu like)',
-        \'Unite -start-insert launcher'],
-    \]
-nnoremap <silent>[menu]v :Unite menu:vim -silent -start-insert<CR>
-" }}}
 
 " }}}
 
