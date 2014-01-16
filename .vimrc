@@ -3,17 +3,6 @@
 set nocompatible    " no compatibility with vi
 filetype off        " required for vundle
 
-" Auto installing NeoBundle
-let iCanHazNeoBundle=1
-let neobundle_readme=expand($HOME.'/.vim/bundle/neobundle.vim/README.md')
-if !filereadable(neobundle_readme)
-    echo "Installing NeoBundle.."
-    echo ""
-    silent !mkdir -p $HOME/.vim/bundle
-    silent !git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
-    let iCanHazNeoBundle=0
-endif
-
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -38,23 +27,16 @@ NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-scripts/Colour-Sampler-Pack'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'paradigm/TextObjectify'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'xolox/vim-easytags'
 NeoBundle 'xolox/vim-misc'
-NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'powerman/vim-plugin-viewdoc'
 NeoBundle 'tpope/vim-fugitive', { 'augroup' : 'fugitive' }
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'kshenoy/vim-signature'
-NeoBundle 'tomtom/tcomment_vim'
-
-NeoBundleLazy 'shemerey/vim-peepopen', {
-\'autoload' : { 'mappings' : ['<Plug>(PeepOpen)',] },}
 
 NeoBundle 'Raimondi/delimitMate'
 
@@ -89,12 +71,6 @@ NeoBundleLazy 'eagletmt/ghcmod-vim', {
 NeoBundleLazy 'tpope/vim-rails', {
 \'autoload' : {'filetypes' : ['ruby', 'rails'], },}
 
-NeoBundleLazy 'klen/python-mode', {
-\'autoload' : { 'filetypes' : ['python',], },}
-
-NeoBundleLazy 'vim-scripts/a.vim', {
-\ 'autoload' : { 'filetypes' : ['c', 'cpp', 'h', 'm', 'objcpp', 'objc' ], },}
-
 NeoBundleLazy 'marijnh/tern_for_vim', {
 \'autoload' : {'filetypes' : ['javascript', ], },}
 
@@ -109,26 +85,8 @@ NeoBundle 'oblitum/rainbow'
 
 filetype plugin indent on
 
-" First-time plugins installation
-if iCanHazNeoBundle == 0
-    echo "Installing Bundles, please ignore key map error messages"
-    echo ""
-    :NeoBundleInstall
-endif
-
 " Installation check.
 NeoBundleCheck
-
-" Disable some of the a.vim mappings.
-augroup DisableMappings
-    " Alternate
-    autocmd!
-    autocmd FileType c,cpp nnoremap <Leader>ihn <nop>
-    autocmd FileType c,cpp nnoremap <Leader>is <nop>
-    autocmd FileType c,cpp nnoremap <Leader>ih <nop>
-    autocmd FileType objc let g:alternateExtensions_h = "m" 
-    autocmd FileType objc let g:alternateExtensions_m = "h"
-augroup END
 
 " }}}
 
@@ -193,9 +151,6 @@ augroup checktime
         autocmd CursorHoldI     * silent! checktime
     endif
 augroup END
-
-" Read Man Pages in vim with :Main.
-runtime! ftplugin/man.vim
 
 " }}}
 
@@ -272,10 +227,6 @@ hi SignColumn guibg=black
 
 " Status line
 set laststatus=2
-set statusline=%t%m%r%w\ \%{tagbar#currenttag('[%s]','')}\ \ \%=
-set statusline+=\ [%l,%v][%p%%]\ (%{&ff})%y\ %{fugitive#statusline()}
-set statusline+=%#warningmsg#
-set statusline+=%*
 
 " }}}
 
@@ -359,8 +310,6 @@ nnoremap <Leader>= mzgg=G`z
 " Indent the whole file and return to original position
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Edit file, starting in same directory as current file
-vnoremap <Leader>v "_dP
-" Delete into one register and paste from another.
 
 " }}}
 
@@ -380,19 +329,12 @@ set foldtext=NeatFoldText()
 " }}}2
 
 set foldenable      " Turn on folding
-"set foldcolumn=1    " Add a column to the left for folding.
 au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
 
 au FileType python set foldmethod=indent
 au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
 au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
-
-" Saves cursor position from last time.
-autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \ exe "normal g`\"" |
-    \ endif
 
 "}}}
 
@@ -407,25 +349,12 @@ nnoremap <Leader>mc :make <bar> :cw<cr>
 nnoremap <Leader>mk :make %< <bar> :cw<cr>
 " Regular compile with no quickfix.
 nnoremap <Leader>mm :make %< <cr>
-" Compile SDL programs.
-nnoremap <Leader>ms :!g++ % -o %< `sdl-config --cflags --libs`
-" Compile > Run > Back to Code, for SDL programs.
-nnoremap <Leader>mr :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
 
 " C/C++
 " These won't run properly if there's a file to be opened since they would be opening files from the directory vim was launched from.
 autocmd FileType c,cpp nnoremap <C-c> :!./%<<cr>
 " runs c++ files *ctrl-c*
 autocmd FileType c,cpp nnoremap <f5> :!g++ % -o %< && ./%< <cr><cr>
-autocmd FileType c,cpp nnoremap <f6> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr><cr>
-autocmd FileType c,cpp nnoremap <f7> :!g++ % -o %< `sdl-config --cflags --libs` -lSDL_image -lSDL_ttf -lSDL_mixer && ./%< <cr>
-
-" Java
-autocmd FileType java nnoremap <C-c> :!java %<<cr><cr>
-autocmd FileType java set makeprg=javac\ %
-autocmd FileType java set errorformat=%A:%f:%l:\ %m,%-Z%p^,%-C%.%#
-autocmd FileType java nnoremap <f5> :make<cr><cr>
-autocmd FileType java nnoremap <f6> :!echo %\|awk -F. '{print $1}'\|xargs java<cr><cr>
 
 " Shell
 autocmd FileType sh nnoremap <C-c> :!./%<CR>
@@ -436,13 +365,7 @@ if has('mac')
     autocmd FileType python nnoremap <C-c> :!/usr/local/bin/python %<cr>
     " option to use :pyfile % instead
     set ofu=syntaxcomplete#Complete
-" windows
-elseif has ("win32")
-    set makeprg=mingw32-make
-    set shell=C:\MinGW\msys\1.0\bin/bash.exe
-    " executes python under windows
-    autocmd FileType python map <C-p> :!C:\Python27/python %
-elseif has('unix')
+else
     " python
     autocmd FileType python nnoremap <Leader>p2 :!/usr/bin/env python2 %
     " runs python 2 files *ctrl-p*
@@ -465,9 +388,6 @@ autocmd BufNewFile,BufRead *.xml,*.tpl set ft=html
 " HTML in php files.
 au BufRead,BufNewFile *.php set ft=php.html
 
-if !empty($MY_RUBY_HOME)
- let g:ruby_path = join(split(glob($MY_RUBY_HOME.'/lib/ruby/*.*')."\n".glob($MY_RUBY_HOME.'/lib/rubysite_ruby/*'),"\n"),',')
-endif
 " }}}
 
 " PLUGIN {{{
@@ -500,10 +420,6 @@ let g:easytags_file = '~/.vim/tags/easytags'
 let g:easytags_cmd = '/usr/local/bin/ctags'
 let g:easytags_updatetime_warn = 0
 
-" Eclim
-let g:EclimMenus = 1
-let g:EclimCompletionMethod = 'omnifunc'
-
 " GHC Mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
@@ -525,21 +441,8 @@ let g:NERDTreeCasadeOpenSingleChildDir=1
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeShowLineNumbers=1
 
-" Python Mode
-let g:pymode_breakpoint = 1 " Load breakpoints plugin.
-let g:pymode_doc_key = '<Leader>K'
-let g:pymode_run_key = '<Leader>R'
-let g:pymode_breakpoint_key = '<Leader>B' " Key for set/unset breakpoint.
-let g:pymode_rope = 0 " Use Jedi instead of Rope.
-let g:pymode_folding = 1
-let g:pymode_motion = 1
-let g:pymode_lint_mccabe_complexity = 16
-
 " Rainbow Parens
 let g:rainbow_active = 1
-
-" Sparkup
-" let g:sparkupNextMapping='<c-u>'
 
 " Signify
 let g:signify_mapping_next_hunk = '<nop>'
@@ -575,28 +478,12 @@ let g:tagbar_compact=1
 let g:tagbar_singleclick=1
 let g:tagbar_sort=0
 
-" Tcomment
-" Yank visual selected lines before toggling comment.
-vmap gy ygvgc
-" Yank and paste visually selected liens before toggling comments.
-vmap gyy ygvgc'>gp'.
-" Yank line before toggling comment.
-nmap gy yygcc
-" Yank and paste line before toggling comment and remember position.
-" Use :t-1 instead of yyP to preserve registers.
-nmap gyy mz:t-1<cr>gCc`zmz
-
 " Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"]
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
-
-
-" View Doc
-let g:viewdoc_open='new'
-let g:viewdoc_only=1
 
 " YouCompleteMe
 autocmd VimEnter * call FindYouCompleteMeConf()
@@ -638,87 +525,6 @@ au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:U
 
 " Emmet
 let g:user_emmet_leader_key = '<c-e>'
-
-" }}}
-
-" UNITE {{{
-let g:unite_source_menu_menus = {}
-nnoremap [menu] <Nop>
-nmap <LocalLeader> [menu]
-
-map [menu]u :Unite menu<CR>
-
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-
-augroup UniteAutoCmd
-    autocmd!
-augroup END
-
-function! s:unite_tabs_and_windows()
-    nmap <buffer> <C-h> <C-w>h
-    nmap <buffer> <C-j> <C-w>j
-    nmap <buffer> <C-k> <C-w>k
-    nmap <buffer> <C-l> <C-w>l
-    imap <buffer> <C-h> <Esc><C-w>h
-    imap <buffer> <C-j> <Esc><C-w>j
-    imap <buffer> <C-k> <Esc><C-w>k
-    imap <buffer> <C-l> <Esc><C-w>l
-    nmap <buffer> <leader>x :bd!<CR>
-    nmap <buffer> <C-s> <Plug>(unite_redraw)
-    imap <buffer> <C-s> <Plug>(unite_redraw)
-endfunction
-
-let g:unite_source_process_enable_confirm = 1
-let g:unite_source_history_yank_enable = 1
-let g:unite_enable_split_vertically = 0
-let g:unite_winheight = 10
-let g:unite_source_directory_mru_limit = 300
-let g:unite_source_file_mru_limit = 300
-let g:unite_source_file_mru_filename_format = ':~:.'
-
-let g:unite_data_directory='~/.vim/.cache/unite'
-let g:unite_enable_start_insert=1
-let g:unite_source_history_yank_enable=1
-let g:unite_source_file_rec_max_cache_files=4000
-let g:unite_split_rule="botright"
-let g:unite_prompt='» '
-
-if executable('ag')
-    let g:unite_source_grep_command='ag'
-    let g:unite_source_grep_default_opts='--nocolor --nogroup --hidden'
-    let g:unite_source_grep_recursive_opt=''
-elseif executable('ack')
-    let g:unite_source_grep_command='ack'
-    let g:unite_source_grep_default_opts = '--column --no-color --nogroup --with-filename'
-    let g:unite_source_grep_recursive_opt=''
-endif
-
-function! s:unite_settings()
-    nmap <buffer> Q <plug>(unite_exit)
-    nmap <buffer> <esc> <plug>(unite_exit)
-    imap <buffer> <esc> <plug>(unite_exit)
-    imap <buffer> jk <Plug>(unite_insert_leave)
-    imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
-    imap <buffer> <leader> <Esc><leader>
-    nmap <buffer> <C-s> <Plug>(unite_redraw)
-    imap <buffer> <C-s> <Plug>(unite_redraw)
-    call s:unite_tabs_and_windows()
-endfunction
-
-autocmd FileType unite call s:unite_settings()
-
-nnoremap <silent> [menu], :<C-u>Unite -buffer-name=files buffer file_mru bookmark file_rec/async<cr>
-nnoremap <silent> [menu]y :<C-u>Unite -buffer-name=yanks history/yank<cr>
-nnoremap <silent> [menu]/ :<C-u>Unite -buffer-name=search grep:.<cr>
-nnoremap <silent> [menu]b :<C-u>Unite buffer -buffer-name=buffers -start-insert<CR>
-nnoremap <silent> [menu]f :<C-u>Unite file_rec/async<CR>
-nnoremap <silent> [menu]r :<C-u>Unite file_mru<CR>
-nnoremap <silent> [menu]ma
-    \ :<C-u>Unite mapping<CR>
-nnoremap <silent> [menu]me
-    \ :<C-u>Unite output:message<CR>
-nnoremap [menu]? :<C-u>Unite source<CR>
 
 " }}}
 
