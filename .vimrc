@@ -314,8 +314,7 @@ nnoremap <Leader>wh :split<cr>
 " vertical/horizontal splits
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " Toggles NerdTree
-"nnoremap <Leader>= mzgg=G`z
-nnoremap <Leader>= gg=G``
+nnoremap <Leader>= m`gg=G``
 " Indent the whole file and return to original position
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Edit file, starting in same directory as current file
