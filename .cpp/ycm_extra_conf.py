@@ -45,16 +45,11 @@ flags = [
 '-I',
 '.',
 '-isystem',
-'/usr/lib/c++/v1',
-'-isystem',
 '/usr/include',
 '-isystem',
 '/usr/local/include',
 '-isystem',
-'/usr/include/c++/4.7',
-'-isystem',
-'/usr/include/c++/4.7.3'
-
+'/usr/include/c++/4.2.1',
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the

@@ -216,19 +216,7 @@ if has('gui_running')
         colorscheme badwolf
     endif
 else
-    if strftime("%H") < 4
-        colorscheme molokai
-    elseif strftime("%H") < 8
-        colorscheme candycode
-    elseif strftime("%H") < 12
-        colorscheme xoria256
-    elseif strftime("%H") < 16
-        colorscheme fruity
-    elseif strftime("%H") < 20
-        colorscheme hybrid
-    else
-        colorscheme badwolf
-    endif
+    colorscheme jellybeans
 endif
 
 hi SignColumn guibg=black
@@ -239,6 +227,21 @@ set laststatus=2
 " }}}
 
 " KEYMAPS {{{
+" Move up and down 10 lines"
+nnoremap J 10j
+nnoremap K 10k
+xnoremap J 10j
+xnoremap K 10k
+
+" Moves to the fornt of the line"
+map H ^
+" Moves to the end of the line"
+map L $
+
+" Map ctrl+c to copy in visual mode"
+vnoremap <C-c> "+y
+" Map ctrl+v to paste in insert mode"
+inoremap <C-v> <C-O> "0P
 
 " Modifier
 inoremap <C-U> <C-G>u<C-U>
@@ -485,7 +488,7 @@ let g:tagbar_width=30
 let g:tagbar_compact=1
 let g:tagbar_singleclick=1
 let g:tagbar_sort=0
-
+    
 " Ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -511,15 +514,14 @@ let g:ycm_semantic_triggers = {
   \ 'lua' : ['.', ':'],
   \ 'erlang' : [':'],
   \ }
-
-
+    
 function! g:UltiSnips_Complete()
-    call UltiSnips_ExpandSnippet()
+    call UltiSnips#ExpandSnippet()
     if g:ulti_expand_res == 0
         if pumvisible()
             return "\<C-n>"
         else
-            call UltiSnips_JumpForwards()
+            call UltiSnips#JumpForwards()
             if g:ulti_jump_forwards_res == 0
                return "\<TAB>"
             endif
@@ -585,5 +587,5 @@ function! FindYouCompleteMeConf()
         let g:ycm_global_ycm_extra_conf = "~/.vim/.cpp/ycm_extra_conf.py"
     endif
 endfunction
-
+    
 " }}}
