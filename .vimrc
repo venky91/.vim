@@ -321,6 +321,8 @@ nnoremap <Leader>= m`gg=G``
 " Indent the whole file and return to original position
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Edit file, starting in same directory as current file
+nnoremap <Leader>. :CommandT<cr>
+" Searches for files using CommandT"
 
 " }}}
 
@@ -418,7 +420,7 @@ let g:CommandTMaxDepth=6
 let g:CommandTScanDotDirectories=1
 let g:CommandTMaxHeight=20
 let g:CommandTMaxCachedDirectories=5
-let g:CommandTCancelMap=['<C-x>', '<C-c>']
+let g:CommandTCancelMap=['<C-x>', '<C-c>', '<Esc>']
 
 " DelimitMate
 let g:delimitMate_expand_cr = 1
