@@ -375,7 +375,7 @@ autocmd FileType ruby nnoremap <C-c> :!ruby %<CR>
 
 " Python
 if has('mac')
-    autocmd FileType python nnoremap <C-c> :!/usr/local/bin/python %<cr>
+    autocmd FileType python nnoremap <Leader>mk :!/usr/bin/python %<cr>
     " option to use :pyfile % instead
     set ofu=syntaxcomplete#Complete
 else
@@ -384,6 +384,9 @@ else
     " runs python 2 files *ctrl-p*
     autocmd FileType python nnoremap <Leader>p3 :!/usr/bin/env python3 %<cr>
 endif
+
+" Javascript
+autocmd FileType javascript nnoremap <Leader>mk :!/usr/local/bin/node %<cr>
 
 " }}}
 
@@ -544,7 +547,7 @@ let g:user_emmet_leader_key = '<c-e>'
 
 " Various
 set omnifunc=syntaxcomplete#Complete " Default Completion
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
