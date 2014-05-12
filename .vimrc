@@ -202,19 +202,8 @@ endif
 set background=dark
 
 if has('gui_running')
-    if strftime("%H") < 4
-        colorscheme fruity
-    elseif strftime("%H") < 8
-        colorscheme hybrid
-    elseif strftime("%H") < 12
-        colorscheme solarized
-    elseif strftime("%H") < 16
-        colorscheme molokai
-    elseif strftime("%H") < 20
-        colorscheme luna
-    else
-        colorscheme badwolf
-    endif
+    colorscheme jellybeans
+    set guifont=Inconsolata:h14
 else
     colorscheme jellybeans
 endif
