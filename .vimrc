@@ -544,6 +544,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType vim set omnifunc=syntaxcomplete#Complete
 
+let g:EclimCompletionMethod = 'omnifunc'
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
