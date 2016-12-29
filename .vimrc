@@ -5,6 +5,8 @@ filetype off        " required for vundle
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath^=~/.vim/bundle/ctrlp.vim/
+  set runtimepath^=~/.vim/bundle/vim-ruboocop/
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -314,6 +316,8 @@ nnoremap <Leader>= m`gg=G``
 nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Edit file, starting in same directory as current file
 nnoremap <Leader>. :CommandT<cr>
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 " Searches for files using CommandT"
 
 " }}}
@@ -340,7 +344,7 @@ au FileType txt set foldmethod=marker
 au FileType python set foldmethod=indent
 au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
 au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
-
+nnoremap <Leader>. :CtrlP<cr> 
 "}}}
 
 " BUILD & COMPILE {{{
