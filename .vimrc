@@ -122,6 +122,8 @@ set undodir=~/.vim/undo
 set statusline+=%F
 
 autocmd FileType * setlocal formatoptions-=cro " Disable automatic comments.
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
 " Mouse
 if has('mouse')
@@ -342,7 +344,8 @@ au FileType vim set foldmethod=marker
 au FileType txt set foldmethod=marker
 
 au FileType python set foldmethod=indent
-au FileType c,cpp,java,ruby,php,css,html,eruby,javascript set foldmethod=syntax
+au FileType ruby set foldmethod=manual
+au FileType c,cpp,java,php,css,html,javascript set foldmethod=syntax
 au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
 nnoremap <Leader>. :CtrlP<cr> 
 "}}}
