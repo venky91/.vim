@@ -117,6 +117,7 @@ set sts=4           " about indenting
 set diffopt=iwhite  " ignore white space in diffs
 set undofile        " persistent undo even after exiting a file
 set undodir=~/.vim/undo
+set statusline+=%F
 
 autocmd FileType * setlocal formatoptions-=cro " Disable automatic comments.
 
