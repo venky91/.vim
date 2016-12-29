@@ -193,8 +193,6 @@ if has('mac')
         let loaded_matchparen=1 " Don't load matchit.vim (paren/bracket matching)
         let html_no_rendering=1 " Don't render italic, bold, links in HTML
     endif
-    set guifont=Consolas:h12,Menlo:h12
-    set shell=/bin/bash
     set clipboard^=unnamed  " Tmux copy paste integration.
 elseif has('win32')
     set guifont=Consolas:h10
@@ -203,18 +201,16 @@ elseif has('unix')
     set guioptions-=T  " Remove Toolbar.
     set guioptions-=m  " Remove Menubar.
     set gfn=Inconsolata\ for\ Powerline\ 12,Terminus\ 10
-    set shell=/bin/bash
 endif
 
 set background=dark
 
 if has('gui_running')
-    colorscheme jellybeans
     set guifont=Inconsolata:h14
-else
-    colorscheme jellybeans
+    set shell=/bin/zsh
 endif
 
+colorscheme molokai
 hi SignColumn guibg=black
 
 " Status line
