@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/james/Developer/Javascript/tizag'
 let g:netrw_dirhist_2='/Users/james/Developer/C-Plus-Plus'
 let g:netrw_dirhist_3='/Users/james/Developer/Python/Algorithms'
 let g:netrw_dirhist_4='/Users/venkat/C++_Projects'
+let g:netrw_dirhist_5='/Users/venkat'
+let g:netrw_dirhist_6='/Users/venkat/Projects/network'
+let g:netrw_dirhist_7='/Users/venkat/Projects/money-train'
+let g:netrw_dirhist_8='/Users/venkat/Projects/refinery'
+let g:netrw_dirhist_9='/Users/venkat/.vim'

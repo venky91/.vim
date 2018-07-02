@@ -146,6 +146,8 @@ set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe,*.style,*.png
 set wildignore+=*.o,*.obj,*.bak,*.m3u,*.avi,*.ssa,*.pdf
 set wildignore+=*.sub,*.mp3,*.jpg,*.srt,*.idx,*.smi,*.chm
 set wildignore+=*.nfo,*.mp4,*.sfv,*.mkv,*.rar,*.zip,*.class
+set wildignore+=*/node_modules/*     " Don't search inside Node.js modules
+set wildignore+=*/bower_components/* " Don't search inside bower modules
 
 " emulates autoread in the terminal
 augroup checktime
@@ -316,6 +318,7 @@ nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <Leader>. :CommandT<cr>
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
+nnoremap<Leader>s :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 " Searches for files using CommandT"
 
 " }}}
@@ -343,7 +346,6 @@ au FileType python set foldmethod=indent
 au FileType ruby set foldmethod=manual
 au FileType c,cpp,java,php,css,html,javascript set foldmethod=syntax
 au FileType python,c,cpp,java,ruby,php,css,html,eruby,javascript set foldlevel=4
-nnoremap <Leader>. :CtrlP<cr> 
 "}}}
 
 " BUILD & COMPILE {{{
@@ -413,7 +415,7 @@ let g:airline#extensions#whitespace#enabled = 0
 nnoremap <C-p> :CommandT<cr>
 nnoremap <C-s-b> :CommandTBuffer<cr>
 nnoremap <Leader>ctf :CommandTFlush<cr>
-let g:CommandTMaxFiles=10000
+let g:CommandTMaxFiles=20000
 let g:CommandTMaxDepth=6
 let g:CommandTScanDotDirectories=1
 let g:CommandTMaxHeight=20
@@ -428,7 +430,7 @@ let g:delimitMate_expand_space = 1
 let g:easytags_include_members = 1
 let g:easytags_python_enabled = 1
 let g:easytags_file = '~/.vim/tags/easytags'
-let g:easytags_cmd = '/usr/local/bin/ctags'
+let g:easytags_cmd = '/usr/bin/ctags'
 let g:easytags_updatetime_warn = 0
 
 " GHC Mod
@@ -564,6 +566,8 @@ set completeopt=menuone
 set tags+=~/.vim/tags/cpp_src
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/easytags
+set tags+=./tags
+set tags+=tags
 
 " }}}
 
