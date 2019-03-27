@@ -1,0 +1,110 @@
+" KEYMAPS {{{
+" Move up and down 10 lines"
+nnoremap J 10j
+nnoremap K 10k
+xnoremap J 10j
+xnoremap K 10k
+
+" Moves to the fornt of the line"
+map H ^
+" Moves to the end of the line"
+map L $
+
+" Map ctrl+c to copy in visual mode"
+vnoremap <C-c> "+y
+" Map ctrl+v to paste in insert mode"
+inoremap <C-v> <C-O> "0P
+
+" Modifier
+inoremap <C-U> <C-G>u<C-U>
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+nnoremap <C-k> <C-W>k
+nnoremap <C-j> <C-W>j
+nnoremap <C-l> <C-W>l
+nnoremap <C-h> <C-W>h
+" Maps the control + movement keys to moving around window splits.
+nnoremap <C-\> :pop<cr>
+" Pop back to previous definition.
+
+" Regular
+noremap ; :
+vnoremap ; :
+" Use ; to do ex commands.
+cmap Q :qa!<cr>
+" easier way to quit
+cmap w!! w !sudo dd of=%<cr>
+" root authority writing
+vnoremap <F2> zf
+" Creates Folds.
+map <F2> za
+" Opens or closes Folds .
+map <F3> zR
+" Opens all Folds.
+map <F4> zM
+" Closes all Folds.
+nnoremap <F8> :UndotreeToggle<CR>
+map <F9> :sign unplace *<CR>
+" Remove signs on the left side.
+nnoremap Y y$
+" y$ yanks to the end of the line.
+nnoremap D d$
+" d$ deletes to the end of the line.
+nnoremap C c$
+" c$ changes to the end of the line.
+imap jk <Esc>
+" esc returns to command mode.
+nnoremap Q gq
+" Don't use Ex mode, use Q for formatting.
+vnoremap < <gv
+vnoremap > >gv
+" Reselect text after identing
+nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
+" Double Click with the Mouse selects all occurences in the buffer.
+:com! -nargs=1 -complete=help H h <args> <bar> only
+" Use :H to open a help file in a full buffer.
+nnoremap ' `
+nnoremap ` '
+" Closer way to get to where you were last.
+nnoremap <TAB> za
+
+" Leader
+let mapleader=","
+let maplocalleader=" "
+" change the mapLeader from \ to ,
+nnoremap <Leader>t :TagbarToggle<CR>
+" toggles the tagbar with tt
+nnoremap <Leader><space> :noh<cr>
+" map ,space to clear search results
+nnoremap <Leader>q <C-w><C-v><C-w>l :e ~/scratch.vim<cr>
+" opens a pad to do macro testing
+nnoremap <Leader>Q :so ~/scratch.vim<cr>
+" source the macro file
+nnoremap <Leader>v :e ~/.vimrc<cr>
+" open vimrc in another split
+nnoremap <Leader>V :silent! so $MYVIMRC<CR>
+" source vimrc
+nnoremap <Leader>wv :vsplit<cr>
+nnoremap <Leader>wh :split<cr>
+" vertical/horizontal splits
+nnoremap <Leader>n :NERDTreeToggle<cr>
+" Toggles NerdTree
+nnoremap <Leader>= m`gg=G``
+" Indent the whole file and return to original position
+nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" Edit file, starting in same directory as current file
+nnoremap <Leader>. :CommandT<cr>
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+nnoremap<Leader>s :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+" Searches for files using CommandT"
+
+" }}}
+
+" Misc {{{
+set number
+set relativenumber
+au WinEnter * :setlocal relativenumber
+au WinEnter * :setlocal number
+set regexpengine=1 " Old Regex Engine
+" }}}
